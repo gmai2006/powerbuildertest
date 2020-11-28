@@ -1,0 +1,6657 @@
+{
+	"openapi": "3.0.0",
+	"info": {
+	  "description": "This is a generated REST API from a given sqlgeneration database schema.",
+	  "version": "1.0.0",
+	  "title": "REST API query generator",
+	  "license": {
+	    "name": "Apache 2.0",
+	    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+	  }
+	},
+	"servers": [
+		{
+		  "url": "http://datascience9.com"
+		}
+	],
+	"paths": {
+		"/MisthKratapod": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthKratapod Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthKratapod response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthKratapod",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthKratapod"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthKratapod",
+			    "in": "path",
+			    "description": "MisthKratapod",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthKratapod"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthKratapod response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthKratapod",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthKratapod"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthKratapod",
+			    "in": "path",
+			    "description": "MisthKratapod",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthKratapod"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthKratapod response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthKratapod",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthKratapod"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthKratapod Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpstath": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpstath Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpstath response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpstath",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpstath"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpstath",
+			    "in": "path",
+			    "description": "MisthZpstath",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpstath"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpstath response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpstath",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpstath"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpstath",
+			    "in": "path",
+			    "description": "MisthZpstath",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpstath"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpstath response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpstath",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpstath"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpstath Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthYpalYvar": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthYpalYvar Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthYpalYvar response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthYpalYvar",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthYpalYvar"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthYpalYvar",
+			    "in": "path",
+			    "description": "MisthYpalYvar",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthYpalYvar"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthYpalYvar response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthYpalYvar",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthYpalYvar"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthYpalYvar",
+			    "in": "path",
+			    "description": "MisthYpalYvar",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthYpalYvar"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthYpalYvar response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthYpalYvar",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthYpalYvar"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthYpalYvar Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZptmima": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZptmima Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZptmima response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZptmima",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZptmima"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZptmima",
+			    "in": "path",
+			    "description": "MisthZptmima",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZptmima"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZptmima response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZptmima",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZptmima"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZptmima",
+			    "in": "path",
+			    "description": "MisthZptmima",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZptmima"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZptmima response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZptmima",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZptmima"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZptmima Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthYpal": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthYpal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthYpal",
+			    "in": "path",
+			    "description": "MisthYpal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthYpal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthYpal",
+			    "in": "path",
+			    "description": "MisthYpal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthYpal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthYpal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthFyloYpal": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFyloYpal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthFyloYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthFyloYpal",
+			    "in": "path",
+			    "description": "MisthFyloYpal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFyloYpal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFyloYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthFyloYpal",
+			    "in": "path",
+			    "description": "MisthFyloYpal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFyloYpal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFyloYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFyloYpal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthReportCols": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthReportCols Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthReportCols response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthReportCols",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthReportCols"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthReportCols",
+			    "in": "path",
+			    "description": "MisthReportCols",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthReportCols"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthReportCols response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthReportCols",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthReportCols"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthReportCols",
+			    "in": "path",
+			    "description": "MisthReportCols",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthReportCols"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthReportCols response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthReportCols",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthReportCols"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthReportCols Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthReport": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthReport Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthReport response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthReport",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthReport"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthReport",
+			    "in": "path",
+			    "description": "MisthReport",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthReport"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthReport response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthReport",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthReport"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthReport",
+			    "in": "path",
+			    "description": "MisthReport",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthReport"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthReport response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthReport",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthReport"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthReport Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Usrgroupperm": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrgroupperm Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrgroupperm response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Usrgroupperm",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrgroupperm"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Usrgroupperm",
+			    "in": "path",
+			    "description": "Usrgroupperm",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrgroupperm"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrgroupperm response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrgroupperm",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrgroupperm"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Usrgroupperm",
+			    "in": "path",
+			    "description": "Usrgroupperm",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrgroupperm"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrgroupperm response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrgroupperm",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrgroupperm"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrgroupperm Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpoikog": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpoikog Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpoikog response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpoikog",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpoikog"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpoikog",
+			    "in": "path",
+			    "description": "MisthZpoikog",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpoikog"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpoikog response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpoikog",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpoikog"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpoikog",
+			    "in": "path",
+			    "description": "MisthZpoikog",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpoikog"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpoikog response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpoikog",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpoikog"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpoikog Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpyvar": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpyvar Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpyvar response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpyvar",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpyvar"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpyvar",
+			    "in": "path",
+			    "description": "MisthZpyvar",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpyvar"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpyvar response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpyvar",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpyvar"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpyvar",
+			    "in": "path",
+			    "description": "MisthZpyvar",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpyvar"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpyvar response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpyvar",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpyvar"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpyvar Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthReportYpal": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthReportYpal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthReportYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthReportYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthReportYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthReportYpal",
+			    "in": "path",
+			    "description": "MisthReportYpal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthReportYpal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthReportYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthReportYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthReportYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthReportYpal",
+			    "in": "path",
+			    "description": "MisthReportYpal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthReportYpal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthReportYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthReportYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthReportYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthReportYpal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpepidom": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpepidom Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpepidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpepidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpepidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpepidom",
+			    "in": "path",
+			    "description": "MisthZpepidom",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpepidom"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpepidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpepidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpepidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpepidom",
+			    "in": "path",
+			    "description": "MisthZpepidom",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpepidom"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpepidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpepidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpepidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpepidom Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Usrgroups": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrgroups Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrgroups response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Usrgroups",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrgroups"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Usrgroups",
+			    "in": "path",
+			    "description": "Usrgroups",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrgroups"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrgroups response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrgroups",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrgroups"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Usrgroups",
+			    "in": "path",
+			    "description": "Usrgroups",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrgroups"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrgroups response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrgroups",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrgroups"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrgroups Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpkat": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpkat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpkat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpkat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpkat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpkat",
+			    "in": "path",
+			    "description": "MisthZpkat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpkat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpkat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpkat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpkat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpkat",
+			    "in": "path",
+			    "description": "MisthZpkat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpkat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpkat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpkat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpkat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpkat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpkrat": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpkrat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpkrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpkrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpkrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpkrat",
+			    "in": "path",
+			    "description": "MisthZpkrat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpkrat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpkrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpkrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpkrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpkrat",
+			    "in": "path",
+			    "description": "MisthZpkrat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpkrat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpkrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpkrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpkrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpkrat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthFyloEpidom": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFyloEpidom Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloEpidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthFyloEpidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloEpidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthFyloEpidom",
+			    "in": "path",
+			    "description": "MisthFyloEpidom",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFyloEpidom"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloEpidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFyloEpidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloEpidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthFyloEpidom",
+			    "in": "path",
+			    "description": "MisthFyloEpidom",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFyloEpidom"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloEpidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFyloEpidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloEpidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFyloEpidom Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Usrmembers": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrmembers Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrmembers response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Usrmembers",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrmembers"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Usrmembers",
+			    "in": "path",
+			    "description": "Usrmembers",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrmembers"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrmembers response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrmembers",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrmembers"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Usrmembers",
+			    "in": "path",
+			    "description": "Usrmembers",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrmembers"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrmembers response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrmembers",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrmembers"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrmembers Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Usruserperm": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usruserperm Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usruserperm response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Usruserperm",
+			           "items": {
+			             "$ref": "#/components/schemas/Usruserperm"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Usruserperm",
+			    "in": "path",
+			    "description": "Usruserperm",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usruserperm"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usruserperm response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usruserperm",
+			           "items": {
+			             "$ref": "#/components/schemas/Usruserperm"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Usruserperm",
+			    "in": "path",
+			    "description": "Usruserperm",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usruserperm"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usruserperm response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usruserperm",
+			           "items": {
+			             "$ref": "#/components/schemas/Usruserperm"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usruserperm Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpperiod": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpperiod Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpperiod response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpperiod",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpperiod"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpperiod",
+			    "in": "path",
+			    "description": "MisthZpperiod",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpperiod"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpperiod response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpperiod",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpperiod"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpperiod",
+			    "in": "path",
+			    "description": "MisthZpperiod",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpperiod"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpperiod response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpperiod",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpperiod"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpperiod Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthFinalYpal": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFinalYpal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinalYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthFinalYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinalYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthFinalYpal",
+			    "in": "path",
+			    "description": "MisthFinalYpal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFinalYpal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinalYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFinalYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinalYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthFinalYpal",
+			    "in": "path",
+			    "description": "MisthFinalYpal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFinalYpal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinalYpal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFinalYpal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinalYpal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFinalYpal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Afxfilterd": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Afxfilterd Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxfilterd response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Afxfilterd",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxfilterd"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Afxfilterd",
+			    "in": "path",
+			    "description": "Afxfilterd",
+			    "required": "true",
+			    "schema": {
+			      "type": "Afxfilterd"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxfilterd response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Afxfilterd",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxfilterd"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Afxfilterd",
+			    "in": "path",
+			    "description": "Afxfilterd",
+			    "required": "true",
+			    "schema": {
+			      "type": "Afxfilterd"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxfilterd response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Afxfilterd",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxfilterd"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Afxfilterd Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Usrapps": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrapps Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrapps response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Usrapps",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrapps"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Usrapps",
+			    "in": "path",
+			    "description": "Usrapps",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrapps"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrapps response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrapps",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrapps"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Usrapps",
+			    "in": "path",
+			    "description": "Usrapps",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrapps"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrapps response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrapps",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrapps"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrapps Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpthesi": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpthesi Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpthesi response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpthesi",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpthesi"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpthesi",
+			    "in": "path",
+			    "description": "MisthZpthesi",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpthesi"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpthesi response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpthesi",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpthesi"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpthesi",
+			    "in": "path",
+			    "description": "MisthZpthesi",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpthesi"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpthesi response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpthesi",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpthesi"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpthesi Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthFinalYpalKrat": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFinalYpalKrat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinalYpalKrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthFinalYpalKrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinalYpalKrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthFinalYpalKrat",
+			    "in": "path",
+			    "description": "MisthFinalYpalKrat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFinalYpalKrat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinalYpalKrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFinalYpalKrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinalYpalKrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthFinalYpalKrat",
+			    "in": "path",
+			    "description": "MisthFinalYpalKrat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFinalYpalKrat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinalYpalKrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFinalYpalKrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinalYpalKrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFinalYpalKrat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Afxfilter": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Afxfilter Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxfilter response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Afxfilter",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxfilter"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Afxfilter",
+			    "in": "path",
+			    "description": "Afxfilter",
+			    "required": "true",
+			    "schema": {
+			      "type": "Afxfilter"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxfilter response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Afxfilter",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxfilter"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Afxfilter",
+			    "in": "path",
+			    "description": "Afxfilter",
+			    "required": "true",
+			    "schema": {
+			      "type": "Afxfilter"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxfilter response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Afxfilter",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxfilter"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Afxfilter Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Usrusers": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrusers Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrusers response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Usrusers",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrusers"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Usrusers",
+			    "in": "path",
+			    "description": "Usrusers",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrusers"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrusers response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrusers",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrusers"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Usrusers",
+			    "in": "path",
+			    "description": "Usrusers",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usrusers"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usrusers response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usrusers",
+			           "items": {
+			             "$ref": "#/components/schemas/Usrusers"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usrusers Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpidikot": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpidikot Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpidikot response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpidikot",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpidikot"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpidikot",
+			    "in": "path",
+			    "description": "MisthZpidikot",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpidikot"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpidikot response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpidikot",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpidikot"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpidikot",
+			    "in": "path",
+			    "description": "MisthZpidikot",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpidikot"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpidikot response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpidikot",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpidikot"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpidikot Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZptamio": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZptamio Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZptamio response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZptamio",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZptamio"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZptamio",
+			    "in": "path",
+			    "description": "MisthZptamio",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZptamio"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZptamio response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZptamio",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZptamio"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZptamio",
+			    "in": "path",
+			    "description": "MisthZptamio",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZptamio"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZptamio response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZptamio",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZptamio"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZptamio Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZptitlos": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZptitlos Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZptitlos response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZptitlos",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZptitlos"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZptitlos",
+			    "in": "path",
+			    "description": "MisthZptitlos",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZptitlos"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZptitlos response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZptitlos",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZptitlos"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZptitlos",
+			    "in": "path",
+			    "description": "MisthZptitlos",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZptitlos"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZptitlos response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZptitlos",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZptitlos"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZptitlos Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthFinalYpalEpidom": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFinalYpalEpidom Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinalYpalEpidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthFinalYpalEpidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinalYpalEpidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthFinalYpalEpidom",
+			    "in": "path",
+			    "description": "MisthFinalYpalEpidom",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFinalYpalEpidom"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinalYpalEpidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFinalYpalEpidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinalYpalEpidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthFinalYpalEpidom",
+			    "in": "path",
+			    "description": "MisthFinalYpalEpidom",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFinalYpalEpidom"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinalYpalEpidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFinalYpalEpidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinalYpalEpidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFinalYpalEpidom Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpxrisi": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpxrisi Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpxrisi response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpxrisi",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpxrisi"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpxrisi",
+			    "in": "path",
+			    "description": "MisthZpxrisi",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpxrisi"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpxrisi response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpxrisi",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpxrisi"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpxrisi",
+			    "in": "path",
+			    "description": "MisthZpxrisi",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpxrisi"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpxrisi response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpxrisi",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpxrisi"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpxrisi Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Afxptoseis": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Afxptoseis Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxptoseis response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Afxptoseis",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxptoseis"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Afxptoseis",
+			    "in": "path",
+			    "description": "Afxptoseis",
+			    "required": "true",
+			    "schema": {
+			      "type": "Afxptoseis"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxptoseis response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Afxptoseis",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxptoseis"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Afxptoseis",
+			    "in": "path",
+			    "description": "Afxptoseis",
+			    "required": "true",
+			    "schema": {
+			      "type": "Afxptoseis"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxptoseis response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Afxptoseis",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxptoseis"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Afxptoseis Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthFylo": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFylo Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFylo response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthFylo",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFylo"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthFylo",
+			    "in": "path",
+			    "description": "MisthFylo",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFylo"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFylo response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFylo",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFylo"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthFylo",
+			    "in": "path",
+			    "description": "MisthFylo",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFylo"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFylo response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFylo",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFylo"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFylo Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthFinal": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFinal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthFinal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthFinal",
+			    "in": "path",
+			    "description": "MisthFinal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFinal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFinal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthFinal",
+			    "in": "path",
+			    "description": "MisthFinal",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFinal"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFinal response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFinal",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFinal"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFinal Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthFyloKrat": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFyloKrat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloKrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthFyloKrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloKrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthFyloKrat",
+			    "in": "path",
+			    "description": "MisthFyloKrat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFyloKrat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloKrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFyloKrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloKrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthFyloKrat",
+			    "in": "path",
+			    "description": "MisthFyloKrat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFyloKrat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloKrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFyloKrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloKrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFyloKrat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Usractions": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usractions Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usractions response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Usractions",
+			           "items": {
+			             "$ref": "#/components/schemas/Usractions"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Usractions",
+			    "in": "path",
+			    "description": "Usractions",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usractions"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usractions response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usractions",
+			           "items": {
+			             "$ref": "#/components/schemas/Usractions"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Usractions",
+			    "in": "path",
+			    "description": "Usractions",
+			    "required": "true",
+			    "schema": {
+			      "type": "Usractions"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Usractions response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Usractions",
+			           "items": {
+			             "$ref": "#/components/schemas/Usractions"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Usractions Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		}
+	},
+	"components": {
+	  "schemas": {
+	    "MisthKratapod": {
+	    	"required": [
+	    		"kodxrisi"
+	    	],
+	      "properties": {
+	        "kodkratapod": {
+	          "type": "FLOAT",
+	          "description": "kodkratapod"
+	        },
+	        "desckratapod": {
+	          "type": "VARCHAR",
+	          "description": "desckratapod"
+	        },
+	        "apoddate": {
+	          "type": "DATE",
+	          "description": "apoddate"
+	        }
+	      }
+	    },
+	    "MisthZpstath": {
+	    	"required": [
+	    		"kodxrisi"
+	    	],
+	      "properties": {
+	        "kodstath": {
+	          "type": "VARCHAR",
+	          "description": "kodstath"
+	        },
+	        "descstath": {
+	          "type": "VARCHAR",
+	          "description": "descstath"
+	        },
+	        "poso": {
+	          "type": "INTEGER",
+	          "description": "poso"
+	        }
+	      }
+	    },
+	    "MisthYpalYvar": {
+	    	"required": [
+	    		"kodypal"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodyvar": {
+	          "type": "VARCHAR",
+	          "description": "kodyvar"
+	        },
+	        "aa": {
+	          "type": "INTEGER",
+	          "description": "aa"
+	        },
+	        "expr": {
+	          "type": "VARCHAR",
+	          "description": "expr"
+	        }
+	      }
+	    },
+	    "MisthZptmima": {
+	    	"required": [
+	    		"kodtmima"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "desctmima": {
+	          "type": "VARCHAR",
+	          "description": "desctmima"
+	        }
+	      }
+	    },
+	    "MisthYpal": {
+	    	"required": [
+	    		"kodypal"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodtmima": {
+	          "type": "VARCHAR",
+	          "description": "kodtmima"
+	        },
+	        "kodidikot": {
+	          "type": "VARCHAR",
+	          "description": "kodidikot"
+	        },
+	        "kodthesi": {
+	          "type": "VARCHAR",
+	          "description": "kodthesi"
+	        },
+	        "kodoikog": {
+	          "type": "VARCHAR",
+	          "description": "kodoikog"
+	        },
+	        "kodtamio": {
+	          "type": "VARCHAR",
+	          "description": "kodtamio"
+	        },
+	        "surname": {
+	          "type": "VARCHAR",
+	          "description": "surname"
+	        },
+	        "name": {
+	          "type": "VARCHAR",
+	          "description": "name"
+	        },
+	        "fathername": {
+	          "type": "VARCHAR",
+	          "description": "fathername"
+	        },
+	        "mitroo": {
+	          "type": "VARCHAR",
+	          "description": "mitroo"
+	        },
+	        "adt": {
+	          "type": "VARCHAR",
+	          "description": "adt"
+	        },
+	        "afm": {
+	          "type": "VARCHAR",
+	          "description": "afm"
+	        },
+	        "doy": {
+	          "type": "VARCHAR",
+	          "description": "doy"
+	        },
+	        "bankno": {
+	          "type": "VARCHAR",
+	          "description": "bankno"
+	        },
+	        "bank": {
+	          "type": "VARCHAR",
+	          "description": "bank"
+	        },
+	        "childs": {
+	          "type": "INTEGER",
+	          "description": "childs"
+	        },
+	        "prostmeli": {
+	          "type": "INTEGER",
+	          "description": "prostmeli"
+	        },
+	        "klimakio": {
+	          "type": "INTEGER",
+	          "description": "klimakio"
+	        },
+	        "bathmos": {
+	          "type": "VARCHAR",
+	          "description": "bathmos"
+	        },
+	        "klados": {
+	          "type": "VARCHAR",
+	          "description": "klados"
+	        },
+	        "birthdate": {
+	          "type": "DATE",
+	          "description": "birthdate"
+	        },
+	        "hireddate": {
+	          "type": "DATE",
+	          "description": "hireddate"
+	        },
+	        "homephone": {
+	          "type": "VARCHAR",
+	          "description": "homephone"
+	        },
+	        "mobilphone": {
+	          "type": "VARCHAR",
+	          "description": "mobilphone"
+	        },
+	        "sex": {
+	          "type": "VARCHAR",
+	          "description": "sex"
+	        },
+	        "spouse": {
+	          "type": "VARCHAR",
+	          "description": "spouse"
+	        },
+	        "city": {
+	          "type": "VARCHAR",
+	          "description": "city"
+	        },
+	        "area": {
+	          "type": "VARCHAR",
+	          "description": "area"
+	        },
+	        "address": {
+	          "type": "VARCHAR",
+	          "description": "address"
+	        },
+	        "tk": {
+	          "type": "VARCHAR",
+	          "description": "tk"
+	        },
+	        "email": {
+	          "type": "VARCHAR",
+	          "description": "email"
+	        },
+	        "jobtitle": {
+	          "type": "VARCHAR",
+	          "description": "jobtitle"
+	        },
+	        "rehireddate": {
+	          "type": "DATE",
+	          "description": "rehireddate"
+	        },
+	        "termdate": {
+	          "type": "DATE",
+	          "description": "termdate"
+	        },
+	        "termreason": {
+	          "type": "VARCHAR",
+	          "description": "termreason"
+	        },
+	        "jobphone": {
+	          "type": "VARCHAR",
+	          "description": "jobphone"
+	        },
+	        "intphone": {
+	          "type": "VARCHAR",
+	          "description": "intphone"
+	        },
+	        "exeldate": {
+	          "type": "DATE",
+	          "description": "exeldate"
+	        },
+	        "mothername": {
+	          "type": "VARCHAR",
+	          "description": "mothername"
+	        },
+	        "newexeldate": {
+	          "type": "DATE",
+	          "description": "newexeldate"
+	        }
+	      }
+	    },
+	    "MisthFyloYpal": {
+	    	"required": [
+	    		"kodypal"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodfylo": {
+	          "type": "VARCHAR",
+	          "description": "kodfylo"
+	        }
+	      }
+	    },
+	    "MisthReportCols": {
+	    	"required": [
+	    		"kodreport"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodcol": {
+	          "type": "INTEGER",
+	          "description": "kodcol"
+	        },
+	        "expr": {
+	          "type": "VARCHAR",
+	          "description": "expr"
+	        },
+	        "header_text": {
+	          "type": "VARCHAR",
+	          "description": "header_text"
+	        },
+	        "width": {
+	          "type": "INTEGER",
+	          "description": "width"
+	        },
+	        "aa": {
+	          "type": "INTEGER",
+	          "description": "aa"
+	        }
+	      }
+	    },
+	    "MisthReport": {
+	    	"required": [
+	    		"kodreport"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "descreport": {
+	          "type": "VARCHAR",
+	          "description": "descreport"
+	        },
+	        "print_margin_top": {
+	          "type": "INTEGER",
+	          "description": "print_margin_top"
+	        },
+	        "print_margin_bottom": {
+	          "type": "INTEGER",
+	          "description": "print_margin_bottom"
+	        },
+	        "print_margin_left": {
+	          "type": "INTEGER",
+	          "description": "print_margin_left"
+	        },
+	        "print_margin_right": {
+	          "type": "INTEGER",
+	          "description": "print_margin_right"
+	        },
+	        "print_orientation": {
+	          "type": "INTEGER",
+	          "description": "print_orientation"
+	        },
+	        "print_paper_size": {
+	          "type": "INTEGER",
+	          "description": "print_paper_size"
+	        },
+	        "print_scale": {
+	          "type": "INTEGER",
+	          "description": "print_scale"
+	        },
+	        "subtitle": {
+	          "type": "VARCHAR",
+	          "description": "subtitle"
+	        },
+	        "prn_notes1": {
+	          "type": "VARCHAR",
+	          "description": "prn_notes1"
+	        },
+	        "prn_notes2": {
+	          "type": "VARCHAR",
+	          "description": "prn_notes2"
+	        }
+	      }
+	    },
+	    "Usrgroupperm": {
+	    	"required": [
+	    		"kodgroup"
+	    	],
+	      "properties": {
+	        "kodaction": {
+	          "type": "VARCHAR",
+	          "description": "kodaction"
+	        },
+	        "editrec": {
+	          "type": "INTEGER",
+	          "description": "editrec"
+	        },
+	        "addrec": {
+	          "type": "INTEGER",
+	          "description": "addrec"
+	        },
+	        "delrec": {
+	          "type": "INTEGER",
+	          "description": "delrec"
+	        },
+	        "openlist": {
+	          "type": "INTEGER",
+	          "description": "openlist"
+	        },
+	        "openform": {
+	          "type": "INTEGER",
+	          "description": "openform"
+	        }
+	      }
+	    },
+	    "MisthZpoikog": {
+	    	"required": [
+	    		"kodoikog"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "descoikog": {
+	          "type": "VARCHAR",
+	          "description": "descoikog"
+	        }
+	      }
+	    },
+	    "MisthZpyvar": {
+	    	"required": [
+	    		"kodxrisi"
+	    	],
+	      "properties": {
+	        "kodyvar": {
+	          "type": "VARCHAR",
+	          "description": "kodyvar"
+	        },
+	        "descyvar": {
+	          "type": "VARCHAR",
+	          "description": "descyvar"
+	        },
+	        "expr": {
+	          "type": "VARCHAR",
+	          "description": "expr"
+	        }
+	      }
+	    },
+	    "MisthReportYpal": {
+	    	"required": [
+	    		"kodreport"
+	    	],
+	      "properties": {
+	        "kodypal": {
+	          "type": "FLOAT",
+	          "description": "kodypal"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        }
+	      }
+	    },
+	    "MisthZpepidom": {
+	    	"required": [
+	    		"kodepidom"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "descepidom": {
+	          "type": "VARCHAR",
+	          "description": "descepidom"
+	        }
+	      }
+	    },
+	    "Usrgroups": {
+	    	"required": [
+	    		"kodgroup"
+	    	],
+	      "properties": {
+	        "descgroup": {
+	          "type": "VARCHAR",
+	          "description": "descgroup"
+	        }
+	      }
+	    },
+	    "MisthZpkat": {
+	    	"required": [
+	    		"kodkat"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "desckat": {
+	          "type": "VARCHAR",
+	          "description": "desckat"
+	        }
+	      }
+	    },
+	    "MisthZpkrat": {
+	    	"required": [
+	    		"kodkrat"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "desckrat": {
+	          "type": "VARCHAR",
+	          "description": "desckrat"
+	        }
+	      }
+	    },
+	    "MisthFyloEpidom": {
+	    	"required": [
+	    		"kodepidom"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodfylo": {
+	          "type": "VARCHAR",
+	          "description": "kodfylo"
+	        },
+	        "expr": {
+	          "type": "VARCHAR",
+	          "description": "expr"
+	        },
+	        "aa": {
+	          "type": "INTEGER",
+	          "description": "aa"
+	        },
+	        "notes": {
+	          "type": "VARCHAR",
+	          "description": "notes"
+	        }
+	      }
+	    },
+	    "Usrmembers": {
+	    	"required": [
+	    		"kodgroup"
+	    	],
+	      "properties": {
+	        "koduser": {
+	          "type": "FLOAT",
+	          "description": "koduser"
+	        }
+	      }
+	    },
+	    "Usruserperm": {
+	    	"required": [
+	    		"kodapp"
+	    	],
+	      "properties": {
+	        "koduser": {
+	          "type": "FLOAT",
+	          "description": "koduser"
+	        },
+	        "enable": {
+	          "type": "INTEGER",
+	          "description": "enable"
+	        }
+	      }
+	    },
+	    "MisthZpperiod": {
+	    	"required": [
+	    		"kodperiod"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "descperiod": {
+	          "type": "VARCHAR",
+	          "description": "descperiod"
+	        },
+	        "orderno": {
+	          "type": "INTEGER",
+	          "description": "orderno"
+	        }
+	      }
+	    },
+	    "MisthFinalYpal": {
+	    	"required": [
+	    		"kodypal"
+	    	],
+	      "properties": {
+	        "kodfinal": {
+	          "type": "FLOAT",
+	          "description": "kodfinal"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "plirdate": {
+	          "type": "DATE",
+	          "description": "plirdate"
+	        }
+	      }
+	    },
+	    "Afxfilterd": {
+	    	"required": [
+	    		"kodfilterd"
+	    	],
+	      "properties": {
+	        "kodfilter": {
+	          "type": "FLOAT",
+	          "description": "kodfilter"
+	        },
+	        "pedio": {
+	          "type": "VARCHAR",
+	          "description": "pedio"
+	        },
+	        "telestis": {
+	          "type": "VARCHAR",
+	          "description": "telestis"
+	        },
+	        "timi": {
+	          "type": "VARCHAR",
+	          "description": "timi"
+	        },
+	        "joint": {
+	          "type": "VARCHAR",
+	          "description": "joint"
+	        }
+	      }
+	    },
+	    "Usrapps": {
+	    	"required": [
+	    		"kodapp"
+	    	],
+	      "properties": {
+	        "descapp": {
+	          "type": "VARCHAR",
+	          "description": "descapp"
+	        }
+	      }
+	    },
+	    "MisthZpthesi": {
+	    	"required": [
+	    		"kodthesi"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "descthesi": {
+	          "type": "VARCHAR",
+	          "description": "descthesi"
+	        }
+	      }
+	    },
+	    "MisthFinalYpalKrat": {
+	    	"required": [
+	    		"kodkrat"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodfinal": {
+	          "type": "FLOAT",
+	          "description": "kodfinal"
+	        },
+	        "kodypal": {
+	          "type": "FLOAT",
+	          "description": "kodypal"
+	        },
+	        "poso": {
+	          "type": "INTEGER",
+	          "description": "poso"
+	        },
+	        "notes": {
+	          "type": "VARCHAR",
+	          "description": "notes"
+	        },
+	        "kodkratapod": {
+	          "type": "FLOAT",
+	          "description": "kodkratapod"
+	        },
+	        "aa": {
+	          "type": "INTEGER",
+	          "description": "aa"
+	        }
+	      }
+	    },
+	    "Afxfilter": {
+	    	"required": [
+	    		"kodfilter"
+	    	],
+	      "properties": {
+	        "descfilter": {
+	          "type": "VARCHAR",
+	          "description": "descfilter"
+	        },
+	        "tablename": {
+	          "type": "VARCHAR",
+	          "description": "tablename"
+	        }
+	      }
+	    },
+	    "Usrusers": {
+	    	"required": [
+	    		"koduser"
+	    	],
+	      "properties": {
+	        "username": {
+	          "type": "VARCHAR",
+	          "description": "username"
+	        },
+	        "fullname": {
+	          "type": "VARCHAR",
+	          "description": "fullname"
+	        },
+	        "password": {
+	          "type": "VARCHAR",
+	          "description": "password"
+	        },
+	        "isactive": {
+	          "type": "INTEGER",
+	          "description": "isactive"
+	        },
+	        "tomeas": {
+	          "type": "VARCHAR",
+	          "description": "tomeas"
+	        },
+	        "idiotita": {
+	          "type": "VARCHAR",
+	          "description": "idiotita"
+	        }
+	      }
+	    },
+	    "MisthZpidikot": {
+	    	"required": [
+	    		"kodidikot"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "descidikot": {
+	          "type": "VARCHAR",
+	          "description": "descidikot"
+	        }
+	      }
+	    },
+	    "MisthZptamio": {
+	    	"required": [
+	    		"kodtamio"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "desctamio": {
+	          "type": "VARCHAR",
+	          "description": "desctamio"
+	        }
+	      }
+	    },
+	    "MisthZptitlos": {
+	    	"required": [
+	    		"kodxrisi"
+	    	],
+	      "properties": {
+	        "kodtitlos": {
+	          "type": "VARCHAR",
+	          "description": "kodtitlos"
+	        },
+	        "desctitlos": {
+	          "type": "VARCHAR",
+	          "description": "desctitlos"
+	        }
+	      }
+	    },
+	    "MisthFinalYpalEpidom": {
+	    	"required": [
+	    		"kodepidom"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodfinal": {
+	          "type": "FLOAT",
+	          "description": "kodfinal"
+	        },
+	        "kodypal": {
+	          "type": "FLOAT",
+	          "description": "kodypal"
+	        },
+	        "poso": {
+	          "type": "INTEGER",
+	          "description": "poso"
+	        },
+	        "notes": {
+	          "type": "VARCHAR",
+	          "description": "notes"
+	        },
+	        "aa": {
+	          "type": "INTEGER",
+	          "description": "aa"
+	        }
+	      }
+	    },
+	    "MisthZpxrisi": {
+	    	"required": [
+	    		"kodxrisi"
+	    	],
+	      "properties": {
+	        "descxrisi": {
+	          "type": "VARCHAR",
+	          "description": "descxrisi"
+	        }
+	      }
+	    },
+	    "Afxptoseis": {
+	    	"required": [
+	    		"onom"
+	    	],
+	      "properties": {
+	        "gen": {
+	          "type": "VARCHAR",
+	          "description": "gen"
+	        },
+	        "ait": {
+	          "type": "VARCHAR",
+	          "description": "ait"
+	        }
+	      }
+	    },
+	    "MisthFylo": {
+	    	"required": [
+	    		"kodxrisi"
+	    	],
+	      "properties": {
+	        "kodfylo": {
+	          "type": "VARCHAR",
+	          "description": "kodfylo"
+	        },
+	        "descfylo": {
+	          "type": "VARCHAR",
+	          "description": "descfylo"
+	        }
+	      }
+	    },
+	    "MisthFinal": {
+	    	"required": [
+	    		"kodfinal"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodkat": {
+	          "type": "VARCHAR",
+	          "description": "kodkat"
+	        },
+	        "kodperiod": {
+	          "type": "VARCHAR",
+	          "description": "kodperiod"
+	        },
+	        "aa": {
+	          "type": "FLOAT",
+	          "description": "aa"
+	        },
+	        "descfinal": {
+	          "type": "VARCHAR",
+	          "description": "descfinal"
+	        },
+	        "datefinal": {
+	          "type": "DATE",
+	          "description": "datefinal"
+	        },
+	        "title": {
+	          "type": "VARCHAR",
+	          "description": "title"
+	        }
+	      }
+	    },
+	    "MisthFyloKrat": {
+	    	"required": [
+	    		"kodkrat"
+	    	],
+	      "properties": {
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodfylo": {
+	          "type": "VARCHAR",
+	          "description": "kodfylo"
+	        },
+	        "expr": {
+	          "type": "VARCHAR",
+	          "description": "expr"
+	        },
+	        "aa": {
+	          "type": "INTEGER",
+	          "description": "aa"
+	        },
+	        "notes": {
+	          "type": "VARCHAR",
+	          "description": "notes"
+	        }
+	      }
+	    },
+	    "Usractions": {
+	    	"required": [
+	    		"kodaction"
+	    	],
+	      "properties": {
+	        "kodapp": {
+	          "type": "VARCHAR",
+	          "description": "kodapp"
+	        },
+	        "descaction": {
+	          "type": "VARCHAR",
+	          "description": "descaction"
+	        }
+	      }
+	    }
+	  }
+	}
+}

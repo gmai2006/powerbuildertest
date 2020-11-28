@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+                       http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+<persistence-unit name="test" transaction-type="JTA">
+	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	<jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
+
+	<class>com.test.abc.entity.MisthKratapod</class> 
+	<class>com.test.abc.entity.MisthZpstath</class> 
+	<class>com.test.abc.entity.MisthYpalYvar</class> 
+	<class>com.test.abc.entity.MisthZptmima</class> 
+	<class>com.test.abc.entity.MisthYpal</class> 
+	<class>com.test.abc.entity.MisthFyloYpal</class> 
+	<class>com.test.abc.entity.MisthReportCols</class> 
+	<class>com.test.abc.entity.MisthReport</class> 
+	<class>com.test.abc.entity.Usrgroupperm</class> 
+	<class>com.test.abc.entity.MisthZpoikog</class> 
+	<class>com.test.abc.entity.MisthZpyvar</class> 
+	<class>com.test.abc.entity.MisthReportYpal</class> 
+	<class>com.test.abc.entity.MisthZpepidom</class> 
+	<class>com.test.abc.entity.Usrgroups</class> 
+	<class>com.test.abc.entity.MisthZpkat</class> 
+	<class>com.test.abc.entity.MisthZpkrat</class> 
+	<class>com.test.abc.entity.MisthFyloEpidom</class> 
+	<class>com.test.abc.entity.Usrmembers</class> 
+	<class>com.test.abc.entity.Usruserperm</class> 
+	<class>com.test.abc.entity.MisthZpperiod</class> 
+	<class>com.test.abc.entity.MisthFinalYpal</class> 
+	<class>com.test.abc.entity.Afxfilterd</class> 
+	<class>com.test.abc.entity.Usrapps</class> 
+	<class>com.test.abc.entity.MisthZpthesi</class> 
+	<class>com.test.abc.entity.MisthFinalYpalKrat</class> 
+	<class>com.test.abc.entity.Afxfilter</class> 
+	<class>com.test.abc.entity.Usrusers</class> 
+	<class>com.test.abc.entity.MisthZpidikot</class> 
+	<class>com.test.abc.entity.MisthZptamio</class> 
+	<class>com.test.abc.entity.MisthZptitlos</class> 
+	<class>com.test.abc.entity.MisthFinalYpalEpidom</class> 
+	<class>com.test.abc.entity.MisthZpxrisi</class> 
+	<class>com.test.abc.entity.Afxptoseis</class> 
+	<class>com.test.abc.entity.MisthFylo</class> 
+	<class>com.test.abc.entity.MisthFinal</class> 
+	<class>com.test.abc.entity.MisthFyloKrat</class> 
+	<class>com.test.abc.entity.Usractions</class> 
+	<class>com.test.abc.entity.DataLoadingStatus</class> 
+  <exclude-unlisted-classes>false</exclude-unlisted-classes>
+  <properties>
+    <property name="hibernate.hbm2ddl.auto" value="update"/>
+    <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:test;"/>
+        <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"></property>
+        <property name="hibernate.show_sql" value="true"/>
+  </properties>
+  </persistence-unit>
+</persistence>
