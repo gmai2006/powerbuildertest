@@ -33,7 +33,6 @@ import javax.persistence.Persistence;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import com.test.abc.entity.MisthKratapod;
 import com.test.abc.utils.FileUtils;
 
@@ -64,8 +63,8 @@ public class MisthKratapodDaoTest {
   /** Run when the class is loaded. */
   @BeforeClass
   public static void beforeClass() {
-    EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
-    JpaDao jpa = new DefaultJpaDao(factory.createEntityManager());
+    EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
+    JpaDao jpa = new StandaloneJpaDao(factory.createEntityManager());
     dao = new DefaultMisthKratapodDao(jpa);
   }
 
@@ -83,8 +82,10 @@ public class MisthKratapodDaoTest {
 
   @Test
   public void testSelect() {
-    MisthKratapod testResult = dao.find(records[1].getId());
+    MisthKratapod testResult = dao.find(records[1].getKodxrisi());
+    java.util.List<MisthKratapod> all = dao.selectAll();
     assertNotNull("expect result", testResult);
+    org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertTrue(
         "expect equals kodkratapod ",
         this.records[1].getKodkratapod() == testResult.getKodkratapod());

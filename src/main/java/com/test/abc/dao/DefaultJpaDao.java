@@ -108,10 +108,9 @@ public class DefaultJpaDao implements JpaDao {
 
   /** {@inheritDoc} */
   @Override
+  @Transactional
   public <E> E create(E e) {
     em.persist(e);
-    em.flush();
-    em.clear();
     return e;
   }
 
@@ -132,5 +131,13 @@ public class DefaultJpaDao implements JpaDao {
     final EntityManager em = getEntityManager();
     E model = em.merge(e);
     return model;
+  }
+
+  /** {@inheritDoc} */
+  @Override
+  @Transactional
+  public <E> void deleteAll(Class<E> e) {
+    Query query = em.createQuery("delete from " + e.getCanonicalName());
+    query.executeUpdate();
   }
 }

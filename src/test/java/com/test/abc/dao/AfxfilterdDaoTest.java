@@ -33,7 +33,6 @@ import javax.persistence.Persistence;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import com.test.abc.entity.Afxfilterd;
 import com.test.abc.utils.FileUtils;
 
@@ -64,8 +63,8 @@ public class AfxfilterdDaoTest {
   /** Run when the class is loaded. */
   @BeforeClass
   public static void beforeClass() {
-    EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
-    JpaDao jpa = new DefaultJpaDao(factory.createEntityManager());
+    EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
+    JpaDao jpa = new StandaloneJpaDao(factory.createEntityManager());
     dao = new DefaultAfxfilterdDao(jpa);
   }
 
@@ -83,8 +82,10 @@ public class AfxfilterdDaoTest {
 
   @Test
   public void testSelect() {
-    Afxfilterd testResult = dao.find(records[1].getId());
+    Afxfilterd testResult = dao.find(records[1].getKodfilterd());
+    java.util.List<Afxfilterd> all = dao.selectAll();
     assertNotNull("expect result", testResult);
+    org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertTrue(
         "expect equals kodfilter ", this.records[1].getKodfilter() == testResult.getKodfilter());
     org.junit.Assert.assertEquals(

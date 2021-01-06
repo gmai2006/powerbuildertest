@@ -60,7 +60,7 @@ public class MisthZpyvarHandler extends DelimiterFileHandler<MisthZpyvar> {
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new String(tokens.get(i)));
+          record.setKodxrisi(new java.lang.String(tokens.get(i)));
           break;
         case "kodyvar":
           record.setKodyvar(tokens.get(i));

@@ -45,32 +45,32 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usrapps")
 public class Usrapps implements Serializable {
-  private static final long serialVersionUID = 160532722816728358L;
+  private static final long serialVersionUID = 160992137253315395L;
   /** Description: kodapp. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodapp\"")
-  private String id;
+  @Column(name = "kodapp")
+  private java.lang.String kodapp;
   /** Description: descapp. */
   @Basic
   @Column(name = "descapp")
-  private String descapp;
+  private java.lang.String descapp;
 
   public Usrapps() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodapp() {
+    return this.kodapp;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodapp(java.lang.String kodapp) {
+    this.kodapp = kodapp;
   }
 
-  public String getDescapp() {
+  public java.lang.String getDescapp() {
     return this.descapp;
   }
 
-  public void setDescapp(String descapp) {
+  public void setDescapp(java.lang.String descapp) {
     this.descapp = descapp;
   }
 }

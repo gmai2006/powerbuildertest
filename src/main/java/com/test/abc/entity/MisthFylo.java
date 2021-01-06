@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_fylo")
 public class MisthFylo implements Serializable {
-  private static final long serialVersionUID = 160532722826248641L;
+  private static final long serialVersionUID = 160992137258676941L;
   /** Description: kodxrisi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodxrisi\"")
-  private String id;
+  @Column(name = "kodxrisi")
+  private java.lang.String kodxrisi;
   /** Description: kodfylo. */
   @Basic
   @Column(name = "kodfylo")
-  private String kodfylo;
+  private java.lang.String kodfylo;
   /** Description: descfylo. */
   @Basic
   @Column(name = "descfylo")
-  private String descfylo;
+  private java.lang.String descfylo;
 
   public MisthFylo() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
   }
 
-  public String getKodfylo() {
+  public java.lang.String getKodfylo() {
     return this.kodfylo;
   }
 
-  public String getDescfylo() {
+  public java.lang.String getDescfylo() {
     return this.descfylo;
   }
 
-  public void setKodfylo(String kodfylo) {
+  public void setKodfylo(java.lang.String kodfylo) {
     this.kodfylo = kodfylo;
   }
 
-  public void setDescfylo(String descfylo) {
+  public void setDescfylo(java.lang.String descfylo) {
     this.descfylo = descfylo;
   }
 }

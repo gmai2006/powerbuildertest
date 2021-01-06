@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpidikot")
 public class MisthZpidikot implements Serializable {
-  private static final long serialVersionUID = 160532722820969137L;
+  private static final long serialVersionUID = 160992137255998707L;
   /** Description: kodidikot. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodidikot\"")
-  private String id;
+  @Column(name = "kodidikot")
+  private java.lang.String kodidikot;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: descidikot. */
   @Basic
   @Column(name = "descidikot")
-  private String descidikot;
+  private java.lang.String descidikot;
 
   public MisthZpidikot() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodidikot() {
+    return this.kodidikot;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodidikot(java.lang.String kodidikot) {
+    this.kodidikot = kodidikot;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getDescidikot() {
+  public java.lang.String getDescidikot() {
     return this.descidikot;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setDescidikot(String descidikot) {
+  public void setDescidikot(java.lang.String descidikot) {
     this.descidikot = descidikot;
   }
 }

@@ -59,7 +59,7 @@ public class DefaultUsruserpermService implements UsruserpermService {
 
   /** {@inheritDoc} */
   @Override
-  public Usruserperm find(String id) {
+  public Usruserperm find(java.lang.String id) {
     final Usruserperm result = dao.find(id);
     logger.info("find(Usruserperm) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultUsruserpermService implements UsruserpermService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(Usruserperm={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(Usruserperm) - exited - return value={} result ");

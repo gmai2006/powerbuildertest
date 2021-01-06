@@ -92,7 +92,7 @@ public class MisthZpperiodHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthZpperiod[].class);
     assertEquals("match count", count, records.length);
-    MisthZpperiod testResult = jpa.find(MisthZpperiod.class, records[0].getId());
+    MisthZpperiod testResult = jpa.find(MisthZpperiod.class, records[0].getKodperiod());
     assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
     assertEquals(
@@ -135,7 +135,7 @@ public class MisthZpperiodHandlerTest {
   }
 
   private String createCsvRecord(final MisthZpperiod record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodperiod())
         + ","
         + TestUtils.getObject(record.getKodxrisi())
         + ","

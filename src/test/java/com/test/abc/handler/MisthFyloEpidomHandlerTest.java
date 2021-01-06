@@ -92,7 +92,7 @@ public class MisthFyloEpidomHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthFyloEpidom[].class);
     assertEquals("match count", count, records.length);
-    MisthFyloEpidom testResult = jpa.find(MisthFyloEpidom.class, records[0].getId());
+    MisthFyloEpidom testResult = jpa.find(MisthFyloEpidom.class, records[0].getKodepidom());
     assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
     assertEquals("expect equals kodfylo ", this.records[0].getKodfylo(), testResult.getKodfylo());
@@ -135,7 +135,7 @@ public class MisthFyloEpidomHandlerTest {
   }
 
   private String createCsvRecord(final MisthFyloEpidom record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodepidom())
         + ","
         + TestUtils.getObject(record.getKodxrisi())
         + ","

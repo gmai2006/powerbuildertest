@@ -59,7 +59,7 @@ public class DefaultMisthFyloEpidomService implements MisthFyloEpidomService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFyloEpidom find(String id) {
+  public MisthFyloEpidom find(java.lang.String id) {
     final MisthFyloEpidom result = dao.find(id);
     logger.info("find(MisthFyloEpidom) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthFyloEpidomService implements MisthFyloEpidomService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthFyloEpidom={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthFyloEpidom) - exited - return value={} result ");

@@ -60,7 +60,7 @@ public interface AfxptoseisDao {
    * @param id An Afxptoseis id.
    * @return The same Afxptoseis.
    */
-  public Afxptoseis find(String id);
+  public Afxptoseis find(java.lang.String id);
   /**
    * Create an Afxptoseis.
    *
@@ -82,5 +82,5 @@ public interface AfxptoseisDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

@@ -92,7 +92,7 @@ public class MisthZpxrisiHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthZpxrisi[].class);
     assertEquals("match count", count, records.length);
-    MisthZpxrisi testResult = jpa.find(MisthZpxrisi.class, records[0].getId());
+    MisthZpxrisi testResult = jpa.find(MisthZpxrisi.class, records[0].getKodxrisi());
     assertEquals(
         "expect equals descxrisi ", this.records[0].getDescxrisi(), testResult.getDescxrisi());
   }
@@ -131,7 +131,9 @@ public class MisthZpxrisiHandlerTest {
   }
 
   private String createCsvRecord(final MisthZpxrisi record) {
-    return TestUtils.getObject(record.getId()) + "," + TestUtils.getObject(record.getDescxrisi());
+    return TestUtils.getObject(record.getKodxrisi())
+        + ","
+        + TestUtils.getObject(record.getDescxrisi());
   }
 
   private String createHeader(String headerfile) throws IOException {

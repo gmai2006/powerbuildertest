@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_fylo_ypal")
 public class MisthFyloYpal implements Serializable {
-  private static final long serialVersionUID = 160532722788927072L;
+  private static final long serialVersionUID = 16099213724415401L;
   /** Description: kodypal. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodypal\"")
-  private Float id;
+  @Column(name = "kodypal")
+  private java.lang.Float kodypal;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: kodfylo. */
   @Basic
   @Column(name = "kodfylo")
-  private String kodfylo;
+  private java.lang.String kodfylo;
 
   public MisthFyloYpal() {}
 
-  public Float getId() {
-    return id;
+  public java.lang.Float getKodypal() {
+    return this.kodypal;
   }
 
-  public void setId(Float id) {
-    this.id = id;
+  public void setKodypal(java.lang.Float kodypal) {
+    this.kodypal = kodypal;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getKodfylo() {
+  public java.lang.String getKodfylo() {
     return this.kodfylo;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setKodfylo(String kodfylo) {
+  public void setKodfylo(java.lang.String kodfylo) {
     this.kodfylo = kodfylo;
   }
 }

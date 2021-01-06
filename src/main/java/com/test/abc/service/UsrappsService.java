@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.Usrapps;
 
 public interface UsrappsService {
-  public Usrapps find(String id);
+  public Usrapps find(java.lang.String id);
   /**
    * Select a list of Usrapps based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface UsrappsService {
    *
    * @param id The Usrapps Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

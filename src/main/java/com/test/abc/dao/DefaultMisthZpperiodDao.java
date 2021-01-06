@@ -65,7 +65,7 @@ public class DefaultMisthZpperiodDao implements MisthZpperiodDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthZpperiod find(String id) {
+  public MisthZpperiod find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthZpperiod model = em.find(MisthZpperiod.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthZpperiodDao implements MisthZpperiodDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthZpperiod removed = em.find(MisthZpperiod.class, id);
     if (null != removed) {

@@ -65,7 +65,7 @@ public class DefaultMisthFinalYpalEpidomDao implements MisthFinalYpalEpidomDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFinalYpalEpidom find(String id) {
+  public MisthFinalYpalEpidom find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthFinalYpalEpidom model = em.find(MisthFinalYpalEpidom.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthFinalYpalEpidomDao implements MisthFinalYpalEpidomDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthFinalYpalEpidom removed = em.find(MisthFinalYpalEpidom.class, id);
     if (null != removed) {

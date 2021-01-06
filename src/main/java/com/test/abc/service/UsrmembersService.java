@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.Usrmembers;
 
 public interface UsrmembersService {
-  public Usrmembers find(Float id);
+  public Usrmembers find(java.lang.Float id);
   /**
    * Select a list of Usrmembers based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface UsrmembersService {
    *
    * @param id The Usrmembers Id.
    */
-  public void delete(Float id);
+  public void delete(java.lang.Float id);
 }

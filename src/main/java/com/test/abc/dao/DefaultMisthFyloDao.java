@@ -65,7 +65,7 @@ public class DefaultMisthFyloDao implements MisthFyloDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFylo find(String id) {
+  public MisthFylo find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthFylo model = em.find(MisthFylo.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthFyloDao implements MisthFyloDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthFylo removed = em.find(MisthFylo.class, id);
     if (null != removed) {

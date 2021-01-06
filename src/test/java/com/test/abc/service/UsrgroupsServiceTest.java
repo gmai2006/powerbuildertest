@@ -51,12 +51,12 @@ public class UsrgroupsServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getId())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodgroup())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    Usrgroups testResult = serviceMock.find(records[0].getId());
+    Usrgroups testResult = serviceMock.find(records[0].getKodgroup());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
         "expect equals descgroup ", this.records[0].getDescgroup(), testResult.getDescgroup());

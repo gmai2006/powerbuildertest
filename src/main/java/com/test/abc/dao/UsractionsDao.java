@@ -60,7 +60,7 @@ public interface UsractionsDao {
    * @param id An Usractions id.
    * @return The same Usractions.
    */
-  public Usractions find(String id);
+  public Usractions find(java.lang.String id);
   /**
    * Create an Usractions.
    *
@@ -82,5 +82,5 @@ public interface UsractionsDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

@@ -60,7 +60,7 @@ public class AfxfilterHandler extends DelimiterFileHandler<Afxfilter> {
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new Float(tokens.get(i)));
+          record.setKodfilter(new java.lang.Float(tokens.get(i)));
           break;
         case "descfilter":
           record.setDescfilter(tokens.get(i));

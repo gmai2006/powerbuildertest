@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthKratapod;
 
 public interface MisthKratapodService {
-  public MisthKratapod find(String id);
+  public MisthKratapod find(java.lang.String id);
   /**
    * Select a list of MisthKratapod based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthKratapodService {
    *
    * @param id The MisthKratapod Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

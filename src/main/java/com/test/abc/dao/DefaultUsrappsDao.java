@@ -65,7 +65,7 @@ public class DefaultUsrappsDao implements UsrappsDao {
 
   /** {@inheritDoc} */
   @Override
-  public Usrapps find(String id) {
+  public Usrapps find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     Usrapps model = em.find(Usrapps.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultUsrappsDao implements UsrappsDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final Usrapps removed = em.find(Usrapps.class, id);
     if (null != removed) {

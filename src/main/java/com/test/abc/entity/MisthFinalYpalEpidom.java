@@ -45,92 +45,92 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_final_ypal_epidom")
 public class MisthFinalYpalEpidom implements Serializable {
-  private static final long serialVersionUID = 160532722824088860L;
+  private static final long serialVersionUID = 160992137257299564L;
   /** Description: kodepidom. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodepidom\"")
-  private String id;
+  @Column(name = "kodepidom")
+  private java.lang.String kodepidom;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: kodfinal. */
   @Basic
   @Column(name = "kodfinal")
-  private Float kodfinal;
+  private java.lang.Float kodfinal;
   /** Description: kodypal. */
   @Basic
   @Column(name = "kodypal")
-  private Float kodypal;
+  private java.lang.Float kodypal;
   /** Description: poso. */
   @Basic
   @Column(name = "poso")
-  private Integer poso;
+  private java.lang.Integer poso;
   /** Description: notes. */
   @Basic
   @Column(name = "notes")
-  private String notes;
+  private java.lang.String notes;
   /** Description: aa. */
   @Basic
   @Column(name = "aa")
-  private Integer aa;
+  private java.lang.Integer aa;
 
   public MisthFinalYpalEpidom() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodepidom() {
+    return this.kodepidom;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodepidom(java.lang.String kodepidom) {
+    this.kodepidom = kodepidom;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public Float getKodfinal() {
+  public java.lang.Float getKodfinal() {
     return this.kodfinal;
   }
 
-  public Float getKodypal() {
+  public java.lang.Float getKodypal() {
     return this.kodypal;
   }
 
-  public Integer getPoso() {
+  public java.lang.Integer getPoso() {
     return this.poso;
   }
 
-  public String getNotes() {
+  public java.lang.String getNotes() {
     return this.notes;
   }
 
-  public Integer getAa() {
+  public java.lang.Integer getAa() {
     return this.aa;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setKodfinal(Float kodfinal) {
+  public void setKodfinal(java.lang.Float kodfinal) {
     this.kodfinal = kodfinal;
   }
 
-  public void setKodypal(Float kodypal) {
+  public void setKodypal(java.lang.Float kodypal) {
     this.kodypal = kodypal;
   }
 
-  public void setPoso(Integer poso) {
+  public void setPoso(java.lang.Integer poso) {
     this.poso = poso;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(java.lang.String notes) {
     this.notes = notes;
   }
 
-  public void setAa(Integer aa) {
+  public void setAa(java.lang.Integer aa) {
     this.aa = aa;
   }
 }

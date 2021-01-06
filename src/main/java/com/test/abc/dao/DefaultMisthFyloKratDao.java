@@ -65,7 +65,7 @@ public class DefaultMisthFyloKratDao implements MisthFyloKratDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFyloKrat find(String id) {
+  public MisthFyloKrat find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthFyloKrat model = em.find(MisthFyloKrat.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthFyloKratDao implements MisthFyloKratDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthFyloKrat removed = em.find(MisthFyloKrat.class, id);
     if (null != removed) {

@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.Afxptoseis;
 
 public interface AfxptoseisService {
-  public Afxptoseis find(String id);
+  public Afxptoseis find(java.lang.String id);
   /**
    * Select a list of Afxptoseis based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface AfxptoseisService {
    *
    * @param id The Afxptoseis Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

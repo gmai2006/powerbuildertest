@@ -59,7 +59,7 @@ public class DefaultMisthZpepidomService implements MisthZpepidomService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthZpepidom find(String id) {
+  public MisthZpepidom find(java.lang.String id) {
     final MisthZpepidom result = dao.find(id);
     logger.info("find(MisthZpepidom) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthZpepidomService implements MisthZpepidomService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthZpepidom={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthZpepidom) - exited - return value={} result ");

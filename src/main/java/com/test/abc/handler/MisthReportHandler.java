@@ -60,7 +60,7 @@ public class MisthReportHandler extends DelimiterFileHandler<MisthReport> {
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new String(tokens.get(i)));
+          record.setKodreport(new java.lang.String(tokens.get(i)));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));
@@ -69,25 +69,25 @@ public class MisthReportHandler extends DelimiterFileHandler<MisthReport> {
           record.setDescreport(tokens.get(i));
           break;
         case "printMarginTop":
-          record.setPrintMarginTop(new Integer(tokens.get(i)));
+          record.setPrintMarginTop(new java.lang.Integer(tokens.get(i)));
           break;
         case "printMarginBottom":
-          record.setPrintMarginBottom(new Integer(tokens.get(i)));
+          record.setPrintMarginBottom(new java.lang.Integer(tokens.get(i)));
           break;
         case "printMarginLeft":
-          record.setPrintMarginLeft(new Integer(tokens.get(i)));
+          record.setPrintMarginLeft(new java.lang.Integer(tokens.get(i)));
           break;
         case "printMarginRight":
-          record.setPrintMarginRight(new Integer(tokens.get(i)));
+          record.setPrintMarginRight(new java.lang.Integer(tokens.get(i)));
           break;
         case "printOrientation":
-          record.setPrintOrientation(new Integer(tokens.get(i)));
+          record.setPrintOrientation(new java.lang.Integer(tokens.get(i)));
           break;
         case "printPaperSize":
-          record.setPrintPaperSize(new Integer(tokens.get(i)));
+          record.setPrintPaperSize(new java.lang.Integer(tokens.get(i)));
           break;
         case "printScale":
-          record.setPrintScale(new Integer(tokens.get(i)));
+          record.setPrintScale(new java.lang.Integer(tokens.get(i)));
           break;
         case "subtitle":
           record.setSubtitle(tokens.get(i));

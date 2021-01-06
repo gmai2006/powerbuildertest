@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthZpperiod;
 
 public interface MisthZpperiodService {
-  public MisthZpperiod find(String id);
+  public MisthZpperiod find(java.lang.String id);
   /**
    * Select a list of MisthZpperiod based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthZpperiodService {
    *
    * @param id The MisthZpperiod Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

@@ -65,7 +65,7 @@ public class DefaultAfxfilterdDao implements AfxfilterdDao {
 
   /** {@inheritDoc} */
   @Override
-  public Afxfilterd find(Float id) {
+  public Afxfilterd find(java.lang.Float id) {
     final EntityManager em = dao.getEntityManager();
     Afxfilterd model = em.find(Afxfilterd.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultAfxfilterdDao implements AfxfilterdDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(Float id) {
+  public void delete(java.lang.Float id) {
     final EntityManager em = dao.getEntityManager();
     final Afxfilterd removed = em.find(Afxfilterd.class, id);
     if (null != removed) {

@@ -82,20 +82,6 @@ public class MisthZpperiodResource {
   }
 
   /**
-   * Idempotent method - create or update MisthZpperiod.
-   *
-   * @param obj The MisthZpperiod be be persisted.
-   * @return The MisthZpperiod entity.
-   */
-  @PUT
-  @Consumes(MediaType.APPLICATION_JSON)
-  public MisthZpperiod createOrUpdate(MisthZpperiod obj) {
-    if (this.service.find(obj.getId()) != null) {
-      return this.service.update(obj);
-    } else return this.service.create(obj);
-  }
-
-  /**
    * InIdempotent method. Update existing MisthZpperiod.
    *
    * @param obj - instance of MisthZpperiod.
@@ -115,9 +101,9 @@ public class MisthZpperiodResource {
    */
 
   /**
-   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id") String
-   * id) { this.service.delete(id); return Response.status(Response.Status.OK).entity("Successfully
-   * delete object").build(); }
+   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id")
+   * java.lang.String id) { this.service.delete(id); return
+   * Response.status(Response.Status.OK).entity("Successfully delete object").build(); }
    */
 
   /**
@@ -127,8 +113,8 @@ public class MisthZpperiodResource {
    * @return MisthZpperiod.
    */
   /**
-   * @GET @Path("{id}") public Response find(@PathParam("id") String id) { MisthZpperiod result =
-   * this.service.find(id); if (null == result) { return
+   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.String id) { MisthZpperiod
+   * result = this.service.find(id); if (null == result) { return
    * Response.status(Response.Status.NOT_FOUND).build(); } return
    * Response.status(Response.Status.OK).entity(result).build(); }
    */

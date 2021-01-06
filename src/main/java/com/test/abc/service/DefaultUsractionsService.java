@@ -59,7 +59,7 @@ public class DefaultUsractionsService implements UsractionsService {
 
   /** {@inheritDoc} */
   @Override
-  public Usractions find(String id) {
+  public Usractions find(java.lang.String id) {
     final Usractions result = dao.find(id);
     logger.info("find(Usractions) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultUsractionsService implements UsractionsService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(Usractions={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(Usractions) - exited - return value={} result ");

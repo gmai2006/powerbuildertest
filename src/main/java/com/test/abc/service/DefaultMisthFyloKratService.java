@@ -59,7 +59,7 @@ public class DefaultMisthFyloKratService implements MisthFyloKratService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFyloKrat find(String id) {
+  public MisthFyloKrat find(java.lang.String id) {
     final MisthFyloKrat result = dao.find(id);
     logger.info("find(MisthFyloKrat) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthFyloKratService implements MisthFyloKratService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthFyloKrat={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthFyloKrat) - exited - return value={} result ");

@@ -65,7 +65,7 @@ public class DefaultMisthYpalYvarDao implements MisthYpalYvarDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthYpalYvar find(Float id) {
+  public MisthYpalYvar find(java.lang.Float id) {
     final EntityManager em = dao.getEntityManager();
     MisthYpalYvar model = em.find(MisthYpalYvar.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthYpalYvarDao implements MisthYpalYvarDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(Float id) {
+  public void delete(java.lang.Float id) {
     final EntityManager em = dao.getEntityManager();
     final MisthYpalYvar removed = em.find(MisthYpalYvar.class, id);
     if (null != removed) {

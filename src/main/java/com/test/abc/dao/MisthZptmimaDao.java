@@ -60,7 +60,7 @@ public interface MisthZptmimaDao {
    * @param id An MisthZptmima id.
    * @return The same MisthZptmima.
    */
-  public MisthZptmima find(String id);
+  public MisthZptmima find(java.lang.String id);
   /**
    * Create an MisthZptmima.
    *
@@ -82,5 +82,5 @@ public interface MisthZptmimaDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

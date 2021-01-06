@@ -92,7 +92,7 @@ public class AfxfilterHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Afxfilter[].class);
     assertEquals("match count", count, records.length);
-    Afxfilter testResult = jpa.find(Afxfilter.class, records[0].getId());
+    Afxfilter testResult = jpa.find(Afxfilter.class, records[0].getKodfilter());
     assertEquals(
         "expect equals descfilter ", this.records[0].getDescfilter(), testResult.getDescfilter());
     assertEquals(
@@ -133,7 +133,7 @@ public class AfxfilterHandlerTest {
   }
 
   private String createCsvRecord(final Afxfilter record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodfilter())
         + ","
         + TestUtils.getObject(record.getDescfilter())
         + ","

@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpkrat")
 public class MisthZpkrat implements Serializable {
-  private static final long serialVersionUID = 160532722805962268L;
+  private static final long serialVersionUID = 16099213724977804L;
   /** Description: kodkrat. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodkrat\"")
-  private String id;
+  @Column(name = "kodkrat")
+  private java.lang.String kodkrat;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: desckrat. */
   @Basic
   @Column(name = "desckrat")
-  private String desckrat;
+  private java.lang.String desckrat;
 
   public MisthZpkrat() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodkrat() {
+    return this.kodkrat;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodkrat(java.lang.String kodkrat) {
+    this.kodkrat = kodkrat;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getDesckrat() {
+  public java.lang.String getDesckrat() {
     return this.desckrat;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setDesckrat(String desckrat) {
+  public void setDesckrat(java.lang.String desckrat) {
     this.desckrat = desckrat;
   }
 }

@@ -59,7 +59,7 @@ public class DefaultMisthZptmimaService implements MisthZptmimaService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthZptmima find(String id) {
+  public MisthZptmima find(java.lang.String id) {
     final MisthZptmima result = dao.find(id);
     logger.info("find(MisthZptmima) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthZptmimaService implements MisthZptmimaService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthZptmima={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthZptmima) - exited - return value={} result ");

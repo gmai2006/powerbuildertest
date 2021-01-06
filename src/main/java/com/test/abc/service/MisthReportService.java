@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthReport;
 
 public interface MisthReportService {
-  public MisthReport find(String id);
+  public MisthReport find(java.lang.String id);
   /**
    * Select a list of MisthReport based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthReportService {
    *
    * @param id The MisthReport Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpthesi")
 public class MisthZpthesi implements Serializable {
-  private static final long serialVersionUID = 160532722817768455L;
+  private static final long serialVersionUID = 160992137253720674L;
   /** Description: kodthesi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodthesi\"")
-  private String id;
+  @Column(name = "kodthesi")
+  private java.lang.String kodthesi;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: descthesi. */
   @Basic
   @Column(name = "descthesi")
-  private String descthesi;
+  private java.lang.String descthesi;
 
   public MisthZpthesi() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodthesi() {
+    return this.kodthesi;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodthesi(java.lang.String kodthesi) {
+    this.kodthesi = kodthesi;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getDescthesi() {
+  public java.lang.String getDescthesi() {
     return this.descthesi;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setDescthesi(String descthesi) {
+  public void setDescthesi(java.lang.String descthesi) {
     this.descthesi = descthesi;
   }
 }

@@ -60,7 +60,7 @@ public class UsrgroupsHandler extends DelimiterFileHandler<Usrgroups> {
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new Float(tokens.get(i)));
+          record.setKodgroup(new java.lang.Float(tokens.get(i)));
           break;
         case "descgroup":
           record.setDescgroup(tokens.get(i));

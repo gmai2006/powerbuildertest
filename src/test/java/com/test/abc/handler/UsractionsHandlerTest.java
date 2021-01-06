@@ -92,7 +92,7 @@ public class UsractionsHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Usractions[].class);
     assertEquals("match count", count, records.length);
-    Usractions testResult = jpa.find(Usractions.class, records[0].getId());
+    Usractions testResult = jpa.find(Usractions.class, records[0].getKodaction());
     assertEquals("expect equals kodapp ", this.records[0].getKodapp(), testResult.getKodapp());
     assertEquals(
         "expect equals descaction ", this.records[0].getDescaction(), testResult.getDescaction());
@@ -132,7 +132,7 @@ public class UsractionsHandlerTest {
   }
 
   private String createCsvRecord(final Usractions record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodaction())
         + ","
         + TestUtils.getObject(record.getKodapp())
         + ","

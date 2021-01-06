@@ -92,7 +92,7 @@ public class MisthFinalYpalHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthFinalYpal[].class);
     assertEquals("match count", count, records.length);
-    MisthFinalYpal testResult = jpa.find(MisthFinalYpal.class, records[0].getId());
+    MisthFinalYpal testResult = jpa.find(MisthFinalYpal.class, records[0].getKodypal());
     org.junit.Assert.assertEquals(
         "expect equals kodfinal ", this.records[0].getKodfinal(), testResult.getKodfinal());
     assertEquals(
@@ -137,7 +137,7 @@ public class MisthFinalYpalHandlerTest {
   }
 
   private String createCsvRecord(final MisthFinalYpal record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodypal())
         + ","
         + TestUtils.getObject(record.getKodfinal())
         + ","

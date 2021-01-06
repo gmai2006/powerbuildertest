@@ -60,25 +60,25 @@ public class MisthFinalYpalEpidomHandler extends DelimiterFileHandler<MisthFinal
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new String(tokens.get(i)));
+          record.setKodepidom(new java.lang.String(tokens.get(i)));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));
           break;
         case "kodfinal":
-          record.setKodfinal(new Float(tokens.get(i)));
+          record.setKodfinal(new java.lang.Float(tokens.get(i)));
           break;
         case "kodypal":
-          record.setKodypal(new Float(tokens.get(i)));
+          record.setKodypal(new java.lang.Float(tokens.get(i)));
           break;
         case "poso":
-          record.setPoso(new Integer(tokens.get(i)));
+          record.setPoso(new java.lang.Integer(tokens.get(i)));
           break;
         case "notes":
           record.setNotes(tokens.get(i));
           break;
         case "aa":
-          record.setAa(new Integer(tokens.get(i)));
+          record.setAa(new java.lang.Integer(tokens.get(i)));
           break;
 
         default:

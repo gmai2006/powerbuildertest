@@ -76,7 +76,7 @@ public class TestUtils {
     try {
       return formater.parse(date);
     } catch (ParseException e) {
-      LOGGER.log(Level.SEVERE, "Cannot parse date {0}", date);
+      LOGGER.log(Level.SEVERE, "Cannot parse date %s", date);
       return new java.util.Date();
     }
   }

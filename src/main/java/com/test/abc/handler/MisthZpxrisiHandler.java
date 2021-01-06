@@ -60,7 +60,7 @@ public class MisthZpxrisiHandler extends DelimiterFileHandler<MisthZpxrisi> {
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new String(tokens.get(i)));
+          record.setKodxrisi(new java.lang.String(tokens.get(i)));
           break;
         case "descxrisi":
           record.setDescxrisi(tokens.get(i));

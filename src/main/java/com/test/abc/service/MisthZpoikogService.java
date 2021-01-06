@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthZpoikog;
 
 public interface MisthZpoikogService {
-  public MisthZpoikog find(String id);
+  public MisthZpoikog find(java.lang.String id);
   /**
    * Select a list of MisthZpoikog based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthZpoikogService {
    *
    * @param id The MisthZpoikog Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

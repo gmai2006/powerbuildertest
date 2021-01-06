@@ -60,7 +60,7 @@ public class MisthZptmimaHandler extends DelimiterFileHandler<MisthZptmima> {
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new String(tokens.get(i)));
+          record.setKodtmima(new java.lang.String(tokens.get(i)));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));

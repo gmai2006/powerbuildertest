@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a50c7da5-f37e-48f6-a229-9b5ed68124d2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="powerbuildertest" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="powerbuildertest" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="powerbuildertest" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="powerbuildertest" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="powerbuildertest" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kEJG0TavD77bkVT7MMN0JozM8U" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/META-INF" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.test.abc.utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.test.abc.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/META-INF" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.AfxfilterDtoTest.testSelect">
+    <configuration name="AfxfilterDaoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.test.abc.dao.AfxfilterDaoTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AfxfilterDtoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.test.abc.dto.AfxfilterDtoTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AfxfilterDtoTest.testSelect" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.test.abc.dto.AfxfilterDtoTest.testSelect&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MisthFinalYpalEpidomDaoTest.testSelect" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.test.abc.dao.MisthFinalYpalEpidomDaoTest.testSelect&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="powerbuildertest [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.AfxfilterDtoTest.testSelect" />
+        <item itemvalue="Gradle.MisthFinalYpalEpidomDaoTest.testSelect" />
+        <item itemvalue="Gradle.AfxfilterDtoTest" />
+        <item itemvalue="Gradle.AfxfilterDaoTest" />
+        <item itemvalue="Gradle.powerbuildertest [buildDependents]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a50c7da5-f37e-48f6-a229-9b5ed68124d2" name="Default Changelist" comment="" />
+      <created>1605259718135</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605259718135</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="125" width="1400" height="618" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605304725162">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state x="100" y="125" width="1400" height="618" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.27.1600.816@0.27.1600.816" timestamp="1605304725162" />
+    <state x="608" y="121" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1606349733441">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state x="608" y="121" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/0.27.1600.816@0.27.1600.816" timestamp="1606349733440" />
+    <state x="553" y="302" width="553" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605291671581">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state x="553" y="302" width="553" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1600.816@0.27.1600.816" timestamp="1605291671581" />
+    <state x="583" y="159" width="424" height="549" key="FileChooserDialogImpl" timestamp="1606683457566">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state x="583" y="159" width="424" height="549" key="FileChooserDialogImpl/0.27.1600.816@0.27.1600.816" timestamp="1606683457566" />
+    <state width="1554" height="300" key="GridCell.Tab.0.bottom" timestamp="1609555016432">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state width="1554" height="300" key="GridCell.Tab.0.bottom/0.27.1600.816@0.27.1600.816" timestamp="1609555016432" />
+    <state width="1554" height="300" key="GridCell.Tab.0.center" timestamp="1609555016430">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state width="1554" height="300" key="GridCell.Tab.0.center/0.27.1600.816@0.27.1600.816" timestamp="1609555016430" />
+    <state width="1554" height="300" key="GridCell.Tab.0.left" timestamp="1609555016429">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state width="1554" height="300" key="GridCell.Tab.0.left/0.27.1600.816@0.27.1600.816" timestamp="1609555016429" />
+    <state width="1554" height="300" key="GridCell.Tab.0.right" timestamp="1609555016430">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state width="1554" height="300" key="GridCell.Tab.0.right/0.27.1600.816@0.27.1600.816" timestamp="1609555016430" />
+    <state width="1554" height="249" key="GridCell.Tab.1.bottom" timestamp="1606683459107">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state width="1554" height="249" key="GridCell.Tab.1.bottom/0.27.1600.816@0.27.1600.816" timestamp="1606683459107" />
+    <state width="1554" height="249" key="GridCell.Tab.1.center" timestamp="1606683459106">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state width="1554" height="249" key="GridCell.Tab.1.center/0.27.1600.816@0.27.1600.816" timestamp="1606683459106" />
+    <state width="1554" height="249" key="GridCell.Tab.1.left" timestamp="1606683459106">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state width="1554" height="249" key="GridCell.Tab.1.left/0.27.1600.816@0.27.1600.816" timestamp="1606683459106" />
+    <state width="1554" height="249" key="GridCell.Tab.1.right" timestamp="1606683459107">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state width="1554" height="249" key="GridCell.Tab.1.right/0.27.1600.816@0.27.1600.816" timestamp="1606683459107" />
+    <state x="283" y="27" width="1024" height="816" key="SettingsEditor" timestamp="1606358092247">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state x="283" y="27" width="1024" height="816" key="SettingsEditor/0.27.1600.816@0.27.1600.816" timestamp="1606358092247" />
+    <state x="490" y="173" width="620" height="522" key="find.popup" timestamp="1609530836432">
+      <screen x="0" y="27" width="1600" height="816" />
+    </state>
+    <state x="490" y="173" width="620" height="522" key="find.popup/0.27.1600.816@0.27.1600.816" timestamp="1609530836432" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/test/abc/dto/AfxfilterDtoTest.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/test/abc/dao/AfxfilterDaoTest.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/powerbuildertest$AfxfilterDaoTest.ic" NAME="AfxfilterDaoTest Coverage Results" MODIFIED="1606358104642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

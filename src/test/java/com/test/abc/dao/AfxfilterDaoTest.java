@@ -18,21 +18,23 @@
 
 package com.test.abc.dao;
 
+import java.nio.charset.Charset;
+import java.util.Arrays;
+import java.io.IOException;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.test.abc.entity.Afxfilter;
-import com.test.abc.utils.FileUtils;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.Arrays;
-import java.util.List;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import com.test.abc.entity.Afxfilter;
+import com.test.abc.utils.FileUtils;
 
 /*
  * %%
@@ -61,8 +63,8 @@ public class AfxfilterDaoTest {
   /** Run when the class is loaded. */
   @BeforeClass
   public static void beforeClass() {
-    EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
-    JpaDao jpa = new DefaultJpaDao(factory.createEntityManager());
+    EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
+    JpaDao jpa = new StandaloneJpaDao(factory.createEntityManager());
     dao = new DefaultAfxfilterDao(jpa);
   }
 
@@ -80,9 +82,10 @@ public class AfxfilterDaoTest {
 
   @Test
   public void testSelect() {
-    Afxfilter testResult = dao.find(records[1].getId());
-    List<Afxfilter> all = dao.selectAll();
+    Afxfilter testResult = dao.find(records[1].getKodfilter());
+    java.util.List<Afxfilter> all = dao.selectAll();
     assertNotNull("expect result", testResult);
+    org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
         "expect equals descfilter ", this.records[1].getDescfilter(), testResult.getDescfilter());
     org.junit.Assert.assertEquals(

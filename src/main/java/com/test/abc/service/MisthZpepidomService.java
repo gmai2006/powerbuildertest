@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthZpepidom;
 
 public interface MisthZpepidomService {
-  public MisthZpepidom find(String id);
+  public MisthZpepidom find(java.lang.String id);
   /**
    * Select a list of MisthZpepidom based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthZpepidomService {
    *
    * @param id The MisthZpepidom Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

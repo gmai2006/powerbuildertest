@@ -60,7 +60,7 @@ public interface UsrappsDao {
    * @param id An Usrapps id.
    * @return The same Usrapps.
    */
-  public Usrapps find(String id);
+  public Usrapps find(java.lang.String id);
   /**
    * Create an Usrapps.
    *
@@ -82,5 +82,5 @@ public interface UsrappsDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

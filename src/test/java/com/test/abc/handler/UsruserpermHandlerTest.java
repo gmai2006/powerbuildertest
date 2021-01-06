@@ -92,7 +92,7 @@ public class UsruserpermHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Usruserperm[].class);
     assertEquals("match count", count, records.length);
-    Usruserperm testResult = jpa.find(Usruserperm.class, records[0].getId());
+    Usruserperm testResult = jpa.find(Usruserperm.class, records[0].getKodapp());
     org.junit.Assert.assertEquals(
         "expect equals koduser ", this.records[0].getKoduser(), testResult.getKoduser());
     org.junit.Assert.assertEquals(
@@ -133,7 +133,7 @@ public class UsruserpermHandlerTest {
   }
 
   private String createCsvRecord(final Usruserperm record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodapp())
         + ","
         + TestUtils.getObject(record.getKoduser())
         + ","

@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "afxptoseis")
 public class Afxptoseis implements Serializable {
-  private static final long serialVersionUID = 160532722825588899L;
+  private static final long serialVersionUID = 160992137258264974L;
   /** Description: onom. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"onom\"")
-  private String id;
+  @Column(name = "onom")
+  private java.lang.String onom;
   /** Description: gen. */
   @Basic
   @Column(name = "gen")
-  private String gen;
+  private java.lang.String gen;
   /** Description: ait. */
   @Basic
   @Column(name = "ait")
-  private String ait;
+  private java.lang.String ait;
 
   public Afxptoseis() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getOnom() {
+    return this.onom;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setOnom(java.lang.String onom) {
+    this.onom = onom;
   }
 
-  public String getGen() {
+  public java.lang.String getGen() {
     return this.gen;
   }
 
-  public String getAit() {
+  public java.lang.String getAit() {
     return this.ait;
   }
 
-  public void setGen(String gen) {
+  public void setGen(java.lang.String gen) {
     this.gen = gen;
   }
 
-  public void setAit(String ait) {
+  public void setAit(java.lang.String ait) {
     this.ait = ait;
   }
 }

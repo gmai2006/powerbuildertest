@@ -45,80 +45,80 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_fylo_epidom")
 public class MisthFyloEpidom implements Serializable {
-  private static final long serialVersionUID = 160532722811346961L;
+  private static final long serialVersionUID = 160992137250239402L;
   /** Description: kodepidom. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodepidom\"")
-  private String id;
+  @Column(name = "kodepidom")
+  private java.lang.String kodepidom;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: kodfylo. */
   @Basic
   @Column(name = "kodfylo")
-  private String kodfylo;
+  private java.lang.String kodfylo;
   /** Description: expr. */
   @Basic
   @Column(name = "expr")
-  private String expr;
+  private java.lang.String expr;
   /** Description: aa. */
   @Basic
   @Column(name = "aa")
-  private Integer aa;
+  private java.lang.Integer aa;
   /** Description: notes. */
   @Basic
   @Column(name = "notes")
-  private String notes;
+  private java.lang.String notes;
 
   public MisthFyloEpidom() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodepidom() {
+    return this.kodepidom;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodepidom(java.lang.String kodepidom) {
+    this.kodepidom = kodepidom;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getKodfylo() {
+  public java.lang.String getKodfylo() {
     return this.kodfylo;
   }
 
-  public String getExpr() {
+  public java.lang.String getExpr() {
     return this.expr;
   }
 
-  public Integer getAa() {
+  public java.lang.Integer getAa() {
     return this.aa;
   }
 
-  public String getNotes() {
+  public java.lang.String getNotes() {
     return this.notes;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setKodfylo(String kodfylo) {
+  public void setKodfylo(java.lang.String kodfylo) {
     this.kodfylo = kodfylo;
   }
 
-  public void setExpr(String expr) {
+  public void setExpr(java.lang.String expr) {
     this.expr = expr;
   }
 
-  public void setAa(Integer aa) {
+  public void setAa(java.lang.Integer aa) {
     this.aa = aa;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(java.lang.String notes) {
     this.notes = notes;
   }
 }

@@ -60,7 +60,7 @@ public interface MisthReportColsDao {
    * @param id An MisthReportCols id.
    * @return The same MisthReportCols.
    */
-  public MisthReportCols find(String id);
+  public MisthReportCols find(java.lang.String id);
   /**
    * Create an MisthReportCols.
    *
@@ -82,5 +82,5 @@ public interface MisthReportColsDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

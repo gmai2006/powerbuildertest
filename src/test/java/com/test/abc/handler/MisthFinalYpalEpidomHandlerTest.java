@@ -92,7 +92,8 @@ public class MisthFinalYpalEpidomHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthFinalYpalEpidom[].class);
     assertEquals("match count", count, records.length);
-    MisthFinalYpalEpidom testResult = jpa.find(MisthFinalYpalEpidom.class, records[0].getId());
+    MisthFinalYpalEpidom testResult =
+        jpa.find(MisthFinalYpalEpidom.class, records[0].getKodepidom());
     assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
     org.junit.Assert.assertEquals(
@@ -139,7 +140,7 @@ public class MisthFinalYpalEpidomHandlerTest {
   }
 
   private String createCsvRecord(final MisthFinalYpalEpidom record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodepidom())
         + ","
         + TestUtils.getObject(record.getKodxrisi())
         + ","

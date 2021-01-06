@@ -75,7 +75,7 @@ public class DelimiterParser {
       return parse(lines, delimiter);
     } catch (IOException e) {
       LOGGER.log(
-          Level.SEVERE, "Cannot parse {0} due to {1}", new Object[] {inputPath.toString(), e});
+          Level.SEVERE, "Cannot parse %s due to {1}", new Object[] {inputPath.toString(), e});
     }
     return Collections.emptyList();
   }

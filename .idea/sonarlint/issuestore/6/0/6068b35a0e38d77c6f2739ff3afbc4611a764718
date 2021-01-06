@@ -1,0 +1,10 @@
+
+J
+java:S1128"4Remove this unused import 'javax.persistence.Query'.(¢ğö
+V	java:S125%"<This block of commented-out lines of code should be removed.(Í›¸ıÿÿÿÿ
+C
+java:S10686".Remove this unused "BATCH_SIZE" private field.(õŸ‰+
+[
+java:S1128"@Remove this unused import 'javax.persistence.EntityTransaction'.(¶“çğüÿÿÿÿ
+@
+java:S10687"*Remove this unused "logger" private field.(‹ı÷

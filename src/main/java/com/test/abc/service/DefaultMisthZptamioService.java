@@ -59,7 +59,7 @@ public class DefaultMisthZptamioService implements MisthZptamioService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthZptamio find(String id) {
+  public MisthZptamio find(java.lang.String id) {
     final MisthZptamio result = dao.find(id);
     logger.info("find(MisthZptamio) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthZptamioService implements MisthZptamioService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthZptamio={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthZptamio) - exited - return value={} result ");

@@ -92,7 +92,7 @@ public class AfxfilterdHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Afxfilterd[].class);
     assertEquals("match count", count, records.length);
-    Afxfilterd testResult = jpa.find(Afxfilterd.class, records[0].getId());
+    Afxfilterd testResult = jpa.find(Afxfilterd.class, records[0].getKodfilterd());
     org.junit.Assert.assertEquals(
         "expect equals kodfilter ", this.records[0].getKodfilter(), testResult.getKodfilter());
     assertEquals("expect equals pedio ", this.records[0].getPedio(), testResult.getPedio());
@@ -136,7 +136,7 @@ public class AfxfilterdHandlerTest {
   }
 
   private String createCsvRecord(final Afxfilterd record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodfilterd())
         + ","
         + TestUtils.getObject(record.getKodfilter())
         + ","

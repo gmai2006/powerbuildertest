@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usruserperm")
 public class Usruserperm implements Serializable {
-  private static final long serialVersionUID = 160532722813084909L;
+  private static final long serialVersionUID = 160992137251127623L;
   /** Description: kodapp. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodapp\"")
-  private String id;
+  @Column(name = "kodapp")
+  private java.lang.String kodapp;
   /** Description: koduser. */
   @Basic
   @Column(name = "koduser")
-  private Float koduser;
+  private java.lang.Float koduser;
   /** Description: enable. */
   @Basic
   @Column(name = "enable")
-  private Integer enable;
+  private java.lang.Integer enable;
 
   public Usruserperm() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodapp() {
+    return this.kodapp;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodapp(java.lang.String kodapp) {
+    this.kodapp = kodapp;
   }
 
-  public Float getKoduser() {
+  public java.lang.Float getKoduser() {
     return this.koduser;
   }
 
-  public Integer getEnable() {
+  public java.lang.Integer getEnable() {
     return this.enable;
   }
 
-  public void setKoduser(Float koduser) {
+  public void setKoduser(java.lang.Float koduser) {
     this.koduser = koduser;
   }
 
-  public void setEnable(Integer enable) {
+  public void setEnable(java.lang.Integer enable) {
     this.enable = enable;
   }
 }

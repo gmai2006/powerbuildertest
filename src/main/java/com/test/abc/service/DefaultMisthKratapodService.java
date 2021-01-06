@@ -59,7 +59,7 @@ public class DefaultMisthKratapodService implements MisthKratapodService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthKratapod find(String id) {
+  public MisthKratapod find(java.lang.String id) {
     final MisthKratapod result = dao.find(id);
     logger.info("find(MisthKratapod) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthKratapodService implements MisthKratapodService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthKratapod={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthKratapod) - exited - return value={} result ");

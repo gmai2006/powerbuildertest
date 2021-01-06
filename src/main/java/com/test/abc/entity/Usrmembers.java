@@ -45,32 +45,32 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usrmembers")
 public class Usrmembers implements Serializable {
-  private static final long serialVersionUID = 160532722812561210L;
+  private static final long serialVersionUID = 160992137250839821L;
   /** Description: kodgroup. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodgroup\"")
-  private Float id;
+  @Column(name = "kodgroup")
+  private java.lang.Float kodgroup;
   /** Description: koduser. */
   @Basic
   @Column(name = "koduser")
-  private Float koduser;
+  private java.lang.Float koduser;
 
   public Usrmembers() {}
 
-  public Float getId() {
-    return id;
+  public java.lang.Float getKodgroup() {
+    return this.kodgroup;
   }
 
-  public void setId(Float id) {
-    this.id = id;
+  public void setKodgroup(java.lang.Float kodgroup) {
+    this.kodgroup = kodgroup;
   }
 
-  public Float getKoduser() {
+  public java.lang.Float getKoduser() {
     return this.koduser;
   }
 
-  public void setKoduser(Float koduser) {
+  public void setKoduser(java.lang.Float koduser) {
     this.koduser = koduser;
   }
 }

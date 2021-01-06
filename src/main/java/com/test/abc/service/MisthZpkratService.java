@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthZpkrat;
 
 public interface MisthZpkratService {
-  public MisthZpkrat find(String id);
+  public MisthZpkrat find(java.lang.String id);
   /**
    * Select a list of MisthZpkrat based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthZpkratService {
    *
    * @param id The MisthZpkrat Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

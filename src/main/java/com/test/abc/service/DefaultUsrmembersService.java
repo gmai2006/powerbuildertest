@@ -59,7 +59,7 @@ public class DefaultUsrmembersService implements UsrmembersService {
 
   /** {@inheritDoc} */
   @Override
-  public Usrmembers find(Float id) {
+  public Usrmembers find(java.lang.Float id) {
     final Usrmembers result = dao.find(id);
     logger.info("find(Usrmembers) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultUsrmembersService implements UsrmembersService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(Float id) {
+  public void delete(java.lang.Float id) {
     logger.info("delete(Usrmembers={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(Usrmembers) - exited - return value={} result ");

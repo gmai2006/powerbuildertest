@@ -60,7 +60,7 @@ public class MisthFinalHandler extends DelimiterFileHandler<MisthFinal> {
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new Float(tokens.get(i)));
+          record.setKodfinal(new java.lang.Float(tokens.get(i)));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));
@@ -72,7 +72,7 @@ public class MisthFinalHandler extends DelimiterFileHandler<MisthFinal> {
           record.setKodperiod(tokens.get(i));
           break;
         case "aa":
-          record.setAa(new Float(tokens.get(i)));
+          record.setAa(new java.lang.Float(tokens.get(i)));
           break;
         case "descfinal":
           record.setDescfinal(tokens.get(i));

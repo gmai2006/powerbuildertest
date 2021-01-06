@@ -51,12 +51,12 @@ public class UsrusersServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getId())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKoduser())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    Usrusers testResult = serviceMock.find(records[0].getId());
+    Usrusers testResult = serviceMock.find(records[0].getKoduser());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
         "expect equals username ", this.records[0].getUsername(), testResult.getUsername());

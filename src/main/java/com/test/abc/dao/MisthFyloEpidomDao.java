@@ -60,7 +60,7 @@ public interface MisthFyloEpidomDao {
    * @param id An MisthFyloEpidom id.
    * @return The same MisthFyloEpidom.
    */
-  public MisthFyloEpidom find(String id);
+  public MisthFyloEpidom find(java.lang.String id);
   /**
    * Create an MisthFyloEpidom.
    *
@@ -82,5 +82,5 @@ public interface MisthFyloEpidomDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

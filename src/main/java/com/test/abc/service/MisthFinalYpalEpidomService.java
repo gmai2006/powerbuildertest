@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthFinalYpalEpidom;
 
 public interface MisthFinalYpalEpidomService {
-  public MisthFinalYpalEpidom find(String id);
+  public MisthFinalYpalEpidom find(java.lang.String id);
   /**
    * Select a list of MisthFinalYpalEpidom based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthFinalYpalEpidomService {
    *
    * @param id The MisthFinalYpalEpidom Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

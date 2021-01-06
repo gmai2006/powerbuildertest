@@ -51,12 +51,12 @@ public class MisthZpyvarServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getId())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodxrisi())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    MisthZpyvar testResult = serviceMock.find(records[0].getId());
+    MisthZpyvar testResult = serviceMock.find(records[0].getKodxrisi());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
         "expect equals kodyvar ", this.records[0].getKodyvar(), testResult.getKodyvar());

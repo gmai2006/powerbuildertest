@@ -51,12 +51,12 @@ public class MisthReportYpalServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getId())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodreport())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    MisthReportYpal testResult = serviceMock.find(records[0].getId());
+    MisthReportYpal testResult = serviceMock.find(records[0].getKodreport());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertTrue(
         "expect equals kodypal ", this.records[0].getKodypal() == testResult.getKodypal());

@@ -59,7 +59,7 @@ public class DefaultMisthReportService implements MisthReportService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthReport find(String id) {
+  public MisthReport find(java.lang.String id) {
     final MisthReport result = dao.find(id);
     logger.info("find(MisthReport) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthReportService implements MisthReportService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthReport={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthReport) - exited - return value={} result ");

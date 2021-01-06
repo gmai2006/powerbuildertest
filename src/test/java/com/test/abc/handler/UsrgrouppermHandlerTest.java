@@ -92,7 +92,7 @@ public class UsrgrouppermHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Usrgroupperm[].class);
     assertEquals("match count", count, records.length);
-    Usrgroupperm testResult = jpa.find(Usrgroupperm.class, records[0].getId());
+    Usrgroupperm testResult = jpa.find(Usrgroupperm.class, records[0].getKodgroup());
     assertEquals(
         "expect equals kodaction ", this.records[0].getKodaction(), testResult.getKodaction());
     org.junit.Assert.assertEquals(
@@ -141,7 +141,7 @@ public class UsrgrouppermHandlerTest {
   }
 
   private String createCsvRecord(final Usrgroupperm record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodgroup())
         + ","
         + TestUtils.getObject(record.getKodaction())
         + ","

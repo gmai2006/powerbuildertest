@@ -51,12 +51,12 @@ public class AfxptoseisServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getId())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getOnom())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    Afxptoseis testResult = serviceMock.find(records[0].getId());
+    Afxptoseis testResult = serviceMock.find(records[0].getOnom());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
         "expect equals gen ", this.records[0].getGen(), testResult.getGen());

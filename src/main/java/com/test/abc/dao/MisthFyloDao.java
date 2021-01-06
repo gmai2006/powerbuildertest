@@ -60,7 +60,7 @@ public interface MisthFyloDao {
    * @param id An MisthFylo id.
    * @return The same MisthFylo.
    */
-  public MisthFylo find(String id);
+  public MisthFylo find(java.lang.String id);
   /**
    * Create an MisthFylo.
    *
@@ -82,5 +82,5 @@ public interface MisthFyloDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

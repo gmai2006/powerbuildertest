@@ -92,7 +92,7 @@ public class UsrusersHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Usrusers[].class);
     assertEquals("match count", count, records.length);
-    Usrusers testResult = jpa.find(Usrusers.class, records[0].getId());
+    Usrusers testResult = jpa.find(Usrusers.class, records[0].getKoduser());
     assertEquals(
         "expect equals username ", this.records[0].getUsername(), testResult.getUsername());
     assertEquals(
@@ -140,7 +140,7 @@ public class UsrusersHandlerTest {
   }
 
   private String createCsvRecord(final Usrusers record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKoduser())
         + ","
         + TestUtils.getObject(record.getUsername())
         + ","

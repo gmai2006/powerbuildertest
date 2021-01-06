@@ -59,7 +59,7 @@ public class DefaultMisthFinalYpalKratService implements MisthFinalYpalKratServi
 
   /** {@inheritDoc} */
   @Override
-  public MisthFinalYpalKrat find(String id) {
+  public MisthFinalYpalKrat find(java.lang.String id) {
     final MisthFinalYpalKrat result = dao.find(id);
     logger.info("find(MisthFinalYpalKrat) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthFinalYpalKratService implements MisthFinalYpalKratServi
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthFinalYpalKrat={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthFinalYpalKrat) - exited - return value={} result ");

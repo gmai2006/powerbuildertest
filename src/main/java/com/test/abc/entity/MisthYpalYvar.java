@@ -45,68 +45,68 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_ypal_yvar")
 public class MisthYpalYvar implements Serializable {
-  private static final long serialVersionUID = 160532722772069087L;
+  private static final long serialVersionUID = 160992137240898506L;
   /** Description: kodypal. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodypal\"")
-  private Float id;
+  @Column(name = "kodypal")
+  private java.lang.Float kodypal;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: kodyvar. */
   @Basic
   @Column(name = "kodyvar")
-  private String kodyvar;
+  private java.lang.String kodyvar;
   /** Description: aa. */
   @Basic
   @Column(name = "aa")
-  private Integer aa;
+  private java.lang.Integer aa;
   /** Description: expr. */
   @Basic
   @Column(name = "expr")
-  private String expr;
+  private java.lang.String expr;
 
   public MisthYpalYvar() {}
 
-  public Float getId() {
-    return id;
+  public java.lang.Float getKodypal() {
+    return this.kodypal;
   }
 
-  public void setId(Float id) {
-    this.id = id;
+  public void setKodypal(java.lang.Float kodypal) {
+    this.kodypal = kodypal;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getKodyvar() {
+  public java.lang.String getKodyvar() {
     return this.kodyvar;
   }
 
-  public Integer getAa() {
+  public java.lang.Integer getAa() {
     return this.aa;
   }
 
-  public String getExpr() {
+  public java.lang.String getExpr() {
     return this.expr;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setKodyvar(String kodyvar) {
+  public void setKodyvar(java.lang.String kodyvar) {
     this.kodyvar = kodyvar;
   }
 
-  public void setAa(Integer aa) {
+  public void setAa(java.lang.Integer aa) {
     this.aa = aa;
   }
 
-  public void setExpr(String expr) {
+  public void setExpr(java.lang.String expr) {
     this.expr = expr;
   }
 }

@@ -92,7 +92,7 @@ public class UsrmembersHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Usrmembers[].class);
     assertEquals("match count", count, records.length);
-    Usrmembers testResult = jpa.find(Usrmembers.class, records[0].getId());
+    Usrmembers testResult = jpa.find(Usrmembers.class, records[0].getKodgroup());
     org.junit.Assert.assertEquals(
         "expect equals koduser ", this.records[0].getKoduser(), testResult.getKoduser());
   }
@@ -131,7 +131,9 @@ public class UsrmembersHandlerTest {
   }
 
   private String createCsvRecord(final Usrmembers record) {
-    return TestUtils.getObject(record.getId()) + "," + TestUtils.getObject(record.getKoduser());
+    return TestUtils.getObject(record.getKodgroup())
+        + ","
+        + TestUtils.getObject(record.getKoduser());
   }
 
   private String createHeader(String headerfile) throws IOException {

@@ -59,7 +59,7 @@ public class DefaultMisthZpoikogService implements MisthZpoikogService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthZpoikog find(String id) {
+  public MisthZpoikog find(java.lang.String id) {
     final MisthZpoikog result = dao.find(id);
     logger.info("find(MisthZpoikog) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthZpoikogService implements MisthZpoikogService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthZpoikog={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthZpoikog) - exited - return value={} result ");

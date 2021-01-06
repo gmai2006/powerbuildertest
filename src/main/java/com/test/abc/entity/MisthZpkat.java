@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpkat")
 public class MisthZpkat implements Serializable {
-  private static final long serialVersionUID = 160532722805248608L;
+  private static final long serialVersionUID = 160992137249246498L;
   /** Description: kodkat. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodkat\"")
-  private String id;
+  @Column(name = "kodkat")
+  private java.lang.String kodkat;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: desckat. */
   @Basic
   @Column(name = "desckat")
-  private String desckat;
+  private java.lang.String desckat;
 
   public MisthZpkat() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodkat() {
+    return this.kodkat;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodkat(java.lang.String kodkat) {
+    this.kodkat = kodkat;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getDesckat() {
+  public java.lang.String getDesckat() {
     return this.desckat;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setDesckat(String desckat) {
+  public void setDesckat(java.lang.String desckat) {
     this.desckat = desckat;
   }
 }

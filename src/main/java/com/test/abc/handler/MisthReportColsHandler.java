@@ -60,13 +60,13 @@ public class MisthReportColsHandler extends DelimiterFileHandler<MisthReportCols
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new String(tokens.get(i)));
+          record.setKodreport(new java.lang.String(tokens.get(i)));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));
           break;
         case "kodcol":
-          record.setKodcol(new Integer(tokens.get(i)));
+          record.setKodcol(new java.lang.Integer(tokens.get(i)));
           break;
         case "expr":
           record.setExpr(tokens.get(i));
@@ -75,10 +75,10 @@ public class MisthReportColsHandler extends DelimiterFileHandler<MisthReportCols
           record.setHeaderText(tokens.get(i));
           break;
         case "width":
-          record.setWidth(new Integer(tokens.get(i)));
+          record.setWidth(new java.lang.Integer(tokens.get(i)));
           break;
         case "aa":
-          record.setAa(new Integer(tokens.get(i)));
+          record.setAa(new java.lang.Integer(tokens.get(i)));
           break;
 
         default:

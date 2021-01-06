@@ -33,7 +33,6 @@ import javax.persistence.Persistence;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import com.test.abc.entity.MisthReportYpal;
 import com.test.abc.utils.FileUtils;
 
@@ -64,8 +63,8 @@ public class MisthReportYpalDaoTest {
   /** Run when the class is loaded. */
   @BeforeClass
   public static void beforeClass() {
-    EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
-    JpaDao jpa = new DefaultJpaDao(factory.createEntityManager());
+    EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
+    JpaDao jpa = new StandaloneJpaDao(factory.createEntityManager());
     dao = new DefaultMisthReportYpalDao(jpa);
   }
 
@@ -83,8 +82,10 @@ public class MisthReportYpalDaoTest {
 
   @Test
   public void testSelect() {
-    MisthReportYpal testResult = dao.find(records[1].getId());
+    MisthReportYpal testResult = dao.find(records[1].getKodreport());
+    java.util.List<MisthReportYpal> all = dao.selectAll();
     assertNotNull("expect result", testResult);
+    org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertTrue(
         "expect equals kodypal ", this.records[1].getKodypal() == testResult.getKodypal());
     org.junit.Assert.assertEquals(

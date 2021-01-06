@@ -33,7 +33,6 @@ import javax.persistence.Persistence;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import com.test.abc.entity.Afxptoseis;
 import com.test.abc.utils.FileUtils;
 
@@ -64,8 +63,8 @@ public class AfxptoseisDaoTest {
   /** Run when the class is loaded. */
   @BeforeClass
   public static void beforeClass() {
-    EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
-    JpaDao jpa = new DefaultJpaDao(factory.createEntityManager());
+    EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
+    JpaDao jpa = new StandaloneJpaDao(factory.createEntityManager());
     dao = new DefaultAfxptoseisDao(jpa);
   }
 
@@ -83,8 +82,10 @@ public class AfxptoseisDaoTest {
 
   @Test
   public void testSelect() {
-    Afxptoseis testResult = dao.find(records[1].getId());
+    Afxptoseis testResult = dao.find(records[1].getOnom());
+    java.util.List<Afxptoseis> all = dao.selectAll();
     assertNotNull("expect result", testResult);
+    org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
         "expect equals gen ", this.records[1].getGen(), testResult.getGen());
     org.junit.Assert.assertEquals(

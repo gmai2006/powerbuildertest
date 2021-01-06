@@ -65,7 +65,7 @@ public class DefaultMisthFinalYpalDao implements MisthFinalYpalDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFinalYpal find(Float id) {
+  public MisthFinalYpal find(java.lang.Float id) {
     final EntityManager em = dao.getEntityManager();
     MisthFinalYpal model = em.find(MisthFinalYpal.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthFinalYpalDao implements MisthFinalYpalDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(Float id) {
+  public void delete(java.lang.Float id) {
     final EntityManager em = dao.getEntityManager();
     final MisthFinalYpal removed = em.find(MisthFinalYpal.class, id);
     if (null != removed) {

@@ -45,32 +45,32 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_final")
 public class MisthFinal implements Serializable {
-  private static final long serialVersionUID = 160532722827259174L;
+  private static final long serialVersionUID = 160992137259024697L;
   /** Description: kodfinal. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodfinal\"")
-  private Float id;
+  @Column(name = "kodfinal")
+  private java.lang.Float kodfinal;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: kodkat. */
   @Basic
   @Column(name = "kodkat")
-  private String kodkat;
+  private java.lang.String kodkat;
   /** Description: kodperiod. */
   @Basic
   @Column(name = "kodperiod")
-  private String kodperiod;
+  private java.lang.String kodperiod;
   /** Description: aa. */
   @Basic
   @Column(name = "aa")
-  private Float aa;
+  private java.lang.Float aa;
   /** Description: descfinal. */
   @Basic
   @Column(name = "descfinal")
-  private String descfinal;
+  private java.lang.String descfinal;
   /** Description: datefinal. */
   @Basic
   @Column(name = "datefinal")
@@ -78,35 +78,35 @@ public class MisthFinal implements Serializable {
   /** Description: title. */
   @Basic
   @Column(name = "title")
-  private String title;
+  private java.lang.String title;
 
   public MisthFinal() {}
 
-  public Float getId() {
-    return id;
+  public java.lang.Float getKodfinal() {
+    return this.kodfinal;
   }
 
-  public void setId(Float id) {
-    this.id = id;
+  public void setKodfinal(java.lang.Float kodfinal) {
+    this.kodfinal = kodfinal;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getKodkat() {
+  public java.lang.String getKodkat() {
     return this.kodkat;
   }
 
-  public String getKodperiod() {
+  public java.lang.String getKodperiod() {
     return this.kodperiod;
   }
 
-  public Float getAa() {
+  public java.lang.Float getAa() {
     return this.aa;
   }
 
-  public String getDescfinal() {
+  public java.lang.String getDescfinal() {
     return this.descfinal;
   }
 
@@ -114,27 +114,27 @@ public class MisthFinal implements Serializable {
     return this.datefinal;
   }
 
-  public String getTitle() {
+  public java.lang.String getTitle() {
     return this.title;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setKodkat(String kodkat) {
+  public void setKodkat(java.lang.String kodkat) {
     this.kodkat = kodkat;
   }
 
-  public void setKodperiod(String kodperiod) {
+  public void setKodperiod(java.lang.String kodperiod) {
     this.kodperiod = kodperiod;
   }
 
-  public void setAa(Float aa) {
+  public void setAa(java.lang.Float aa) {
     this.aa = aa;
   }
 
-  public void setDescfinal(String descfinal) {
+  public void setDescfinal(java.lang.String descfinal) {
     this.descfinal = descfinal;
   }
 
@@ -142,7 +142,7 @@ public class MisthFinal implements Serializable {
     this.datefinal = datefinal;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(java.lang.String title) {
     this.title = title;
   }
 }

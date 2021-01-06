@@ -65,7 +65,7 @@ public class DefaultMisthReportDao implements MisthReportDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthReport find(String id) {
+  public MisthReport find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthReport model = em.find(MisthReport.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthReportDao implements MisthReportDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthReport removed = em.find(MisthReport.class, id);
     if (null != removed) {

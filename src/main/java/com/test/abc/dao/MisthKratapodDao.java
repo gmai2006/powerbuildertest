@@ -60,7 +60,7 @@ public interface MisthKratapodDao {
    * @param id An MisthKratapod id.
    * @return The same MisthKratapod.
    */
-  public MisthKratapod find(String id);
+  public MisthKratapod find(java.lang.String id);
   /**
    * Create an MisthKratapod.
    *
@@ -82,5 +82,5 @@ public interface MisthKratapodDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

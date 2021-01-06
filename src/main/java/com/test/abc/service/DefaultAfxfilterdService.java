@@ -59,7 +59,7 @@ public class DefaultAfxfilterdService implements AfxfilterdService {
 
   /** {@inheritDoc} */
   @Override
-  public Afxfilterd find(Float id) {
+  public Afxfilterd find(java.lang.Float id) {
     final Afxfilterd result = dao.find(id);
     logger.info("find(Afxfilterd) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultAfxfilterdService implements AfxfilterdService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(Float id) {
+  public void delete(java.lang.Float id) {
     logger.info("delete(Afxfilterd={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(Afxfilterd) - exited - return value={} result ");

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.test.abc.dto.AfxfilterDtoTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.test.abc.dto.AfxfilterDtoTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.test.abc.dto.html">com.test.abc.dto</a> &gt; AfxfilterDtoTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.095s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testSelect</td>
+<td class="success">0.095s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Hibernate: 
+    
+    drop table if exists afxfilter CASCADE 
+Hibernate: 
+    
+    drop table if exists afxfilterd CASCADE 
+Hibernate: 
+    
+    drop table if exists afxptoseis CASCADE 
+Hibernate: 
+    
+    drop table if exists data_loading_status CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_final CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_final_ypal CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_final_ypal_epidom CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_final_ypal_krat CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_fylo CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_fylo_epidom CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_fylo_krat CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_fylo_ypal CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_kratapod CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_report CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_report_cols CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_report_ypal CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_ypal CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_ypal_yvar CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpepidom CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpidikot CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpkat CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpkrat CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpoikog CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpperiod CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpstath CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zptamio CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpthesi CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zptitlos CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zptmima CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpxrisi CASCADE 
+Hibernate: 
+    
+    drop table if exists misth_zpyvar CASCADE 
+Hibernate: 
+    
+    drop table if exists usractions CASCADE 
+Hibernate: 
+    
+    drop table if exists usrapps CASCADE 
+Hibernate: 
+    
+    drop table if exists usrgroupperm CASCADE 
+Hibernate: 
+    
+    drop table if exists usrgroups CASCADE 
+Hibernate: 
+    
+    drop table if exists usrmembers CASCADE 
+Hibernate: 
+    
+    drop table if exists usruserperm CASCADE 
+Hibernate: 
+    
+    drop table if exists usrusers CASCADE 
+Hibernate: 
+    
+    create table afxfilter (
+       &quot;kodfilter&quot; float not null,
+        descfilter varchar(255),
+        tablename varchar(255),
+        primary key (&quot;kodfilter&quot;)
+    )
+Hibernate: 
+    
+    create table afxfilterd (
+       &quot;kodfilterd&quot; float not null,
+        joint varchar(255),
+        kodfilter float,
+        pedio varchar(255),
+        telestis varchar(255),
+        timi varchar(255),
+        primary key (&quot;kodfilterd&quot;)
+    )
+Hibernate: 
+    
+    create table afxptoseis (
+       &quot;onom&quot; varchar(255) not null,
+        ait varchar(255),
+        gen varchar(255),
+        primary key (&quot;onom&quot;)
+    )
+Hibernate: 
+    
+    create table data_loading_status (
+       id varchar(255) not null,
+        records bigint,
+        status varchar(255),
+        update_Date date,
+        primary key (id)
+    )
+Hibernate: 
+    
+    create table misth_final (
+       &quot;kodfinal&quot; float not null,
+        aa float,
+        datefinal timestamp,
+        descfinal varchar(255),
+        kodkat varchar(255),
+        kodperiod varchar(255),
+        kodxrisi varchar(255),
+        title varchar(255),
+        primary key (&quot;kodfinal&quot;)
+    )
+Hibernate: 
+    
+    create table misth_final_ypal (
+       &quot;kodypal&quot; float not null,
+        kodfinal float,
+        kodxrisi varchar(255),
+        plirdate timestamp,
+        primary key (&quot;kodypal&quot;)
+    )
+Hibernate: 
+    
+    create table misth_final_ypal_epidom (
+       &quot;kodepidom&quot; varchar(255) not null,
+        aa integer,
+        kodfinal float,
+        kodxrisi varchar(255),
+        kodypal float,
+        notes varchar(255),
+        poso integer,
+        primary key (&quot;kodepidom&quot;)
+    )
+Hibernate: 
+    
+    create table misth_final_ypal_krat (
+       &quot;kodkrat&quot; varchar(255) not null,
+        aa integer,
+        kodfinal float,
+        kodkratapod float,
+        kodxrisi varchar(255),
+        kodypal float,
+        notes varchar(255),
+        poso integer,
+        primary key (&quot;kodkrat&quot;)
+    )
+Hibernate: 
+    
+    create table misth_fylo (
+       &quot;kodxrisi&quot; varchar(255) not null,
+        descfylo varchar(255),
+        kodfylo varchar(255),
+        primary key (&quot;kodxrisi&quot;)
+    )
+Hibernate: 
+    
+    create table misth_fylo_epidom (
+       &quot;kodepidom&quot; varchar(255) not null,
+        aa integer,
+        expr varchar(255),
+        kodfylo varchar(255),
+        kodxrisi varchar(255),
+        notes varchar(255),
+        primary key (&quot;kodepidom&quot;)
+    )
+Hibernate: 
+    
+    create table misth_fylo_krat (
+       &quot;kodkrat&quot; varchar(255) not null,
+        aa integer,
+        expr varchar(255),
+        kodfylo varchar(255),
+        kodxrisi varchar(255),
+        notes varchar(255),
+        primary key (&quot;kodkrat&quot;)
+    )
+Hibernate: 
+    
+    create table misth_fylo_ypal (
+       &quot;kodypal&quot; float not null,
+        kodfylo varchar(255),
+        kodxrisi varchar(255),
+        primary key (&quot;kodypal&quot;)
+    )
+Hibernate: 
+    
+    create table misth_kratapod (
+       &quot;kodxrisi&quot; varchar(255) not null,
+        apoddate timestamp,
+        desckratapod varchar(255),
+        kodkratapod float,
+        primary key (&quot;kodxrisi&quot;)
+    )
+Hibernate: 
+    
+    create table misth_report (
+       &quot;kodreport&quot; varchar(255) not null,
+        descreport varchar(255),
+        kodxrisi varchar(255),
+        print_margin_bottom integer,
+        print_margin_left integer,
+        print_margin_right integer,
+        print_margin_top integer,
+        print_orientation integer,
+        print_paper_size integer,
+        print_scale integer,
+        prn_notes1 varchar(255),
+        prn_notes2 varchar(255),
+        subtitle varchar(255),
+        primary key (&quot;kodreport&quot;)
+    )
+Hibernate: 
+    
+    create table misth_report_cols (
+       &quot;kodreport&quot; varchar(255) not null,
+        aa integer,
+        expr varchar(255),
+        header_text varchar(255),
+        kodcol integer,
+        kodxrisi varchar(255),
+        width integer,
+        primary key (&quot;kodreport&quot;)
+    )
+Hibernate: 
+    
+    create table misth_report_ypal (
+       &quot;kodreport&quot; float not null,
+        kodxrisi varchar(255),
+        kodypal float,
+        primary key (&quot;kodreport&quot;)
+    )
+Hibernate: 
+    
+    create table misth_ypal (
+       &quot;kodypal&quot; float not null,
+        address varchar(255),
+        adt varchar(255),
+        afm varchar(255),
+        area varchar(255),
+        bank varchar(255),
+        bankno varchar(255),
+        bathmos varchar(255),
+        birthdate timestamp,
+        childs integer,
+        city varchar(255),
+        doy varchar(255),
+        email varchar(255),
+        exeldate timestamp,
+        fathername varchar(255),
+        hireddate timestamp,
+        homephone varchar(255),
+        intphone varchar(255),
+        jobphone varchar(255),
+        jobtitle varchar(255),
+        klados varchar(255),
+        klimakio integer,
+        kodidikot varchar(255),
+        kodoikog varchar(255),
+        kodtamio varchar(255),
+        kodthesi varchar(255),
+        kodtmima varchar(255),
+        kodxrisi varchar(255),
+        mitroo varchar(255),
+        mobilphone varchar(255),
+        mothername varchar(255),
+        name varchar(255),
+        newexeldate timestamp,
+        prostmeli integer,
+        rehireddate timestamp,
+        sex varchar(255),
+        spouse varchar(255),
+        surname varchar(255),
+        termdate timestamp,
+        termreason varchar(255),
+        tk varchar(255),
+        primary key (&quot;kodypal&quot;)
+    )
+Hibernate: 
+    
+    create table misth_ypal_yvar (
+       &quot;kodypal&quot; float not null,
+        aa integer,
+        expr varchar(255),
+        kodxrisi varchar(255),
+        kodyvar varchar(255),
+        primary key (&quot;kodypal&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpepidom (
+       &quot;kodepidom&quot; varchar(255) not null,
+        descepidom varchar(255),
+        kodxrisi varchar(255),
+        primary key (&quot;kodepidom&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpidikot (
+       &quot;kodidikot&quot; varchar(255) not null,
+        descidikot varchar(255),
+        kodxrisi varchar(255),
+        primary key (&quot;kodidikot&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpkat (
+       &quot;kodkat&quot; varchar(255) not null,
+        desckat varchar(255),
+        kodxrisi varchar(255),
+        primary key (&quot;kodkat&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpkrat (
+       &quot;kodkrat&quot; varchar(255) not null,
+        desckrat varchar(255),
+        kodxrisi varchar(255),
+        primary key (&quot;kodkrat&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpoikog (
+       &quot;kodoikog&quot; varchar(255) not null,
+        descoikog varchar(255),
+        kodxrisi varchar(255),
+        primary key (&quot;kodoikog&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpperiod (
+       &quot;kodperiod&quot; varchar(255) not null,
+        descperiod varchar(255),
+        kodxrisi varchar(255),
+        orderno integer,
+        primary key (&quot;kodperiod&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpstath (
+       &quot;kodxrisi&quot; varchar(255) not null,
+        descstath varchar(255),
+        kodstath varchar(255),
+        poso integer,
+        primary key (&quot;kodxrisi&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zptamio (
+       &quot;kodtamio&quot; varchar(255) not null,
+        desctamio varchar(255),
+        kodxrisi varchar(255),
+        primary key (&quot;kodtamio&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpthesi (
+       &quot;kodthesi&quot; varchar(255) not null,
+        descthesi varchar(255),
+        kodxrisi varchar(255),
+        primary key (&quot;kodthesi&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zptitlos (
+       &quot;kodxrisi&quot; varchar(255) not null,
+        desctitlos varchar(255),
+        kodtitlos varchar(255),
+        primary key (&quot;kodxrisi&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zptmima (
+       &quot;kodtmima&quot; varchar(255) not null,
+        desctmima varchar(255),
+        kodxrisi varchar(255),
+        primary key (&quot;kodtmima&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpxrisi (
+       &quot;kodxrisi&quot; varchar(255) not null,
+        descxrisi varchar(255),
+        primary key (&quot;kodxrisi&quot;)
+    )
+Hibernate: 
+    
+    create table misth_zpyvar (
+       &quot;kodxrisi&quot; varchar(255) not null,
+        descyvar varchar(255),
+        expr varchar(255),
+        kodyvar varchar(255),
+        primary key (&quot;kodxrisi&quot;)
+    )
+Hibernate: 
+    
+    create table usractions (
+       &quot;kodaction&quot; varchar(255) not null,
+        descaction varchar(255),
+        kodapp varchar(255),
+        primary key (&quot;kodaction&quot;)
+    )
+Hibernate: 
+    
+    create table usrapps (
+       &quot;kodapp&quot; varchar(255) not null,
+        descapp varchar(255),
+        primary key (&quot;kodapp&quot;)
+    )
+Hibernate: 
+    
+    create table usrgroupperm (
+       &quot;kodgroup&quot; float not null,
+        addrec integer,
+        delrec integer,
+        editrec integer,
+        kodaction varchar(255),
+        openform integer,
+        openlist integer,
+        primary key (&quot;kodgroup&quot;)
+    )
+Hibernate: 
+    
+    create table usrgroups (
+       &quot;kodgroup&quot; float not null,
+        descgroup varchar(255),
+        primary key (&quot;kodgroup&quot;)
+    )
+Hibernate: 
+    
+    create table usrmembers (
+       &quot;kodgroup&quot; float not null,
+        koduser float,
+        primary key (&quot;kodgroup&quot;)
+    )
+Hibernate: 
+    
+    create table usruserperm (
+       &quot;kodapp&quot; varchar(255) not null,
+        enable integer,
+        koduser float,
+        primary key (&quot;kodapp&quot;)
+    )
+Hibernate: 
+    
+    create table usrusers (
+       &quot;koduser&quot; float not null,
+        fullname varchar(255),
+        idiotita varchar(255),
+        isactive integer,
+        password varchar(255),
+        tomeas varchar(255),
+        username varchar(255),
+        primary key (&quot;koduser&quot;)
+    )
+Hibernate: 
+    insert 
+    into
+        afxfilter
+        (descfilter, tablename, &quot;kodfilter&quot;) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        afxfilter
+        (descfilter, tablename, &quot;kodfilter&quot;) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        afxfilter
+        (descfilter, tablename, &quot;kodfilter&quot;) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        afxfilter
+        (descfilter, tablename, &quot;kodfilter&quot;) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        afxfilter
+        (descfilter, tablename, &quot;kodfilter&quot;) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        afxfilter
+        (descfilter, tablename, &quot;kodfilter&quot;) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        afxfilter
+        (descfilter, tablename, &quot;kodfilter&quot;) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        afxfilter
+        (descfilter, tablename, &quot;kodfilter&quot;) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        afxfilter
+        (descfilter, tablename, &quot;kodfilter&quot;) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    SELECT
+        descfilter,
+        tablename 
+    FROM
+        afxfilter 
+    WHERE
+        tablename= ?
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jan 01, 2021 3:48:42 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: localpersistence]
+Jan 01, 2021 3:48:42 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.4.24.Final
+Jan 01, 2021 3:48:42 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Jan 01, 2021 3:48:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Jan 01, 2021 3:48:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;]
+Jan 01, 2021 3:48:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {}
+Jan 01, 2021 3:48:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Jan 01, 2021 3:48:43 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections &lt;init&gt;
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Jan 01, 2021 3:48:43 PM org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Jan 01, 2021 3:48:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3a985a22] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Jan 01, 2021 3:48:44 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@971ca22] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Jan 01, 2021 3:48:44 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5</a> at Jan 1, 2021 3:48:45 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -19,11 +19,7 @@
 package com.test.abc.entity;
 
 import javax.persistence.Column;
-import javax.persistence.ColumnResult;
-import javax.persistence.ConstructorResult;
 import javax.persistence.Entity;
-import javax.persistence.NamedNativeQuery;
-import javax.persistence.SqlResultSetMapping;
 import javax.persistence.Table;
 import java.io.Serializable;
 import javax.persistence.Basic;
@@ -46,61 +42,47 @@ import javax.persistence.Basic;
  * #L%
  */
 
-//@SqlResultSetMapping(
-//    name="afxfiltertest",
-//    classes={
-//        @ConstructorResult(
-//            targetClass=com.test.abc.dto.TestDto.class,
-//            columns={
-//                @ColumnResult(name="descfilter", type=String.class),
-//                @ColumnResult(name="tablename", type=String.class),
-//            })})
-
-//@NamedNativeQuery(name = "test",
-//    query = "SELECT descfilter, tablename FROM afxfilter",
-//    resultSetMapping = "afxfiltertest")
-
 @Entity
 @Table(name = "afxfilter")
 public class Afxfilter implements Serializable {
-  private static final long serialVersionUID = 160532722819255619L;
+  private static final long serialVersionUID = 160992137254825358L;
   /** Description: kodfilter. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodfilter\"")
-  private Float id;
+  @Column(name = "kodfilter")
+  private java.lang.Float kodfilter;
   /** Description: descfilter. */
   @Basic
   @Column(name = "descfilter")
-  private String descfilter;
+  private java.lang.String descfilter;
   /** Description: tablename. */
   @Basic
   @Column(name = "tablename")
-  private String tablename;
+  private java.lang.String tablename;
 
   public Afxfilter() {}
 
-  public Float getId() {
-    return id;
+  public java.lang.Float getKodfilter() {
+    return this.kodfilter;
   }
 
-  public void setId(Float id) {
-    this.id = id;
+  public void setKodfilter(java.lang.Float kodfilter) {
+    this.kodfilter = kodfilter;
   }
 
-  public String getDescfilter() {
+  public java.lang.String getDescfilter() {
     return this.descfilter;
   }
 
-  public String getTablename() {
+  public java.lang.String getTablename() {
     return this.tablename;
   }
 
-  public void setDescfilter(String descfilter) {
+  public void setDescfilter(java.lang.String descfilter) {
     this.descfilter = descfilter;
   }
 
-  public void setTablename(String tablename) {
+  public void setTablename(java.lang.String tablename) {
     this.tablename = tablename;
   }
 }

@@ -60,7 +60,7 @@ public interface UsruserpermDao {
    * @param id An Usruserperm id.
    * @return The same Usruserperm.
    */
-  public Usruserperm find(String id);
+  public Usruserperm find(java.lang.String id);
   /**
    * Create an Usruserperm.
    *
@@ -82,5 +82,5 @@ public interface UsruserpermDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

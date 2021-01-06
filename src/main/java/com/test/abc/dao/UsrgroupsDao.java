@@ -60,7 +60,7 @@ public interface UsrgroupsDao {
    * @param id An Usrgroups id.
    * @return The same Usrgroups.
    */
-  public Usrgroups find(Float id);
+  public Usrgroups find(java.lang.Float id);
   /**
    * Create an Usrgroups.
    *
@@ -82,5 +82,5 @@ public interface UsrgroupsDao {
    *
    * @param id The entity Id.
    */
-  public void delete(Float id);
+  public void delete(java.lang.Float id);
 }

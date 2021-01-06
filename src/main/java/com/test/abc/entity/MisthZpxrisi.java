@@ -45,32 +45,32 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpxrisi")
 public class MisthZpxrisi implements Serializable {
-  private static final long serialVersionUID = 160532722824920559L;
+  private static final long serialVersionUID = 160992137257810020L;
   /** Description: kodxrisi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodxrisi\"")
-  private String id;
+  @Column(name = "kodxrisi")
+  private java.lang.String kodxrisi;
   /** Description: descxrisi. */
   @Basic
   @Column(name = "descxrisi")
-  private String descxrisi;
+  private java.lang.String descxrisi;
 
   public MisthZpxrisi() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
   }
 
-  public String getDescxrisi() {
+  public java.lang.String getDescxrisi() {
     return this.descxrisi;
   }
 
-  public void setDescxrisi(String descxrisi) {
+  public void setDescxrisi(java.lang.String descxrisi) {
     this.descxrisi = descxrisi;
   }
 }

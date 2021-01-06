@@ -45,20 +45,20 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_final_ypal")
 public class MisthFinalYpal implements Serializable {
-  private static final long serialVersionUID = 160532722814961619L;
+  private static final long serialVersionUID = 160992137252342551L;
   /** Description: kodypal. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodypal\"")
-  private Float id;
+  @Column(name = "kodypal")
+  private java.lang.Float kodypal;
   /** Description: kodfinal. */
   @Basic
   @Column(name = "kodfinal")
-  private Float kodfinal;
+  private java.lang.Float kodfinal;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: plirdate. */
   @Basic
   @Column(name = "plirdate")
@@ -66,19 +66,19 @@ public class MisthFinalYpal implements Serializable {
 
   public MisthFinalYpal() {}
 
-  public Float getId() {
-    return id;
+  public java.lang.Float getKodypal() {
+    return this.kodypal;
   }
 
-  public void setId(Float id) {
-    this.id = id;
+  public void setKodypal(java.lang.Float kodypal) {
+    this.kodypal = kodypal;
   }
 
-  public Float getKodfinal() {
+  public java.lang.Float getKodfinal() {
     return this.kodfinal;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
@@ -86,11 +86,11 @@ public class MisthFinalYpal implements Serializable {
     return this.plirdate;
   }
 
-  public void setKodfinal(Float kodfinal) {
+  public void setKodfinal(java.lang.Float kodfinal) {
     this.kodfinal = kodfinal;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 

@@ -59,7 +59,7 @@ public class DefaultMisthZpperiodService implements MisthZpperiodService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthZpperiod find(String id) {
+  public MisthZpperiod find(java.lang.String id) {
     final MisthZpperiod result = dao.find(id);
     logger.info("find(MisthZpperiod) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthZpperiodService implements MisthZpperiodService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthZpperiod={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthZpperiod) - exited - return value={} result ");

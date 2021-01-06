@@ -60,7 +60,7 @@ public class UsrusersHandler extends DelimiterFileHandler<Usrusers> {
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new Float(tokens.get(i)));
+          record.setKoduser(new java.lang.Float(tokens.get(i)));
           break;
         case "username":
           record.setUsername(tokens.get(i));
@@ -72,7 +72,7 @@ public class UsrusersHandler extends DelimiterFileHandler<Usrusers> {
           record.setPassword(tokens.get(i));
           break;
         case "isactive":
-          record.setIsactive(new Integer(tokens.get(i)));
+          record.setIsactive(new java.lang.Integer(tokens.get(i)));
           break;
         case "tomeas":
           record.setTomeas(tokens.get(i));

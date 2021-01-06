@@ -51,12 +51,12 @@ public class MisthFyloServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getId())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodxrisi())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    MisthFylo testResult = serviceMock.find(records[0].getId());
+    MisthFylo testResult = serviceMock.find(records[0].getKodxrisi());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
         "expect equals kodfylo ", this.records[0].getKodfylo(), testResult.getKodfylo());

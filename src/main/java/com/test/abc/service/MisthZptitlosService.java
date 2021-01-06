@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthZptitlos;
 
 public interface MisthZptitlosService {
-  public MisthZptitlos find(String id);
+  public MisthZptitlos find(java.lang.String id);
   /**
    * Select a list of MisthZptitlos based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthZptitlosService {
    *
    * @param id The MisthZptitlos Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

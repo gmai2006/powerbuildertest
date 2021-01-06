@@ -82,20 +82,6 @@ public class MisthZpkatResource {
   }
 
   /**
-   * Idempotent method - create or update MisthZpkat.
-   *
-   * @param obj The MisthZpkat be be persisted.
-   * @return The MisthZpkat entity.
-   */
-  @PUT
-  @Consumes(MediaType.APPLICATION_JSON)
-  public MisthZpkat createOrUpdate(MisthZpkat obj) {
-    if (this.service.find(obj.getId()) != null) {
-      return this.service.update(obj);
-    } else return this.service.create(obj);
-  }
-
-  /**
    * InIdempotent method. Update existing MisthZpkat.
    *
    * @param obj - instance of MisthZpkat.
@@ -115,9 +101,9 @@ public class MisthZpkatResource {
    */
 
   /**
-   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id") String
-   * id) { this.service.delete(id); return Response.status(Response.Status.OK).entity("Successfully
-   * delete object").build(); }
+   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id")
+   * java.lang.String id) { this.service.delete(id); return
+   * Response.status(Response.Status.OK).entity("Successfully delete object").build(); }
    */
 
   /**
@@ -127,8 +113,8 @@ public class MisthZpkatResource {
    * @return MisthZpkat.
    */
   /**
-   * @GET @Path("{id}") public Response find(@PathParam("id") String id) { MisthZpkat result =
-   * this.service.find(id); if (null == result) { return
+   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.String id) { MisthZpkat
+   * result = this.service.find(id); if (null == result) { return
    * Response.status(Response.Status.NOT_FOUND).build(); } return
    * Response.status(Response.Status.OK).entity(result).build(); }
    */

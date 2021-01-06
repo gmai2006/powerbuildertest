@@ -40,7 +40,7 @@ public interface JpaDao {
    * @param max A maximum number of returned records.
    * @return A list of entities type E
    */
-  public <E> List<E> select(String queryStr, Class<E> e, int max);
+  <E> List<E> select(String queryStr, Class<E> e, int max);
 
   /**
    * Retrieve all records type E.
@@ -60,7 +60,7 @@ public interface JpaDao {
    * @param <E> An entity type.
    * @return The same entity.
    */
-  public <E> E find(Class<E> e, Object id);
+  <E> E find(Class<E> e, Object id);
 
   /**
    * Create an entity.
@@ -69,7 +69,7 @@ public interface JpaDao {
    * @param <E> An entity type.
    * @return The same entity.
    */
-  public <E> E create(E e);
+  <E> E create(E e);
 
   /**
    * Create entities in batch.
@@ -78,7 +78,7 @@ public interface JpaDao {
    * @param <E> The entity type.
    * @return The total count.
    */
-  public <E> int batchCreate(List<E> list);
+  <E> int batchCreate(List<E> list);
 
   /**
    * Delete the entity.
@@ -87,7 +87,7 @@ public interface JpaDao {
    * @param e An entity.
    * @param <E> An entity type.
    */
-  public <E> void delete(Class<E> e, Object id);
+  <E> void delete(Class<E> e, Object id);
 
   /**
    * Update the entity.
@@ -97,4 +97,7 @@ public interface JpaDao {
    * @return The same entity.
    */
   public <E> E update(E e);
+
+  /** Delete all air load tables. */
+  public <E> void deleteAll(Class<E> e);
 }

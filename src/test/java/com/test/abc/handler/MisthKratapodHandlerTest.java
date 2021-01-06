@@ -92,7 +92,7 @@ public class MisthKratapodHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthKratapod[].class);
     assertEquals("match count", count, records.length);
-    MisthKratapod testResult = jpa.find(MisthKratapod.class, records[0].getId());
+    MisthKratapod testResult = jpa.find(MisthKratapod.class, records[0].getKodxrisi());
     org.junit.Assert.assertEquals(
         "expect equals kodkratapod ",
         this.records[0].getKodkratapod(),
@@ -141,7 +141,7 @@ public class MisthKratapodHandlerTest {
   }
 
   private String createCsvRecord(final MisthKratapod record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodxrisi())
         + ","
         + TestUtils.getObject(record.getKodkratapod())
         + ","

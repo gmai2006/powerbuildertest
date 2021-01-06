@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.Usractions;
 
 public interface UsractionsService {
-  public Usractions find(String id);
+  public Usractions find(java.lang.String id);
   /**
    * Select a list of Usractions based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface UsractionsService {
    *
    * @param id The Usractions Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

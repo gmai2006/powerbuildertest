@@ -65,7 +65,7 @@ public class DefaultMisthReportColsDao implements MisthReportColsDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthReportCols find(String id) {
+  public MisthReportCols find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthReportCols model = em.find(MisthReportCols.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthReportColsDao implements MisthReportColsDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthReportCols removed = em.find(MisthReportCols.class, id);
     if (null != removed) {

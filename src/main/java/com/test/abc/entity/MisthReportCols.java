@@ -45,92 +45,92 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_report_cols")
 public class MisthReportCols implements Serializable {
-  private static final long serialVersionUID = 160532722791221849L;
+  private static final long serialVersionUID = 160992137244787256L;
   /** Description: kodreport. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodreport\"")
-  private String id;
+  @Column(name = "kodreport")
+  private java.lang.String kodreport;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: kodcol. */
   @Basic
   @Column(name = "kodcol")
-  private Integer kodcol;
+  private java.lang.Integer kodcol;
   /** Description: expr. */
   @Basic
   @Column(name = "expr")
-  private String expr;
+  private java.lang.String expr;
   /** Description: header_text. */
   @Basic
   @Column(name = "header_text")
-  private String headerText;
+  private java.lang.String headerText;
   /** Description: width. */
   @Basic
   @Column(name = "width")
-  private Integer width;
+  private java.lang.Integer width;
   /** Description: aa. */
   @Basic
   @Column(name = "aa")
-  private Integer aa;
+  private java.lang.Integer aa;
 
   public MisthReportCols() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodreport() {
+    return this.kodreport;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodreport(java.lang.String kodreport) {
+    this.kodreport = kodreport;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public Integer getKodcol() {
+  public java.lang.Integer getKodcol() {
     return this.kodcol;
   }
 
-  public String getExpr() {
+  public java.lang.String getExpr() {
     return this.expr;
   }
 
-  public String getHeaderText() {
+  public java.lang.String getHeaderText() {
     return this.headerText;
   }
 
-  public Integer getWidth() {
+  public java.lang.Integer getWidth() {
     return this.width;
   }
 
-  public Integer getAa() {
+  public java.lang.Integer getAa() {
     return this.aa;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setKodcol(Integer kodcol) {
+  public void setKodcol(java.lang.Integer kodcol) {
     this.kodcol = kodcol;
   }
 
-  public void setExpr(String expr) {
+  public void setExpr(java.lang.String expr) {
     this.expr = expr;
   }
 
-  public void setHeaderText(String headerText) {
+  public void setHeaderText(java.lang.String headerText) {
     this.headerText = headerText;
   }
 
-  public void setWidth(Integer width) {
+  public void setWidth(java.lang.Integer width) {
     this.width = width;
   }
 
-  public void setAa(Integer aa) {
+  public void setAa(java.lang.Integer aa) {
     this.aa = aa;
   }
 }

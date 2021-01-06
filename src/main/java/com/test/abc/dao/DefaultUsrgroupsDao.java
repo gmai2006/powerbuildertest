@@ -65,7 +65,7 @@ public class DefaultUsrgroupsDao implements UsrgroupsDao {
 
   /** {@inheritDoc} */
   @Override
-  public Usrgroups find(Float id) {
+  public Usrgroups find(java.lang.Float id) {
     final EntityManager em = dao.getEntityManager();
     Usrgroups model = em.find(Usrgroups.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultUsrgroupsDao implements UsrgroupsDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(Float id) {
+  public void delete(java.lang.Float id) {
     final EntityManager em = dao.getEntityManager();
     final Usrgroups removed = em.find(Usrgroups.class, id);
     if (null != removed) {

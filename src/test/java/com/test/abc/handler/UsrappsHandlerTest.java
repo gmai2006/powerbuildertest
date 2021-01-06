@@ -92,7 +92,7 @@ public class UsrappsHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Usrapps[].class);
     assertEquals("match count", count, records.length);
-    Usrapps testResult = jpa.find(Usrapps.class, records[0].getId());
+    Usrapps testResult = jpa.find(Usrapps.class, records[0].getKodapp());
     assertEquals("expect equals descapp ", this.records[0].getDescapp(), testResult.getDescapp());
   }
 
@@ -130,7 +130,7 @@ public class UsrappsHandlerTest {
   }
 
   private String createCsvRecord(final Usrapps record) {
-    return TestUtils.getObject(record.getId()) + "," + TestUtils.getObject(record.getDescapp());
+    return TestUtils.getObject(record.getKodapp()) + "," + TestUtils.getObject(record.getDescapp());
   }
 
   private String createHeader(String headerfile) throws IOException {

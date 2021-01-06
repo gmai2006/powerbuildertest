@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.Usrgroupperm;
 
 public interface UsrgrouppermService {
-  public Usrgroupperm find(Float id);
+  public Usrgroupperm find(java.lang.Float id);
   /**
    * Select a list of Usrgroupperm based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface UsrgrouppermService {
    *
    * @param id The Usrgroupperm Id.
    */
-  public void delete(Float id);
+  public void delete(java.lang.Float id);
 }

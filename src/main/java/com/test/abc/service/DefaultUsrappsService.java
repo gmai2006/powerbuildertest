@@ -59,7 +59,7 @@ public class DefaultUsrappsService implements UsrappsService {
 
   /** {@inheritDoc} */
   @Override
-  public Usrapps find(String id) {
+  public Usrapps find(java.lang.String id) {
     final Usrapps result = dao.find(id);
     logger.info("find(Usrapps) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultUsrappsService implements UsrappsService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(Usrapps={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(Usrapps) - exited - return value={} result ");

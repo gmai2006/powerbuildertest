@@ -92,7 +92,7 @@ public class MisthFinalHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthFinal[].class);
     assertEquals("match count", count, records.length);
-    MisthFinal testResult = jpa.find(MisthFinal.class, records[0].getId());
+    MisthFinal testResult = jpa.find(MisthFinal.class, records[0].getKodfinal());
     assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
     assertEquals("expect equals kodkat ", this.records[0].getKodkat(), testResult.getKodkat());
@@ -142,7 +142,7 @@ public class MisthFinalHandlerTest {
   }
 
   private String createCsvRecord(final MisthFinal record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodfinal())
         + ","
         + TestUtils.getObject(record.getKodxrisi())
         + ","

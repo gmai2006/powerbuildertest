@@ -82,20 +82,6 @@ public class UsrusersResource {
   }
 
   /**
-   * Idempotent method - create or update Usrusers.
-   *
-   * @param obj The Usrusers be be persisted.
-   * @return The Usrusers entity.
-   */
-  @PUT
-  @Consumes(MediaType.APPLICATION_JSON)
-  public Usrusers createOrUpdate(Usrusers obj) {
-    if (this.service.find(obj.getId()) != null) {
-      return this.service.update(obj);
-    } else return this.service.create(obj);
-  }
-
-  /**
    * InIdempotent method. Update existing Usrusers.
    *
    * @param obj - instance of Usrusers.
@@ -115,9 +101,9 @@ public class UsrusersResource {
    */
 
   /**
-   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id") Float id)
-   * { this.service.delete(id); return Response.status(Response.Status.OK).entity("Successfully
-   * delete object").build(); }
+   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id")
+   * java.lang.Float id) { this.service.delete(id); return
+   * Response.status(Response.Status.OK).entity("Successfully delete object").build(); }
    */
 
   /**
@@ -127,8 +113,8 @@ public class UsrusersResource {
    * @return Usrusers.
    */
   /**
-   * @GET @Path("{id}") public Response find(@PathParam("id") Float id) { Usrusers result =
-   * this.service.find(id); if (null == result) { return
+   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.Float id) { Usrusers result
+   * = this.service.find(id); if (null == result) { return
    * Response.status(Response.Status.NOT_FOUND).build(); } return
    * Response.status(Response.Status.OK).entity(result).build(); }
    */

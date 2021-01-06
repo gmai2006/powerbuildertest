@@ -45,80 +45,80 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "afxfilterd")
 public class Afxfilterd implements Serializable {
-  private static final long serialVersionUID = 160532722815770766L;
+  private static final long serialVersionUID = 160992137252866448L;
   /** Description: kodfilterd. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodfilterd\"")
-  private Float id;
+  @Column(name = "kodfilterd")
+  private java.lang.Float kodfilterd;
   /** Description: kodfilter. */
   @Basic
   @Column(name = "kodfilter")
-  private Float kodfilter;
+  private java.lang.Float kodfilter;
   /** Description: pedio. */
   @Basic
   @Column(name = "pedio")
-  private String pedio;
+  private java.lang.String pedio;
   /** Description: telestis. */
   @Basic
   @Column(name = "telestis")
-  private String telestis;
+  private java.lang.String telestis;
   /** Description: timi. */
   @Basic
   @Column(name = "timi")
-  private String timi;
+  private java.lang.String timi;
   /** Description: joint. */
   @Basic
   @Column(name = "joint")
-  private String joint;
+  private java.lang.String joint;
 
   public Afxfilterd() {}
 
-  public Float getId() {
-    return id;
+  public java.lang.Float getKodfilterd() {
+    return this.kodfilterd;
   }
 
-  public void setId(Float id) {
-    this.id = id;
+  public void setKodfilterd(java.lang.Float kodfilterd) {
+    this.kodfilterd = kodfilterd;
   }
 
-  public Float getKodfilter() {
+  public java.lang.Float getKodfilter() {
     return this.kodfilter;
   }
 
-  public String getPedio() {
+  public java.lang.String getPedio() {
     return this.pedio;
   }
 
-  public String getTelestis() {
+  public java.lang.String getTelestis() {
     return this.telestis;
   }
 
-  public String getTimi() {
+  public java.lang.String getTimi() {
     return this.timi;
   }
 
-  public String getJoint() {
+  public java.lang.String getJoint() {
     return this.joint;
   }
 
-  public void setKodfilter(Float kodfilter) {
+  public void setKodfilter(java.lang.Float kodfilter) {
     this.kodfilter = kodfilter;
   }
 
-  public void setPedio(String pedio) {
+  public void setPedio(java.lang.String pedio) {
     this.pedio = pedio;
   }
 
-  public void setTelestis(String telestis) {
+  public void setTelestis(java.lang.String telestis) {
     this.telestis = telestis;
   }
 
-  public void setTimi(String timi) {
+  public void setTimi(java.lang.String timi) {
     this.timi = timi;
   }
 
-  public void setJoint(String joint) {
+  public void setJoint(java.lang.String joint) {
     this.joint = joint;
   }
 }

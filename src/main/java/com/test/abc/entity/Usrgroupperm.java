@@ -45,92 +45,92 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usrgroupperm")
 public class Usrgroupperm implements Serializable {
-  private static final long serialVersionUID = 160532722797151632L;
+  private static final long serialVersionUID = 160992137246325954L;
   /** Description: kodgroup. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodgroup\"")
-  private Float id;
+  @Column(name = "kodgroup")
+  private java.lang.Float kodgroup;
   /** Description: kodaction. */
   @Basic
   @Column(name = "kodaction")
-  private String kodaction;
+  private java.lang.String kodaction;
   /** Description: editrec. */
   @Basic
   @Column(name = "editrec")
-  private Integer editrec;
+  private java.lang.Integer editrec;
   /** Description: addrec. */
   @Basic
   @Column(name = "addrec")
-  private Integer addrec;
+  private java.lang.Integer addrec;
   /** Description: delrec. */
   @Basic
   @Column(name = "delrec")
-  private Integer delrec;
+  private java.lang.Integer delrec;
   /** Description: openlist. */
   @Basic
   @Column(name = "openlist")
-  private Integer openlist;
+  private java.lang.Integer openlist;
   /** Description: openform. */
   @Basic
   @Column(name = "openform")
-  private Integer openform;
+  private java.lang.Integer openform;
 
   public Usrgroupperm() {}
 
-  public Float getId() {
-    return id;
+  public java.lang.Float getKodgroup() {
+    return this.kodgroup;
   }
 
-  public void setId(Float id) {
-    this.id = id;
+  public void setKodgroup(java.lang.Float kodgroup) {
+    this.kodgroup = kodgroup;
   }
 
-  public String getKodaction() {
+  public java.lang.String getKodaction() {
     return this.kodaction;
   }
 
-  public Integer getEditrec() {
+  public java.lang.Integer getEditrec() {
     return this.editrec;
   }
 
-  public Integer getAddrec() {
+  public java.lang.Integer getAddrec() {
     return this.addrec;
   }
 
-  public Integer getDelrec() {
+  public java.lang.Integer getDelrec() {
     return this.delrec;
   }
 
-  public Integer getOpenlist() {
+  public java.lang.Integer getOpenlist() {
     return this.openlist;
   }
 
-  public Integer getOpenform() {
+  public java.lang.Integer getOpenform() {
     return this.openform;
   }
 
-  public void setKodaction(String kodaction) {
+  public void setKodaction(java.lang.String kodaction) {
     this.kodaction = kodaction;
   }
 
-  public void setEditrec(Integer editrec) {
+  public void setEditrec(java.lang.Integer editrec) {
     this.editrec = editrec;
   }
 
-  public void setAddrec(Integer addrec) {
+  public void setAddrec(java.lang.Integer addrec) {
     this.addrec = addrec;
   }
 
-  public void setDelrec(Integer delrec) {
+  public void setDelrec(java.lang.Integer delrec) {
     this.delrec = delrec;
   }
 
-  public void setOpenlist(Integer openlist) {
+  public void setOpenlist(java.lang.Integer openlist) {
     this.openlist = openlist;
   }
 
-  public void setOpenform(Integer openform) {
+  public void setOpenform(java.lang.Integer openform) {
     this.openform = openform;
   }
 }

@@ -59,7 +59,7 @@ public class DefaultUsrgrouppermService implements UsrgrouppermService {
 
   /** {@inheritDoc} */
   @Override
-  public Usrgroupperm find(Float id) {
+  public Usrgroupperm find(java.lang.Float id) {
     final Usrgroupperm result = dao.find(id);
     logger.info("find(Usrgroupperm) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultUsrgrouppermService implements UsrgrouppermService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(Float id) {
+  public void delete(java.lang.Float id) {
     logger.info("delete(Usrgroupperm={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(Usrgroupperm) - exited - return value={} result ");

@@ -60,7 +60,7 @@ public interface MisthZptamioDao {
    * @param id An MisthZptamio id.
    * @return The same MisthZptamio.
    */
-  public MisthZptamio find(String id);
+  public MisthZptamio find(java.lang.String id);
   /**
    * Create an MisthZptamio.
    *
@@ -82,5 +82,5 @@ public interface MisthZptamioDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

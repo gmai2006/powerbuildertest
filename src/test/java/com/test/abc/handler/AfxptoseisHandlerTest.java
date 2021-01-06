@@ -92,7 +92,7 @@ public class AfxptoseisHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Afxptoseis[].class);
     assertEquals("match count", count, records.length);
-    Afxptoseis testResult = jpa.find(Afxptoseis.class, records[0].getId());
+    Afxptoseis testResult = jpa.find(Afxptoseis.class, records[0].getOnom());
     assertEquals("expect equals gen ", this.records[0].getGen(), testResult.getGen());
     assertEquals("expect equals ait ", this.records[0].getAit(), testResult.getAit());
   }
@@ -131,7 +131,7 @@ public class AfxptoseisHandlerTest {
   }
 
   private String createCsvRecord(final Afxptoseis record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getOnom())
         + ","
         + TestUtils.getObject(record.getGen())
         + ","

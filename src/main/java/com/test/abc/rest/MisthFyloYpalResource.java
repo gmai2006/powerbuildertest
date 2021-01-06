@@ -82,20 +82,6 @@ public class MisthFyloYpalResource {
   }
 
   /**
-   * Idempotent method - create or update MisthFyloYpal.
-   *
-   * @param obj The MisthFyloYpal be be persisted.
-   * @return The MisthFyloYpal entity.
-   */
-  @PUT
-  @Consumes(MediaType.APPLICATION_JSON)
-  public MisthFyloYpal createOrUpdate(MisthFyloYpal obj) {
-    if (this.service.find(obj.getId()) != null) {
-      return this.service.update(obj);
-    } else return this.service.create(obj);
-  }
-
-  /**
    * InIdempotent method. Update existing MisthFyloYpal.
    *
    * @param obj - instance of MisthFyloYpal.
@@ -115,9 +101,9 @@ public class MisthFyloYpalResource {
    */
 
   /**
-   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id") Float id)
-   * { this.service.delete(id); return Response.status(Response.Status.OK).entity("Successfully
-   * delete object").build(); }
+   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id")
+   * java.lang.Float id) { this.service.delete(id); return
+   * Response.status(Response.Status.OK).entity("Successfully delete object").build(); }
    */
 
   /**
@@ -127,8 +113,8 @@ public class MisthFyloYpalResource {
    * @return MisthFyloYpal.
    */
   /**
-   * @GET @Path("{id}") public Response find(@PathParam("id") Float id) { MisthFyloYpal result =
-   * this.service.find(id); if (null == result) { return
+   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.Float id) { MisthFyloYpal
+   * result = this.service.find(id); if (null == result) { return
    * Response.status(Response.Status.NOT_FOUND).build(); } return
    * Response.status(Response.Status.OK).entity(result).build(); }
    */

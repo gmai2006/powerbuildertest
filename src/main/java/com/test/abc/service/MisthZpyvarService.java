@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthZpyvar;
 
 public interface MisthZpyvarService {
-  public MisthZpyvar find(String id);
+  public MisthZpyvar find(java.lang.String id);
   /**
    * Select a list of MisthZpyvar based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthZpyvarService {
    *
    * @param id The MisthZpyvar Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

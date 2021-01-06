@@ -59,7 +59,7 @@ public class DefaultMisthZpyvarService implements MisthZpyvarService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthZpyvar find(String id) {
+  public MisthZpyvar find(java.lang.String id) {
     final MisthZpyvar result = dao.find(id);
     logger.info("find(MisthZpyvar) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthZpyvarService implements MisthZpyvarService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthZpyvar={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthZpyvar) - exited - return value={} result ");

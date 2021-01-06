@@ -33,7 +33,6 @@ import javax.persistence.Persistence;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import com.test.abc.entity.MisthFinalYpal;
 import com.test.abc.utils.FileUtils;
 
@@ -64,8 +63,8 @@ public class MisthFinalYpalDaoTest {
   /** Run when the class is loaded. */
   @BeforeClass
   public static void beforeClass() {
-    EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
-    JpaDao jpa = new DefaultJpaDao(factory.createEntityManager());
+    EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
+    JpaDao jpa = new StandaloneJpaDao(factory.createEntityManager());
     dao = new DefaultMisthFinalYpalDao(jpa);
   }
 
@@ -83,8 +82,10 @@ public class MisthFinalYpalDaoTest {
 
   @Test
   public void testSelect() {
-    MisthFinalYpal testResult = dao.find(records[1].getId());
+    MisthFinalYpal testResult = dao.find(records[1].getKodypal());
+    java.util.List<MisthFinalYpal> all = dao.selectAll();
     assertNotNull("expect result", testResult);
+    org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertTrue(
         "expect equals kodfinal ", this.records[1].getKodfinal() == testResult.getKodfinal());
     org.junit.Assert.assertEquals(

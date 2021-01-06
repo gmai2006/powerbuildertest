@@ -51,12 +51,12 @@ public class MisthZpthesiServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getId())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodthesi())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    MisthZpthesi testResult = serviceMock.find(records[0].getId());
+    MisthZpthesi testResult = serviceMock.find(records[0].getKodthesi());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());

@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zptitlos")
 public class MisthZptitlos implements Serializable {
-  private static final long serialVersionUID = 160532722822674708L;
+  private static final long serialVersionUID = 160992137256875956L;
   /** Description: kodxrisi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodxrisi\"")
-  private String id;
+  @Column(name = "kodxrisi")
+  private java.lang.String kodxrisi;
   /** Description: kodtitlos. */
   @Basic
   @Column(name = "kodtitlos")
-  private String kodtitlos;
+  private java.lang.String kodtitlos;
   /** Description: desctitlos. */
   @Basic
   @Column(name = "desctitlos")
-  private String desctitlos;
+  private java.lang.String desctitlos;
 
   public MisthZptitlos() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
   }
 
-  public String getKodtitlos() {
+  public java.lang.String getKodtitlos() {
     return this.kodtitlos;
   }
 
-  public String getDesctitlos() {
+  public java.lang.String getDesctitlos() {
     return this.desctitlos;
   }
 
-  public void setKodtitlos(String kodtitlos) {
+  public void setKodtitlos(java.lang.String kodtitlos) {
     this.kodtitlos = kodtitlos;
   }
 
-  public void setDesctitlos(String desctitlos) {
+  public void setDesctitlos(java.lang.String desctitlos) {
     this.desctitlos = desctitlos;
   }
 }

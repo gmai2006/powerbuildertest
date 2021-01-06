@@ -45,92 +45,92 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usrusers")
 public class Usrusers implements Serializable {
-  private static final long serialVersionUID = 160532722819910881L;
+  private static final long serialVersionUID = 160992137255332417L;
   /** Description: koduser. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"koduser\"")
-  private Float id;
+  @Column(name = "koduser")
+  private java.lang.Float koduser;
   /** Description: username. */
   @Basic
   @Column(name = "username")
-  private String username;
+  private java.lang.String username;
   /** Description: fullname. */
   @Basic
   @Column(name = "fullname")
-  private String fullname;
+  private java.lang.String fullname;
   /** Description: password. */
   @Basic
   @Column(name = "password")
-  private String password;
+  private java.lang.String password;
   /** Description: isactive. */
   @Basic
   @Column(name = "isactive")
-  private Integer isactive;
+  private java.lang.Integer isactive;
   /** Description: tomeas. */
   @Basic
   @Column(name = "tomeas")
-  private String tomeas;
+  private java.lang.String tomeas;
   /** Description: idiotita. */
   @Basic
   @Column(name = "idiotita")
-  private String idiotita;
+  private java.lang.String idiotita;
 
   public Usrusers() {}
 
-  public Float getId() {
-    return id;
+  public java.lang.Float getKoduser() {
+    return this.koduser;
   }
 
-  public void setId(Float id) {
-    this.id = id;
+  public void setKoduser(java.lang.Float koduser) {
+    this.koduser = koduser;
   }
 
-  public String getUsername() {
+  public java.lang.String getUsername() {
     return this.username;
   }
 
-  public String getFullname() {
+  public java.lang.String getFullname() {
     return this.fullname;
   }
 
-  public String getPassword() {
+  public java.lang.String getPassword() {
     return this.password;
   }
 
-  public Integer getIsactive() {
+  public java.lang.Integer getIsactive() {
     return this.isactive;
   }
 
-  public String getTomeas() {
+  public java.lang.String getTomeas() {
     return this.tomeas;
   }
 
-  public String getIdiotita() {
+  public java.lang.String getIdiotita() {
     return this.idiotita;
   }
 
-  public void setUsername(String username) {
+  public void setUsername(java.lang.String username) {
     this.username = username;
   }
 
-  public void setFullname(String fullname) {
+  public void setFullname(java.lang.String fullname) {
     this.fullname = fullname;
   }
 
-  public void setPassword(String password) {
+  public void setPassword(java.lang.String password) {
     this.password = password;
   }
 
-  public void setIsactive(Integer isactive) {
+  public void setIsactive(java.lang.Integer isactive) {
     this.isactive = isactive;
   }
 
-  public void setTomeas(String tomeas) {
+  public void setTomeas(java.lang.String tomeas) {
     this.tomeas = tomeas;
   }
 
-  public void setIdiotita(String idiotita) {
+  public void setIdiotita(java.lang.String idiotita) {
     this.idiotita = idiotita;
   }
 }

@@ -92,7 +92,7 @@ public class MisthReportHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthReport[].class);
     assertEquals("match count", count, records.length);
-    MisthReport testResult = jpa.find(MisthReport.class, records[0].getId());
+    MisthReport testResult = jpa.find(MisthReport.class, records[0].getKodreport());
     assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
     assertEquals(
@@ -165,7 +165,7 @@ public class MisthReportHandlerTest {
   }
 
   private String createCsvRecord(final MisthReport record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodreport())
         + ","
         + TestUtils.getObject(record.getKodxrisi())
         + ","

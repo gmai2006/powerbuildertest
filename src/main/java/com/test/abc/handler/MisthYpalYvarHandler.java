@@ -60,7 +60,7 @@ public class MisthYpalYvarHandler extends DelimiterFileHandler<MisthYpalYvar> {
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new Float(tokens.get(i)));
+          record.setKodypal(new java.lang.Float(tokens.get(i)));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));
@@ -69,7 +69,7 @@ public class MisthYpalYvarHandler extends DelimiterFileHandler<MisthYpalYvar> {
           record.setKodyvar(tokens.get(i));
           break;
         case "aa":
-          record.setAa(new Integer(tokens.get(i)));
+          record.setAa(new java.lang.Integer(tokens.get(i)));
           break;
         case "expr":
           record.setExpr(tokens.get(i));

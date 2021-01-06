@@ -45,164 +45,164 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_report")
 public class MisthReport implements Serializable {
-  private static final long serialVersionUID = 160532722795640356L;
+  private static final long serialVersionUID = 160992137245384550L;
   /** Description: kodreport. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodreport\"")
-  private String id;
+  @Column(name = "kodreport")
+  private java.lang.String kodreport;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: descreport. */
   @Basic
   @Column(name = "descreport")
-  private String descreport;
+  private java.lang.String descreport;
   /** Description: print_margin_top. */
   @Basic
   @Column(name = "print_margin_top")
-  private Integer printMarginTop;
+  private java.lang.Integer printMarginTop;
   /** Description: print_margin_bottom. */
   @Basic
   @Column(name = "print_margin_bottom")
-  private Integer printMarginBottom;
+  private java.lang.Integer printMarginBottom;
   /** Description: print_margin_left. */
   @Basic
   @Column(name = "print_margin_left")
-  private Integer printMarginLeft;
+  private java.lang.Integer printMarginLeft;
   /** Description: print_margin_right. */
   @Basic
   @Column(name = "print_margin_right")
-  private Integer printMarginRight;
+  private java.lang.Integer printMarginRight;
   /** Description: print_orientation. */
   @Basic
   @Column(name = "print_orientation")
-  private Integer printOrientation;
+  private java.lang.Integer printOrientation;
   /** Description: print_paper_size. */
   @Basic
   @Column(name = "print_paper_size")
-  private Integer printPaperSize;
+  private java.lang.Integer printPaperSize;
   /** Description: print_scale. */
   @Basic
   @Column(name = "print_scale")
-  private Integer printScale;
+  private java.lang.Integer printScale;
   /** Description: subtitle. */
   @Basic
   @Column(name = "subtitle")
-  private String subtitle;
+  private java.lang.String subtitle;
   /** Description: prn_notes1. */
   @Basic
   @Column(name = "prn_notes1")
-  private String prnNotes1;
+  private java.lang.String prnNotes1;
   /** Description: prn_notes2. */
   @Basic
   @Column(name = "prn_notes2")
-  private String prnNotes2;
+  private java.lang.String prnNotes2;
 
   public MisthReport() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodreport() {
+    return this.kodreport;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodreport(java.lang.String kodreport) {
+    this.kodreport = kodreport;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getDescreport() {
+  public java.lang.String getDescreport() {
     return this.descreport;
   }
 
-  public Integer getPrintMarginTop() {
+  public java.lang.Integer getPrintMarginTop() {
     return this.printMarginTop;
   }
 
-  public Integer getPrintMarginBottom() {
+  public java.lang.Integer getPrintMarginBottom() {
     return this.printMarginBottom;
   }
 
-  public Integer getPrintMarginLeft() {
+  public java.lang.Integer getPrintMarginLeft() {
     return this.printMarginLeft;
   }
 
-  public Integer getPrintMarginRight() {
+  public java.lang.Integer getPrintMarginRight() {
     return this.printMarginRight;
   }
 
-  public Integer getPrintOrientation() {
+  public java.lang.Integer getPrintOrientation() {
     return this.printOrientation;
   }
 
-  public Integer getPrintPaperSize() {
+  public java.lang.Integer getPrintPaperSize() {
     return this.printPaperSize;
   }
 
-  public Integer getPrintScale() {
+  public java.lang.Integer getPrintScale() {
     return this.printScale;
   }
 
-  public String getSubtitle() {
+  public java.lang.String getSubtitle() {
     return this.subtitle;
   }
 
-  public String getPrnNotes1() {
+  public java.lang.String getPrnNotes1() {
     return this.prnNotes1;
   }
 
-  public String getPrnNotes2() {
+  public java.lang.String getPrnNotes2() {
     return this.prnNotes2;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setDescreport(String descreport) {
+  public void setDescreport(java.lang.String descreport) {
     this.descreport = descreport;
   }
 
-  public void setPrintMarginTop(Integer printMarginTop) {
+  public void setPrintMarginTop(java.lang.Integer printMarginTop) {
     this.printMarginTop = printMarginTop;
   }
 
-  public void setPrintMarginBottom(Integer printMarginBottom) {
+  public void setPrintMarginBottom(java.lang.Integer printMarginBottom) {
     this.printMarginBottom = printMarginBottom;
   }
 
-  public void setPrintMarginLeft(Integer printMarginLeft) {
+  public void setPrintMarginLeft(java.lang.Integer printMarginLeft) {
     this.printMarginLeft = printMarginLeft;
   }
 
-  public void setPrintMarginRight(Integer printMarginRight) {
+  public void setPrintMarginRight(java.lang.Integer printMarginRight) {
     this.printMarginRight = printMarginRight;
   }
 
-  public void setPrintOrientation(Integer printOrientation) {
+  public void setPrintOrientation(java.lang.Integer printOrientation) {
     this.printOrientation = printOrientation;
   }
 
-  public void setPrintPaperSize(Integer printPaperSize) {
+  public void setPrintPaperSize(java.lang.Integer printPaperSize) {
     this.printPaperSize = printPaperSize;
   }
 
-  public void setPrintScale(Integer printScale) {
+  public void setPrintScale(java.lang.Integer printScale) {
     this.printScale = printScale;
   }
 
-  public void setSubtitle(String subtitle) {
+  public void setSubtitle(java.lang.String subtitle) {
     this.subtitle = subtitle;
   }
 
-  public void setPrnNotes1(String prnNotes1) {
+  public void setPrnNotes1(java.lang.String prnNotes1) {
     this.prnNotes1 = prnNotes1;
   }
 
-  public void setPrnNotes2(String prnNotes2) {
+  public void setPrnNotes2(java.lang.String prnNotes2) {
     this.prnNotes2 = prnNotes2;
   }
 }

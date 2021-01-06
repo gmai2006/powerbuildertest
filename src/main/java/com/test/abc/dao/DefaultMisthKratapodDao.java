@@ -65,7 +65,7 @@ public class DefaultMisthKratapodDao implements MisthKratapodDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthKratapod find(String id) {
+  public MisthKratapod find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthKratapod model = em.find(MisthKratapod.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthKratapodDao implements MisthKratapodDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthKratapod removed = em.find(MisthKratapod.class, id);
     if (null != removed) {

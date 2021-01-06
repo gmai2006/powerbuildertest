@@ -92,7 +92,7 @@ public class UsrgroupsHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Usrgroups[].class);
     assertEquals("match count", count, records.length);
-    Usrgroups testResult = jpa.find(Usrgroups.class, records[0].getId());
+    Usrgroups testResult = jpa.find(Usrgroups.class, records[0].getKodgroup());
     assertEquals(
         "expect equals descgroup ", this.records[0].getDescgroup(), testResult.getDescgroup());
   }
@@ -131,7 +131,9 @@ public class UsrgroupsHandlerTest {
   }
 
   private String createCsvRecord(final Usrgroups record) {
-    return TestUtils.getObject(record.getId()) + "," + TestUtils.getObject(record.getDescgroup());
+    return TestUtils.getObject(record.getKodgroup())
+        + ","
+        + TestUtils.getObject(record.getDescgroup());
   }
 
   private String createHeader(String headerfile) throws IOException {

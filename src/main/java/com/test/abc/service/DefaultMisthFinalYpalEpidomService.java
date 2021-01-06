@@ -59,7 +59,7 @@ public class DefaultMisthFinalYpalEpidomService implements MisthFinalYpalEpidomS
 
   /** {@inheritDoc} */
   @Override
-  public MisthFinalYpalEpidom find(String id) {
+  public MisthFinalYpalEpidom find(java.lang.String id) {
     final MisthFinalYpalEpidom result = dao.find(id);
     logger.info("find(MisthFinalYpalEpidom) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthFinalYpalEpidomService implements MisthFinalYpalEpidomS
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthFinalYpalEpidom={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthFinalYpalEpidom) - exited - return value={} result ");

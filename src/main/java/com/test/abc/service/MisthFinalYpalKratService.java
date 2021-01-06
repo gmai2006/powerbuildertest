@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthFinalYpalKrat;
 
 public interface MisthFinalYpalKratService {
-  public MisthFinalYpalKrat find(String id);
+  public MisthFinalYpalKrat find(java.lang.String id);
   /**
    * Select a list of MisthFinalYpalKrat based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthFinalYpalKratService {
    *
    * @param id The MisthFinalYpalKrat Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

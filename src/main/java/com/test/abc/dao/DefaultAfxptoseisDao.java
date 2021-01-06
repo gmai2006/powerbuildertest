@@ -65,7 +65,7 @@ public class DefaultAfxptoseisDao implements AfxptoseisDao {
 
   /** {@inheritDoc} */
   @Override
-  public Afxptoseis find(String id) {
+  public Afxptoseis find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     Afxptoseis model = em.find(Afxptoseis.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultAfxptoseisDao implements AfxptoseisDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final Afxptoseis removed = em.find(Afxptoseis.class, id);
     if (null != removed) {

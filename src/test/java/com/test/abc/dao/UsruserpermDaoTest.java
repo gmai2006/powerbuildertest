@@ -33,7 +33,6 @@ import javax.persistence.Persistence;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import com.test.abc.entity.Usruserperm;
 import com.test.abc.utils.FileUtils;
 
@@ -64,8 +63,8 @@ public class UsruserpermDaoTest {
   /** Run when the class is loaded. */
   @BeforeClass
   public static void beforeClass() {
-    EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
-    JpaDao jpa = new DefaultJpaDao(factory.createEntityManager());
+    EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
+    JpaDao jpa = new StandaloneJpaDao(factory.createEntityManager());
     dao = new DefaultUsruserpermDao(jpa);
   }
 
@@ -83,8 +82,10 @@ public class UsruserpermDaoTest {
 
   @Test
   public void testSelect() {
-    Usruserperm testResult = dao.find(records[1].getId());
+    Usruserperm testResult = dao.find(records[1].getKodapp());
+    java.util.List<Usruserperm> all = dao.selectAll();
     assertNotNull("expect result", testResult);
+    org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertTrue(
         "expect equals koduser ", this.records[1].getKoduser() == testResult.getKoduser());
     org.junit.Assert.assertTrue(

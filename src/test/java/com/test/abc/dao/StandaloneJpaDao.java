@@ -8,8 +8,6 @@ import javax.persistence.Query;
 
 public class StandaloneJpaDao implements JpaDao {
   private static final int BATCH_SIZE = 50;
-  private static final String UNITNAME = "applicationpersistence";
-
   protected EntityManager em;
 
   /**
@@ -112,5 +110,13 @@ public class StandaloneJpaDao implements JpaDao {
     E model = em.merge(e);
     em.getTransaction().commit();
     return model;
+  }
+
+  @Override
+  public <E> void deleteAll(Class<E> e) {
+    em.getTransaction().begin();
+    Query query = em.createQuery("delete from " + e.getCanonicalName());
+    query.executeUpdate();
+    em.getTransaction().commit();
   }
 }

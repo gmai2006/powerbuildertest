@@ -60,7 +60,7 @@ public interface MisthZpyvarDao {
    * @param id An MisthZpyvar id.
    * @return The same MisthZpyvar.
    */
-  public MisthZpyvar find(String id);
+  public MisthZpyvar find(java.lang.String id);
   /**
    * Create an MisthZpyvar.
    *
@@ -82,5 +82,5 @@ public interface MisthZpyvarDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

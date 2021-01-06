@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthFyloEpidom;
 
 public interface MisthFyloEpidomService {
-  public MisthFyloEpidom find(String id);
+  public MisthFyloEpidom find(java.lang.String id);
   /**
    * Select a list of MisthFyloEpidom based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthFyloEpidomService {
    *
    * @param id The MisthFyloEpidom Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

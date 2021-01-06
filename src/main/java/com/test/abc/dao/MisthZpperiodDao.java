@@ -60,7 +60,7 @@ public interface MisthZpperiodDao {
    * @param id An MisthZpperiod id.
    * @return The same MisthZpperiod.
    */
-  public MisthZpperiod find(String id);
+  public MisthZpperiod find(java.lang.String id);
   /**
    * Create an MisthZpperiod.
    *
@@ -82,5 +82,5 @@ public interface MisthZpperiodDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zptamio")
 public class MisthZptamio implements Serializable {
-  private static final long serialVersionUID = 160532722821565500L;
+  private static final long serialVersionUID = 160992137256325567L;
   /** Description: kodtamio. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodtamio\"")
-  private String id;
+  @Column(name = "kodtamio")
+  private java.lang.String kodtamio;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: desctamio. */
   @Basic
   @Column(name = "desctamio")
-  private String desctamio;
+  private java.lang.String desctamio;
 
   public MisthZptamio() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodtamio() {
+    return this.kodtamio;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodtamio(java.lang.String kodtamio) {
+    this.kodtamio = kodtamio;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getDesctamio() {
+  public java.lang.String getDesctamio() {
     return this.desctamio;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setDesctamio(String desctamio) {
+  public void setDesctamio(java.lang.String desctamio) {
     this.desctamio = desctamio;
   }
 }

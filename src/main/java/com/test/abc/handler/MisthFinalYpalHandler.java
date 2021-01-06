@@ -60,10 +60,10 @@ public class MisthFinalYpalHandler extends DelimiterFileHandler<MisthFinalYpal> 
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
         case "id":
-          record.setId(new Float(tokens.get(i)));
+          record.setKodypal(new java.lang.Float(tokens.get(i)));
           break;
         case "kodfinal":
-          record.setKodfinal(new Float(tokens.get(i)));
+          record.setKodfinal(new java.lang.Float(tokens.get(i)));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));

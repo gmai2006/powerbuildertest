@@ -92,7 +92,7 @@ public class MisthFyloKratHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthFyloKrat[].class);
     assertEquals("match count", count, records.length);
-    MisthFyloKrat testResult = jpa.find(MisthFyloKrat.class, records[0].getId());
+    MisthFyloKrat testResult = jpa.find(MisthFyloKrat.class, records[0].getKodkrat());
     assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
     assertEquals("expect equals kodfylo ", this.records[0].getKodfylo(), testResult.getKodfylo());
@@ -135,7 +135,7 @@ public class MisthFyloKratHandlerTest {
   }
 
   private String createCsvRecord(final MisthFyloKrat record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodkrat())
         + ","
         + TestUtils.getObject(record.getKodxrisi())
         + ","

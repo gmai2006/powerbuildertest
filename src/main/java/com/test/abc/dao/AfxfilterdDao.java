@@ -60,7 +60,7 @@ public interface AfxfilterdDao {
    * @param id An Afxfilterd id.
    * @return The same Afxfilterd.
    */
-  public Afxfilterd find(Float id);
+  public Afxfilterd find(java.lang.Float id);
   /**
    * Create an Afxfilterd.
    *
@@ -82,5 +82,5 @@ public interface AfxfilterdDao {
    *
    * @param id The entity Id.
    */
-  public void delete(Float id);
+  public void delete(java.lang.Float id);
 }

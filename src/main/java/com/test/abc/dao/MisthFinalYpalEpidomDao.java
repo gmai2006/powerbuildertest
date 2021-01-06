@@ -60,7 +60,7 @@ public interface MisthFinalYpalEpidomDao {
    * @param id An MisthFinalYpalEpidom id.
    * @return The same MisthFinalYpalEpidom.
    */
-  public MisthFinalYpalEpidom find(String id);
+  public MisthFinalYpalEpidom find(java.lang.String id);
   /**
    * Create an MisthFinalYpalEpidom.
    *
@@ -82,5 +82,5 @@ public interface MisthFinalYpalEpidomDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

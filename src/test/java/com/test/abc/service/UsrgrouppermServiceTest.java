@@ -51,12 +51,12 @@ public class UsrgrouppermServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getId())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodgroup())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    Usrgroupperm testResult = serviceMock.find(records[0].getId());
+    Usrgroupperm testResult = serviceMock.find(records[0].getKodgroup());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
         "expect equals kodaction ", this.records[0].getKodaction(), testResult.getKodaction());

@@ -59,7 +59,7 @@ public class DefaultMisthFyloService implements MisthFyloService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFylo find(String id) {
+  public MisthFylo find(java.lang.String id) {
     final MisthFylo result = dao.find(id);
     logger.info("find(MisthFylo) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthFyloService implements MisthFyloService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthFylo={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthFylo) - exited - return value={} result ");

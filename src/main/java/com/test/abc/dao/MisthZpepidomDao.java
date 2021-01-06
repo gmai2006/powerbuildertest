@@ -60,7 +60,7 @@ public interface MisthZpepidomDao {
    * @param id An MisthZpepidom id.
    * @return The same MisthZpepidom.
    */
-  public MisthZpepidom find(String id);
+  public MisthZpepidom find(java.lang.String id);
   /**
    * Create an MisthZpepidom.
    *
@@ -82,5 +82,5 @@ public interface MisthZpepidomDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

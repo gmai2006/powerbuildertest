@@ -51,12 +51,12 @@ public class UsractionsServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getId())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodaction())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    Usractions testResult = serviceMock.find(records[0].getId());
+    Usractions testResult = serviceMock.find(records[0].getKodaction());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
         "expect equals kodapp ", this.records[0].getKodapp(), testResult.getKodapp());

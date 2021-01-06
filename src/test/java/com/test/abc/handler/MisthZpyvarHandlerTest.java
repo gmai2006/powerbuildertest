@@ -92,7 +92,7 @@ public class MisthZpyvarHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthZpyvar[].class);
     assertEquals("match count", count, records.length);
-    MisthZpyvar testResult = jpa.find(MisthZpyvar.class, records[0].getId());
+    MisthZpyvar testResult = jpa.find(MisthZpyvar.class, records[0].getKodxrisi());
     assertEquals("expect equals kodyvar ", this.records[0].getKodyvar(), testResult.getKodyvar());
     assertEquals(
         "expect equals descyvar ", this.records[0].getDescyvar(), testResult.getDescyvar());
@@ -133,7 +133,7 @@ public class MisthZpyvarHandlerTest {
   }
 
   private String createCsvRecord(final MisthZpyvar record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodxrisi())
         + ","
         + TestUtils.getObject(record.getKodyvar())
         + ","

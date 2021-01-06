@@ -59,7 +59,7 @@ public class DefaultAfxptoseisService implements AfxptoseisService {
 
   /** {@inheritDoc} */
   @Override
-  public Afxptoseis find(String id) {
+  public Afxptoseis find(java.lang.String id) {
     final Afxptoseis result = dao.find(id);
     logger.info("find(Afxptoseis) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultAfxptoseisService implements AfxptoseisService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(Afxptoseis={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(Afxptoseis) - exited - return value={} result ");

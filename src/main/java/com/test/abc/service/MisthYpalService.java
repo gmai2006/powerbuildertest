@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthYpal;
 
 public interface MisthYpalService {
-  public MisthYpal find(Float id);
+  public MisthYpal find(java.lang.Float id);
   /**
    * Select a list of MisthYpal based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthYpalService {
    *
    * @param id The MisthYpal Id.
    */
-  public void delete(Float id);
+  public void delete(java.lang.Float id);
 }

@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthZptamio;
 
 public interface MisthZptamioService {
-  public MisthZptamio find(String id);
+  public MisthZptamio find(java.lang.String id);
   /**
    * Select a list of MisthZptamio based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthZptamioService {
    *
    * @param id The MisthZptamio Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

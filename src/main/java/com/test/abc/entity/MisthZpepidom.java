@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpepidom")
 public class MisthZpepidom implements Serializable {
-  private static final long serialVersionUID = 160532722803786094L;
+  private static final long serialVersionUID = 160992137248385881L;
   /** Description: kodepidom. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "\"kodepidom\"")
-  private String id;
+  @Column(name = "kodepidom")
+  private java.lang.String kodepidom;
   /** Description: kodxrisi. */
   @Basic
   @Column(name = "kodxrisi")
-  private String kodxrisi;
+  private java.lang.String kodxrisi;
   /** Description: descepidom. */
   @Basic
   @Column(name = "descepidom")
-  private String descepidom;
+  private java.lang.String descepidom;
 
   public MisthZpepidom() {}
 
-  public String getId() {
-    return id;
+  public java.lang.String getKodepidom() {
+    return this.kodepidom;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setKodepidom(java.lang.String kodepidom) {
+    this.kodepidom = kodepidom;
   }
 
-  public String getKodxrisi() {
+  public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public String getDescepidom() {
+  public java.lang.String getDescepidom() {
     return this.descepidom;
   }
 
-  public void setKodxrisi(String kodxrisi) {
+  public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setDescepidom(String descepidom) {
+  public void setDescepidom(java.lang.String descepidom) {
     this.descepidom = descepidom;
   }
 }

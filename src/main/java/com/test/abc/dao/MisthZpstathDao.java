@@ -60,7 +60,7 @@ public interface MisthZpstathDao {
    * @param id An MisthZpstath id.
    * @return The same MisthZpstath.
    */
-  public MisthZpstath find(String id);
+  public MisthZpstath find(java.lang.String id);
   /**
    * Create an MisthZpstath.
    *
@@ -82,5 +82,5 @@ public interface MisthZpstathDao {
    *
    * @param id The entity Id.
    */
-  public void delete(String id);
+  public void delete(java.lang.String id);
 }

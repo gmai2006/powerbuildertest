@@ -82,20 +82,6 @@ public class UsruserpermResource {
   }
 
   /**
-   * Idempotent method - create or update Usruserperm.
-   *
-   * @param obj The Usruserperm be be persisted.
-   * @return The Usruserperm entity.
-   */
-  @PUT
-  @Consumes(MediaType.APPLICATION_JSON)
-  public Usruserperm createOrUpdate(Usruserperm obj) {
-    if (this.service.find(obj.getId()) != null) {
-      return this.service.update(obj);
-    } else return this.service.create(obj);
-  }
-
-  /**
    * InIdempotent method. Update existing Usruserperm.
    *
    * @param obj - instance of Usruserperm.
@@ -115,9 +101,9 @@ public class UsruserpermResource {
    */
 
   /**
-   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id") String
-   * id) { this.service.delete(id); return Response.status(Response.Status.OK).entity("Successfully
-   * delete object").build(); }
+   * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id")
+   * java.lang.String id) { this.service.delete(id); return
+   * Response.status(Response.Status.OK).entity("Successfully delete object").build(); }
    */
 
   /**
@@ -127,8 +113,8 @@ public class UsruserpermResource {
    * @return Usruserperm.
    */
   /**
-   * @GET @Path("{id}") public Response find(@PathParam("id") String id) { Usruserperm result =
-   * this.service.find(id); if (null == result) { return
+   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.String id) { Usruserperm
+   * result = this.service.find(id); if (null == result) { return
    * Response.status(Response.Status.NOT_FOUND).build(); } return
    * Response.status(Response.Status.OK).entity(result).build(); }
    */

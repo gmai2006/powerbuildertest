@@ -65,7 +65,7 @@ public class DefaultMisthZpkatDao implements MisthZpkatDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthZpkat find(String id) {
+  public MisthZpkat find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthZpkat model = em.find(MisthZpkat.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthZpkatDao implements MisthZpkatDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthZpkat removed = em.find(MisthZpkat.class, id);
     if (null != removed) {

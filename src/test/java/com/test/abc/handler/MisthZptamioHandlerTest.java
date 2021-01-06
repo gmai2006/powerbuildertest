@@ -92,7 +92,7 @@ public class MisthZptamioHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthZptamio[].class);
     assertEquals("match count", count, records.length);
-    MisthZptamio testResult = jpa.find(MisthZptamio.class, records[0].getId());
+    MisthZptamio testResult = jpa.find(MisthZptamio.class, records[0].getKodtamio());
     assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
     assertEquals(
@@ -133,7 +133,7 @@ public class MisthZptamioHandlerTest {
   }
 
   private String createCsvRecord(final MisthZptamio record) {
-    return TestUtils.getObject(record.getId())
+    return TestUtils.getObject(record.getKodtamio())
         + ","
         + TestUtils.getObject(record.getKodxrisi())
         + ","

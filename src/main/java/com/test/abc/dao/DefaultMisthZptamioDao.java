@@ -65,7 +65,7 @@ public class DefaultMisthZptamioDao implements MisthZptamioDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthZptamio find(String id) {
+  public MisthZptamio find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthZptamio model = em.find(MisthZptamio.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthZptamioDao implements MisthZptamioDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(String id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthZptamio removed = em.find(MisthZptamio.class, id);
     if (null != removed) {
