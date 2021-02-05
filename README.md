@@ -16,9 +16,9 @@ All instructions should be run in a terminal
   
   [JBoss 21] (https://download.jboss.org/wildfly/21.0.1.Final/wildfly-21.0.1.Final.tar.gz)
 
-  IN the terminal, cd back to the project directory
+  In the terminal, cd back to the project directory
   
-  run the following gradle command
+  Run the following gradle command
   
   ``` gradle build```
   
@@ -26,7 +26,8 @@ All instructions should be run in a terminal
   
   Start your JBoss 
   
-  cd to <your Jboss dir>/bin and run ./standalone.sh
+  cd to <your Jboss dir>/bin and 
+  run ./standalone.sh
   
   [Enter this URL into your browser address] (http://localhost:8080/powerbuildertest/)
 
