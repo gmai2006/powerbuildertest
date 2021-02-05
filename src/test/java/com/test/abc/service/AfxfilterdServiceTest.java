@@ -58,15 +58,15 @@ public class AfxfilterdServiceTest {
   public void testFind_success() {
     Afxfilterd testResult = serviceMock.find(records[0].getKodfilterd());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertTrue(
-        "expect equals kodfilter ", this.records[0].getKodfilter() == testResult.getKodfilter());
-    org.junit.Assert.assertEquals(
-        "expect equals pedio ", this.records[0].getPedio(), testResult.getPedio());
     org.junit.Assert.assertEquals(
         "expect equals telestis ", this.records[0].getTelestis(), testResult.getTelestis());
     org.junit.Assert.assertEquals(
-        "expect equals timi ", this.records[0].getTimi(), testResult.getTimi());
+        "expect equals pedio ", this.records[0].getPedio(), testResult.getPedio());
     org.junit.Assert.assertEquals(
         "expect equals joint ", this.records[0].getJoint(), testResult.getJoint());
+    org.junit.Assert.assertTrue(
+        "expect equals kodfilter ", this.records[0].getKodfilter() == testResult.getKodfilter());
+    org.junit.Assert.assertEquals(
+        "expect equals timi ", this.records[0].getTimi(), testResult.getTimi());
   }
 }

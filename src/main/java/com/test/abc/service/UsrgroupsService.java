@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.Usrgroups;
 
 public interface UsrgroupsService {
-  public Usrgroups find(java.lang.Float id);
+  public Usrgroups find(java.lang.Integer id);
   /**
    * Select a list of Usrgroups based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface UsrgroupsService {
    *
    * @param id The Usrgroups Id.
    */
-  public void delete(java.lang.Float id);
+  public void delete(java.lang.Integer id);
 }

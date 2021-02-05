@@ -87,10 +87,10 @@ public class MisthZpperiodDaoTest {
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals descperiod ", this.records[1].getDescperiod(), testResult.getDescperiod());
     org.junit.Assert.assertTrue(
         "expect equals orderno ", this.records[1].getOrderno() == testResult.getOrderno());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
   }
 }

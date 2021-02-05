@@ -82,13 +82,13 @@ public class MisthZpidikotDaoTest {
 
   @Test
   public void testSelect() {
-    MisthZpidikot testResult = dao.find(records[1].getKodidikot());
+    MisthZpidikot testResult = dao.find(records[1].getKodxrisi());
     java.util.List<MisthZpidikot> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals descidikot ", this.records[1].getDescidikot(), testResult.getDescidikot());
+    org.junit.Assert.assertEquals(
+        "expect equals kodidikot ", this.records[1].getKodidikot(), testResult.getKodidikot());
   }
 }

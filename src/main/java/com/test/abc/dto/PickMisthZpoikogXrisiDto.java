@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthZpoikogXrisiDto implements Serializable {
-  private static final long serialVersionUID = 160992137695880728L;
+  private static final long serialVersionUID = 161096104220144924L;
 
   /** Description: kodoikog. */
   private java.lang.String kodoikog;

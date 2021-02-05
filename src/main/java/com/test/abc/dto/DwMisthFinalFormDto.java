@@ -41,10 +41,10 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthFinalFormDto implements Serializable {
-  private static final long serialVersionUID = 160992137722632251L;
+  private static final long serialVersionUID = 161096104239449051L;
 
   /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
+  private java.lang.Integer kodfinal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -70,7 +70,7 @@ public class DwMisthFinalFormDto implements Serializable {
   public DwMisthFinalFormDto() {}
 
   public DwMisthFinalFormDto(
-      java.lang.Float kodfinal,
+      java.lang.Integer kodfinal,
       java.lang.String kodxrisi,
       java.lang.String descfinal,
       java.util.Date datefinal,
@@ -88,7 +88,7 @@ public class DwMisthFinalFormDto implements Serializable {
     this.aa = aa;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
@@ -120,7 +120,7 @@ public class DwMisthFinalFormDto implements Serializable {
     return this.aa;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 

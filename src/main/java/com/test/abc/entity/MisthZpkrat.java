@@ -45,20 +45,32 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpkrat")
 public class MisthZpkrat implements Serializable {
-  private static final long serialVersionUID = 16099213724977804L;
+  private static final long serialVersionUID = 161096103739843916L;
   /** Description: kodkrat. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodkrat")
   private java.lang.String kodkrat;
-  /** Description: kodxrisi. */
+  /** Description: isautoforos. */
   @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
+  @Column(name = "isautoforos")
+  private java.lang.Integer isautoforos;
   /** Description: desckrat. */
   @Basic
-  @Column(name = "desckrat")
+  @Column(name = "desckrat", length = 50)
   private java.lang.String desckrat;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
+  /** Description: isasf. */
+  @Basic
+  @Column(name = "isasf")
+  private java.lang.Integer isasf;
+  /** Description: isforos. */
+  @Basic
+  @Column(name = "isforos")
+  private java.lang.Integer isforos;
 
   public MisthZpkrat() {}
 
@@ -70,19 +82,43 @@ public class MisthZpkrat implements Serializable {
     this.kodkrat = kodkrat;
   }
 
-  public java.lang.String getKodxrisi() {
-    return this.kodxrisi;
+  public java.lang.Integer getIsautoforos() {
+    return this.isautoforos;
   }
 
   public java.lang.String getDesckrat() {
     return this.desckrat;
   }
 
-  public void setKodxrisi(java.lang.String kodxrisi) {
-    this.kodxrisi = kodxrisi;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
+  }
+
+  public java.lang.Integer getIsasf() {
+    return this.isasf;
+  }
+
+  public java.lang.Integer getIsforos() {
+    return this.isforos;
+  }
+
+  public void setIsautoforos(java.lang.Integer isautoforos) {
+    this.isautoforos = isautoforos;
   }
 
   public void setDesckrat(java.lang.String desckrat) {
     this.desckrat = desckrat;
+  }
+
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
+  }
+
+  public void setIsasf(java.lang.Integer isasf) {
+    this.isasf = isasf;
+  }
+
+  public void setIsforos(java.lang.Integer isforos) {
+    this.isforos = isforos;
   }
 }

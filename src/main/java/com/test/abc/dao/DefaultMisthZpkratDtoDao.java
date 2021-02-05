@@ -79,7 +79,7 @@ public class DefaultMisthZpkratDtoDao implements MisthZpkratDtoDao {
 
   public List<SprnYpalPeriodKratDto> sprnYpalPeriodKrat(
       java.lang.String arg_kodxrisi,
-      java.lang.Float arg_kodypal,
+      java.lang.Integer arg_kodypal,
       java.util.Date arg_fromdate,
       java.util.Date arg_todate) {
     final TypedQuery<SprnYpalPeriodKratDto> query =
@@ -93,7 +93,7 @@ public class DefaultMisthZpkratDtoDao implements MisthZpkratDtoDao {
   }
 
   public List<SprnAnalisiKratForosDto> sprnAnalisiKratForos(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnAnalisiKratForosDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnAnalisiKratForosMapping", SprnAnalisiKratForosDto.class);
@@ -103,7 +103,7 @@ public class DefaultMisthZpkratDtoDao implements MisthZpkratDtoDao {
   }
 
   public List<SprnFinalKratMisthDto> sprnFinalKratMisth(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnFinalKratMisthDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnFinalKratMisthMapping", SprnFinalKratMisthDto.class);
@@ -113,7 +113,7 @@ public class DefaultMisthZpkratDtoDao implements MisthZpkratDtoDao {
   }
 
   public List<SprnAnalisiKratAutoforosDto> sprnAnalisiKratAutoforos(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnAnalisiKratAutoforosDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnAnalisiKratAutoforosMapping", SprnAnalisiKratAutoforosDto.class);
@@ -142,7 +142,7 @@ public class DefaultMisthZpkratDtoDao implements MisthZpkratDtoDao {
   }
 
   public List<SprnAnalisiKratLoipaDto> sprnAnalisiKratLoipa(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnAnalisiKratLoipaDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnAnalisiKratLoipaMapping", SprnAnalisiKratLoipaDto.class);
@@ -152,7 +152,7 @@ public class DefaultMisthZpkratDtoDao implements MisthZpkratDtoDao {
   }
 
   public List<SprnAnalisiKratAsfDto> sprnAnalisiKratAsf(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnAnalisiKratAsfDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnAnalisiKratAsfMapping", SprnAnalisiKratAsfDto.class);
@@ -176,7 +176,9 @@ public class DefaultMisthZpkratDtoDao implements MisthZpkratDtoDao {
   }
 
   public List<SprnFinalKratYpalDto> sprnFinalKratYpal(
-      java.lang.Float arg_kodfinal, java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal,
+      java.lang.Integer arg_kodypal,
+      java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnFinalKratYpalDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnFinalKratYpalMapping", SprnFinalKratYpalDto.class);

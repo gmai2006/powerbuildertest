@@ -59,8 +59,8 @@ public class MisthZpoikogServiceTest {
     MisthZpoikog testResult = serviceMock.find(records[0].getKodoikog());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals descoikog ", this.records[0].getDescoikog(), testResult.getDescoikog());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
   }
 }

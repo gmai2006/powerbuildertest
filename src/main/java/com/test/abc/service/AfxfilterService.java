@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.Afxfilter;
 
 public interface AfxfilterService {
-  public Afxfilter find(java.lang.Float id);
+  public Afxfilter find(java.lang.String id);
   /**
    * Select a list of Afxfilter based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface AfxfilterService {
    *
    * @param id The Afxfilter Id.
    */
-  public void delete(java.lang.Float id);
+  public void delete(java.lang.String id);
 }

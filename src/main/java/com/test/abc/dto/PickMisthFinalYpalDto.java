@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthFinalYpalDto implements Serializable {
-  private static final long serialVersionUID = 160992137724233752L;
+  private static final long serialVersionUID = 161096104240542069L;
 
   /** Description: surname. */
   private java.lang.String surname;
@@ -53,7 +53,7 @@ public class PickMisthFinalYpalDto implements Serializable {
   private java.lang.String fathername;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   public PickMisthFinalYpalDto() {}
 
@@ -61,7 +61,7 @@ public class PickMisthFinalYpalDto implements Serializable {
       java.lang.String surname,
       java.lang.String name,
       java.lang.String fathername,
-      java.lang.Float kodypal) {
+      java.lang.Integer kodypal) {
     this.surname = surname;
     this.name = name;
     this.fathername = fathername;
@@ -80,7 +80,7 @@ public class PickMisthFinalYpalDto implements Serializable {
     return this.fathername;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -96,7 +96,7 @@ public class PickMisthFinalYpalDto implements Serializable {
     this.fathername = fathername;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 }

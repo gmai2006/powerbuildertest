@@ -87,9 +87,9 @@ public class MisthZpyvarDaoTest {
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
-        "expect equals kodyvar ", this.records[1].getKodyvar(), testResult.getKodyvar());
-    org.junit.Assert.assertEquals(
         "expect equals descyvar ", this.records[1].getDescyvar(), testResult.getDescyvar());
+    org.junit.Assert.assertEquals(
+        "expect equals kodyvar ", this.records[1].getKodyvar(), testResult.getKodyvar());
     org.junit.Assert.assertEquals(
         "expect equals expr ", this.records[1].getExpr(), testResult.getExpr());
   }

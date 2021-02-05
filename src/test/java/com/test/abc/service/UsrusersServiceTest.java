@@ -59,16 +59,16 @@ public class UsrusersServiceTest {
     Usrusers testResult = serviceMock.find(records[0].getKoduser());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals username ", this.records[0].getUsername(), testResult.getUsername());
-    org.junit.Assert.assertEquals(
-        "expect equals fullname ", this.records[0].getFullname(), testResult.getFullname());
-    org.junit.Assert.assertEquals(
         "expect equals password ", this.records[0].getPassword(), testResult.getPassword());
     org.junit.Assert.assertTrue(
         "expect equals isactive ", this.records[0].getIsactive() == testResult.getIsactive());
     org.junit.Assert.assertEquals(
+        "expect equals idiotita ", this.records[0].getIdiotita(), testResult.getIdiotita());
+    org.junit.Assert.assertEquals(
         "expect equals tomeas ", this.records[0].getTomeas(), testResult.getTomeas());
     org.junit.Assert.assertEquals(
-        "expect equals idiotita ", this.records[0].getIdiotita(), testResult.getIdiotita());
+        "expect equals fullname ", this.records[0].getFullname(), testResult.getFullname());
+    org.junit.Assert.assertEquals(
+        "expect equals username ", this.records[0].getUsername(), testResult.getUsername());
   }
 }

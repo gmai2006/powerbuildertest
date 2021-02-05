@@ -1875,161 +1875,6 @@
 			 }
 			}
 		},
-		"/MisthZpepidom": {
-			"get": {
-			 "operationId": "findbyId",
-			 "parameters": [
-			  {
-			  	"name": "id",
-			    "in": "path",
-			    "description": "MisthZpepidom Id ",
-			    "required": "true",
-			    "schema": {
-			      "type": "string"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "MisthZpepidom response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "list of MisthZpepidom",
-			           "items": {
-			             "$ref": "#/components/schemas/MisthZpepidom"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"put": {
-			 "operationId": "createOrUpdate",
-			 "parameters": [
-			  {
-			  	"name": "MisthZpepidom",
-			    "in": "path",
-			    "description": "MisthZpepidom",
-			    "required": "true",
-			    "schema": {
-			      "type": "MisthZpepidom"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "MisthZpepidom response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "MisthZpepidom",
-			           "items": {
-			             "$ref": "#/components/schemas/MisthZpepidom"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"post": {
-			 "operationId": "update",
-			 "parameters": [
-			  {
-			  	"name": "MisthZpepidom",
-			    "in": "path",
-			    "description": "MisthZpepidom",
-			    "required": "true",
-			    "schema": {
-			      "type": "MisthZpepidom"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "MisthZpepidom response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "MisthZpepidom",
-			           "items": {
-			             "$ref": "#/components/schemas/MisthZpepidom"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"delete": {
-			 "operationId": "delete",
-			 "parameters": [
-			  {
-			  	"name": "id",
-			    "in": "path",
-			    "description": "MisthZpepidom Id ",
-			    "required": "true",
-			    "schema": {
-			      "type": "string"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "No response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			}
-		},
 		"/Usrgroups": {
 			"get": {
 			 "operationId": "findbyId",
@@ -2155,6 +2000,161 @@
 			  	"name": "id",
 			    "in": "path",
 			    "description": "Usrgroups Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpepidom": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpepidom Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpepidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpepidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpepidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpepidom",
+			    "in": "path",
+			    "description": "MisthZpepidom",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpepidom"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpepidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpepidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpepidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpepidom",
+			    "in": "path",
+			    "description": "MisthZpepidom",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpepidom"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpepidom response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpepidom",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpepidom"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpepidom Id ",
 			    "required": "true",
 			    "schema": {
 			      "type": "string"
@@ -3270,161 +3270,6 @@
 			 }
 			}
 		},
-		"/Afxfilterd": {
-			"get": {
-			 "operationId": "findbyId",
-			 "parameters": [
-			  {
-			  	"name": "id",
-			    "in": "path",
-			    "description": "Afxfilterd Id ",
-			    "required": "true",
-			    "schema": {
-			      "type": "string"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "Afxfilterd response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "list of Afxfilterd",
-			           "items": {
-			             "$ref": "#/components/schemas/Afxfilterd"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"put": {
-			 "operationId": "createOrUpdate",
-			 "parameters": [
-			  {
-			  	"name": "Afxfilterd",
-			    "in": "path",
-			    "description": "Afxfilterd",
-			    "required": "true",
-			    "schema": {
-			      "type": "Afxfilterd"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "Afxfilterd response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "Afxfilterd",
-			           "items": {
-			             "$ref": "#/components/schemas/Afxfilterd"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"post": {
-			 "operationId": "update",
-			 "parameters": [
-			  {
-			  	"name": "Afxfilterd",
-			    "in": "path",
-			    "description": "Afxfilterd",
-			    "required": "true",
-			    "schema": {
-			      "type": "Afxfilterd"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "Afxfilterd response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "Afxfilterd",
-			           "items": {
-			             "$ref": "#/components/schemas/Afxfilterd"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"delete": {
-			 "operationId": "delete",
-			 "parameters": [
-			  {
-			  	"name": "id",
-			    "in": "path",
-			    "description": "Afxfilterd Id ",
-			    "required": "true",
-			    "schema": {
-			      "type": "string"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "No response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			}
-		},
 		"/Usrapps": {
 			"get": {
 			 "operationId": "findbyId",
@@ -3705,6 +3550,161 @@
 			  	"name": "id",
 			    "in": "path",
 			    "description": "MisthZpthesi Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/Afxfilterd": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Afxfilterd Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxfilterd response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of Afxfilterd",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxfilterd"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "Afxfilterd",
+			    "in": "path",
+			    "description": "Afxfilterd",
+			    "required": "true",
+			    "schema": {
+			      "type": "Afxfilterd"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxfilterd response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Afxfilterd",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxfilterd"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "Afxfilterd",
+			    "in": "path",
+			    "description": "Afxfilterd",
+			    "required": "true",
+			    "schema": {
+			      "type": "Afxfilterd"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "Afxfilterd response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "Afxfilterd",
+			           "items": {
+			             "$ref": "#/components/schemas/Afxfilterd"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "Afxfilterd Id ",
 			    "required": "true",
 			    "schema": {
 			      "type": "string"
@@ -4200,161 +4200,6 @@
 			 }
 			}
 		},
-		"/MisthZpidikot": {
-			"get": {
-			 "operationId": "findbyId",
-			 "parameters": [
-			  {
-			  	"name": "id",
-			    "in": "path",
-			    "description": "MisthZpidikot Id ",
-			    "required": "true",
-			    "schema": {
-			      "type": "string"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "MisthZpidikot response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "list of MisthZpidikot",
-			           "items": {
-			             "$ref": "#/components/schemas/MisthZpidikot"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"put": {
-			 "operationId": "createOrUpdate",
-			 "parameters": [
-			  {
-			  	"name": "MisthZpidikot",
-			    "in": "path",
-			    "description": "MisthZpidikot",
-			    "required": "true",
-			    "schema": {
-			      "type": "MisthZpidikot"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "MisthZpidikot response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "MisthZpidikot",
-			           "items": {
-			             "$ref": "#/components/schemas/MisthZpidikot"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"post": {
-			 "operationId": "update",
-			 "parameters": [
-			  {
-			  	"name": "MisthZpidikot",
-			    "in": "path",
-			    "description": "MisthZpidikot",
-			    "required": "true",
-			    "schema": {
-			      "type": "MisthZpidikot"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "MisthZpidikot response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "MisthZpidikot",
-			           "items": {
-			             "$ref": "#/components/schemas/MisthZpidikot"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"delete": {
-			 "operationId": "delete",
-			 "parameters": [
-			  {
-			  	"name": "id",
-			    "in": "path",
-			    "description": "MisthZpidikot Id ",
-			    "required": "true",
-			    "schema": {
-			      "type": "string"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "No response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			}
-		},
 		"/MisthZptamio": {
 			"get": {
 			 "operationId": "findbyId",
@@ -4480,6 +4325,161 @@
 			  	"name": "id",
 			    "in": "path",
 			    "description": "MisthZptamio Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
+		},
+		"/MisthZpidikot": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpidikot Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpidikot response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthZpidikot",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpidikot"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpidikot",
+			    "in": "path",
+			    "description": "MisthZpidikot",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpidikot"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpidikot response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpidikot",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpidikot"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthZpidikot",
+			    "in": "path",
+			    "description": "MisthZpidikot",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthZpidikot"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthZpidikot response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthZpidikot",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthZpidikot"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthZpidikot Id ",
 			    "required": "true",
 			    "schema": {
 			      "type": "string"
@@ -5440,161 +5440,6 @@
 			 }
 			}
 		},
-		"/MisthFyloKrat": {
-			"get": {
-			 "operationId": "findbyId",
-			 "parameters": [
-			  {
-			  	"name": "id",
-			    "in": "path",
-			    "description": "MisthFyloKrat Id ",
-			    "required": "true",
-			    "schema": {
-			      "type": "string"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "MisthFyloKrat response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "list of MisthFyloKrat",
-			           "items": {
-			             "$ref": "#/components/schemas/MisthFyloKrat"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"put": {
-			 "operationId": "createOrUpdate",
-			 "parameters": [
-			  {
-			  	"name": "MisthFyloKrat",
-			    "in": "path",
-			    "description": "MisthFyloKrat",
-			    "required": "true",
-			    "schema": {
-			      "type": "MisthFyloKrat"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "MisthFyloKrat response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "MisthFyloKrat",
-			           "items": {
-			             "$ref": "#/components/schemas/MisthFyloKrat"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"post": {
-			 "operationId": "update",
-			 "parameters": [
-			  {
-			  	"name": "MisthFyloKrat",
-			    "in": "path",
-			    "description": "MisthFyloKrat",
-			    "required": "true",
-			    "schema": {
-			      "type": "MisthFyloKrat"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "MisthFyloKrat response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "MisthFyloKrat",
-			           "items": {
-			             "$ref": "#/components/schemas/MisthFyloKrat"
-			           }
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			},
-			"delete": {
-			 "operationId": "delete",
-			 "parameters": [
-			  {
-			  	"name": "id",
-			    "in": "path",
-			    "description": "MisthFyloKrat Id ",
-			    "required": "true",
-			    "schema": {
-			      "type": "string"
-			    }
-			  }
-			 ],
-			 "responses": {
-			   "200": {
-			     "description": "No response",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   },
-			   "default": {
-			     "description": "error payload",
-			     "content": {
-			       "application/json": {
-			         "schema": {
-			           "type": "string"
-			         }
-			       }
-			     }
-			   }
-			 }
-			}
-		},
 		"/Usractions": {
 			"get": {
 			 "operationId": "findbyId",
@@ -5749,6 +5594,161 @@
 			   }
 			 }
 			}
+		},
+		"/MisthFyloKrat": {
+			"get": {
+			 "operationId": "findbyId",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFyloKrat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloKrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "list of MisthFyloKrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloKrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"put": {
+			 "operationId": "createOrUpdate",
+			 "parameters": [
+			  {
+			  	"name": "MisthFyloKrat",
+			    "in": "path",
+			    "description": "MisthFyloKrat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFyloKrat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloKrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFyloKrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloKrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"post": {
+			 "operationId": "update",
+			 "parameters": [
+			  {
+			  	"name": "MisthFyloKrat",
+			    "in": "path",
+			    "description": "MisthFyloKrat",
+			    "required": "true",
+			    "schema": {
+			      "type": "MisthFyloKrat"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "MisthFyloKrat response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "MisthFyloKrat",
+			           "items": {
+			             "$ref": "#/components/schemas/MisthFyloKrat"
+			           }
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			},
+			"delete": {
+			 "operationId": "delete",
+			 "parameters": [
+			  {
+			  	"name": "id",
+			    "in": "path",
+			    "description": "MisthFyloKrat Id ",
+			    "required": "true",
+			    "schema": {
+			      "type": "string"
+			    }
+			  }
+			 ],
+			 "responses": {
+			   "200": {
+			     "description": "No response",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   },
+			   "default": {
+			     "description": "error payload",
+			     "content": {
+			       "application/json": {
+			         "schema": {
+			           "type": "string"
+			         }
+			       }
+			     }
+			   }
+			 }
+			}
 		}
 	},
 	"components": {
@@ -5758,13 +5758,13 @@
 	    		"kodxrisi"
 	    	],
 	      "properties": {
-	        "kodkratapod": {
-	          "type": "FLOAT",
-	          "description": "kodkratapod"
-	        },
 	        "desckratapod": {
 	          "type": "VARCHAR",
 	          "description": "desckratapod"
+	        },
+	        "kodkratapod": {
+	          "type": "FLOAT",
+	          "description": "kodkratapod"
 	        },
 	        "apoddate": {
 	          "type": "DATE",
@@ -5781,13 +5781,13 @@
 	          "type": "VARCHAR",
 	          "description": "kodstath"
 	        },
-	        "descstath": {
-	          "type": "VARCHAR",
-	          "description": "descstath"
-	        },
 	        "poso": {
 	          "type": "INTEGER",
 	          "description": "poso"
+	        },
+	        "descstath": {
+	          "type": "VARCHAR",
+	          "description": "descstath"
 	        }
 	      }
 	    },
@@ -5796,6 +5796,10 @@
 	    		"kodypal"
 	    	],
 	      "properties": {
+	        "aa": {
+	          "type": "FLOAT",
+	          "description": "aa"
+	        },
 	        "kodxrisi": {
 	          "type": "VARCHAR",
 	          "description": "kodxrisi"
@@ -5803,10 +5807,6 @@
 	        "kodyvar": {
 	          "type": "VARCHAR",
 	          "description": "kodyvar"
-	        },
-	        "aa": {
-	          "type": "INTEGER",
-	          "description": "aa"
 	        },
 	        "expr": {
 	          "type": "VARCHAR",
@@ -5819,180 +5819,180 @@
 	    		"kodtmima"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
 	        "desctmima": {
 	          "type": "VARCHAR",
 	          "description": "desctmima"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
 	        }
 	      }
 	    },
 	    "MisthYpal": {
 	    	"required": [
-	    		"kodypal"
+	    		"kodoikog"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
-	        "kodtmima": {
-	          "type": "VARCHAR",
-	          "description": "kodtmima"
-	        },
-	        "kodidikot": {
-	          "type": "VARCHAR",
-	          "description": "kodidikot"
-	        },
-	        "kodthesi": {
-	          "type": "VARCHAR",
-	          "description": "kodthesi"
-	        },
-	        "kodoikog": {
-	          "type": "VARCHAR",
-	          "description": "kodoikog"
-	        },
-	        "kodtamio": {
-	          "type": "VARCHAR",
-	          "description": "kodtamio"
-	        },
-	        "surname": {
-	          "type": "VARCHAR",
-	          "description": "surname"
-	        },
-	        "name": {
-	          "type": "VARCHAR",
-	          "description": "name"
-	        },
-	        "fathername": {
-	          "type": "VARCHAR",
-	          "description": "fathername"
-	        },
-	        "mitroo": {
-	          "type": "VARCHAR",
-	          "description": "mitroo"
-	        },
-	        "adt": {
-	          "type": "VARCHAR",
-	          "description": "adt"
-	        },
-	        "afm": {
-	          "type": "VARCHAR",
-	          "description": "afm"
-	        },
-	        "doy": {
-	          "type": "VARCHAR",
-	          "description": "doy"
-	        },
-	        "bankno": {
-	          "type": "VARCHAR",
-	          "description": "bankno"
-	        },
-	        "bank": {
-	          "type": "VARCHAR",
-	          "description": "bank"
-	        },
-	        "childs": {
-	          "type": "INTEGER",
-	          "description": "childs"
-	        },
-	        "prostmeli": {
-	          "type": "INTEGER",
-	          "description": "prostmeli"
-	        },
-	        "klimakio": {
-	          "type": "INTEGER",
-	          "description": "klimakio"
-	        },
 	        "bathmos": {
 	          "type": "VARCHAR",
 	          "description": "bathmos"
-	        },
-	        "klados": {
-	          "type": "VARCHAR",
-	          "description": "klados"
 	        },
 	        "birthdate": {
 	          "type": "DATE",
 	          "description": "birthdate"
 	        },
-	        "hireddate": {
-	          "type": "DATE",
-	          "description": "hireddate"
+	        "klimakio": {
+	          "type": "INTEGER",
+	          "description": "klimakio"
 	        },
-	        "homephone": {
-	          "type": "VARCHAR",
-	          "description": "homephone"
-	        },
-	        "mobilphone": {
-	          "type": "VARCHAR",
-	          "description": "mobilphone"
-	        },
-	        "sex": {
-	          "type": "VARCHAR",
-	          "description": "sex"
+	        "childs": {
+	          "type": "INTEGER",
+	          "description": "childs"
 	        },
 	        "spouse": {
 	          "type": "VARCHAR",
 	          "description": "spouse"
 	        },
-	        "city": {
+	        "kodtmima": {
 	          "type": "VARCHAR",
-	          "description": "city"
+	          "description": "kodtmima"
 	        },
-	        "area": {
+	        "bank": {
 	          "type": "VARCHAR",
-	          "description": "area"
+	          "description": "bank"
 	        },
-	        "address": {
+	        "mobilphone": {
 	          "type": "VARCHAR",
-	          "description": "address"
+	          "description": "mobilphone"
 	        },
-	        "tk": {
-	          "type": "VARCHAR",
-	          "description": "tk"
+	        "hireddate": {
+	          "type": "DATE",
+	          "description": "hireddate"
 	        },
-	        "email": {
+	        "kodthesi": {
 	          "type": "VARCHAR",
-	          "description": "email"
+	          "description": "kodthesi"
 	        },
-	        "jobtitle": {
+	        "bankno": {
 	          "type": "VARCHAR",
-	          "description": "jobtitle"
+	          "description": "bankno"
+	        },
+	        "prostmeli": {
+	          "type": "INTEGER",
+	          "description": "prostmeli"
 	        },
 	        "rehireddate": {
 	          "type": "DATE",
 	          "description": "rehireddate"
 	        },
-	        "termdate": {
-	          "type": "DATE",
-	          "description": "termdate"
-	        },
-	        "termreason": {
+	        "city": {
 	          "type": "VARCHAR",
-	          "description": "termreason"
-	        },
-	        "jobphone": {
-	          "type": "VARCHAR",
-	          "description": "jobphone"
+	          "description": "city"
 	        },
 	        "intphone": {
 	          "type": "VARCHAR",
 	          "description": "intphone"
 	        },
+	        "doy": {
+	          "type": "VARCHAR",
+	          "description": "doy"
+	        },
+	        "surname": {
+	          "type": "VARCHAR",
+	          "description": "surname"
+	        },
+	        "kodypal": {
+	          "type": "INTEGER",
+	          "description": "kodypal"
+	        },
+	        "email": {
+	          "type": "VARCHAR",
+	          "description": "email"
+	        },
+	        "kodtamio": {
+	          "type": "VARCHAR",
+	          "description": "kodtamio"
+	        },
+	        "address": {
+	          "type": "VARCHAR",
+	          "description": "address"
+	        },
+	        "jobtitle": {
+	          "type": "VARCHAR",
+	          "description": "jobtitle"
+	        },
+	        "sex": {
+	          "type": "VARCHAR",
+	          "description": "sex"
+	        },
+	        "termreason": {
+	          "type": "VARCHAR",
+	          "description": "termreason"
+	        },
+	        "fathername": {
+	          "type": "VARCHAR",
+	          "description": "fathername"
+	        },
 	        "exeldate": {
 	          "type": "DATE",
 	          "description": "exeldate"
+	        },
+	        "tk": {
+	          "type": "VARCHAR",
+	          "description": "tk"
+	        },
+	        "jobphone": {
+	          "type": "VARCHAR",
+	          "description": "jobphone"
+	        },
+	        "mitroo": {
+	          "type": "VARCHAR",
+	          "description": "mitroo"
+	        },
+	        "termdate": {
+	          "type": "DATE",
+	          "description": "termdate"
 	        },
 	        "mothername": {
 	          "type": "VARCHAR",
 	          "description": "mothername"
 	        },
+	        "klados": {
+	          "type": "VARCHAR",
+	          "description": "klados"
+	        },
+	        "area": {
+	          "type": "VARCHAR",
+	          "description": "area"
+	        },
 	        "newexeldate": {
 	          "type": "DATE",
 	          "description": "newexeldate"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodidikot": {
+	          "type": "VARCHAR",
+	          "description": "kodidikot"
+	        },
+	        "adt": {
+	          "type": "VARCHAR",
+	          "description": "adt"
+	        },
+	        "name": {
+	          "type": "VARCHAR",
+	          "description": "name"
+	        },
+	        "homephone": {
+	          "type": "VARCHAR",
+	          "description": "homephone"
+	        },
+	        "afm": {
+	          "type": "VARCHAR",
+	          "description": "afm"
 	        }
 	      }
 	    },
@@ -6001,87 +6001,67 @@
 	    		"kodypal"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
 	        "kodfylo": {
 	          "type": "VARCHAR",
 	          "description": "kodfylo"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
 	        }
 	      }
 	    },
 	    "MisthReportCols": {
 	    	"required": [
-	    		"kodreport"
+	    		"kodxrisi"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
-	        "kodcol": {
-	          "type": "INTEGER",
-	          "description": "kodcol"
-	        },
-	        "expr": {
-	          "type": "VARCHAR",
-	          "description": "expr"
-	        },
 	        "header_text": {
 	          "type": "VARCHAR",
 	          "description": "header_text"
+	        },
+	        "aa": {
+	          "type": "FLOAT",
+	          "description": "aa"
 	        },
 	        "width": {
 	          "type": "INTEGER",
 	          "description": "width"
 	        },
-	        "aa": {
+	        "kodreport": {
+	          "type": "VARCHAR",
+	          "description": "kodreport"
+	        },
+	        "expr": {
+	          "type": "VARCHAR",
+	          "description": "expr"
+	        },
+	        "kodcol": {
 	          "type": "INTEGER",
-	          "description": "aa"
+	          "description": "kodcol"
 	        }
 	      }
 	    },
 	    "MisthReport": {
 	    	"required": [
-	    		"kodreport"
+	    		"kodxrisi"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
+	        "print_margin_bottom": {
+	          "type": "INTEGER",
+	          "description": "print_margin_bottom"
 	        },
 	        "descreport": {
 	          "type": "VARCHAR",
 	          "description": "descreport"
 	        },
-	        "print_margin_top": {
-	          "type": "INTEGER",
-	          "description": "print_margin_top"
-	        },
-	        "print_margin_bottom": {
-	          "type": "INTEGER",
-	          "description": "print_margin_bottom"
-	        },
-	        "print_margin_left": {
-	          "type": "INTEGER",
-	          "description": "print_margin_left"
-	        },
-	        "print_margin_right": {
-	          "type": "INTEGER",
-	          "description": "print_margin_right"
-	        },
-	        "print_orientation": {
-	          "type": "INTEGER",
-	          "description": "print_orientation"
-	        },
 	        "print_paper_size": {
 	          "type": "INTEGER",
 	          "description": "print_paper_size"
 	        },
-	        "print_scale": {
+	        "print_orientation": {
 	          "type": "INTEGER",
-	          "description": "print_scale"
+	          "description": "print_orientation"
 	        },
 	        "subtitle": {
 	          "type": "VARCHAR",
@@ -6094,6 +6074,26 @@
 	        "prn_notes2": {
 	          "type": "VARCHAR",
 	          "description": "prn_notes2"
+	        },
+	        "print_margin_right": {
+	          "type": "INTEGER",
+	          "description": "print_margin_right"
+	        },
+	        "print_margin_top": {
+	          "type": "INTEGER",
+	          "description": "print_margin_top"
+	        },
+	        "print_scale": {
+	          "type": "INTEGER",
+	          "description": "print_scale"
+	        },
+	        "kodreport": {
+	          "type": "VARCHAR",
+	          "description": "kodreport"
+	        },
+	        "print_margin_left": {
+	          "type": "INTEGER",
+	          "description": "print_margin_left"
 	        }
 	      }
 	    },
@@ -6102,9 +6102,9 @@
 	    		"kodgroup"
 	    	],
 	      "properties": {
-	        "kodaction": {
-	          "type": "VARCHAR",
-	          "description": "kodaction"
+	        "openlist": {
+	          "type": "INTEGER",
+	          "description": "openlist"
 	        },
 	        "editrec": {
 	          "type": "INTEGER",
@@ -6118,9 +6118,9 @@
 	          "type": "INTEGER",
 	          "description": "delrec"
 	        },
-	        "openlist": {
-	          "type": "INTEGER",
-	          "description": "openlist"
+	        "kodaction": {
+	          "type": "VARCHAR",
+	          "description": "kodaction"
 	        },
 	        "openform": {
 	          "type": "INTEGER",
@@ -6133,13 +6133,13 @@
 	    		"kodoikog"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
 	        "descoikog": {
 	          "type": "VARCHAR",
 	          "description": "descoikog"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
 	        }
 	      }
 	    },
@@ -6148,13 +6148,13 @@
 	    		"kodxrisi"
 	    	],
 	      "properties": {
-	        "kodyvar": {
-	          "type": "VARCHAR",
-	          "description": "kodyvar"
-	        },
 	        "descyvar": {
 	          "type": "VARCHAR",
 	          "description": "descyvar"
+	        },
+	        "kodyvar": {
+	          "type": "VARCHAR",
+	          "description": "kodyvar"
 	        },
 	        "expr": {
 	          "type": "VARCHAR",
@@ -6164,31 +6164,16 @@
 	    },
 	    "MisthReportYpal": {
 	    	"required": [
-	    		"kodreport"
-	    	],
-	      "properties": {
-	        "kodypal": {
-	          "type": "FLOAT",
-	          "description": "kodypal"
-	        },
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        }
-	      }
-	    },
-	    "MisthZpepidom": {
-	    	"required": [
-	    		"kodepidom"
+	    		"kodypal"
 	    	],
 	      "properties": {
 	        "kodxrisi": {
 	          "type": "VARCHAR",
 	          "description": "kodxrisi"
 	        },
-	        "descepidom": {
+	        "kodreport": {
 	          "type": "VARCHAR",
-	          "description": "descepidom"
+	          "description": "kodreport"
 	        }
 	      }
 	    },
@@ -6203,18 +6188,45 @@
 	        }
 	      }
 	    },
-	    "MisthZpkat": {
+	    "MisthZpepidom": {
 	    	"required": [
-	    		"kodkat"
+	    		"kodepidom"
 	    	],
 	      "properties": {
+	        "autoforos": {
+	          "type": "INTEGER",
+	          "description": "autoforos"
+	        },
+	        "descepidom": {
+	          "type": "VARCHAR",
+	          "description": "descepidom"
+	        },
 	        "kodxrisi": {
 	          "type": "VARCHAR",
 	          "description": "kodxrisi"
 	        },
+	        "hasforo": {
+	          "type": "INTEGER",
+	          "description": "hasforo"
+	        },
+	        "isasf": {
+	          "type": "INTEGER",
+	          "description": "isasf"
+	        }
+	      }
+	    },
+	    "MisthZpkat": {
+	    	"required": [
+	    		"kodxrisi"
+	    	],
+	      "properties": {
 	        "desckat": {
 	          "type": "VARCHAR",
 	          "description": "desckat"
+	        },
+	        "kodkat": {
+	          "type": "VARCHAR",
+	          "description": "kodkat"
 	        }
 	      }
 	    },
@@ -6223,13 +6235,25 @@
 	    		"kodkrat"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
+	        "isautoforos": {
+	          "type": "INTEGER",
+	          "description": "isautoforos"
 	        },
 	        "desckrat": {
 	          "type": "VARCHAR",
 	          "description": "desckrat"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "isasf": {
+	          "type": "INTEGER",
+	          "description": "isasf"
+	        },
+	        "isforos": {
+	          "type": "INTEGER",
+	          "description": "isforos"
 	        }
 	      }
 	    },
@@ -6238,51 +6262,51 @@
 	    		"kodepidom"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
+	        "aa": {
+	          "type": "FLOAT",
+	          "description": "aa"
 	        },
 	        "kodfylo": {
 	          "type": "VARCHAR",
 	          "description": "kodfylo"
 	        },
-	        "expr": {
-	          "type": "VARCHAR",
-	          "description": "expr"
-	        },
-	        "aa": {
-	          "type": "INTEGER",
-	          "description": "aa"
-	        },
 	        "notes": {
 	          "type": "VARCHAR",
 	          "description": "notes"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "expr": {
+	          "type": "VARCHAR",
+	          "description": "expr"
 	        }
 	      }
 	    },
 	    "Usrmembers": {
 	    	"required": [
-	    		"kodgroup"
+	    		"koduser"
 	    	],
 	      "properties": {
-	        "koduser": {
-	          "type": "FLOAT",
-	          "description": "koduser"
+	        "kodgroup": {
+	          "type": "INTEGER",
+	          "description": "kodgroup"
 	        }
 	      }
 	    },
 	    "Usruserperm": {
 	    	"required": [
-	    		"kodapp"
+	    		"koduser"
 	    	],
 	      "properties": {
-	        "koduser": {
-	          "type": "FLOAT",
-	          "description": "koduser"
-	        },
 	        "enable": {
 	          "type": "INTEGER",
 	          "description": "enable"
+	        },
+	        "kodapp": {
+	          "type": "VARCHAR",
+	          "description": "kodapp"
 	        }
 	      }
 	    },
@@ -6291,10 +6315,6 @@
 	    		"kodperiod"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
 	        "descperiod": {
 	          "type": "VARCHAR",
 	          "description": "descperiod"
@@ -6302,6 +6322,10 @@
 	        "orderno": {
 	          "type": "INTEGER",
 	          "description": "orderno"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
 	        }
 	      }
 	    },
@@ -6310,44 +6334,17 @@
 	    		"kodypal"
 	    	],
 	      "properties": {
+	        "plirdate": {
+	          "type": "DATE",
+	          "description": "plirdate"
+	        },
 	        "kodfinal": {
-	          "type": "FLOAT",
+	          "type": "INTEGER",
 	          "description": "kodfinal"
 	        },
 	        "kodxrisi": {
 	          "type": "VARCHAR",
 	          "description": "kodxrisi"
-	        },
-	        "plirdate": {
-	          "type": "DATE",
-	          "description": "plirdate"
-	        }
-	      }
-	    },
-	    "Afxfilterd": {
-	    	"required": [
-	    		"kodfilterd"
-	    	],
-	      "properties": {
-	        "kodfilter": {
-	          "type": "FLOAT",
-	          "description": "kodfilter"
-	        },
-	        "pedio": {
-	          "type": "VARCHAR",
-	          "description": "pedio"
-	        },
-	        "telestis": {
-	          "type": "VARCHAR",
-	          "description": "telestis"
-	        },
-	        "timi": {
-	          "type": "VARCHAR",
-	          "description": "timi"
-	        },
-	        "joint": {
-	          "type": "VARCHAR",
-	          "description": "joint"
 	        }
 	      }
 	    },
@@ -6367,13 +6364,40 @@
 	    		"kodthesi"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
 	        "descthesi": {
 	          "type": "VARCHAR",
 	          "description": "descthesi"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        }
+	      }
+	    },
+	    "Afxfilterd": {
+	    	"required": [
+	    		"kodfilterd"
+	    	],
+	      "properties": {
+	        "telestis": {
+	          "type": "VARCHAR",
+	          "description": "telestis"
+	        },
+	        "pedio": {
+	          "type": "VARCHAR",
+	          "description": "pedio"
+	        },
+	        "joint": {
+	          "type": "VARCHAR",
+	          "description": "joint"
+	        },
+	        "kodfilter": {
+	          "type": "FLOAT",
+	          "description": "kodfilter"
+	        },
+	        "timi": {
+	          "type": "VARCHAR",
+	          "description": "timi"
 	        }
 	      }
 	    },
@@ -6382,44 +6406,44 @@
 	    		"kodkrat"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
-	        "kodfinal": {
+	        "aa": {
 	          "type": "FLOAT",
-	          "description": "kodfinal"
+	          "description": "aa"
 	        },
 	        "kodypal": {
-	          "type": "FLOAT",
-	          "description": "kodypal"
-	        },
-	        "poso": {
 	          "type": "INTEGER",
-	          "description": "poso"
-	        },
-	        "notes": {
-	          "type": "VARCHAR",
-	          "description": "notes"
+	          "description": "kodypal"
 	        },
 	        "kodkratapod": {
 	          "type": "FLOAT",
 	          "description": "kodkratapod"
 	        },
-	        "aa": {
+	        "notes": {
+	          "type": "VARCHAR",
+	          "description": "notes"
+	        },
+	        "kodfinal": {
 	          "type": "INTEGER",
-	          "description": "aa"
+	          "description": "kodfinal"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "poso": {
+	          "type": "INTEGER",
+	          "description": "poso"
 	        }
 	      }
 	    },
 	    "Afxfilter": {
 	    	"required": [
-	    		"kodfilter"
+	    		"descfilter"
 	    	],
 	      "properties": {
-	        "descfilter": {
-	          "type": "VARCHAR",
-	          "description": "descfilter"
+	        "kodfilter": {
+	          "type": "FLOAT",
+	          "description": "kodfilter"
 	        },
 	        "tablename": {
 	          "type": "VARCHAR",
@@ -6432,14 +6456,6 @@
 	    		"koduser"
 	    	],
 	      "properties": {
-	        "username": {
-	          "type": "VARCHAR",
-	          "description": "username"
-	        },
-	        "fullname": {
-	          "type": "VARCHAR",
-	          "description": "fullname"
-	        },
 	        "password": {
 	          "type": "VARCHAR",
 	          "description": "password"
@@ -6448,28 +6464,21 @@
 	          "type": "INTEGER",
 	          "description": "isactive"
 	        },
+	        "idiotita": {
+	          "type": "VARCHAR",
+	          "description": "idiotita"
+	        },
 	        "tomeas": {
 	          "type": "VARCHAR",
 	          "description": "tomeas"
 	        },
-	        "idiotita": {
+	        "fullname": {
 	          "type": "VARCHAR",
-	          "description": "idiotita"
-	        }
-	      }
-	    },
-	    "MisthZpidikot": {
-	    	"required": [
-	    		"kodidikot"
-	    	],
-	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
+	          "description": "fullname"
 	        },
-	        "descidikot": {
+	        "username": {
 	          "type": "VARCHAR",
-	          "description": "descidikot"
+	          "description": "username"
 	        }
 	      }
 	    },
@@ -6485,6 +6494,21 @@
 	        "desctamio": {
 	          "type": "VARCHAR",
 	          "description": "desctamio"
+	        }
+	      }
+	    },
+	    "MisthZpidikot": {
+	    	"required": [
+	    		"kodxrisi"
+	    	],
+	      "properties": {
+	        "descidikot": {
+	          "type": "VARCHAR",
+	          "description": "descidikot"
+	        },
+	        "kodidikot": {
+	          "type": "VARCHAR",
+	          "description": "kodidikot"
 	        }
 	      }
 	    },
@@ -6508,29 +6532,29 @@
 	    		"kodepidom"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
-	        "kodfinal": {
+	        "aa": {
 	          "type": "FLOAT",
-	          "description": "kodfinal"
+	          "description": "aa"
 	        },
 	        "kodypal": {
-	          "type": "FLOAT",
-	          "description": "kodypal"
-	        },
-	        "poso": {
 	          "type": "INTEGER",
-	          "description": "poso"
+	          "description": "kodypal"
 	        },
 	        "notes": {
 	          "type": "VARCHAR",
 	          "description": "notes"
 	        },
-	        "aa": {
+	        "kodfinal": {
 	          "type": "INTEGER",
-	          "description": "aa"
+	          "description": "kodfinal"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "poso": {
+	          "type": "INTEGER",
+	          "description": "poso"
 	        }
 	      }
 	    },
@@ -6547,16 +6571,16 @@
 	    },
 	    "Afxptoseis": {
 	    	"required": [
-	    		"onom"
+	    		"ait"
 	    	],
 	      "properties": {
 	        "gen": {
 	          "type": "VARCHAR",
 	          "description": "gen"
 	        },
-	        "ait": {
+	        "onom": {
 	          "type": "VARCHAR",
-	          "description": "ait"
+	          "description": "onom"
 	        }
 	      }
 	    },
@@ -6565,32 +6589,24 @@
 	    		"kodxrisi"
 	    	],
 	      "properties": {
-	        "kodfylo": {
-	          "type": "VARCHAR",
-	          "description": "kodfylo"
-	        },
 	        "descfylo": {
 	          "type": "VARCHAR",
 	          "description": "descfylo"
+	        },
+	        "kodfylo": {
+	          "type": "VARCHAR",
+	          "description": "kodfylo"
 	        }
 	      }
 	    },
 	    "MisthFinal": {
 	    	"required": [
-	    		"kodfinal"
+	    		"kodperiod"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
-	        },
-	        "kodkat": {
-	          "type": "VARCHAR",
-	          "description": "kodkat"
-	        },
-	        "kodperiod": {
-	          "type": "VARCHAR",
-	          "description": "kodperiod"
+	        "datefinal": {
+	          "type": "DATE",
+	          "description": "datefinal"
 	        },
 	        "aa": {
 	          "type": "FLOAT",
@@ -6600,13 +6616,36 @@
 	          "type": "VARCHAR",
 	          "description": "descfinal"
 	        },
-	        "datefinal": {
-	          "type": "DATE",
-	          "description": "datefinal"
+	        "kodfinal": {
+	          "type": "INTEGER",
+	          "description": "kodfinal"
+	        },
+	        "kodxrisi": {
+	          "type": "VARCHAR",
+	          "description": "kodxrisi"
+	        },
+	        "kodkat": {
+	          "type": "VARCHAR",
+	          "description": "kodkat"
 	        },
 	        "title": {
 	          "type": "VARCHAR",
 	          "description": "title"
+	        }
+	      }
+	    },
+	    "Usractions": {
+	    	"required": [
+	    		"kodapp"
+	    	],
+	      "properties": {
+	        "descaction": {
+	          "type": "VARCHAR",
+	          "description": "descaction"
+	        },
+	        "kodaction": {
+	          "type": "VARCHAR",
+	          "description": "kodaction"
 	        }
 	      }
 	    },
@@ -6615,40 +6654,25 @@
 	    		"kodkrat"
 	    	],
 	      "properties": {
-	        "kodxrisi": {
-	          "type": "VARCHAR",
-	          "description": "kodxrisi"
+	        "aa": {
+	          "type": "FLOAT",
+	          "description": "aa"
 	        },
 	        "kodfylo": {
 	          "type": "VARCHAR",
 	          "description": "kodfylo"
 	        },
-	        "expr": {
-	          "type": "VARCHAR",
-	          "description": "expr"
-	        },
-	        "aa": {
-	          "type": "INTEGER",
-	          "description": "aa"
-	        },
 	        "notes": {
 	          "type": "VARCHAR",
 	          "description": "notes"
-	        }
-	      }
-	    },
-	    "Usractions": {
-	    	"required": [
-	    		"kodaction"
-	    	],
-	      "properties": {
-	        "kodapp": {
-	          "type": "VARCHAR",
-	          "description": "kodapp"
 	        },
-	        "descaction": {
+	        "kodxrisi": {
 	          "type": "VARCHAR",
-	          "description": "descaction"
+	          "description": "kodxrisi"
+	        },
+	        "expr": {
+	          "type": "VARCHAR",
+	          "description": "expr"
 	        }
 	      }
 	    }

@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PrnKratNoapodDto implements Serializable {
-  private static final long serialVersionUID = 16099213772008169L;
+  private static final long serialVersionUID = 161096104237453395L;
 
   /** Description: kodkrat. */
   private java.lang.String kodkrat;
@@ -62,7 +62,7 @@ public class PrnKratNoapodDto implements Serializable {
   private java.lang.String fathername;
 
   /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
+  private java.lang.Integer kodfinal;
 
   /** Description: datefinal. */
   private java.util.Date datefinal;
@@ -91,7 +91,7 @@ public class PrnKratNoapodDto implements Serializable {
       java.lang.String surname,
       java.lang.String name,
       java.lang.String fathername,
-      java.lang.Float kodfinal,
+      java.lang.Integer kodfinal,
       java.util.Date datefinal,
       java.lang.String kodxrisi,
       java.lang.Integer poso,
@@ -137,7 +137,7 @@ public class PrnKratNoapodDto implements Serializable {
     return this.fathername;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
@@ -189,7 +189,7 @@ public class PrnKratNoapodDto implements Serializable {
     this.fathername = fathername;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 

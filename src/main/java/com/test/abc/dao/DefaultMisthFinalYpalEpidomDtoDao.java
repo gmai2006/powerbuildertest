@@ -63,7 +63,7 @@ public class DefaultMisthFinalYpalEpidomDtoDao implements MisthFinalYpalEpidomDt
 
   public List<SprnYpalPeriodEpidomDto> sprnYpalPeriodEpidom(
       java.lang.String arg_kodxrisi,
-      java.lang.Float arg_kodypal,
+      java.lang.Integer arg_kodypal,
       java.util.Date arg_fromdate,
       java.util.Date arg_todate) {
     final TypedQuery<SprnYpalPeriodEpidomDto> query =
@@ -77,7 +77,7 @@ public class DefaultMisthFinalYpalEpidomDtoDao implements MisthFinalYpalEpidomDt
   }
 
   public List<SprnAnalisiEpidomAsfDto> sprnAnalisiEpidomAsf(
-      java.lang.String arg_kodxrisi, java.lang.Float arg_kodypal) {
+      java.lang.String arg_kodxrisi, java.lang.Integer arg_kodypal) {
     final TypedQuery<SprnAnalisiEpidomAsfDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnAnalisiEpidomAsfMapping", SprnAnalisiEpidomAsfDto.class);
@@ -87,7 +87,9 @@ public class DefaultMisthFinalYpalEpidomDtoDao implements MisthFinalYpalEpidomDt
   }
 
   public List<SprnFinalEpidomYpalDto> sprnFinalEpidomYpal(
-      java.lang.Float arg_kodfinal, java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal,
+      java.lang.Integer arg_kodypal,
+      java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnFinalEpidomYpalDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnFinalEpidomYpalMapping", SprnFinalEpidomYpalDto.class);
@@ -98,7 +100,7 @@ public class DefaultMisthFinalYpalEpidomDtoDao implements MisthFinalYpalEpidomDt
   }
 
   public List<DwMisthFinalYpalEpidomListDto> dwMisthFinalYpalEpidomList(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthFinalYpalEpidomListDto> query =
         dao.getEntityManager()
             .createNamedQuery(
@@ -109,7 +111,7 @@ public class DefaultMisthFinalYpalEpidomDtoDao implements MisthFinalYpalEpidomDt
   }
 
   public List<SprnFinalEpidomMisthDto> sprnFinalEpidomMisth(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnFinalEpidomMisthDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnFinalEpidomMisthMapping", SprnFinalEpidomMisthDto.class);
@@ -119,7 +121,7 @@ public class DefaultMisthFinalYpalEpidomDtoDao implements MisthFinalYpalEpidomDt
   }
 
   public List<SprnAnalisiEpidomNoforosDto> sprnAnalisiEpidomNoforos(
-      java.lang.String arg_kodxrisi, java.lang.Float arg_kodypal) {
+      java.lang.String arg_kodxrisi, java.lang.Integer arg_kodypal) {
     final TypedQuery<SprnAnalisiEpidomNoforosDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnAnalisiEpidomNoforosMapping", SprnAnalisiEpidomNoforosDto.class);
@@ -129,7 +131,7 @@ public class DefaultMisthFinalYpalEpidomDtoDao implements MisthFinalYpalEpidomDt
   }
 
   public List<SprnAnalisiEpidomForosDto> sprnAnalisiEpidomForos(
-      java.lang.String arg_kodxrisi, java.lang.Float arg_kodypal) {
+      java.lang.String arg_kodxrisi, java.lang.Integer arg_kodypal) {
     final TypedQuery<SprnAnalisiEpidomForosDto> query =
         dao.getEntityManager()
             .createNamedQuery("sprnAnalisiEpidomForosMapping", SprnAnalisiEpidomForosDto.class);
@@ -139,7 +141,7 @@ public class DefaultMisthFinalYpalEpidomDtoDao implements MisthFinalYpalEpidomDt
   }
 
   public List<SprnAnalisiEpidomAutoforosDto> sprnAnalisiEpidomAutoforos(
-      java.lang.String arg_kodxrisi, java.lang.Float arg_kodypal) {
+      java.lang.String arg_kodxrisi, java.lang.Integer arg_kodypal) {
     final TypedQuery<SprnAnalisiEpidomAutoforosDto> query =
         dao.getEntityManager()
             .createNamedQuery(

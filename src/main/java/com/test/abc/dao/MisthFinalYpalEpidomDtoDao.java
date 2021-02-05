@@ -42,28 +42,28 @@ import com.test.abc.dto.*;
 public interface MisthFinalYpalEpidomDtoDao {
   List<SprnYpalPeriodEpidomDto> sprnYpalPeriodEpidom(
       java.lang.String arg_kodxrisi,
-      java.lang.Float arg_kodypal,
+      java.lang.Integer arg_kodypal,
       java.util.Date arg_fromdate,
       java.util.Date arg_todate);
 
   List<SprnAnalisiEpidomAsfDto> sprnAnalisiEpidomAsf(
-      java.lang.String arg_kodxrisi, java.lang.Float arg_kodypal);
+      java.lang.String arg_kodxrisi, java.lang.Integer arg_kodypal);
 
   List<SprnFinalEpidomYpalDto> sprnFinalEpidomYpal(
-      java.lang.Float arg_kodfinal, java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 
   List<DwMisthFinalYpalEpidomListDto> dwMisthFinalYpalEpidomList(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 
   List<SprnFinalEpidomMisthDto> sprnFinalEpidomMisth(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 
   List<SprnAnalisiEpidomNoforosDto> sprnAnalisiEpidomNoforos(
-      java.lang.String arg_kodxrisi, java.lang.Float arg_kodypal);
+      java.lang.String arg_kodxrisi, java.lang.Integer arg_kodypal);
 
   List<SprnAnalisiEpidomForosDto> sprnAnalisiEpidomForos(
-      java.lang.String arg_kodxrisi, java.lang.Float arg_kodypal);
+      java.lang.String arg_kodxrisi, java.lang.Integer arg_kodypal);
 
   List<SprnAnalisiEpidomAutoforosDto> sprnAnalisiEpidomAutoforos(
-      java.lang.String arg_kodxrisi, java.lang.Float arg_kodypal);
+      java.lang.String arg_kodxrisi, java.lang.Integer arg_kodypal);
 }

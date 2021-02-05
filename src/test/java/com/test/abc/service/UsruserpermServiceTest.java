@@ -51,16 +51,16 @@ public class UsruserpermServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getKodapp())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKoduser())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    Usruserperm testResult = serviceMock.find(records[0].getKodapp());
+    Usruserperm testResult = serviceMock.find(records[0].getKoduser());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertTrue(
-        "expect equals koduser ", this.records[0].getKoduser() == testResult.getKoduser());
-    org.junit.Assert.assertTrue(
         "expect equals enable ", this.records[0].getEnable() == testResult.getEnable());
+    org.junit.Assert.assertEquals(
+        "expect equals kodapp ", this.records[0].getKodapp(), testResult.getKodapp());
   }
 }

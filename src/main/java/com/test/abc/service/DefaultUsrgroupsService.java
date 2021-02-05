@@ -59,7 +59,7 @@ public class DefaultUsrgroupsService implements UsrgroupsService {
 
   /** {@inheritDoc} */
   @Override
-  public Usrgroups find(java.lang.Float id) {
+  public Usrgroups find(java.lang.Integer id) {
     final Usrgroups result = dao.find(id);
     logger.info("find(Usrgroups) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultUsrgroupsService implements UsrgroupsService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(java.lang.Float id) {
+  public void delete(java.lang.Integer id) {
     logger.info("delete(Usrgroups={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(Usrgroups) - exited - return value={} result ");

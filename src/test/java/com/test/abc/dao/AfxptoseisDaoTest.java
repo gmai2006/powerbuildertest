@@ -82,13 +82,13 @@ public class AfxptoseisDaoTest {
 
   @Test
   public void testSelect() {
-    Afxptoseis testResult = dao.find(records[1].getOnom());
+    Afxptoseis testResult = dao.find(records[1].getAit());
     java.util.List<Afxptoseis> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
         "expect equals gen ", this.records[1].getGen(), testResult.getGen());
     org.junit.Assert.assertEquals(
-        "expect equals ait ", this.records[1].getAit(), testResult.getAit());
+        "expect equals onom ", this.records[1].getOnom(), testResult.getOnom());
   }
 }

@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthFyloEpidomListDto implements Serializable {
-  private static final long serialVersionUID = 160992137671924570L;
+  private static final long serialVersionUID = 16109610420391367L;
 
   /** Description: kodfylo. */
   private java.lang.String kodfylo;
@@ -56,7 +56,7 @@ public class DwMisthFyloEpidomListDto implements Serializable {
   private java.lang.String expr;
 
   /** Description: aa. */
-  private java.lang.Integer aa;
+  private java.lang.Float aa;
 
   /** Description: notes. */
   private java.lang.String notes;
@@ -68,7 +68,7 @@ public class DwMisthFyloEpidomListDto implements Serializable {
       java.lang.String kodepidom,
       java.lang.String kodxrisi,
       java.lang.String expr,
-      java.lang.Integer aa,
+      java.lang.Float aa,
       java.lang.String notes) {
     this.kodfylo = kodfylo;
     this.kodepidom = kodepidom;
@@ -94,7 +94,7 @@ public class DwMisthFyloEpidomListDto implements Serializable {
     return this.expr;
   }
 
-  public java.lang.Integer getAa() {
+  public java.lang.Float getAa() {
     return this.aa;
   }
 
@@ -118,7 +118,7 @@ public class DwMisthFyloEpidomListDto implements Serializable {
     this.expr = expr;
   }
 
-  public void setAa(java.lang.Integer aa) {
+  public void setAa(java.lang.Float aa) {
     this.aa = aa;
   }
 

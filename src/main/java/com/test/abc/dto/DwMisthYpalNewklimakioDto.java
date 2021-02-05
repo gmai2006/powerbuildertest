@@ -41,10 +41,10 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthYpalNewklimakioDto implements Serializable {
-  private static final long serialVersionUID = 160992137739672309L;
+  private static final long serialVersionUID = 161096104251679689L;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -67,7 +67,7 @@ public class DwMisthYpalNewklimakioDto implements Serializable {
   public DwMisthYpalNewklimakioDto() {}
 
   public DwMisthYpalNewklimakioDto(
-      java.lang.Float kodypal,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
       java.lang.String surname,
       java.lang.String name,
@@ -83,7 +83,7 @@ public class DwMisthYpalNewklimakioDto implements Serializable {
     this.exeldate = exeldate;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -111,7 +111,7 @@ public class DwMisthYpalNewklimakioDto implements Serializable {
     return this.exeldate;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

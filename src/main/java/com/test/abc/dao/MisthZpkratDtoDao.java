@@ -46,33 +46,33 @@ public interface MisthZpkratDtoDao {
 
   List<SprnYpalPeriodKratDto> sprnYpalPeriodKrat(
       java.lang.String arg_kodxrisi,
-      java.lang.Float arg_kodypal,
+      java.lang.Integer arg_kodypal,
       java.util.Date arg_fromdate,
       java.util.Date arg_todate);
 
   List<SprnAnalisiKratForosDto> sprnAnalisiKratForos(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 
   List<SprnFinalKratMisthDto> sprnFinalKratMisth(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 
   List<SprnAnalisiKratAutoforosDto> sprnAnalisiKratAutoforos(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 
   List<DwStepKratapodMisthselectDto> dwStepKratapodMisthselect(java.lang.String arg_kodxrisi);
 
   List<PrnKratapodDto> prnKratapod(java.lang.String arg_kodxrisi, java.lang.Float arg_kodkratapod);
 
   List<SprnAnalisiKratLoipaDto> sprnAnalisiKratLoipa(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 
   List<SprnAnalisiKratAsfDto> sprnAnalisiKratAsf(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 
   List<PrnKratNoapodDto> prnKratNoapod(java.lang.String arg_kodxrisi);
 
   List<PrnKratTotalDto> prnKratTotal(java.lang.String arg_kodxrisi);
 
   List<SprnFinalKratYpalDto> sprnFinalKratYpal(
-      java.lang.Float arg_kodfinal, java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 }

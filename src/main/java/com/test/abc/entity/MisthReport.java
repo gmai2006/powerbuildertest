@@ -45,105 +45,85 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_report")
 public class MisthReport implements Serializable {
-  private static final long serialVersionUID = 160992137245384550L;
-  /** Description: kodreport. */
+  private static final long serialVersionUID = 161096103735547946L;
+  /** Description: kodxrisi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "kodreport")
-  private java.lang.String kodreport;
-  /** Description: kodxrisi. */
-  @Basic
   @Column(name = "kodxrisi")
   private java.lang.String kodxrisi;
-  /** Description: descreport. */
-  @Basic
-  @Column(name = "descreport")
-  private java.lang.String descreport;
-  /** Description: print_margin_top. */
-  @Basic
-  @Column(name = "print_margin_top")
-  private java.lang.Integer printMarginTop;
   /** Description: print_margin_bottom. */
   @Basic
   @Column(name = "print_margin_bottom")
   private java.lang.Integer printMarginBottom;
-  /** Description: print_margin_left. */
+  /** Description: descreport. */
   @Basic
-  @Column(name = "print_margin_left")
-  private java.lang.Integer printMarginLeft;
-  /** Description: print_margin_right. */
-  @Basic
-  @Column(name = "print_margin_right")
-  private java.lang.Integer printMarginRight;
-  /** Description: print_orientation. */
-  @Basic
-  @Column(name = "print_orientation")
-  private java.lang.Integer printOrientation;
+  @Column(name = "descreport", length = 100)
+  private java.lang.String descreport;
   /** Description: print_paper_size. */
   @Basic
   @Column(name = "print_paper_size")
   private java.lang.Integer printPaperSize;
+  /** Description: print_orientation. */
+  @Basic
+  @Column(name = "print_orientation")
+  private java.lang.Integer printOrientation;
+  /** Description: subtitle. */
+  @Basic
+  @Column(name = "subtitle", length = 32766)
+  private java.lang.String subtitle;
+  /** Description: prn_notes1. */
+  @Basic
+  @Column(name = "prn_notes1", length = 32766)
+  private java.lang.String prnNotes1;
+  /** Description: prn_notes2. */
+  @Basic
+  @Column(name = "prn_notes2", length = 32766)
+  private java.lang.String prnNotes2;
+  /** Description: print_margin_right. */
+  @Basic
+  @Column(name = "print_margin_right")
+  private java.lang.Integer printMarginRight;
+  /** Description: print_margin_top. */
+  @Basic
+  @Column(name = "print_margin_top")
+  private java.lang.Integer printMarginTop;
   /** Description: print_scale. */
   @Basic
   @Column(name = "print_scale")
   private java.lang.Integer printScale;
-  /** Description: subtitle. */
+  /** Description: kodreport. */
   @Basic
-  @Column(name = "subtitle")
-  private java.lang.String subtitle;
-  /** Description: prn_notes1. */
+  @Column(name = "kodreport", length = 64)
+  private java.lang.String kodreport;
+  /** Description: print_margin_left. */
   @Basic
-  @Column(name = "prn_notes1")
-  private java.lang.String prnNotes1;
-  /** Description: prn_notes2. */
-  @Basic
-  @Column(name = "prn_notes2")
-  private java.lang.String prnNotes2;
+  @Column(name = "print_margin_left")
+  private java.lang.Integer printMarginLeft;
 
   public MisthReport() {}
-
-  public java.lang.String getKodreport() {
-    return this.kodreport;
-  }
-
-  public void setKodreport(java.lang.String kodreport) {
-    this.kodreport = kodreport;
-  }
 
   public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public java.lang.String getDescreport() {
-    return this.descreport;
-  }
-
-  public java.lang.Integer getPrintMarginTop() {
-    return this.printMarginTop;
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
   }
 
   public java.lang.Integer getPrintMarginBottom() {
     return this.printMarginBottom;
   }
 
-  public java.lang.Integer getPrintMarginLeft() {
-    return this.printMarginLeft;
-  }
-
-  public java.lang.Integer getPrintMarginRight() {
-    return this.printMarginRight;
-  }
-
-  public java.lang.Integer getPrintOrientation() {
-    return this.printOrientation;
+  public java.lang.String getDescreport() {
+    return this.descreport;
   }
 
   public java.lang.Integer getPrintPaperSize() {
     return this.printPaperSize;
   }
 
-  public java.lang.Integer getPrintScale() {
-    return this.printScale;
+  public java.lang.Integer getPrintOrientation() {
+    return this.printOrientation;
   }
 
   public java.lang.String getSubtitle() {
@@ -158,40 +138,40 @@ public class MisthReport implements Serializable {
     return this.prnNotes2;
   }
 
-  public void setKodxrisi(java.lang.String kodxrisi) {
-    this.kodxrisi = kodxrisi;
+  public java.lang.Integer getPrintMarginRight() {
+    return this.printMarginRight;
   }
 
-  public void setDescreport(java.lang.String descreport) {
-    this.descreport = descreport;
+  public java.lang.Integer getPrintMarginTop() {
+    return this.printMarginTop;
   }
 
-  public void setPrintMarginTop(java.lang.Integer printMarginTop) {
-    this.printMarginTop = printMarginTop;
+  public java.lang.Integer getPrintScale() {
+    return this.printScale;
+  }
+
+  public java.lang.String getKodreport() {
+    return this.kodreport;
+  }
+
+  public java.lang.Integer getPrintMarginLeft() {
+    return this.printMarginLeft;
   }
 
   public void setPrintMarginBottom(java.lang.Integer printMarginBottom) {
     this.printMarginBottom = printMarginBottom;
   }
 
-  public void setPrintMarginLeft(java.lang.Integer printMarginLeft) {
-    this.printMarginLeft = printMarginLeft;
-  }
-
-  public void setPrintMarginRight(java.lang.Integer printMarginRight) {
-    this.printMarginRight = printMarginRight;
-  }
-
-  public void setPrintOrientation(java.lang.Integer printOrientation) {
-    this.printOrientation = printOrientation;
+  public void setDescreport(java.lang.String descreport) {
+    this.descreport = descreport;
   }
 
   public void setPrintPaperSize(java.lang.Integer printPaperSize) {
     this.printPaperSize = printPaperSize;
   }
 
-  public void setPrintScale(java.lang.Integer printScale) {
-    this.printScale = printScale;
+  public void setPrintOrientation(java.lang.Integer printOrientation) {
+    this.printOrientation = printOrientation;
   }
 
   public void setSubtitle(java.lang.String subtitle) {
@@ -204,5 +184,25 @@ public class MisthReport implements Serializable {
 
   public void setPrnNotes2(java.lang.String prnNotes2) {
     this.prnNotes2 = prnNotes2;
+  }
+
+  public void setPrintMarginRight(java.lang.Integer printMarginRight) {
+    this.printMarginRight = printMarginRight;
+  }
+
+  public void setPrintMarginTop(java.lang.Integer printMarginTop) {
+    this.printMarginTop = printMarginTop;
+  }
+
+  public void setPrintScale(java.lang.Integer printScale) {
+    this.printScale = printScale;
+  }
+
+  public void setKodreport(java.lang.String kodreport) {
+    this.kodreport = kodreport;
+  }
+
+  public void setPrintMarginLeft(java.lang.Integer printMarginLeft) {
+    this.printMarginLeft = printMarginLeft;
   }
 }

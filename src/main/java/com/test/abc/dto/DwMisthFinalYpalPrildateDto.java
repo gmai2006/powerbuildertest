@@ -41,13 +41,13 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthFinalYpalPrildateDto implements Serializable {
-  private static final long serialVersionUID = 160992137677254445L;
+  private static final long serialVersionUID = 161096104207556537L;
 
   /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
+  private java.lang.Integer kodfinal;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -58,8 +58,8 @@ public class DwMisthFinalYpalPrildateDto implements Serializable {
   public DwMisthFinalYpalPrildateDto() {}
 
   public DwMisthFinalYpalPrildateDto(
-      java.lang.Float kodfinal,
-      java.lang.Float kodypal,
+      java.lang.Integer kodfinal,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
       java.util.Date plirdate) {
     this.kodfinal = kodfinal;
@@ -68,11 +68,11 @@ public class DwMisthFinalYpalPrildateDto implements Serializable {
     this.plirdate = plirdate;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -84,11 +84,11 @@ public class DwMisthFinalYpalPrildateDto implements Serializable {
     return this.plirdate;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

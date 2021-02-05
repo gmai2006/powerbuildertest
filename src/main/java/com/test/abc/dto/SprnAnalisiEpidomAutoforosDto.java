@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class SprnAnalisiEpidomAutoforosDto implements Serializable {
-  private static final long serialVersionUID = 160992137721489833L;
+  private static final long serialVersionUID = 161096104238269938L;
 
   /** Description: poso. */
   private java.lang.Integer poso;

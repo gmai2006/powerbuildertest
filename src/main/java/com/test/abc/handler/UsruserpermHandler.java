@@ -59,14 +59,14 @@ public class UsruserpermHandler extends DelimiterFileHandler<Usruserperm> {
     Usruserperm record = new Usruserperm();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodapp(new java.lang.String(tokens.get(i)));
-          break;
         case "koduser":
-          record.setKoduser(new java.lang.Float(tokens.get(i)));
+          record.setKoduser(new java.lang.Integer(tokens.get(i)));
           break;
         case "enable":
           record.setEnable(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "kodapp":
+          record.setKodapp(tokens.get(i));
           break;
 
         default:

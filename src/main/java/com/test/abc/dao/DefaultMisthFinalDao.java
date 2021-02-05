@@ -65,7 +65,7 @@ public class DefaultMisthFinalDao implements MisthFinalDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFinal find(java.lang.Float id) {
+  public MisthFinal find(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     MisthFinal model = em.find(MisthFinal.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthFinalDao implements MisthFinalDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(java.lang.Float id) {
+  public void delete(java.lang.String id) {
     final EntityManager em = dao.getEntityManager();
     final MisthFinal removed = em.find(MisthFinal.class, id);
     if (null != removed) {

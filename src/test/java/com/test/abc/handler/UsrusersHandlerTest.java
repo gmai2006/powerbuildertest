@@ -20,19 +20,14 @@ package com.test.abc.handler;
 
 import static org.junit.Assert.assertEquals;
 import java.io.IOException;
-import com.google.gson.Gson;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Set;
-
+import org.json.CDL;
+import org.json.JSONArray;
+import com.google.gson.Gson;
 import com.test.abc.entity.Usrusers;
 import com.test.abc.dao.JpaDao;
 import com.test.abc.dao.StandaloneJpaDao;
@@ -72,14 +67,14 @@ import org.junit.Test;
 public class UsrusersHandlerTest {
   static final String inputFile = "Usrusers.json";
   static UsrusersHandler handler;
-  private JpaDao jpa;
+  private static JpaDao jpa;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
   private Usrusers[] records;
 
   /** Run before the test. */
-  @Before
-  public void before() {
-    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
+  @BeforeClass
+  public static void before() {
+    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
     jpa = new StandaloneJpaDao(factory.createEntityManager());
     handler = new UsrusersHandler(jpa);
   }
@@ -94,16 +89,16 @@ public class UsrusersHandlerTest {
     assertEquals("match count", count, records.length);
     Usrusers testResult = jpa.find(Usrusers.class, records[0].getKoduser());
     assertEquals(
-        "expect equals username ", this.records[0].getUsername(), testResult.getUsername());
-    assertEquals(
-        "expect equals fullname ", this.records[0].getFullname(), testResult.getFullname());
-    assertEquals(
         "expect equals password ", this.records[0].getPassword(), testResult.getPassword());
     org.junit.Assert.assertEquals(
         "expect equals isactive ", this.records[0].getIsactive(), testResult.getIsactive());
-    assertEquals("expect equals tomeas ", this.records[0].getTomeas(), testResult.getTomeas());
     assertEquals(
         "expect equals idiotita ", this.records[0].getIdiotita(), testResult.getIdiotita());
+    assertEquals("expect equals tomeas ", this.records[0].getTomeas(), testResult.getTomeas());
+    assertEquals(
+        "expect equals fullname ", this.records[0].getFullname(), testResult.getFullname());
+    assertEquals(
+        "expect equals username ", this.records[0].getUsername(), testResult.getUsername());
   }
 
   /**
@@ -118,47 +113,13 @@ public class UsrusersHandlerTest {
       final File tempFile = File.createTempFile(inputFile, ".txt");
       tempFile.deleteOnExit();
       String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-      final Usrusers[] records = gson.fromJson(json, Usrusers[].class);
-      String header =
-          createHeader(
-              Paths.get(inputFile.substring(0, inputFile.length() - 5) + "header.json").toString());
-      final List<String> result = new ArrayList<>();
-      result.add(header);
-
-      final List<String> data =
-          Arrays.stream(records)
-              .map(record -> createCsvRecord(record))
-              .collect(Collectors.toList());
-
-      result.addAll(data);
-      FileUtils.writeListOfStringToFile(tempFile, result);
+      JSONArray docs = new JSONArray(json);
+      String csv = CDL.toString(docs);
+      org.apache.commons.io.FileUtils.writeStringToFile(tempFile, csv, Charset.defaultCharset());
       return tempFile;
     } catch (IOException ex) {
       ex.printStackTrace();
       return null;
     }
-  }
-
-  private String createCsvRecord(final Usrusers record) {
-    return TestUtils.getObject(record.getKoduser())
-        + ","
-        + TestUtils.getObject(record.getUsername())
-        + ","
-        + TestUtils.getObject(record.getFullname())
-        + ","
-        + TestUtils.getObject(record.getPassword())
-        + ","
-        + TestUtils.getObject(record.getIsactive())
-        + ","
-        + TestUtils.getObject(record.getTomeas())
-        + ","
-        + TestUtils.getObject(record.getIdiotita());
-  }
-
-  private String createHeader(String headerfile) throws IOException {
-    String json = FileUtils.readFileFromResource2String(headerfile, Charset.defaultCharset());
-    JsonParser parser = new JsonParser();
-    JsonObject jsonObject = parser.parse(json).getAsJsonObject();
-    return jsonObject.get("header").getAsString();
   }
 }

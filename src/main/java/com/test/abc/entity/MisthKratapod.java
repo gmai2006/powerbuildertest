@@ -45,20 +45,20 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_kratapod")
 public class MisthKratapod implements Serializable {
-  private static final long serialVersionUID = 160992137238614714L;
+  private static final long serialVersionUID = 161096103728864110L;
   /** Description: kodxrisi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodxrisi")
   private java.lang.String kodxrisi;
+  /** Description: desckratapod. */
+  @Basic
+  @Column(name = "desckratapod", length = 100)
+  private java.lang.String desckratapod;
   /** Description: kodkratapod. */
   @Basic
   @Column(name = "kodkratapod")
   private java.lang.Float kodkratapod;
-  /** Description: desckratapod. */
-  @Basic
-  @Column(name = "desckratapod")
-  private java.lang.String desckratapod;
   /** Description: apoddate. */
   @Basic
   @Column(name = "apoddate")
@@ -74,24 +74,24 @@ public class MisthKratapod implements Serializable {
     this.kodxrisi = kodxrisi;
   }
 
-  public java.lang.Float getKodkratapod() {
-    return this.kodkratapod;
-  }
-
   public java.lang.String getDesckratapod() {
     return this.desckratapod;
+  }
+
+  public java.lang.Float getKodkratapod() {
+    return this.kodkratapod;
   }
 
   public java.util.Date getApoddate() {
     return this.apoddate;
   }
 
-  public void setKodkratapod(java.lang.Float kodkratapod) {
-    this.kodkratapod = kodkratapod;
-  }
-
   public void setDesckratapod(java.lang.String desckratapod) {
     this.desckratapod = desckratapod;
+  }
+
+  public void setKodkratapod(java.lang.Float kodkratapod) {
+    this.kodkratapod = kodkratapod;
   }
 
   public void setApoddate(java.util.Date apoddate) {

@@ -182,22 +182,22 @@ public class JsonHelper {
    * Helper function that converts JSON to an POJO.
    *
    * @param json The JSON string.
-   * @return The MisthZpepidom.
+   * @return The Usrgroups.
    */
-  public static MisthZpepidom fromJson2MisthZpepidom(JsonElement json) {
+  public static Usrgroups fromJson2Usrgroups(JsonElement json) {
     Objects.requireNonNull(json);
-    return gson.fromJson(json, MisthZpepidom.class);
+    return gson.fromJson(json, Usrgroups.class);
   }
 
   /**
    * Helper function that converts JSON to an POJO.
    *
    * @param json The JSON string.
-   * @return The Usrgroups.
+   * @return The MisthZpepidom.
    */
-  public static Usrgroups fromJson2Usrgroups(JsonElement json) {
+  public static MisthZpepidom fromJson2MisthZpepidom(JsonElement json) {
     Objects.requireNonNull(json);
-    return gson.fromJson(json, Usrgroups.class);
+    return gson.fromJson(json, MisthZpepidom.class);
   }
 
   /**
@@ -281,17 +281,6 @@ public class JsonHelper {
    * Helper function that converts JSON to an POJO.
    *
    * @param json The JSON string.
-   * @return The Afxfilterd.
-   */
-  public static Afxfilterd fromJson2Afxfilterd(JsonElement json) {
-    Objects.requireNonNull(json);
-    return gson.fromJson(json, Afxfilterd.class);
-  }
-
-  /**
-   * Helper function that converts JSON to an POJO.
-   *
-   * @param json The JSON string.
    * @return The Usrapps.
    */
   public static Usrapps fromJson2Usrapps(JsonElement json) {
@@ -308,6 +297,17 @@ public class JsonHelper {
   public static MisthZpthesi fromJson2MisthZpthesi(JsonElement json) {
     Objects.requireNonNull(json);
     return gson.fromJson(json, MisthZpthesi.class);
+  }
+
+  /**
+   * Helper function that converts JSON to an POJO.
+   *
+   * @param json The JSON string.
+   * @return The Afxfilterd.
+   */
+  public static Afxfilterd fromJson2Afxfilterd(JsonElement json) {
+    Objects.requireNonNull(json);
+    return gson.fromJson(json, Afxfilterd.class);
   }
 
   /**
@@ -347,22 +347,22 @@ public class JsonHelper {
    * Helper function that converts JSON to an POJO.
    *
    * @param json The JSON string.
-   * @return The MisthZpidikot.
+   * @return The MisthZptamio.
    */
-  public static MisthZpidikot fromJson2MisthZpidikot(JsonElement json) {
+  public static MisthZptamio fromJson2MisthZptamio(JsonElement json) {
     Objects.requireNonNull(json);
-    return gson.fromJson(json, MisthZpidikot.class);
+    return gson.fromJson(json, MisthZptamio.class);
   }
 
   /**
    * Helper function that converts JSON to an POJO.
    *
    * @param json The JSON string.
-   * @return The MisthZptamio.
+   * @return The MisthZpidikot.
    */
-  public static MisthZptamio fromJson2MisthZptamio(JsonElement json) {
+  public static MisthZpidikot fromJson2MisthZpidikot(JsonElement json) {
     Objects.requireNonNull(json);
-    return gson.fromJson(json, MisthZptamio.class);
+    return gson.fromJson(json, MisthZpidikot.class);
   }
 
   /**
@@ -435,22 +435,22 @@ public class JsonHelper {
    * Helper function that converts JSON to an POJO.
    *
    * @param json The JSON string.
-   * @return The MisthFyloKrat.
+   * @return The Usractions.
    */
-  public static MisthFyloKrat fromJson2MisthFyloKrat(JsonElement json) {
+  public static Usractions fromJson2Usractions(JsonElement json) {
     Objects.requireNonNull(json);
-    return gson.fromJson(json, MisthFyloKrat.class);
+    return gson.fromJson(json, Usractions.class);
   }
 
   /**
    * Helper function that converts JSON to an POJO.
    *
    * @param json The JSON string.
-   * @return The Usractions.
+   * @return The MisthFyloKrat.
    */
-  public static Usractions fromJson2Usractions(JsonElement json) {
+  public static MisthFyloKrat fromJson2MisthFyloKrat(JsonElement json) {
     Objects.requireNonNull(json);
-    return gson.fromJson(json, Usractions.class);
+    return gson.fromJson(json, MisthFyloKrat.class);
   }
 
   /**

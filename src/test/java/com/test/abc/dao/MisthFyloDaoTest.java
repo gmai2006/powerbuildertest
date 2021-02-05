@@ -87,8 +87,8 @@ public class MisthFyloDaoTest {
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
-        "expect equals kodfylo ", this.records[1].getKodfylo(), testResult.getKodfylo());
-    org.junit.Assert.assertEquals(
         "expect equals descfylo ", this.records[1].getDescfylo(), testResult.getDescfylo());
+    org.junit.Assert.assertEquals(
+        "expect equals kodfylo ", this.records[1].getKodfylo(), testResult.getKodfylo());
   }
 }

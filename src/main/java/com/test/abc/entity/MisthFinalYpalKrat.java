@@ -45,40 +45,40 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_final_ypal_krat")
 public class MisthFinalYpalKrat implements Serializable {
-  private static final long serialVersionUID = 160992137254114171L;
+  private static final long serialVersionUID = 161096103744772464L;
   /** Description: kodkrat. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodkrat")
   private java.lang.String kodkrat;
-  /** Description: kodxrisi. */
+  /** Description: aa. */
   @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
-  /** Description: kodfinal. */
-  @Basic
-  @Column(name = "kodfinal")
-  private java.lang.Float kodfinal;
+  @Column(name = "aa")
+  private java.lang.Float aa;
   /** Description: kodypal. */
   @Basic
   @Column(name = "kodypal")
-  private java.lang.Float kodypal;
-  /** Description: poso. */
-  @Basic
-  @Column(name = "poso")
-  private java.lang.Integer poso;
-  /** Description: notes. */
-  @Basic
-  @Column(name = "notes")
-  private java.lang.String notes;
+  private java.lang.Integer kodypal;
   /** Description: kodkratapod. */
   @Basic
   @Column(name = "kodkratapod")
   private java.lang.Float kodkratapod;
-  /** Description: aa. */
+  /** Description: notes. */
   @Basic
-  @Column(name = "aa")
-  private java.lang.Integer aa;
+  @Column(name = "notes", length = 32766)
+  private java.lang.String notes;
+  /** Description: kodfinal. */
+  @Basic
+  @Column(name = "kodfinal")
+  private java.lang.Integer kodfinal;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
+  /** Description: poso. */
+  @Basic
+  @Column(name = "poso")
+  private java.lang.Integer poso;
 
   public MisthFinalYpalKrat() {}
 
@@ -90,59 +90,59 @@ public class MisthFinalYpalKrat implements Serializable {
     this.kodkrat = kodkrat;
   }
 
-  public java.lang.String getKodxrisi() {
-    return this.kodxrisi;
+  public java.lang.Float getAa() {
+    return this.aa;
   }
 
-  public java.lang.Float getKodfinal() {
-    return this.kodfinal;
-  }
-
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
-  }
-
-  public java.lang.Integer getPoso() {
-    return this.poso;
-  }
-
-  public java.lang.String getNotes() {
-    return this.notes;
   }
 
   public java.lang.Float getKodkratapod() {
     return this.kodkratapod;
   }
 
-  public java.lang.Integer getAa() {
-    return this.aa;
+  public java.lang.String getNotes() {
+    return this.notes;
   }
 
-  public void setKodxrisi(java.lang.String kodxrisi) {
-    this.kodxrisi = kodxrisi;
+  public java.lang.Integer getKodfinal() {
+    return this.kodfinal;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
-    this.kodfinal = kodfinal;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public java.lang.Integer getPoso() {
+    return this.poso;
+  }
+
+  public void setAa(java.lang.Float aa) {
+    this.aa = aa;
+  }
+
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
-  }
-
-  public void setPoso(java.lang.Integer poso) {
-    this.poso = poso;
-  }
-
-  public void setNotes(java.lang.String notes) {
-    this.notes = notes;
   }
 
   public void setKodkratapod(java.lang.Float kodkratapod) {
     this.kodkratapod = kodkratapod;
   }
 
-  public void setAa(java.lang.Integer aa) {
-    this.aa = aa;
+  public void setNotes(java.lang.String notes) {
+    this.notes = notes;
+  }
+
+  public void setKodfinal(java.lang.Integer kodfinal) {
+    this.kodfinal = kodfinal;
+  }
+
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
+  }
+
+  public void setPoso(java.lang.Integer poso) {
+    this.poso = poso;
   }
 }

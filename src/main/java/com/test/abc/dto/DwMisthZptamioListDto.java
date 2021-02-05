@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthZptamioListDto implements Serializable {
-  private static final long serialVersionUID = 160992137714636586L;
+  private static final long serialVersionUID = 161096104233580024L;
 
   /** Description: kodtamio. */
   private java.lang.String kodtamio;

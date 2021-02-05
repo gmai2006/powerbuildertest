@@ -88,9 +88,9 @@ public class MisthZpstathDaoTest {
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
         "expect equals kodstath ", this.records[1].getKodstath(), testResult.getKodstath());
-    org.junit.Assert.assertEquals(
-        "expect equals descstath ", this.records[1].getDescstath(), testResult.getDescstath());
     org.junit.Assert.assertTrue(
         "expect equals poso ", this.records[1].getPoso() == testResult.getPoso());
+    org.junit.Assert.assertEquals(
+        "expect equals descstath ", this.records[1].getDescstath(), testResult.getDescstath());
   }
 }

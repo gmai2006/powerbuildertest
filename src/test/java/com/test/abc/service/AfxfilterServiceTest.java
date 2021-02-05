@@ -51,15 +51,15 @@ public class AfxfilterServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getKodfilter())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getDescfilter())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    Afxfilter testResult = serviceMock.find(records[0].getKodfilter());
+    Afxfilter testResult = serviceMock.find(records[0].getDescfilter());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertEquals(
-        "expect equals descfilter ", this.records[0].getDescfilter(), testResult.getDescfilter());
+    org.junit.Assert.assertTrue(
+        "expect equals kodfilter ", this.records[0].getKodfilter() == testResult.getKodfilter());
     org.junit.Assert.assertEquals(
         "expect equals tablename ", this.records[0].getTablename(), testResult.getTablename());
   }

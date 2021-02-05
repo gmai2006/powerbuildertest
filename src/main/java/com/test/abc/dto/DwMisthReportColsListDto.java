@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthReportColsListDto implements Serializable {
-  private static final long serialVersionUID = 160992137737418453L;
+  private static final long serialVersionUID = 161096104250245669L;
 
   /** Description: kodcol. */
   private java.lang.Integer kodcol;
@@ -62,7 +62,7 @@ public class DwMisthReportColsListDto implements Serializable {
   private java.lang.Integer width;
 
   /** Description: aa. */
-  private java.lang.Integer aa;
+  private java.lang.Float aa;
 
   public DwMisthReportColsListDto() {}
 
@@ -73,7 +73,7 @@ public class DwMisthReportColsListDto implements Serializable {
       java.lang.String expr,
       java.lang.String headerText,
       java.lang.Integer width,
-      java.lang.Integer aa) {
+      java.lang.Float aa) {
     this.kodcol = kodcol;
     this.kodreport = kodreport;
     this.kodxrisi = kodxrisi;
@@ -107,7 +107,7 @@ public class DwMisthReportColsListDto implements Serializable {
     return this.width;
   }
 
-  public java.lang.Integer getAa() {
+  public java.lang.Float getAa() {
     return this.aa;
   }
 
@@ -135,7 +135,7 @@ public class DwMisthReportColsListDto implements Serializable {
     this.width = width;
   }
 
-  public void setAa(java.lang.Integer aa) {
+  public void setAa(java.lang.Float aa) {
     this.aa = aa;
   }
 }

@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthFinalYpalListDto implements Serializable {
-  private static final long serialVersionUID = 160992137713216131L;
+  private static final long serialVersionUID = 161096104232680566L;
 
   /** Description: datefinal. */
   private java.util.Date datefinal;
@@ -50,10 +50,10 @@ public class DwMisthFinalYpalListDto implements Serializable {
   private java.lang.String descfinal;
 
   /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
+  private java.lang.Integer kodfinal;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: plirdate. */
   private java.util.Date plirdate;
@@ -66,8 +66,8 @@ public class DwMisthFinalYpalListDto implements Serializable {
   public DwMisthFinalYpalListDto(
       java.util.Date datefinal,
       java.lang.String descfinal,
-      java.lang.Float kodfinal,
-      java.lang.Float kodypal,
+      java.lang.Integer kodfinal,
+      java.lang.Integer kodypal,
       java.util.Date plirdate,
       java.lang.Integer cmPaid) {
     this.datefinal = datefinal;
@@ -86,11 +86,11 @@ public class DwMisthFinalYpalListDto implements Serializable {
     return this.descfinal;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -110,11 +110,11 @@ public class DwMisthFinalYpalListDto implements Serializable {
     this.descfinal = descfinal;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

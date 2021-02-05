@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthZpstathListDto implements Serializable {
-  private static final long serialVersionUID = 160992137738345751L;
+  private static final long serialVersionUID = 161096104250882121L;
 
   /** Description: kodstath. */
   private java.lang.String kodstath;

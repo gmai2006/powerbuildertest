@@ -59,11 +59,11 @@ public class UsrgrouppermHandler extends DelimiterFileHandler<Usrgroupperm> {
     Usrgroupperm record = new Usrgroupperm();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodgroup(new java.lang.Float(tokens.get(i)));
+        case "kodgroup":
+          record.setKodgroup(new java.lang.Integer(tokens.get(i)));
           break;
-        case "kodaction":
-          record.setKodaction(tokens.get(i));
+        case "openlist":
+          record.setOpenlist(new java.lang.Integer(tokens.get(i)));
           break;
         case "editrec":
           record.setEditrec(new java.lang.Integer(tokens.get(i)));
@@ -74,8 +74,8 @@ public class UsrgrouppermHandler extends DelimiterFileHandler<Usrgroupperm> {
         case "delrec":
           record.setDelrec(new java.lang.Integer(tokens.get(i)));
           break;
-        case "openlist":
-          record.setOpenlist(new java.lang.Integer(tokens.get(i)));
+        case "kodaction":
+          record.setKodaction(tokens.get(i));
           break;
         case "openform":
           record.setOpenform(new java.lang.Integer(tokens.get(i)));

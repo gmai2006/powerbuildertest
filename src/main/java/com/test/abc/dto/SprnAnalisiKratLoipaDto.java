@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class SprnAnalisiKratLoipaDto implements Serializable {
-  private static final long serialVersionUID = 160992137703374313L;
+  private static final long serialVersionUID = 161096104225237724L;
 
   /** Description: desckrat. */
   private java.lang.String desckrat;

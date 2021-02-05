@@ -87,8 +87,8 @@ public class MisthZptmimaDaoTest {
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals desctmima ", this.records[1].getDesctmima(), testResult.getDesctmima());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
   }
 }

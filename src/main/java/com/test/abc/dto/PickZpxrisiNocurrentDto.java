@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickZpxrisiNocurrentDto implements Serializable {
-  private static final long serialVersionUID = 160992137682472474L;
+  private static final long serialVersionUID = 161096104210988933L;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;

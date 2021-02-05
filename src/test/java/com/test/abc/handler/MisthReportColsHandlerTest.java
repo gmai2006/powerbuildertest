@@ -20,19 +20,14 @@ package com.test.abc.handler;
 
 import static org.junit.Assert.assertEquals;
 import java.io.IOException;
-import com.google.gson.Gson;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Set;
-
+import org.json.CDL;
+import org.json.JSONArray;
+import com.google.gson.Gson;
 import com.test.abc.entity.MisthReportCols;
 import com.test.abc.dao.JpaDao;
 import com.test.abc.dao.StandaloneJpaDao;
@@ -72,14 +67,14 @@ import org.junit.Test;
 public class MisthReportColsHandlerTest {
   static final String inputFile = "MisthReportCols.json";
   static MisthReportColsHandler handler;
-  private JpaDao jpa;
+  private static JpaDao jpa;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
   private MisthReportCols[] records;
 
   /** Run before the test. */
-  @Before
-  public void before() {
-    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
+  @BeforeClass
+  public static void before() {
+    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
     jpa = new StandaloneJpaDao(factory.createEntityManager());
     handler = new MisthReportColsHandler(jpa);
   }
@@ -92,17 +87,17 @@ public class MisthReportColsHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthReportCols[].class);
     assertEquals("match count", count, records.length);
-    MisthReportCols testResult = jpa.find(MisthReportCols.class, records[0].getKodreport());
-    assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
-        "expect equals kodcol ", this.records[0].getKodcol(), testResult.getKodcol());
-    assertEquals("expect equals expr ", this.records[0].getExpr(), testResult.getExpr());
+    MisthReportCols testResult = jpa.find(MisthReportCols.class, records[0].getKodxrisi());
     assertEquals(
         "expect equals headerText ", this.records[0].getHeaderText(), testResult.getHeaderText());
+    org.junit.Assert.assertEquals("expect equals aa ", this.records[0].getAa(), testResult.getAa());
     org.junit.Assert.assertEquals(
         "expect equals width ", this.records[0].getWidth(), testResult.getWidth());
-    org.junit.Assert.assertEquals("expect equals aa ", this.records[0].getAa(), testResult.getAa());
+    assertEquals(
+        "expect equals kodreport ", this.records[0].getKodreport(), testResult.getKodreport());
+    assertEquals("expect equals expr ", this.records[0].getExpr(), testResult.getExpr());
+    org.junit.Assert.assertEquals(
+        "expect equals kodcol ", this.records[0].getKodcol(), testResult.getKodcol());
   }
 
   /**
@@ -117,47 +112,13 @@ public class MisthReportColsHandlerTest {
       final File tempFile = File.createTempFile(inputFile, ".txt");
       tempFile.deleteOnExit();
       String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-      final MisthReportCols[] records = gson.fromJson(json, MisthReportCols[].class);
-      String header =
-          createHeader(
-              Paths.get(inputFile.substring(0, inputFile.length() - 5) + "header.json").toString());
-      final List<String> result = new ArrayList<>();
-      result.add(header);
-
-      final List<String> data =
-          Arrays.stream(records)
-              .map(record -> createCsvRecord(record))
-              .collect(Collectors.toList());
-
-      result.addAll(data);
-      FileUtils.writeListOfStringToFile(tempFile, result);
+      JSONArray docs = new JSONArray(json);
+      String csv = CDL.toString(docs);
+      org.apache.commons.io.FileUtils.writeStringToFile(tempFile, csv, Charset.defaultCharset());
       return tempFile;
     } catch (IOException ex) {
       ex.printStackTrace();
       return null;
     }
-  }
-
-  private String createCsvRecord(final MisthReportCols record) {
-    return TestUtils.getObject(record.getKodreport())
-        + ","
-        + TestUtils.getObject(record.getKodxrisi())
-        + ","
-        + TestUtils.getObject(record.getKodcol())
-        + ","
-        + TestUtils.getObject(record.getExpr())
-        + ","
-        + TestUtils.getObject(record.getHeaderText())
-        + ","
-        + TestUtils.getObject(record.getWidth())
-        + ","
-        + TestUtils.getObject(record.getAa());
-  }
-
-  private String createHeader(String headerfile) throws IOException {
-    String json = FileUtils.readFileFromResource2String(headerfile, Charset.defaultCharset());
-    JsonParser parser = new JsonParser();
-    JsonObject jsonObject = parser.parse(json).getAsJsonObject();
-    return jsonObject.get("header").getAsString();
   }
 }

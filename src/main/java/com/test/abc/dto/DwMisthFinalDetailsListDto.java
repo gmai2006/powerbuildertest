@@ -41,13 +41,16 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthFinalDetailsListDto implements Serializable {
-  private static final long serialVersionUID = 160992137716286175L;
+  private static final long serialVersionUID = 161096104234792129L;
 
   /** Description: datefinal. */
   private java.util.Date datefinal;
 
   /** Description: descfinal. */
   private java.lang.String descfinal;
+
+  /** Description: kodfinal. */
+  private java.lang.Integer kodfinal;
 
   /** Description: plirdate. */
   private java.util.Date plirdate;
@@ -61,8 +64,11 @@ public class DwMisthFinalDetailsListDto implements Serializable {
   /** Description: fathername. */
   private java.lang.String fathername;
 
+  /** Description: kodfinal1. */
+  private java.lang.Integer kodfinal1;
+
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -76,41 +82,35 @@ public class DwMisthFinalDetailsListDto implements Serializable {
   /** Description: aa. */
   private java.lang.Float aa;
 
-  /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
-
-  /** Description: kodfinal1. */
-  private java.lang.Float kodfinal1;
-
   public DwMisthFinalDetailsListDto() {}
 
   public DwMisthFinalDetailsListDto(
       java.util.Date datefinal,
       java.lang.String descfinal,
+      java.lang.Integer kodfinal,
       java.util.Date plirdate,
       java.lang.String surname,
       java.lang.String name,
       java.lang.String fathername,
-      java.lang.Float kodypal,
+      java.lang.Integer kodfinal1,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
       java.lang.String desckat,
       java.lang.String descperiod,
-      java.lang.Float aa,
-      java.lang.Float kodfinal,
-      java.lang.Float kodfinal1) {
+      java.lang.Float aa) {
     this.datefinal = datefinal;
     this.descfinal = descfinal;
+    this.kodfinal = kodfinal;
     this.plirdate = plirdate;
     this.surname = surname;
     this.name = name;
     this.fathername = fathername;
+    this.kodfinal1 = kodfinal1;
     this.kodypal = kodypal;
     this.kodxrisi = kodxrisi;
     this.desckat = desckat;
     this.descperiod = descperiod;
     this.aa = aa;
-    this.kodfinal = kodfinal;
-    this.kodfinal1 = kodfinal1;
   }
 
   public java.util.Date getDatefinal() {
@@ -119,6 +119,10 @@ public class DwMisthFinalDetailsListDto implements Serializable {
 
   public java.lang.String getDescfinal() {
     return this.descfinal;
+  }
+
+  public java.lang.Integer getKodfinal() {
+    return this.kodfinal;
   }
 
   public java.util.Date getPlirdate() {
@@ -137,7 +141,11 @@ public class DwMisthFinalDetailsListDto implements Serializable {
     return this.fathername;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodfinal1() {
+    return this.kodfinal1;
+  }
+
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -157,20 +165,16 @@ public class DwMisthFinalDetailsListDto implements Serializable {
     return this.aa;
   }
 
-  public java.lang.Float getKodfinal() {
-    return this.kodfinal;
-  }
-
-  public java.lang.Float getKodfinal1() {
-    return this.kodfinal1;
-  }
-
   public void setDatefinal(java.util.Date datefinal) {
     this.datefinal = datefinal;
   }
 
   public void setDescfinal(java.lang.String descfinal) {
     this.descfinal = descfinal;
+  }
+
+  public void setKodfinal(java.lang.Integer kodfinal) {
+    this.kodfinal = kodfinal;
   }
 
   public void setPlirdate(java.util.Date plirdate) {
@@ -189,7 +193,11 @@ public class DwMisthFinalDetailsListDto implements Serializable {
     this.fathername = fathername;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodfinal1(java.lang.Integer kodfinal1) {
+    this.kodfinal1 = kodfinal1;
+  }
+
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 
@@ -207,13 +215,5 @@ public class DwMisthFinalDetailsListDto implements Serializable {
 
   public void setAa(java.lang.Float aa) {
     this.aa = aa;
-  }
-
-  public void setKodfinal(java.lang.Float kodfinal) {
-    this.kodfinal = kodfinal;
-  }
-
-  public void setKodfinal1(java.lang.Float kodfinal1) {
-    this.kodfinal1 = kodfinal1;
   }
 }

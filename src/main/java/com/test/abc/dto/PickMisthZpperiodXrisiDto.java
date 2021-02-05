@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthZpperiodXrisiDto implements Serializable {
-  private static final long serialVersionUID = 160992137673613698L;
+  private static final long serialVersionUID = 161096104205349799L;
 
   /** Description: kodperiod. */
   private java.lang.String kodperiod;

@@ -51,42 +51,42 @@ public class MisthReportServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getKodreport())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodxrisi())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    MisthReport testResult = serviceMock.find(records[0].getKodreport());
+    MisthReport testResult = serviceMock.find(records[0].getKodxrisi());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
-        "expect equals descreport ", this.records[0].getDescreport(), testResult.getDescreport());
-    org.junit.Assert.assertTrue(
-        "expect equals printMarginTop ",
-        this.records[0].getPrintMarginTop() == testResult.getPrintMarginTop());
     org.junit.Assert.assertTrue(
         "expect equals printMarginBottom ",
         this.records[0].getPrintMarginBottom() == testResult.getPrintMarginBottom());
-    org.junit.Assert.assertTrue(
-        "expect equals printMarginLeft ",
-        this.records[0].getPrintMarginLeft() == testResult.getPrintMarginLeft());
-    org.junit.Assert.assertTrue(
-        "expect equals printMarginRight ",
-        this.records[0].getPrintMarginRight() == testResult.getPrintMarginRight());
-    org.junit.Assert.assertTrue(
-        "expect equals printOrientation ",
-        this.records[0].getPrintOrientation() == testResult.getPrintOrientation());
+    org.junit.Assert.assertEquals(
+        "expect equals descreport ", this.records[0].getDescreport(), testResult.getDescreport());
     org.junit.Assert.assertTrue(
         "expect equals printPaperSize ",
         this.records[0].getPrintPaperSize() == testResult.getPrintPaperSize());
     org.junit.Assert.assertTrue(
-        "expect equals printScale ", this.records[0].getPrintScale() == testResult.getPrintScale());
+        "expect equals printOrientation ",
+        this.records[0].getPrintOrientation() == testResult.getPrintOrientation());
     org.junit.Assert.assertEquals(
         "expect equals subtitle ", this.records[0].getSubtitle(), testResult.getSubtitle());
     org.junit.Assert.assertEquals(
         "expect equals prnNotes1 ", this.records[0].getPrnNotes1(), testResult.getPrnNotes1());
     org.junit.Assert.assertEquals(
         "expect equals prnNotes2 ", this.records[0].getPrnNotes2(), testResult.getPrnNotes2());
+    org.junit.Assert.assertTrue(
+        "expect equals printMarginRight ",
+        this.records[0].getPrintMarginRight() == testResult.getPrintMarginRight());
+    org.junit.Assert.assertTrue(
+        "expect equals printMarginTop ",
+        this.records[0].getPrintMarginTop() == testResult.getPrintMarginTop());
+    org.junit.Assert.assertTrue(
+        "expect equals printScale ", this.records[0].getPrintScale() == testResult.getPrintScale());
+    org.junit.Assert.assertEquals(
+        "expect equals kodreport ", this.records[0].getKodreport(), testResult.getKodreport());
+    org.junit.Assert.assertTrue(
+        "expect equals printMarginLeft ",
+        this.records[0].getPrintMarginLeft() == testResult.getPrintMarginLeft());
   }
 }

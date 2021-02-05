@@ -45,7 +45,7 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zptamio")
 public class MisthZptamio implements Serializable {
-  private static final long serialVersionUID = 160992137256325567L;
+  private static final long serialVersionUID = 16109610374725022L;
   /** Description: kodtamio. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
@@ -53,11 +53,11 @@ public class MisthZptamio implements Serializable {
   private java.lang.String kodtamio;
   /** Description: kodxrisi. */
   @Basic
-  @Column(name = "kodxrisi")
+  @Column(name = "kodxrisi", length = 64)
   private java.lang.String kodxrisi;
   /** Description: desctamio. */
   @Basic
-  @Column(name = "desctamio")
+  @Column(name = "desctamio", length = 50)
   private java.lang.String desctamio;
 
   public MisthZptamio() {}

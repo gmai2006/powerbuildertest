@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PrnAnalisiYpalDto implements Serializable {
-  private static final long serialVersionUID = 16099213769745746L;
+  private static final long serialVersionUID = 161096104221280718L;
 
   /** Description: surname. */
   private java.lang.String surname;
@@ -92,7 +92,7 @@ public class PrnAnalisiYpalDto implements Serializable {
   private java.util.Date hireddate;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -131,7 +131,7 @@ public class PrnAnalisiYpalDto implements Serializable {
       java.lang.String klados,
       java.util.Date birthdate,
       java.util.Date hireddate,
-      java.lang.Float kodypal,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
       java.lang.String descidikot,
       java.lang.String descoikog,
@@ -227,7 +227,7 @@ public class PrnAnalisiYpalDto implements Serializable {
     return this.hireddate;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -319,7 +319,7 @@ public class PrnAnalisiYpalDto implements Serializable {
     this.hireddate = hireddate;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

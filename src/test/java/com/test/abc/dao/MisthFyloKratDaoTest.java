@@ -86,14 +86,14 @@ public class MisthFyloKratDaoTest {
     java.util.List<MisthFyloKrat> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue("expect equals aa ", this.records[1].getAa() == testResult.getAa());
     org.junit.Assert.assertEquals(
         "expect equals kodfylo ", this.records[1].getKodfylo(), testResult.getKodfylo());
     org.junit.Assert.assertEquals(
-        "expect equals expr ", this.records[1].getExpr(), testResult.getExpr());
-    org.junit.Assert.assertTrue("expect equals aa ", this.records[1].getAa() == testResult.getAa());
-    org.junit.Assert.assertEquals(
         "expect equals notes ", this.records[1].getNotes(), testResult.getNotes());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertEquals(
+        "expect equals expr ", this.records[1].getExpr(), testResult.getExpr());
   }
 }

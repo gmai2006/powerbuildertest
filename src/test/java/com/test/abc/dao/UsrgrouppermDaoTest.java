@@ -86,16 +86,16 @@ public class UsrgrouppermDaoTest {
     java.util.List<Usrgroupperm> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
-    org.junit.Assert.assertEquals(
-        "expect equals kodaction ", this.records[1].getKodaction(), testResult.getKodaction());
+    org.junit.Assert.assertTrue(
+        "expect equals openlist ", this.records[1].getOpenlist() == testResult.getOpenlist());
     org.junit.Assert.assertTrue(
         "expect equals editrec ", this.records[1].getEditrec() == testResult.getEditrec());
     org.junit.Assert.assertTrue(
         "expect equals addrec ", this.records[1].getAddrec() == testResult.getAddrec());
     org.junit.Assert.assertTrue(
         "expect equals delrec ", this.records[1].getDelrec() == testResult.getDelrec());
-    org.junit.Assert.assertTrue(
-        "expect equals openlist ", this.records[1].getOpenlist() == testResult.getOpenlist());
+    org.junit.Assert.assertEquals(
+        "expect equals kodaction ", this.records[1].getKodaction(), testResult.getKodaction());
     org.junit.Assert.assertTrue(
         "expect equals openform ", this.records[1].getOpenform() == testResult.getOpenform());
   }

@@ -102,7 +102,7 @@ public class MisthFinalYpalResource {
 
   /**
    * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id")
-   * java.lang.Float id) { this.service.delete(id); return
+   * java.lang.Integer id) { this.service.delete(id); return
    * Response.status(Response.Status.OK).entity("Successfully delete object").build(); }
    */
 
@@ -113,7 +113,7 @@ public class MisthFinalYpalResource {
    * @return MisthFinalYpal.
    */
   /**
-   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.Float id) { MisthFinalYpal
+   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.Integer id) { MisthFinalYpal
    * result = this.service.find(id); if (null == result) { return
    * Response.status(Response.Status.NOT_FOUND).build(); } return
    * Response.status(Response.Status.OK).entity(result).build(); }

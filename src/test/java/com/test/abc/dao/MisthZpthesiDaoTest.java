@@ -87,8 +87,8 @@ public class MisthZpthesiDaoTest {
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals descthesi ", this.records[1].getDescthesi(), testResult.getDescthesi());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
   }
 }

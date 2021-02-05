@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class SprnYpalPeriodKratDto implements Serializable {
-  private static final long serialVersionUID = 160992137668314277L;
+  private static final long serialVersionUID = 161096104201156999L;
 
   /** Description: desckrat. */
   private java.lang.String desckrat;

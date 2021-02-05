@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwAfxfilterdListDto implements Serializable {
-  private static final long serialVersionUID = 160992137687271324L;
+  private static final long serialVersionUID = 161096104214484079L;
 
   /** Description: kodfilterd. */
   private java.lang.Float kodfilterd;

@@ -45,24 +45,24 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usrgroups")
 public class Usrgroups implements Serializable {
-  private static final long serialVersionUID = 160992137248844065L;
+  private static final long serialVersionUID = 161096103738485505L;
   /** Description: kodgroup. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodgroup")
-  private java.lang.Float kodgroup;
+  private java.lang.Integer kodgroup;
   /** Description: descgroup. */
   @Basic
-  @Column(name = "descgroup")
+  @Column(name = "descgroup", length = 100)
   private java.lang.String descgroup;
 
   public Usrgroups() {}
 
-  public java.lang.Float getKodgroup() {
+  public java.lang.Integer getKodgroup() {
     return this.kodgroup;
   }
 
-  public void setKodgroup(java.lang.Float kodgroup) {
+  public void setKodgroup(java.lang.Integer kodgroup) {
     this.kodgroup = kodgroup;
   }
 

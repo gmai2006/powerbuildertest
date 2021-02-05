@@ -59,14 +59,23 @@ public class MisthZpepidomHandler extends DelimiterFileHandler<MisthZpepidom> {
     MisthZpepidom record = new MisthZpepidom();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodepidom":
           record.setKodepidom(new java.lang.String(tokens.get(i)));
+          break;
+        case "autoforos":
+          record.setAutoforos(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "descepidom":
+          record.setDescepidom(tokens.get(i));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));
           break;
-        case "descepidom":
-          record.setDescepidom(tokens.get(i));
+        case "hasforo":
+          record.setHasforo(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "isasf":
+          record.setIsasf(new java.lang.Integer(tokens.get(i)));
           break;
 
         default:

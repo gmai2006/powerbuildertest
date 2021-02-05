@@ -40,20 +40,20 @@ import com.test.abc.dto.*;
  */
 
 public interface MisthFinalYpalDtoDao {
-  List<SprnReport3Dto> sprnReport3(java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+  List<SprnReport3Dto> sprnReport3(java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 
   List<DwMisthFinalYpalPrildateDto> dwMisthFinalYpalPrildate(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 
   List<PrnFinalYpalListDto> prnFinalYpalList(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 
   List<DwMisthFinalYpalPlirdateListDto> dwMisthFinalYpalPlirdateList(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 
   List<DwMisthFinalYpalListDto> dwMisthFinalYpalList(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 
   List<PickMisthFinalYpalDto> pickMisthFinalYpal(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 }

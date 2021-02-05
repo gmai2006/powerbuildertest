@@ -61,9 +61,24 @@ public class DefaultMisthZpidikotDtoDao implements MisthZpidikotDtoDao {
 
   public DefaultMisthZpidikotDtoDao() {}
 
+  public List<PrnYpalTotalDatesDto> prnYpalTotalDates(java.lang.String arg_kodxrisi) {
+    final TypedQuery<PrnYpalTotalDatesDto> query =
+        dao.getEntityManager()
+            .createNamedQuery("prnYpalTotalDatesMapping", PrnYpalTotalDatesDto.class);
+    query.setParameter("arg_kodxrisi", arg_kodxrisi);
+    return query.getResultList();
+  }
+
   public List<DwMisthYpalListDto> dwMisthYpalList(java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthYpalListDto> query =
         dao.getEntityManager().createNamedQuery("dwMisthYpalListMapping", DwMisthYpalListDto.class);
+    query.setParameter("arg_kodxrisi", arg_kodxrisi);
+    return query.getResultList();
+  }
+
+  public List<PrnAnalisiYpalDto> prnAnalisiYpal(java.lang.String arg_kodxrisi) {
+    final TypedQuery<PrnAnalisiYpalDto> query =
+        dao.getEntityManager().createNamedQuery("prnAnalisiYpalMapping", PrnAnalisiYpalDto.class);
     query.setParameter("arg_kodxrisi", arg_kodxrisi);
     return query.getResultList();
   }
@@ -77,7 +92,7 @@ public class DefaultMisthZpidikotDtoDao implements MisthZpidikotDtoDao {
   }
 
   public List<PrnFinalAtomikiMisthDto> prnFinalAtomikiMisth(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<PrnFinalAtomikiMisthDto> query =
         dao.getEntityManager()
             .createNamedQuery("prnFinalAtomikiMisthMapping", PrnFinalAtomikiMisthDto.class);
@@ -86,8 +101,17 @@ public class DefaultMisthZpidikotDtoDao implements MisthZpidikotDtoDao {
     return query.getResultList();
   }
 
+  public List<PrnYpalFinalDto> prnYpalFinal(java.lang.String arg_kodxrisi) {
+    final TypedQuery<PrnYpalFinalDto> query =
+        dao.getEntityManager().createNamedQuery("prnYpalFinalMapping", PrnYpalFinalDto.class);
+    query.setParameter("arg_kodxrisi", arg_kodxrisi);
+    return query.getResultList();
+  }
+
   public List<PrnFinalAtomikiMisthArgDto> prnFinalAtomikiMisthArg(
-      java.lang.Float arg_kodypal, java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal,
+      java.lang.Integer arg_kodfinal,
+      java.lang.String arg_kodxrisi) {
     final TypedQuery<PrnFinalAtomikiMisthArgDto> query =
         dao.getEntityManager()
             .createNamedQuery("prnFinalAtomikiMisthArgMapping", PrnFinalAtomikiMisthArgDto.class);

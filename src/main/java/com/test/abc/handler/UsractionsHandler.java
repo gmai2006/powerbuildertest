@@ -59,14 +59,14 @@ public class UsractionsHandler extends DelimiterFileHandler<Usractions> {
     Usractions record = new Usractions();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodaction(new java.lang.String(tokens.get(i)));
-          break;
         case "kodapp":
-          record.setKodapp(tokens.get(i));
+          record.setKodapp(new java.lang.String(tokens.get(i)));
           break;
         case "descaction":
           record.setDescaction(tokens.get(i));
+          break;
+        case "kodaction":
+          record.setKodaction(tokens.get(i));
           break;
 
         default:

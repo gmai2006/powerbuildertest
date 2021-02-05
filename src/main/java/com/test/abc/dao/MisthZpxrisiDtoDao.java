@@ -40,5 +40,5 @@ import com.test.abc.dto.*;
  */
 
 public interface MisthZpxrisiDtoDao {
-  List<PickZpxrisiNocurrentDto> pickZpxrisiNocurrent();
+  List<PickZpxrisiNocurrentDto> pickZpxrisiNocurrent(java.lang.String arg_kodxrisi);
 }

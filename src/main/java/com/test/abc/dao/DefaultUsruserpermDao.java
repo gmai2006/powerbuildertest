@@ -65,7 +65,7 @@ public class DefaultUsruserpermDao implements UsruserpermDao {
 
   /** {@inheritDoc} */
   @Override
-  public Usruserperm find(java.lang.String id) {
+  public Usruserperm find(java.lang.Integer id) {
     final EntityManager em = dao.getEntityManager();
     Usruserperm model = em.find(Usruserperm.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultUsruserpermDao implements UsruserpermDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(java.lang.String id) {
+  public void delete(java.lang.Integer id) {
     final EntityManager em = dao.getEntityManager();
     final Usruserperm removed = em.find(Usruserperm.class, id);
     if (null != removed) {

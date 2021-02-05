@@ -41,13 +41,13 @@ import java.util.stream.Collectors;
  */
 
 public class DwUsrmembersGroupListDto implements Serializable {
-  private static final long serialVersionUID = 160992137718216013L;
+  private static final long serialVersionUID = 161096104236190074L;
 
   /** Description: kodgroup. */
-  private java.lang.Float kodgroup;
+  private java.lang.Integer kodgroup;
 
   /** Description: koduser. */
-  private java.lang.Float koduser;
+  private java.lang.Integer koduser;
 
   /** Description: username. */
   private java.lang.String username;
@@ -61,8 +61,8 @@ public class DwUsrmembersGroupListDto implements Serializable {
   public DwUsrmembersGroupListDto() {}
 
   public DwUsrmembersGroupListDto(
-      java.lang.Float kodgroup,
-      java.lang.Float koduser,
+      java.lang.Integer kodgroup,
+      java.lang.Integer koduser,
       java.lang.String username,
       java.lang.String fullname,
       java.lang.Integer isactive) {
@@ -73,11 +73,11 @@ public class DwUsrmembersGroupListDto implements Serializable {
     this.isactive = isactive;
   }
 
-  public java.lang.Float getKodgroup() {
+  public java.lang.Integer getKodgroup() {
     return this.kodgroup;
   }
 
-  public java.lang.Float getKoduser() {
+  public java.lang.Integer getKoduser() {
     return this.koduser;
   }
 
@@ -93,11 +93,11 @@ public class DwUsrmembersGroupListDto implements Serializable {
     return this.isactive;
   }
 
-  public void setKodgroup(java.lang.Float kodgroup) {
+  public void setKodgroup(java.lang.Integer kodgroup) {
     this.kodgroup = kodgroup;
   }
 
-  public void setKoduser(java.lang.Float koduser) {
+  public void setKoduser(java.lang.Integer koduser) {
     this.koduser = koduser;
   }
 

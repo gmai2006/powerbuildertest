@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class SprnFinalEpidomYpalDto implements Serializable {
-  private static final long serialVersionUID = 160992137656728395L;
+  private static final long serialVersionUID = 161096104189922431L;
 
   /** Description: descepidom. */
   private java.lang.String descepidom;

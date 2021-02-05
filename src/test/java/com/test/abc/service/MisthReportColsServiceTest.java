@@ -51,23 +51,23 @@ public class MisthReportColsServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getKodreport())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodxrisi())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    MisthReportCols testResult = serviceMock.find(records[0].getKodreport());
+    MisthReportCols testResult = serviceMock.find(records[0].getKodxrisi());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertTrue(
-        "expect equals kodcol ", this.records[0].getKodcol() == testResult.getKodcol());
-    org.junit.Assert.assertEquals(
-        "expect equals expr ", this.records[0].getExpr(), testResult.getExpr());
-    org.junit.Assert.assertEquals(
         "expect equals headerText ", this.records[0].getHeaderText(), testResult.getHeaderText());
+    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
     org.junit.Assert.assertTrue(
         "expect equals width ", this.records[0].getWidth() == testResult.getWidth());
-    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
+    org.junit.Assert.assertEquals(
+        "expect equals kodreport ", this.records[0].getKodreport(), testResult.getKodreport());
+    org.junit.Assert.assertEquals(
+        "expect equals expr ", this.records[0].getExpr(), testResult.getExpr());
+    org.junit.Assert.assertTrue(
+        "expect equals kodcol ", this.records[0].getKodcol() == testResult.getKodcol());
   }
 }

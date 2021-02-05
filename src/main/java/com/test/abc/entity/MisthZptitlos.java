@@ -45,7 +45,7 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zptitlos")
 public class MisthZptitlos implements Serializable {
-  private static final long serialVersionUID = 160992137256875956L;
+  private static final long serialVersionUID = 161096103748336800L;
   /** Description: kodxrisi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
@@ -53,11 +53,11 @@ public class MisthZptitlos implements Serializable {
   private java.lang.String kodxrisi;
   /** Description: kodtitlos. */
   @Basic
-  @Column(name = "kodtitlos")
+  @Column(name = "kodtitlos", length = 2)
   private java.lang.String kodtitlos;
   /** Description: desctitlos. */
   @Basic
-  @Column(name = "desctitlos")
+  @Column(name = "desctitlos", length = 10)
   private java.lang.String desctitlos;
 
   public MisthZptitlos() {}

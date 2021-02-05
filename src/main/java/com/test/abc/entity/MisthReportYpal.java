@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_report_ypal")
 public class MisthReportYpal implements Serializable {
-  private static final long serialVersionUID = 160992137247915240L;
-  /** Description: kodreport. */
+  private static final long serialVersionUID = 161096103738080746L;
+  /** Description: kodypal. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "kodreport")
-  private java.lang.Float kodreport;
-  /** Description: kodypal. */
-  @Basic
   @Column(name = "kodypal")
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
   /** Description: kodxrisi. */
   @Basic
-  @Column(name = "kodxrisi")
+  @Column(name = "kodxrisi", length = 64)
   private java.lang.String kodxrisi;
+  /** Description: kodreport. */
+  @Basic
+  @Column(name = "kodreport", length = 64)
+  private java.lang.String kodreport;
 
   public MisthReportYpal() {}
 
-  public java.lang.Float getKodreport() {
-    return this.kodreport;
-  }
-
-  public void setKodreport(java.lang.Float kodreport) {
-    this.kodreport = kodreport;
-  }
-
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
+  }
+
+  public void setKodypal(java.lang.Integer kodypal) {
+    this.kodypal = kodypal;
   }
 
   public java.lang.String getKodxrisi() {
     return this.kodxrisi;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
-    this.kodypal = kodypal;
+  public java.lang.String getKodreport() {
+    return this.kodreport;
   }
 
   public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
+  }
+
+  public void setKodreport(java.lang.String kodreport) {
+    this.kodreport = kodreport;
   }
 }

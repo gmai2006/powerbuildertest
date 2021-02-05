@@ -59,17 +59,17 @@ public class MisthZpperiodHandler extends DelimiterFileHandler<MisthZpperiod> {
     MisthZpperiod record = new MisthZpperiod();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodperiod":
           record.setKodperiod(new java.lang.String(tokens.get(i)));
-          break;
-        case "kodxrisi":
-          record.setKodxrisi(tokens.get(i));
           break;
         case "descperiod":
           record.setDescperiod(tokens.get(i));
           break;
         case "orderno":
           record.setOrderno(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "kodxrisi":
+          record.setKodxrisi(tokens.get(i));
           break;
 
         default:

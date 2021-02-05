@@ -87,16 +87,16 @@ public class UsrusersDaoTest {
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
-        "expect equals username ", this.records[1].getUsername(), testResult.getUsername());
-    org.junit.Assert.assertEquals(
-        "expect equals fullname ", this.records[1].getFullname(), testResult.getFullname());
-    org.junit.Assert.assertEquals(
         "expect equals password ", this.records[1].getPassword(), testResult.getPassword());
     org.junit.Assert.assertTrue(
         "expect equals isactive ", this.records[1].getIsactive() == testResult.getIsactive());
     org.junit.Assert.assertEquals(
+        "expect equals idiotita ", this.records[1].getIdiotita(), testResult.getIdiotita());
+    org.junit.Assert.assertEquals(
         "expect equals tomeas ", this.records[1].getTomeas(), testResult.getTomeas());
     org.junit.Assert.assertEquals(
-        "expect equals idiotita ", this.records[1].getIdiotita(), testResult.getIdiotita());
+        "expect equals fullname ", this.records[1].getFullname(), testResult.getFullname());
+    org.junit.Assert.assertEquals(
+        "expect equals username ", this.records[1].getUsername(), testResult.getUsername());
   }
 }

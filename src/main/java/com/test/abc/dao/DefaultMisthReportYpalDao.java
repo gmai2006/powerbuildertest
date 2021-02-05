@@ -65,7 +65,7 @@ public class DefaultMisthReportYpalDao implements MisthReportYpalDao {
 
   /** {@inheritDoc} */
   @Override
-  public MisthReportYpal find(java.lang.Float id) {
+  public MisthReportYpal find(java.lang.Integer id) {
     final EntityManager em = dao.getEntityManager();
     MisthReportYpal model = em.find(MisthReportYpal.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultMisthReportYpalDao implements MisthReportYpalDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(java.lang.Float id) {
+  public void delete(java.lang.Integer id) {
     final EntityManager em = dao.getEntityManager();
     final MisthReportYpal removed = em.find(MisthReportYpal.class, id);
     if (null != removed) {

@@ -59,9 +59,9 @@ public class MisthZpyvarServiceTest {
     MisthZpyvar testResult = serviceMock.find(records[0].getKodxrisi());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals kodyvar ", this.records[0].getKodyvar(), testResult.getKodyvar());
-    org.junit.Assert.assertEquals(
         "expect equals descyvar ", this.records[0].getDescyvar(), testResult.getDescyvar());
+    org.junit.Assert.assertEquals(
+        "expect equals kodyvar ", this.records[0].getKodyvar(), testResult.getKodyvar());
     org.junit.Assert.assertEquals(
         "expect equals expr ", this.records[0].getExpr(), testResult.getExpr());
   }

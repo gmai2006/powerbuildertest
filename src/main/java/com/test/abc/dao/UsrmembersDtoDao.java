@@ -40,5 +40,5 @@ import com.test.abc.dto.*;
  */
 
 public interface UsrmembersDtoDao {
-  List<DwUsrmembersUserListDto> dwUsrmembersUserList(java.lang.Float arg_koduser);
+  List<DwUsrmembersUserListDto> dwUsrmembersUserList(java.lang.Integer arg_koduser);
 }

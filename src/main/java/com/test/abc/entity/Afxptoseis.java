@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "afxptoseis")
 public class Afxptoseis implements Serializable {
-  private static final long serialVersionUID = 160992137258264974L;
-  /** Description: onom. */
+  private static final long serialVersionUID = 161096103749947849L;
+  /** Description: ait. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "onom")
-  private java.lang.String onom;
-  /** Description: gen. */
-  @Basic
-  @Column(name = "gen")
-  private java.lang.String gen;
-  /** Description: ait. */
-  @Basic
   @Column(name = "ait")
   private java.lang.String ait;
+  /** Description: gen. */
+  @Basic
+  @Column(name = "gen", length = 50)
+  private java.lang.String gen;
+  /** Description: onom. */
+  @Basic
+  @Column(name = "onom", length = 50)
+  private java.lang.String onom;
 
   public Afxptoseis() {}
 
-  public java.lang.String getOnom() {
-    return this.onom;
+  public java.lang.String getAit() {
+    return this.ait;
   }
 
-  public void setOnom(java.lang.String onom) {
-    this.onom = onom;
+  public void setAit(java.lang.String ait) {
+    this.ait = ait;
   }
 
   public java.lang.String getGen() {
     return this.gen;
   }
 
-  public java.lang.String getAit() {
-    return this.ait;
+  public java.lang.String getOnom() {
+    return this.onom;
   }
 
   public void setGen(java.lang.String gen) {
     this.gen = gen;
   }
 
-  public void setAit(java.lang.String ait) {
-    this.ait = ait;
+  public void setOnom(java.lang.String onom) {
+    this.onom = onom;
   }
 }

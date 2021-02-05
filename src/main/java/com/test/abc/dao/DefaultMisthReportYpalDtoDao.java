@@ -62,7 +62,7 @@ public class DefaultMisthReportYpalDtoDao implements MisthReportYpalDtoDao {
   public DefaultMisthReportYpalDtoDao() {}
 
   public List<SprnReport2Dto> sprnReport2(
-      java.lang.Float arg_kodreport, java.lang.String arg_kodxrisi) {
+      java.lang.String arg_kodreport, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnReport2Dto> query =
         dao.getEntityManager().createNamedQuery("sprnReport2Mapping", SprnReport2Dto.class);
     query.setParameter("arg_kodreport", arg_kodreport);
@@ -71,7 +71,7 @@ public class DefaultMisthReportYpalDtoDao implements MisthReportYpalDtoDao {
   }
 
   public List<SprnReportDto> sprnReport(
-      java.lang.Float arg_kodreport, java.lang.String arg_kodxrisi) {
+      java.lang.String arg_kodreport, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnReportDto> query =
         dao.getEntityManager().createNamedQuery("sprnReportMapping", SprnReportDto.class);
     query.setParameter("arg_kodreport", arg_kodreport);
@@ -80,7 +80,7 @@ public class DefaultMisthReportYpalDtoDao implements MisthReportYpalDtoDao {
   }
 
   public List<PickMisthReportYpalDto> pickMisthReportYpal(
-      java.lang.Float arg_kodreport, java.lang.String arg_kodxrisi) {
+      java.lang.String arg_kodreport, java.lang.String arg_kodxrisi) {
     final TypedQuery<PickMisthReportYpalDto> query =
         dao.getEntityManager()
             .createNamedQuery("pickMisthReportYpalMapping", PickMisthReportYpalDto.class);

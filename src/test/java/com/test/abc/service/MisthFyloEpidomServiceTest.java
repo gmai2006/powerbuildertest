@@ -58,14 +58,14 @@ public class MisthFyloEpidomServiceTest {
   public void testFind_success() {
     MisthFyloEpidom testResult = serviceMock.find(records[0].getKodepidom());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
     org.junit.Assert.assertEquals(
         "expect equals kodfylo ", this.records[0].getKodfylo(), testResult.getKodfylo());
     org.junit.Assert.assertEquals(
-        "expect equals expr ", this.records[0].getExpr(), testResult.getExpr());
-    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
-    org.junit.Assert.assertEquals(
         "expect equals notes ", this.records[0].getNotes(), testResult.getNotes());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertEquals(
+        "expect equals expr ", this.records[0].getExpr(), testResult.getExpr());
   }
 }

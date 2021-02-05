@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PrnYpalNewklimakioDto implements Serializable {
-  private static final long serialVersionUID = 160992137728384844L;
+  private static final long serialVersionUID = 16109610424591692L;
 
   /** Description: surname. */
   private java.lang.String surname;

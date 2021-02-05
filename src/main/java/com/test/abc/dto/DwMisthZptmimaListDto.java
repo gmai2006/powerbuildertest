@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthZptmimaListDto implements Serializable {
-  private static final long serialVersionUID = 160992137691662209L;
+  private static final long serialVersionUID = 161096104217186186L;
 
   /** Description: kodtmima. */
   private java.lang.String kodtmima;

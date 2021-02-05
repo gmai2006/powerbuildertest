@@ -45,20 +45,20 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zptmima")
 public class MisthZptmima implements Serializable {
-  private static final long serialVersionUID = 160992137241369808L;
+  private static final long serialVersionUID = 161096103731348903L;
   /** Description: kodtmima. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodtmima")
   private java.lang.String kodtmima;
-  /** Description: kodxrisi. */
-  @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
   /** Description: desctmima. */
   @Basic
-  @Column(name = "desctmima")
+  @Column(name = "desctmima", length = 50)
   private java.lang.String desctmima;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
 
   public MisthZptmima() {}
 
@@ -70,19 +70,19 @@ public class MisthZptmima implements Serializable {
     this.kodtmima = kodtmima;
   }
 
-  public java.lang.String getKodxrisi() {
-    return this.kodxrisi;
-  }
-
   public java.lang.String getDesctmima() {
     return this.desctmima;
   }
 
-  public void setKodxrisi(java.lang.String kodxrisi) {
-    this.kodxrisi = kodxrisi;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
   }
 
   public void setDesctmima(java.lang.String desctmima) {
     this.desctmima = desctmima;
+  }
+
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
   }
 }

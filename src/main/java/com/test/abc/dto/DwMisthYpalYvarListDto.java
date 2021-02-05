@@ -41,10 +41,10 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthYpalYvarListDto implements Serializable {
-  private static final long serialVersionUID = 160992137685322393L;
+  private static final long serialVersionUID = 161096104213099570L;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodyvar. */
   private java.lang.String kodyvar;
@@ -53,7 +53,7 @@ public class DwMisthYpalYvarListDto implements Serializable {
   private java.lang.String kodxrisi;
 
   /** Description: aa. */
-  private java.lang.Integer aa;
+  private java.lang.Float aa;
 
   /** Description: expr. */
   private java.lang.String expr;
@@ -61,10 +61,10 @@ public class DwMisthYpalYvarListDto implements Serializable {
   public DwMisthYpalYvarListDto() {}
 
   public DwMisthYpalYvarListDto(
-      java.lang.Float kodypal,
+      java.lang.Integer kodypal,
       java.lang.String kodyvar,
       java.lang.String kodxrisi,
-      java.lang.Integer aa,
+      java.lang.Float aa,
       java.lang.String expr) {
     this.kodypal = kodypal;
     this.kodyvar = kodyvar;
@@ -73,7 +73,7 @@ public class DwMisthYpalYvarListDto implements Serializable {
     this.expr = expr;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -85,7 +85,7 @@ public class DwMisthYpalYvarListDto implements Serializable {
     return this.kodxrisi;
   }
 
-  public java.lang.Integer getAa() {
+  public java.lang.Float getAa() {
     return this.aa;
   }
 
@@ -93,7 +93,7 @@ public class DwMisthYpalYvarListDto implements Serializable {
     return this.expr;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 
@@ -105,7 +105,7 @@ public class DwMisthYpalYvarListDto implements Serializable {
     this.kodxrisi = kodxrisi;
   }
 
-  public void setAa(java.lang.Integer aa) {
+  public void setAa(java.lang.Float aa) {
     this.aa = aa;
   }
 

@@ -86,11 +86,11 @@ public class MisthYpalYvarDaoTest {
     java.util.List<MisthYpalYvar> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
+    org.junit.Assert.assertTrue("expect equals aa ", this.records[1].getAa() == testResult.getAa());
     org.junit.Assert.assertEquals(
         "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
     org.junit.Assert.assertEquals(
         "expect equals kodyvar ", this.records[1].getKodyvar(), testResult.getKodyvar());
-    org.junit.Assert.assertTrue("expect equals aa ", this.records[1].getAa() == testResult.getAa());
     org.junit.Assert.assertEquals(
         "expect equals expr ", this.records[1].getExpr(), testResult.getExpr());
   }

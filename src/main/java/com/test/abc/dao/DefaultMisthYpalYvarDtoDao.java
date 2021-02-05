@@ -62,7 +62,7 @@ public class DefaultMisthYpalYvarDtoDao implements MisthYpalYvarDtoDao {
   public DefaultMisthYpalYvarDtoDao() {}
 
   public List<DwMisthYpalYvarListDto> dwMisthYpalYvarList(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthYpalYvarListDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwMisthYpalYvarListMapping", DwMisthYpalYvarListDto.class);

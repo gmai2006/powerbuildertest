@@ -82,13 +82,13 @@ public class UsractionsDaoTest {
 
   @Test
   public void testSelect() {
-    Usractions testResult = dao.find(records[1].getKodaction());
+    Usractions testResult = dao.find(records[1].getKodapp());
     java.util.List<Usractions> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
-        "expect equals kodapp ", this.records[1].getKodapp(), testResult.getKodapp());
-    org.junit.Assert.assertEquals(
         "expect equals descaction ", this.records[1].getDescaction(), testResult.getDescaction());
+    org.junit.Assert.assertEquals(
+        "expect equals kodaction ", this.records[1].getKodaction(), testResult.getKodaction());
   }
 }

@@ -65,7 +65,7 @@ public class DefaultUsrusersDao implements UsrusersDao {
 
   /** {@inheritDoc} */
   @Override
-  public Usrusers find(java.lang.Float id) {
+  public Usrusers find(java.lang.Integer id) {
     final EntityManager em = dao.getEntityManager();
     Usrusers model = em.find(Usrusers.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultUsrusersDao implements UsrusersDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(java.lang.Float id) {
+  public void delete(java.lang.Integer id) {
     final EntityManager em = dao.getEntityManager();
     final Usrusers removed = em.find(Usrusers.class, id);
     if (null != removed) {

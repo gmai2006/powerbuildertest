@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.MisthFinal;
 
 public interface MisthFinalService {
-  public MisthFinal find(java.lang.Float id);
+  public MisthFinal find(java.lang.String id);
   /**
    * Select a list of MisthFinal based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface MisthFinalService {
    *
    * @param id The MisthFinal Id.
    */
-  public void delete(java.lang.Float id);
+  public void delete(java.lang.String id);
 }

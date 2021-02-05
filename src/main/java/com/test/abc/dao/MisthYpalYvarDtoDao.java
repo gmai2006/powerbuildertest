@@ -41,5 +41,5 @@ import com.test.abc.dto.*;
 
 public interface MisthYpalYvarDtoDao {
   List<DwMisthYpalYvarListDto> dwMisthYpalYvarList(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 }

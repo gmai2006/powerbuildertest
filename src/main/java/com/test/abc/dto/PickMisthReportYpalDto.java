@@ -41,13 +41,13 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthReportYpalDto implements Serializable {
-  private static final long serialVersionUID = 160992137727019278L;
+  private static final long serialVersionUID = 161096104242461708L;
 
   /** Description: kodreport. */
-  private java.lang.Float kodreport;
+  private java.lang.String kodreport;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -64,8 +64,8 @@ public class PickMisthReportYpalDto implements Serializable {
   public PickMisthReportYpalDto() {}
 
   public PickMisthReportYpalDto(
-      java.lang.Float kodreport,
-      java.lang.Float kodypal,
+      java.lang.String kodreport,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
       java.lang.String surname,
       java.lang.String name,
@@ -78,11 +78,11 @@ public class PickMisthReportYpalDto implements Serializable {
     this.fathername = fathername;
   }
 
-  public java.lang.Float getKodreport() {
+  public java.lang.String getKodreport() {
     return this.kodreport;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -102,11 +102,11 @@ public class PickMisthReportYpalDto implements Serializable {
     return this.fathername;
   }
 
-  public void setKodreport(java.lang.Float kodreport) {
+  public void setKodreport(java.lang.String kodreport) {
     this.kodreport = kodreport;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

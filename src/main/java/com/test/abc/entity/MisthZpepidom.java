@@ -45,20 +45,32 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpepidom")
 public class MisthZpepidom implements Serializable {
-  private static final long serialVersionUID = 160992137248385881L;
+  private static final long serialVersionUID = 161096103738862062L;
   /** Description: kodepidom. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodepidom")
   private java.lang.String kodepidom;
-  /** Description: kodxrisi. */
+  /** Description: autoforos. */
   @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
+  @Column(name = "autoforos")
+  private java.lang.Integer autoforos;
   /** Description: descepidom. */
   @Basic
-  @Column(name = "descepidom")
+  @Column(name = "descepidom", length = 50)
   private java.lang.String descepidom;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
+  /** Description: hasforo. */
+  @Basic
+  @Column(name = "hasforo")
+  private java.lang.Integer hasforo;
+  /** Description: isasf. */
+  @Basic
+  @Column(name = "isasf")
+  private java.lang.Integer isasf;
 
   public MisthZpepidom() {}
 
@@ -70,19 +82,43 @@ public class MisthZpepidom implements Serializable {
     this.kodepidom = kodepidom;
   }
 
-  public java.lang.String getKodxrisi() {
-    return this.kodxrisi;
+  public java.lang.Integer getAutoforos() {
+    return this.autoforos;
   }
 
   public java.lang.String getDescepidom() {
     return this.descepidom;
   }
 
-  public void setKodxrisi(java.lang.String kodxrisi) {
-    this.kodxrisi = kodxrisi;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
+  }
+
+  public java.lang.Integer getHasforo() {
+    return this.hasforo;
+  }
+
+  public java.lang.Integer getIsasf() {
+    return this.isasf;
+  }
+
+  public void setAutoforos(java.lang.Integer autoforos) {
+    this.autoforos = autoforos;
   }
 
   public void setDescepidom(java.lang.String descepidom) {
     this.descepidom = descepidom;
+  }
+
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
+  }
+
+  public void setHasforo(java.lang.Integer hasforo) {
+    this.hasforo = hasforo;
+  }
+
+  public void setIsasf(java.lang.Integer isasf) {
+    this.isasf = isasf;
   }
 }

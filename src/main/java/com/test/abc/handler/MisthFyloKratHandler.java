@@ -59,23 +59,23 @@ public class MisthFyloKratHandler extends DelimiterFileHandler<MisthFyloKrat> {
     MisthFyloKrat record = new MisthFyloKrat();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodkrat":
           record.setKodkrat(new java.lang.String(tokens.get(i)));
           break;
-        case "kodxrisi":
-          record.setKodxrisi(tokens.get(i));
+        case "aa":
+          record.setAa(new java.lang.Float(tokens.get(i)));
           break;
         case "kodfylo":
           record.setKodfylo(tokens.get(i));
           break;
-        case "expr":
-          record.setExpr(tokens.get(i));
-          break;
-        case "aa":
-          record.setAa(new java.lang.Integer(tokens.get(i)));
-          break;
         case "notes":
           record.setNotes(tokens.get(i));
+          break;
+        case "kodxrisi":
+          record.setKodxrisi(tokens.get(i));
+          break;
+        case "expr":
+          record.setExpr(tokens.get(i));
           break;
 
         default:

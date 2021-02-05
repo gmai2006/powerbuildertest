@@ -60,7 +60,7 @@ public interface UsrusersDao {
    * @param id An Usrusers id.
    * @return The same Usrusers.
    */
-  public Usrusers find(java.lang.Float id);
+  public Usrusers find(java.lang.Integer id);
   /**
    * Create an Usrusers.
    *
@@ -82,5 +82,5 @@ public interface UsrusersDao {
    *
    * @param id The entity Id.
    */
-  public void delete(java.lang.Float id);
+  public void delete(java.lang.Integer id);
 }

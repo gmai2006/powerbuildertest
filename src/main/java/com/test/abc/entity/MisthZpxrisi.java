@@ -45,7 +45,7 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpxrisi")
 public class MisthZpxrisi implements Serializable {
-  private static final long serialVersionUID = 160992137257810020L;
+  private static final long serialVersionUID = 161096103749598525L;
   /** Description: kodxrisi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
@@ -53,7 +53,7 @@ public class MisthZpxrisi implements Serializable {
   private java.lang.String kodxrisi;
   /** Description: descxrisi. */
   @Basic
-  @Column(name = "descxrisi")
+  @Column(name = "descxrisi", length = 50)
   private java.lang.String descxrisi;
 
   public MisthZpxrisi() {}

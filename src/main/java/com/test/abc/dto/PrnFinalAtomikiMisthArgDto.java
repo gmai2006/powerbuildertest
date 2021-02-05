@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PrnFinalAtomikiMisthArgDto implements Serializable {
-  private static final long serialVersionUID = 160992137744447782L;
+  private static final long serialVersionUID = 161096104256919022L;
 
   /** Description: surname. */
   private java.lang.String surname;
@@ -104,7 +104,7 @@ public class PrnFinalAtomikiMisthArgDto implements Serializable {
   private java.lang.String desctmima;
 
   /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
+  private java.lang.Integer kodfinal;
 
   /** Description: aa. */
   private java.lang.Float aa;
@@ -119,7 +119,7 @@ public class PrnFinalAtomikiMisthArgDto implements Serializable {
   private java.lang.String title;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: desctamio. */
   private java.lang.String desctamio;
@@ -147,12 +147,12 @@ public class PrnFinalAtomikiMisthArgDto implements Serializable {
       java.lang.String descidikot,
       java.lang.String descthesi,
       java.lang.String desctmima,
-      java.lang.Float kodfinal,
+      java.lang.Integer kodfinal,
       java.lang.Float aa,
       java.lang.String descfinal,
       java.util.Date datefinal,
       java.lang.String title,
-      java.lang.Float kodypal,
+      java.lang.Integer kodypal,
       java.lang.String desctamio) {
     this.surname = surname;
     this.name = name;
@@ -263,7 +263,7 @@ public class PrnFinalAtomikiMisthArgDto implements Serializable {
     return this.desctmima;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
@@ -283,7 +283,7 @@ public class PrnFinalAtomikiMisthArgDto implements Serializable {
     return this.title;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -371,7 +371,7 @@ public class PrnFinalAtomikiMisthArgDto implements Serializable {
     this.desctmima = desctmima;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 
@@ -391,7 +391,7 @@ public class PrnFinalAtomikiMisthArgDto implements Serializable {
     this.title = title;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

@@ -59,11 +59,11 @@ public class AfxfilterHandler extends DelimiterFileHandler<Afxfilter> {
     Afxfilter record = new Afxfilter();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodfilter(new java.lang.Float(tokens.get(i)));
-          break;
         case "descfilter":
-          record.setDescfilter(tokens.get(i));
+          record.setDescfilter(new java.lang.String(tokens.get(i)));
+          break;
+        case "kodfilter":
+          record.setKodfilter(new java.lang.Float(tokens.get(i)));
           break;
         case "tablename":
           record.setTablename(tokens.get(i));

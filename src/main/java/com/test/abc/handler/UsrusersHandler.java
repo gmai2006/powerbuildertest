@@ -59,14 +59,8 @@ public class UsrusersHandler extends DelimiterFileHandler<Usrusers> {
     Usrusers record = new Usrusers();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKoduser(new java.lang.Float(tokens.get(i)));
-          break;
-        case "username":
-          record.setUsername(tokens.get(i));
-          break;
-        case "fullname":
-          record.setFullname(tokens.get(i));
+        case "koduser":
+          record.setKoduser(new java.lang.Integer(tokens.get(i)));
           break;
         case "password":
           record.setPassword(tokens.get(i));
@@ -74,11 +68,17 @@ public class UsrusersHandler extends DelimiterFileHandler<Usrusers> {
         case "isactive":
           record.setIsactive(new java.lang.Integer(tokens.get(i)));
           break;
+        case "idiotita":
+          record.setIdiotita(tokens.get(i));
+          break;
         case "tomeas":
           record.setTomeas(tokens.get(i));
           break;
-        case "idiotita":
-          record.setIdiotita(tokens.get(i));
+        case "fullname":
+          record.setFullname(tokens.get(i));
+          break;
+        case "username":
+          record.setUsername(tokens.get(i));
           break;
 
         default:

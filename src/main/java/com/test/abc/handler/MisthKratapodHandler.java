@@ -59,14 +59,14 @@ public class MisthKratapodHandler extends DelimiterFileHandler<MisthKratapod> {
     MisthKratapod record = new MisthKratapod();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodxrisi":
           record.setKodxrisi(new java.lang.String(tokens.get(i)));
-          break;
-        case "kodkratapod":
-          record.setKodkratapod(new java.lang.Float(tokens.get(i)));
           break;
         case "desckratapod":
           record.setDesckratapod(tokens.get(i));
+          break;
+        case "kodkratapod":
+          record.setKodkratapod(new java.lang.Float(tokens.get(i)));
           break;
         case "apoddate":
           record.setApoddate(new java.util.Date(parseDate(tokens.get(i))));

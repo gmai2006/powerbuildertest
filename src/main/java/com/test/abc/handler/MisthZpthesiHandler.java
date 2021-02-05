@@ -59,14 +59,14 @@ public class MisthZpthesiHandler extends DelimiterFileHandler<MisthZpthesi> {
     MisthZpthesi record = new MisthZpthesi();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodthesi":
           record.setKodthesi(new java.lang.String(tokens.get(i)));
-          break;
-        case "kodxrisi":
-          record.setKodxrisi(tokens.get(i));
           break;
         case "descthesi":
           record.setDescthesi(tokens.get(i));
+          break;
+        case "kodxrisi":
+          record.setKodxrisi(tokens.get(i));
           break;
 
         default:

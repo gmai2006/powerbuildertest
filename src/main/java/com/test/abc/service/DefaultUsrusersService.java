@@ -59,7 +59,7 @@ public class DefaultUsrusersService implements UsrusersService {
 
   /** {@inheritDoc} */
   @Override
-  public Usrusers find(java.lang.Float id) {
+  public Usrusers find(java.lang.Integer id) {
     final Usrusers result = dao.find(id);
     logger.info("find(Usrusers) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultUsrusersService implements UsrusersService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(java.lang.Float id) {
+  public void delete(java.lang.Integer id) {
     logger.info("delete(Usrusers={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(Usrusers) - exited - return value={} result ");

@@ -86,9 +86,15 @@ public class MisthZpepidomDaoTest {
     java.util.List<MisthZpepidom> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue(
+        "expect equals autoforos ", this.records[1].getAutoforos() == testResult.getAutoforos());
     org.junit.Assert.assertEquals(
         "expect equals descepidom ", this.records[1].getDescepidom(), testResult.getDescepidom());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue(
+        "expect equals hasforo ", this.records[1].getHasforo() == testResult.getHasforo());
+    org.junit.Assert.assertTrue(
+        "expect equals isasf ", this.records[1].getIsasf() == testResult.getIsasf());
   }
 }

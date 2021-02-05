@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PrnFinalNopaidAnaYpalDto implements Serializable {
-  private static final long serialVersionUID = 160992137693812703L;
+  private static final long serialVersionUID = 161096104218827967L;
 
   /** Description: descfinal. */
   private java.lang.String descfinal;
@@ -56,7 +56,7 @@ public class PrnFinalNopaidAnaYpalDto implements Serializable {
   private java.lang.String fathername;
 
   /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
+  private java.lang.Integer kodfinal;
 
   /** Description: datefinal. */
   private java.util.Date datefinal;
@@ -65,7 +65,7 @@ public class PrnFinalNopaidAnaYpalDto implements Serializable {
   private java.util.Date plirdate;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -83,10 +83,10 @@ public class PrnFinalNopaidAnaYpalDto implements Serializable {
       java.lang.String surname,
       java.lang.String name,
       java.lang.String fathername,
-      java.lang.Float kodfinal,
+      java.lang.Integer kodfinal,
       java.util.Date datefinal,
       java.util.Date plirdate,
-      java.lang.Float kodypal,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
       java.lang.String descperiod,
       java.lang.Float aa) {
@@ -119,7 +119,7 @@ public class PrnFinalNopaidAnaYpalDto implements Serializable {
     return this.fathername;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
@@ -131,7 +131,7 @@ public class PrnFinalNopaidAnaYpalDto implements Serializable {
     return this.plirdate;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -163,7 +163,7 @@ public class PrnFinalNopaidAnaYpalDto implements Serializable {
     this.fathername = fathername;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 
@@ -175,7 +175,7 @@ public class PrnFinalNopaidAnaYpalDto implements Serializable {
     this.plirdate = plirdate;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

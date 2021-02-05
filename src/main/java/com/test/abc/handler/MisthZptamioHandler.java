@@ -59,7 +59,7 @@ public class MisthZptamioHandler extends DelimiterFileHandler<MisthZptamio> {
     MisthZptamio record = new MisthZptamio();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodtamio":
           record.setKodtamio(new java.lang.String(tokens.get(i)));
           break;
         case "kodxrisi":

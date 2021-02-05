@@ -51,14 +51,14 @@ public class UsrmembersServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getKodgroup())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKoduser())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    Usrmembers testResult = serviceMock.find(records[0].getKodgroup());
+    Usrmembers testResult = serviceMock.find(records[0].getKoduser());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertTrue(
-        "expect equals koduser ", this.records[0].getKoduser() == testResult.getKoduser());
+        "expect equals kodgroup ", this.records[0].getKodgroup() == testResult.getKodgroup());
   }
 }

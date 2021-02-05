@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthZpkratXrisiDto implements Serializable {
-  private static final long serialVersionUID = 160992137645746811L;
+  private static final long serialVersionUID = 161096104180569841L;
 
   /** Description: kodkrat. */
   private java.lang.String kodkrat;

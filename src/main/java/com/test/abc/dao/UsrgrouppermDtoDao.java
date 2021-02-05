@@ -40,5 +40,5 @@ import com.test.abc.dto.*;
  */
 
 public interface UsrgrouppermDtoDao {
-  List<DwUsrgrouppermListDto> dwUsrgrouppermList(java.lang.Float arg_kodgroup);
+  List<DwUsrgrouppermListDto> dwUsrgrouppermList(java.lang.Integer arg_kodgroup);
 }

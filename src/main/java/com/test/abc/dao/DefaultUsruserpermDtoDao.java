@@ -61,7 +61,7 @@ public class DefaultUsruserpermDtoDao implements UsruserpermDtoDao {
 
   public DefaultUsruserpermDtoDao() {}
 
-  public List<DwUsruserpermListDto> dwUsruserpermList(java.lang.Float arg_koduser) {
+  public List<DwUsruserpermListDto> dwUsruserpermList(java.lang.Integer arg_koduser) {
     final TypedQuery<DwUsruserpermListDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwUsruserpermListMapping", DwUsruserpermListDto.class);

@@ -102,7 +102,7 @@ public class UsruserpermResource {
 
   /**
    * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id")
-   * java.lang.String id) { this.service.delete(id); return
+   * java.lang.Integer id) { this.service.delete(id); return
    * Response.status(Response.Status.OK).entity("Successfully delete object").build(); }
    */
 
@@ -113,7 +113,7 @@ public class UsruserpermResource {
    * @return Usruserperm.
    */
   /**
-   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.String id) { Usruserperm
+   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.Integer id) { Usruserperm
    * result = this.service.find(id); if (null == result) { return
    * Response.status(Response.Status.NOT_FOUND).build(); } return
    * Response.status(Response.Status.OK).entity(result).build(); }

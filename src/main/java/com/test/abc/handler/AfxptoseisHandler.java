@@ -59,14 +59,14 @@ public class AfxptoseisHandler extends DelimiterFileHandler<Afxptoseis> {
     Afxptoseis record = new Afxptoseis();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setOnom(new java.lang.String(tokens.get(i)));
+        case "ait":
+          record.setAit(new java.lang.String(tokens.get(i)));
           break;
         case "gen":
           record.setGen(tokens.get(i));
           break;
-        case "ait":
-          record.setAit(tokens.get(i));
+        case "onom":
+          record.setOnom(tokens.get(i));
           break;
 
         default:

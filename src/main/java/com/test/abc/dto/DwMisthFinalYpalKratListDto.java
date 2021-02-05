@@ -41,13 +41,13 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthFinalYpalKratListDto implements Serializable {
-  private static final long serialVersionUID = 160992137675229684L;
+  private static final long serialVersionUID = 161096104206359159L;
 
   /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
+  private java.lang.Integer kodfinal;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodkrat. */
   private java.lang.String kodkrat;
@@ -59,7 +59,7 @@ public class DwMisthFinalYpalKratListDto implements Serializable {
   private java.lang.Integer poso;
 
   /** Description: aa. */
-  private java.lang.Integer aa;
+  private java.lang.Float aa;
 
   /** Description: notes. */
   private java.lang.String notes;
@@ -67,12 +67,12 @@ public class DwMisthFinalYpalKratListDto implements Serializable {
   public DwMisthFinalYpalKratListDto() {}
 
   public DwMisthFinalYpalKratListDto(
-      java.lang.Float kodfinal,
-      java.lang.Float kodypal,
+      java.lang.Integer kodfinal,
+      java.lang.Integer kodypal,
       java.lang.String kodkrat,
       java.lang.String kodxrisi,
       java.lang.Integer poso,
-      java.lang.Integer aa,
+      java.lang.Float aa,
       java.lang.String notes) {
     this.kodfinal = kodfinal;
     this.kodypal = kodypal;
@@ -83,11 +83,11 @@ public class DwMisthFinalYpalKratListDto implements Serializable {
     this.notes = notes;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -103,7 +103,7 @@ public class DwMisthFinalYpalKratListDto implements Serializable {
     return this.poso;
   }
 
-  public java.lang.Integer getAa() {
+  public java.lang.Float getAa() {
     return this.aa;
   }
 
@@ -111,11 +111,11 @@ public class DwMisthFinalYpalKratListDto implements Serializable {
     return this.notes;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 
@@ -131,7 +131,7 @@ public class DwMisthFinalYpalKratListDto implements Serializable {
     this.poso = poso;
   }
 
-  public void setAa(java.lang.Integer aa) {
+  public void setAa(java.lang.Float aa) {
     this.aa = aa;
   }
 

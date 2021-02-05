@@ -59,10 +59,10 @@ public class MisthZpperiodServiceTest {
     MisthZpperiod testResult = serviceMock.find(records[0].getKodperiod());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals descperiod ", this.records[0].getDescperiod(), testResult.getDescperiod());
     org.junit.Assert.assertTrue(
         "expect equals orderno ", this.records[0].getOrderno() == testResult.getOrderno());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
   }
 }

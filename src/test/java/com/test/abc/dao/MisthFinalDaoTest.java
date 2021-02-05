@@ -82,22 +82,22 @@ public class MisthFinalDaoTest {
 
   @Test
   public void testSelect() {
-    MisthFinal testResult = dao.find(records[1].getKodfinal());
+    MisthFinal testResult = dao.find(records[1].getKodperiod());
     java.util.List<MisthFinal> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
-        "expect equals kodkat ", this.records[1].getKodkat(), testResult.getKodkat());
-    org.junit.Assert.assertEquals(
-        "expect equals kodperiod ", this.records[1].getKodperiod(), testResult.getKodperiod());
+    org.junit.Assert.assertTrue(
+        "expect equals datefinal ",
+        this.records[1].getDatefinal().getTime() == testResult.getDatefinal().getTime());
     org.junit.Assert.assertTrue("expect equals aa ", this.records[1].getAa() == testResult.getAa());
     org.junit.Assert.assertEquals(
         "expect equals descfinal ", this.records[1].getDescfinal(), testResult.getDescfinal());
     org.junit.Assert.assertTrue(
-        "expect equals datefinal ",
-        this.records[1].getDatefinal().getTime() == testResult.getDatefinal().getTime());
+        "expect equals kodfinal ", this.records[1].getKodfinal() == testResult.getKodfinal());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertEquals(
+        "expect equals kodkat ", this.records[1].getKodkat(), testResult.getKodkat());
     org.junit.Assert.assertEquals(
         "expect equals title ", this.records[1].getTitle(), testResult.getTitle());
   }

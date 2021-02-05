@@ -59,17 +59,17 @@ public class MisthZpstathHandler extends DelimiterFileHandler<MisthZpstath> {
     MisthZpstath record = new MisthZpstath();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodxrisi":
           record.setKodxrisi(new java.lang.String(tokens.get(i)));
           break;
         case "kodstath":
           record.setKodstath(tokens.get(i));
           break;
-        case "descstath":
-          record.setDescstath(tokens.get(i));
-          break;
         case "poso":
           record.setPoso(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "descstath":
+          record.setDescstath(tokens.get(i));
           break;
 
         default:

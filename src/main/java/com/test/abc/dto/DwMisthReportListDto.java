@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthReportListDto implements Serializable {
-  private static final long serialVersionUID = 160992137732078698L;
+  private static final long serialVersionUID = 16109610424854828L;
 
   /** Description: kodreport. */
   private java.lang.String kodreport;

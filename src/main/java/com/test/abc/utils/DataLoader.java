@@ -141,12 +141,12 @@ public class DataLoader {
           handler = new MisthReportYpalHandler(jpa);
           handler.process(inputStream);
           break;
-        case "MisthZpepidom":
-          handler = new MisthZpepidomHandler(jpa);
-          handler.process(inputStream);
-          break;
         case "Usrgroups":
           handler = new UsrgroupsHandler(jpa);
+          handler.process(inputStream);
+          break;
+        case "MisthZpepidom":
+          handler = new MisthZpepidomHandler(jpa);
           handler.process(inputStream);
           break;
         case "MisthZpkat":
@@ -177,16 +177,16 @@ public class DataLoader {
           handler = new MisthFinalYpalHandler(jpa);
           handler.process(inputStream);
           break;
-        case "Afxfilterd":
-          handler = new AfxfilterdHandler(jpa);
-          handler.process(inputStream);
-          break;
         case "Usrapps":
           handler = new UsrappsHandler(jpa);
           handler.process(inputStream);
           break;
         case "MisthZpthesi":
           handler = new MisthZpthesiHandler(jpa);
+          handler.process(inputStream);
+          break;
+        case "Afxfilterd":
+          handler = new AfxfilterdHandler(jpa);
           handler.process(inputStream);
           break;
         case "MisthFinalYpalKrat":
@@ -201,12 +201,12 @@ public class DataLoader {
           handler = new UsrusersHandler(jpa);
           handler.process(inputStream);
           break;
-        case "MisthZpidikot":
-          handler = new MisthZpidikotHandler(jpa);
-          handler.process(inputStream);
-          break;
         case "MisthZptamio":
           handler = new MisthZptamioHandler(jpa);
+          handler.process(inputStream);
+          break;
+        case "MisthZpidikot":
+          handler = new MisthZpidikotHandler(jpa);
           handler.process(inputStream);
           break;
         case "MisthZptitlos":
@@ -233,12 +233,12 @@ public class DataLoader {
           handler = new MisthFinalHandler(jpa);
           handler.process(inputStream);
           break;
-        case "MisthFyloKrat":
-          handler = new MisthFyloKratHandler(jpa);
-          handler.process(inputStream);
-          break;
         case "Usractions":
           handler = new UsractionsHandler(jpa);
+          handler.process(inputStream);
+          break;
+        case "MisthFyloKrat":
+          handler = new MisthFyloKratHandler(jpa);
           handler.process(inputStream);
           break;
 

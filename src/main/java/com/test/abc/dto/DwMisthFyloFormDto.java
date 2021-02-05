@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthFyloFormDto implements Serializable {
-  private static final long serialVersionUID = 160992137666658596L;
+  private static final long serialVersionUID = 161096104199125482L;
 
   /** Description: kodfylo. */
   private java.lang.String kodfylo;

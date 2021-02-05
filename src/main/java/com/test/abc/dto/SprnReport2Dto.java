@@ -41,13 +41,13 @@ import java.util.stream.Collectors;
  */
 
 public class SprnReport2Dto implements Serializable {
-  private static final long serialVersionUID = 160992137646928926L;
+  private static final long serialVersionUID = 161096104182033272L;
 
   /** Description: kodreport. */
-  private java.lang.Float kodreport;
+  private java.lang.String kodreport;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -73,8 +73,8 @@ public class SprnReport2Dto implements Serializable {
   public SprnReport2Dto() {}
 
   public SprnReport2Dto(
-      java.lang.Float kodreport,
-      java.lang.Float kodypal,
+      java.lang.String kodreport,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
       java.lang.String surname,
       java.lang.String name,
@@ -93,11 +93,11 @@ public class SprnReport2Dto implements Serializable {
     this.prnNotes2 = prnNotes2;
   }
 
-  public java.lang.Float getKodreport() {
+  public java.lang.String getKodreport() {
     return this.kodreport;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -129,11 +129,11 @@ public class SprnReport2Dto implements Serializable {
     return this.prnNotes2;
   }
 
-  public void setKodreport(java.lang.Float kodreport) {
+  public void setKodreport(java.lang.String kodreport) {
     this.kodreport = kodreport;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

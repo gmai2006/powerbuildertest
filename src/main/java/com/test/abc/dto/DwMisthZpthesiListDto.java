@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthZpthesiListDto implements Serializable {
-  private static final long serialVersionUID = 160992137724845704L;
+  private static final long serialVersionUID = 161096104241018994L;
 
   /** Description: kodthesi. */
   private java.lang.String kodthesi;

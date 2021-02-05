@@ -61,7 +61,7 @@ public class DefaultUsrgrouppermDtoDao implements UsrgrouppermDtoDao {
 
   public DefaultUsrgrouppermDtoDao() {}
 
-  public List<DwUsrgrouppermListDto> dwUsrgrouppermList(java.lang.Float arg_kodgroup) {
+  public List<DwUsrgrouppermListDto> dwUsrgrouppermList(java.lang.Integer arg_kodgroup) {
     final TypedQuery<DwUsrgrouppermListDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwUsrgrouppermListMapping", DwUsrgrouppermListDto.class);

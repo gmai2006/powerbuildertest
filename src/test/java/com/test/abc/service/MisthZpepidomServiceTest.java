@@ -58,9 +58,15 @@ public class MisthZpepidomServiceTest {
   public void testFind_success() {
     MisthZpepidom testResult = serviceMock.find(records[0].getKodepidom());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue(
+        "expect equals autoforos ", this.records[0].getAutoforos() == testResult.getAutoforos());
     org.junit.Assert.assertEquals(
         "expect equals descepidom ", this.records[0].getDescepidom(), testResult.getDescepidom());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue(
+        "expect equals hasforo ", this.records[0].getHasforo() == testResult.getHasforo());
+    org.junit.Assert.assertTrue(
+        "expect equals isasf ", this.records[0].getIsasf() == testResult.getIsasf());
   }
 }

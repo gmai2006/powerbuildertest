@@ -40,13 +40,19 @@ import com.test.abc.dto.*;
  */
 
 public interface MisthZpidikotDtoDao {
+  List<PrnYpalTotalDatesDto> prnYpalTotalDates(java.lang.String arg_kodxrisi);
+
   List<DwMisthYpalListDto> dwMisthYpalList(java.lang.String arg_kodxrisi);
+
+  List<PrnAnalisiYpalDto> prnAnalisiYpal(java.lang.String arg_kodxrisi);
 
   List<PickMisthZpidikotXrisiDto> pickMisthZpidikotXrisi(java.lang.String arg_kodxrisi);
 
   List<PrnFinalAtomikiMisthDto> prnFinalAtomikiMisth(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
+
+  List<PrnYpalFinalDto> prnYpalFinal(java.lang.String arg_kodxrisi);
 
   List<PrnFinalAtomikiMisthArgDto> prnFinalAtomikiMisthArg(
-      java.lang.Float arg_kodypal, java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 }

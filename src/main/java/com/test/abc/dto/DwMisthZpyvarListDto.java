@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthZpyvarListDto implements Serializable {
-  private static final long serialVersionUID = 160992137723674291L;
+  private static final long serialVersionUID = 161096104240067403L;
 
   /** Description: kodyvar. */
   private java.lang.String kodyvar;

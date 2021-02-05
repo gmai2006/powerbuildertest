@@ -41,22 +41,22 @@ import java.util.stream.Collectors;
  */
 
 public class DwUsrgroupsListDto implements Serializable {
-  private static final long serialVersionUID = 160992137665058062L;
+  private static final long serialVersionUID = 161096104197178886L;
 
   /** Description: kodgroup. */
-  private java.lang.Float kodgroup;
+  private java.lang.Integer kodgroup;
 
   /** Description: descgroup. */
   private java.lang.String descgroup;
 
   public DwUsrgroupsListDto() {}
 
-  public DwUsrgroupsListDto(java.lang.Float kodgroup, java.lang.String descgroup) {
+  public DwUsrgroupsListDto(java.lang.Integer kodgroup, java.lang.String descgroup) {
     this.kodgroup = kodgroup;
     this.descgroup = descgroup;
   }
 
-  public java.lang.Float getKodgroup() {
+  public java.lang.Integer getKodgroup() {
     return this.kodgroup;
   }
 
@@ -64,7 +64,7 @@ public class DwUsrgroupsListDto implements Serializable {
     return this.descgroup;
   }
 
-  public void setKodgroup(java.lang.Float kodgroup) {
+  public void setKodgroup(java.lang.Integer kodgroup) {
     this.kodgroup = kodgroup;
   }
 

@@ -41,22 +41,22 @@ import java.util.stream.Collectors;
  */
 
 public class PickUsrusersWithadminDto implements Serializable {
-  private static final long serialVersionUID = 160992137722193361L;
+  private static final long serialVersionUID = 161096104238988608L;
 
   /** Description: koduser. */
-  private java.lang.Float koduser;
+  private java.lang.Integer koduser;
 
   /** Description: username. */
   private java.lang.String username;
 
   public PickUsrusersWithadminDto() {}
 
-  public PickUsrusersWithadminDto(java.lang.Float koduser, java.lang.String username) {
+  public PickUsrusersWithadminDto(java.lang.Integer koduser, java.lang.String username) {
     this.koduser = koduser;
     this.username = username;
   }
 
-  public java.lang.Float getKoduser() {
+  public java.lang.Integer getKoduser() {
     return this.koduser;
   }
 
@@ -64,7 +64,7 @@ public class PickUsrusersWithadminDto implements Serializable {
     return this.username;
   }
 
-  public void setKoduser(java.lang.Float koduser) {
+  public void setKoduser(java.lang.Integer koduser) {
     this.koduser = koduser;
   }
 

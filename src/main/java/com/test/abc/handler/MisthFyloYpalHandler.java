@@ -59,14 +59,14 @@ public class MisthFyloYpalHandler extends DelimiterFileHandler<MisthFyloYpal> {
     MisthFyloYpal record = new MisthFyloYpal();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodypal(new java.lang.Float(tokens.get(i)));
-          break;
-        case "kodxrisi":
-          record.setKodxrisi(tokens.get(i));
+        case "kodypal":
+          record.setKodypal(new java.lang.Integer(tokens.get(i)));
           break;
         case "kodfylo":
           record.setKodfylo(tokens.get(i));
+          break;
+        case "kodxrisi":
+          record.setKodxrisi(tokens.get(i));
           break;
 
         default:

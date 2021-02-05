@@ -82,11 +82,11 @@ public class UsrmembersDaoTest {
 
   @Test
   public void testSelect() {
-    Usrmembers testResult = dao.find(records[1].getKodgroup());
+    Usrmembers testResult = dao.find(records[1].getKoduser());
     java.util.List<Usrmembers> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertTrue(
-        "expect equals koduser ", this.records[1].getKoduser() == testResult.getKoduser());
+        "expect equals kodgroup ", this.records[1].getKodgroup() == testResult.getKodgroup());
   }
 }

@@ -59,7 +59,7 @@ public class UsrappsHandler extends DelimiterFileHandler<Usrapps> {
     Usrapps record = new Usrapps();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodapp":
           record.setKodapp(new java.lang.String(tokens.get(i)));
           break;
         case "descapp":

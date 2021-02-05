@@ -58,13 +58,13 @@ public class MisthKratapodServiceTest {
   public void testFind_success() {
     MisthKratapod testResult = serviceMock.find(records[0].getKodxrisi());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertTrue(
-        "expect equals kodkratapod ",
-        this.records[0].getKodkratapod() == testResult.getKodkratapod());
     org.junit.Assert.assertEquals(
         "expect equals desckratapod ",
         this.records[0].getDesckratapod(),
         testResult.getDesckratapod());
+    org.junit.Assert.assertTrue(
+        "expect equals kodkratapod ",
+        this.records[0].getKodkratapod() == testResult.getKodkratapod());
     org.junit.Assert.assertEquals(
         "expect equals apoddate ",
         this.records[0].getApoddate().getTime(),

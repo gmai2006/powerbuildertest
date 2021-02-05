@@ -61,7 +61,7 @@ public class DefaultUsrmembersDtoDao implements UsrmembersDtoDao {
 
   public DefaultUsrmembersDtoDao() {}
 
-  public List<DwUsrmembersUserListDto> dwUsrmembersUserList(java.lang.Float arg_koduser) {
+  public List<DwUsrmembersUserListDto> dwUsrmembersUserList(java.lang.Integer arg_koduser) {
     final TypedQuery<DwUsrmembersUserListDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwUsrmembersUserListMapping", DwUsrmembersUserListDto.class);

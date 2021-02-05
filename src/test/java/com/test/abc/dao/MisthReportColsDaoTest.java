@@ -82,20 +82,20 @@ public class MisthReportColsDaoTest {
 
   @Test
   public void testSelect() {
-    MisthReportCols testResult = dao.find(records[1].getKodreport());
+    MisthReportCols testResult = dao.find(records[1].getKodxrisi());
     java.util.List<MisthReportCols> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertTrue(
-        "expect equals kodcol ", this.records[1].getKodcol() == testResult.getKodcol());
-    org.junit.Assert.assertEquals(
-        "expect equals expr ", this.records[1].getExpr(), testResult.getExpr());
-    org.junit.Assert.assertEquals(
         "expect equals headerText ", this.records[1].getHeaderText(), testResult.getHeaderText());
+    org.junit.Assert.assertTrue("expect equals aa ", this.records[1].getAa() == testResult.getAa());
     org.junit.Assert.assertTrue(
         "expect equals width ", this.records[1].getWidth() == testResult.getWidth());
-    org.junit.Assert.assertTrue("expect equals aa ", this.records[1].getAa() == testResult.getAa());
+    org.junit.Assert.assertEquals(
+        "expect equals kodreport ", this.records[1].getKodreport(), testResult.getKodreport());
+    org.junit.Assert.assertEquals(
+        "expect equals expr ", this.records[1].getExpr(), testResult.getExpr());
+    org.junit.Assert.assertTrue(
+        "expect equals kodcol ", this.records[1].getKodcol() == testResult.getKodcol());
   }
 }

@@ -45,7 +45,7 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpstath")
 public class MisthZpstath implements Serializable {
-  private static final long serialVersionUID = 160992137240233882L;
+  private static final long serialVersionUID = 161096103730121327L;
   /** Description: kodxrisi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
@@ -53,16 +53,16 @@ public class MisthZpstath implements Serializable {
   private java.lang.String kodxrisi;
   /** Description: kodstath. */
   @Basic
-  @Column(name = "kodstath")
+  @Column(name = "kodstath", length = 20)
   private java.lang.String kodstath;
-  /** Description: descstath. */
-  @Basic
-  @Column(name = "descstath")
-  private java.lang.String descstath;
   /** Description: poso. */
   @Basic
   @Column(name = "poso")
   private java.lang.Integer poso;
+  /** Description: descstath. */
+  @Basic
+  @Column(name = "descstath", length = 50)
+  private java.lang.String descstath;
 
   public MisthZpstath() {}
 
@@ -78,23 +78,23 @@ public class MisthZpstath implements Serializable {
     return this.kodstath;
   }
 
-  public java.lang.String getDescstath() {
-    return this.descstath;
-  }
-
   public java.lang.Integer getPoso() {
     return this.poso;
+  }
+
+  public java.lang.String getDescstath() {
+    return this.descstath;
   }
 
   public void setKodstath(java.lang.String kodstath) {
     this.kodstath = kodstath;
   }
 
-  public void setDescstath(java.lang.String descstath) {
-    this.descstath = descstath;
-  }
-
   public void setPoso(java.lang.Integer poso) {
     this.poso = poso;
+  }
+
+  public void setDescstath(java.lang.String descstath) {
+    this.descstath = descstath;
   }
 }

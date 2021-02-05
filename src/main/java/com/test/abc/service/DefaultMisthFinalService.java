@@ -59,7 +59,7 @@ public class DefaultMisthFinalService implements MisthFinalService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFinal find(java.lang.Float id) {
+  public MisthFinal find(java.lang.String id) {
     final MisthFinal result = dao.find(id);
     logger.info("find(MisthFinal) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthFinalService implements MisthFinalService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(java.lang.Float id) {
+  public void delete(java.lang.String id) {
     logger.info("delete(MisthFinal={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthFinal) - exited - return value={} result ");

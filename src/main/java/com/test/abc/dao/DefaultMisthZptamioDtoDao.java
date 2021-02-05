@@ -61,32 +61,10 @@ public class DefaultMisthZptamioDtoDao implements MisthZptamioDtoDao {
 
   public DefaultMisthZptamioDtoDao() {}
 
-  public List<PrnYpalTotalDatesDto> prnYpalTotalDates(java.lang.String arg_kodxrisi) {
-    final TypedQuery<PrnYpalTotalDatesDto> query =
-        dao.getEntityManager()
-            .createNamedQuery("prnYpalTotalDatesMapping", PrnYpalTotalDatesDto.class);
-    query.setParameter("arg_kodxrisi", arg_kodxrisi);
-    return query.getResultList();
-  }
-
   public List<PickMisthZptamioXrisiDto> pickMisthZptamioXrisi(java.lang.String arg_kodxrisi) {
     final TypedQuery<PickMisthZptamioXrisiDto> query =
         dao.getEntityManager()
             .createNamedQuery("pickMisthZptamioXrisiMapping", PickMisthZptamioXrisiDto.class);
-    query.setParameter("arg_kodxrisi", arg_kodxrisi);
-    return query.getResultList();
-  }
-
-  public List<PrnAnalisiYpalDto> prnAnalisiYpal(java.lang.String arg_kodxrisi) {
-    final TypedQuery<PrnAnalisiYpalDto> query =
-        dao.getEntityManager().createNamedQuery("prnAnalisiYpalMapping", PrnAnalisiYpalDto.class);
-    query.setParameter("arg_kodxrisi", arg_kodxrisi);
-    return query.getResultList();
-  }
-
-  public List<PrnYpalFinalDto> prnYpalFinal(java.lang.String arg_kodxrisi) {
-    final TypedQuery<PrnYpalFinalDto> query =
-        dao.getEntityManager().createNamedQuery("prnYpalFinalMapping", PrnYpalFinalDto.class);
     query.setParameter("arg_kodxrisi", arg_kodxrisi);
     return query.getResultList();
   }

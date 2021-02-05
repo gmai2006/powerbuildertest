@@ -87,11 +87,11 @@ public class MisthFinalYpalDaoTest {
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertTrue(
+        "expect equals plirdate ",
+        this.records[1].getPlirdate().getTime() == testResult.getPlirdate().getTime());
+    org.junit.Assert.assertTrue(
         "expect equals kodfinal ", this.records[1].getKodfinal() == testResult.getKodfinal());
     org.junit.Assert.assertEquals(
         "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertTrue(
-        "expect equals plirdate ",
-        this.records[1].getPlirdate().getTime() == testResult.getPlirdate().getTime());
   }
 }

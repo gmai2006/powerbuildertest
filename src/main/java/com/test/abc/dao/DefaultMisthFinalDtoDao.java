@@ -62,7 +62,7 @@ public class DefaultMisthFinalDtoDao implements MisthFinalDtoDao {
   public DefaultMisthFinalDtoDao() {}
 
   public List<DwMisthFinalFormDto> dwMisthFinalForm(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthFinalFormDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwMisthFinalFormMapping", DwMisthFinalFormDto.class);
@@ -72,7 +72,7 @@ public class DefaultMisthFinalDtoDao implements MisthFinalDtoDao {
   }
 
   public List<PrnFinalTotalMisthDto> prnFinalTotalMisth(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<PrnFinalTotalMisthDto> query =
         dao.getEntityManager()
             .createNamedQuery("prnFinalTotalMisthMapping", PrnFinalTotalMisthDto.class);

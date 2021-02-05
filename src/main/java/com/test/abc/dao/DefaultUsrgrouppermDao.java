@@ -65,7 +65,7 @@ public class DefaultUsrgrouppermDao implements UsrgrouppermDao {
 
   /** {@inheritDoc} */
   @Override
-  public Usrgroupperm find(java.lang.Float id) {
+  public Usrgroupperm find(java.lang.Integer id) {
     final EntityManager em = dao.getEntityManager();
     Usrgroupperm model = em.find(Usrgroupperm.class, id);
     if (null == model) {
@@ -101,7 +101,7 @@ public class DefaultUsrgrouppermDao implements UsrgrouppermDao {
   /** {@inheritDoc} */
   @Override
   @Transactional
-  public void delete(java.lang.Float id) {
+  public void delete(java.lang.Integer id) {
     final EntityManager em = dao.getEntityManager();
     final Usrgroupperm removed = em.find(Usrgroupperm.class, id);
     if (null != removed) {

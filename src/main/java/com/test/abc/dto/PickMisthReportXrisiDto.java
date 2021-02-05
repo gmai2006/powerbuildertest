@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthReportXrisiDto implements Serializable {
-  private static final long serialVersionUID = 160992137743928588L;
+  private static final long serialVersionUID = 1610961042563630L;
 
   /** Description: kodreport. */
   private java.lang.String kodreport;

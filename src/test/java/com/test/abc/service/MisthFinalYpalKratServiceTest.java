@@ -58,19 +58,19 @@ public class MisthFinalYpalKratServiceTest {
   public void testFind_success() {
     MisthFinalYpalKrat testResult = serviceMock.find(records[0].getKodkrat());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertTrue(
-        "expect equals kodfinal ", this.records[0].getKodfinal() == testResult.getKodfinal());
+    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
     org.junit.Assert.assertTrue(
         "expect equals kodypal ", this.records[0].getKodypal() == testResult.getKodypal());
     org.junit.Assert.assertTrue(
-        "expect equals poso ", this.records[0].getPoso() == testResult.getPoso());
+        "expect equals kodkratapod ",
+        this.records[0].getKodkratapod() == testResult.getKodkratapod());
     org.junit.Assert.assertEquals(
         "expect equals notes ", this.records[0].getNotes(), testResult.getNotes());
     org.junit.Assert.assertTrue(
-        "expect equals kodkratapod ",
-        this.records[0].getKodkratapod() == testResult.getKodkratapod());
-    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
+        "expect equals kodfinal ", this.records[0].getKodfinal() == testResult.getKodfinal());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue(
+        "expect equals poso ", this.records[0].getPoso() == testResult.getPoso());
   }
 }

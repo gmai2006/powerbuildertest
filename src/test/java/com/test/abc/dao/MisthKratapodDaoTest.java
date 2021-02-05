@@ -86,13 +86,13 @@ public class MisthKratapodDaoTest {
     java.util.List<MisthKratapod> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
-    org.junit.Assert.assertTrue(
-        "expect equals kodkratapod ",
-        this.records[1].getKodkratapod() == testResult.getKodkratapod());
     org.junit.Assert.assertEquals(
         "expect equals desckratapod ",
         this.records[1].getDesckratapod(),
         testResult.getDesckratapod());
+    org.junit.Assert.assertTrue(
+        "expect equals kodkratapod ",
+        this.records[1].getKodkratapod() == testResult.getKodkratapod());
     org.junit.Assert.assertTrue(
         "expect equals apoddate ",
         this.records[1].getApoddate().getTime() == testResult.getApoddate().getTime());

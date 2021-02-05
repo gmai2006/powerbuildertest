@@ -86,9 +86,16 @@ public class MisthZpkratDaoTest {
     java.util.List<MisthZpkrat> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue(
+        "expect equals isautoforos ",
+        this.records[1].getIsautoforos() == testResult.getIsautoforos());
     org.junit.Assert.assertEquals(
         "expect equals desckrat ", this.records[1].getDesckrat(), testResult.getDesckrat());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue(
+        "expect equals isasf ", this.records[1].getIsasf() == testResult.getIsasf());
+    org.junit.Assert.assertTrue(
+        "expect equals isforos ", this.records[1].getIsforos() == testResult.getIsforos());
   }
 }

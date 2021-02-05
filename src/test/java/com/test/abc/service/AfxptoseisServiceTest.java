@@ -51,16 +51,16 @@ public class AfxptoseisServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getOnom())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getAit())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    Afxptoseis testResult = serviceMock.find(records[0].getOnom());
+    Afxptoseis testResult = serviceMock.find(records[0].getAit());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
         "expect equals gen ", this.records[0].getGen(), testResult.getGen());
     org.junit.Assert.assertEquals(
-        "expect equals ait ", this.records[0].getAit(), testResult.getAit());
+        "expect equals onom ", this.records[0].getOnom(), testResult.getOnom());
   }
 }

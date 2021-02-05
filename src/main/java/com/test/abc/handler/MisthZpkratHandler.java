@@ -59,14 +59,23 @@ public class MisthZpkratHandler extends DelimiterFileHandler<MisthZpkrat> {
     MisthZpkrat record = new MisthZpkrat();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodkrat":
           record.setKodkrat(new java.lang.String(tokens.get(i)));
+          break;
+        case "isautoforos":
+          record.setIsautoforos(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "desckrat":
+          record.setDesckrat(tokens.get(i));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));
           break;
-        case "desckrat":
-          record.setDesckrat(tokens.get(i));
+        case "isasf":
+          record.setIsasf(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "isforos":
+          record.setIsforos(new java.lang.Integer(tokens.get(i)));
           break;
 
         default:

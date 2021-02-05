@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PrnFinalYpalListDto implements Serializable {
-  private static final long serialVersionUID = 160992137677990878L;
+  private static final long serialVersionUID = 16109610420807290L;
 
   /** Description: descfinal. */
   private java.lang.String descfinal;
@@ -55,6 +55,9 @@ public class PrnFinalYpalListDto implements Serializable {
   /** Description: fathername. */
   private java.lang.String fathername;
 
+  /** Description: kodfinal. */
+  private java.lang.Integer kodfinal;
+
   /** Description: datefinal. */
   private java.util.Date datefinal;
 
@@ -62,10 +65,13 @@ public class PrnFinalYpalListDto implements Serializable {
   private java.util.Date plirdate;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
+
+  /** Description: kodfinal1. */
+  private java.lang.Integer kodfinal1;
 
   /** Description: title. */
   private java.lang.String title;
@@ -76,12 +82,6 @@ public class PrnFinalYpalListDto implements Serializable {
   /** Description: aa. */
   private java.lang.Float aa;
 
-  /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
-
-  /** Description: kodfinal1. */
-  private java.lang.Float kodfinal1;
-
   public PrnFinalYpalListDto() {}
 
   public PrnFinalYpalListDto(
@@ -89,28 +89,28 @@ public class PrnFinalYpalListDto implements Serializable {
       java.lang.String surname,
       java.lang.String name,
       java.lang.String fathername,
+      java.lang.Integer kodfinal,
       java.util.Date datefinal,
       java.util.Date plirdate,
-      java.lang.Float kodypal,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
+      java.lang.Integer kodfinal1,
       java.lang.String title,
       java.lang.String mitroo,
-      java.lang.Float aa,
-      java.lang.Float kodfinal,
-      java.lang.Float kodfinal1) {
+      java.lang.Float aa) {
     this.descfinal = descfinal;
     this.surname = surname;
     this.name = name;
     this.fathername = fathername;
+    this.kodfinal = kodfinal;
     this.datefinal = datefinal;
     this.plirdate = plirdate;
     this.kodypal = kodypal;
     this.kodxrisi = kodxrisi;
+    this.kodfinal1 = kodfinal1;
     this.title = title;
     this.mitroo = mitroo;
     this.aa = aa;
-    this.kodfinal = kodfinal;
-    this.kodfinal1 = kodfinal1;
   }
 
   public java.lang.String getDescfinal() {
@@ -129,6 +129,10 @@ public class PrnFinalYpalListDto implements Serializable {
     return this.fathername;
   }
 
+  public java.lang.Integer getKodfinal() {
+    return this.kodfinal;
+  }
+
   public java.util.Date getDatefinal() {
     return this.datefinal;
   }
@@ -137,12 +141,16 @@ public class PrnFinalYpalListDto implements Serializable {
     return this.plirdate;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
   public java.lang.String getKodxrisi() {
     return this.kodxrisi;
+  }
+
+  public java.lang.Integer getKodfinal1() {
+    return this.kodfinal1;
   }
 
   public java.lang.String getTitle() {
@@ -155,14 +163,6 @@ public class PrnFinalYpalListDto implements Serializable {
 
   public java.lang.Float getAa() {
     return this.aa;
-  }
-
-  public java.lang.Float getKodfinal() {
-    return this.kodfinal;
-  }
-
-  public java.lang.Float getKodfinal1() {
-    return this.kodfinal1;
   }
 
   public void setDescfinal(java.lang.String descfinal) {
@@ -181,6 +181,10 @@ public class PrnFinalYpalListDto implements Serializable {
     this.fathername = fathername;
   }
 
+  public void setKodfinal(java.lang.Integer kodfinal) {
+    this.kodfinal = kodfinal;
+  }
+
   public void setDatefinal(java.util.Date datefinal) {
     this.datefinal = datefinal;
   }
@@ -189,12 +193,16 @@ public class PrnFinalYpalListDto implements Serializable {
     this.plirdate = plirdate;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 
   public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
+  }
+
+  public void setKodfinal1(java.lang.Integer kodfinal1) {
+    this.kodfinal1 = kodfinal1;
   }
 
   public void setTitle(java.lang.String title) {
@@ -207,13 +215,5 @@ public class PrnFinalYpalListDto implements Serializable {
 
   public void setAa(java.lang.Float aa) {
     this.aa = aa;
-  }
-
-  public void setKodfinal(java.lang.Float kodfinal) {
-    this.kodfinal = kodfinal;
-  }
-
-  public void setKodfinal1(java.lang.Float kodfinal1) {
-    this.kodfinal1 = kodfinal1;
   }
 }

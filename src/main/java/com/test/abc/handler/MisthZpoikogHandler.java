@@ -59,14 +59,14 @@ public class MisthZpoikogHandler extends DelimiterFileHandler<MisthZpoikog> {
     MisthZpoikog record = new MisthZpoikog();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodoikog":
           record.setKodoikog(new java.lang.String(tokens.get(i)));
-          break;
-        case "kodxrisi":
-          record.setKodxrisi(tokens.get(i));
           break;
         case "descoikog":
           record.setDescoikog(tokens.get(i));
+          break;
+        case "kodxrisi":
+          record.setKodxrisi(tokens.get(i));
           break;
 
         default:

@@ -41,5 +41,5 @@ import com.test.abc.dto.*;
 
 public interface MisthFinalYpalKratDtoDao {
   List<DwMisthFinalYpalKratListDto> dwMisthFinalYpalKratList(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 }

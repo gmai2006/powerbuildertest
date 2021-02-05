@@ -61,10 +61,11 @@ public class DefaultMisthZpxrisiDtoDao implements MisthZpxrisiDtoDao {
 
   public DefaultMisthZpxrisiDtoDao() {}
 
-  public List<PickZpxrisiNocurrentDto> pickZpxrisiNocurrent() {
+  public List<PickZpxrisiNocurrentDto> pickZpxrisiNocurrent(java.lang.String arg_kodxrisi) {
     final TypedQuery<PickZpxrisiNocurrentDto> query =
         dao.getEntityManager()
             .createNamedQuery("pickZpxrisiNocurrentMapping", PickZpxrisiNocurrentDto.class);
+    query.setParameter("arg_kodxrisi", arg_kodxrisi);
     return query.getResultList();
   }
 }

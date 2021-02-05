@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class SprnReport3Dto implements Serializable {
-  private static final long serialVersionUID = 160992137669274399L;
+  private static final long serialVersionUID = 161096104201762591L;
 
   /** Description: surname. */
   private java.lang.String surname;
@@ -59,13 +59,13 @@ public class SprnReport3Dto implements Serializable {
   private java.util.Date datefinal;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: title. */
   private java.lang.String title;
 
   /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
+  private java.lang.Integer kodfinal;
 
   public SprnReport3Dto() {}
 
@@ -75,9 +75,9 @@ public class SprnReport3Dto implements Serializable {
       java.lang.String fathername,
       java.lang.Float aa,
       java.util.Date datefinal,
-      java.lang.Float kodypal,
+      java.lang.Integer kodypal,
       java.lang.String title,
-      java.lang.Float kodfinal) {
+      java.lang.Integer kodfinal) {
     this.surname = surname;
     this.name = name;
     this.fathername = fathername;
@@ -108,7 +108,7 @@ public class SprnReport3Dto implements Serializable {
     return this.datefinal;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -116,7 +116,7 @@ public class SprnReport3Dto implements Serializable {
     return this.title;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
@@ -140,7 +140,7 @@ public class SprnReport3Dto implements Serializable {
     this.datefinal = datefinal;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 
@@ -148,7 +148,7 @@ public class SprnReport3Dto implements Serializable {
     this.title = title;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 }

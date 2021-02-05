@@ -60,7 +60,7 @@ public interface MisthYpalYvarDao {
    * @param id An MisthYpalYvar id.
    * @return The same MisthYpalYvar.
    */
-  public MisthYpalYvar find(java.lang.Float id);
+  public MisthYpalYvar find(java.lang.Integer id);
   /**
    * Create an MisthYpalYvar.
    *
@@ -82,5 +82,5 @@ public interface MisthYpalYvarDao {
    *
    * @param id The entity Id.
    */
-  public void delete(java.lang.Float id);
+  public void delete(java.lang.Integer id);
 }

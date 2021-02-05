@@ -58,11 +58,11 @@ public class MisthYpalYvarServiceTest {
   public void testFind_success() {
     MisthYpalYvar testResult = serviceMock.find(records[0].getKodypal());
     org.junit.Assert.assertNotNull(testResult);
+    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
     org.junit.Assert.assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
     org.junit.Assert.assertEquals(
         "expect equals kodyvar ", this.records[0].getKodyvar(), testResult.getKodyvar());
-    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
     org.junit.Assert.assertEquals(
         "expect equals expr ", this.records[0].getExpr(), testResult.getExpr());
   }

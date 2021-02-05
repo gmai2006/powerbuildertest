@@ -51,26 +51,26 @@ public class MisthFinalServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getKodfinal())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodperiod())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    MisthFinal testResult = serviceMock.find(records[0].getKodfinal());
+    MisthFinal testResult = serviceMock.find(records[0].getKodperiod());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
-        "expect equals kodkat ", this.records[0].getKodkat(), testResult.getKodkat());
-    org.junit.Assert.assertEquals(
-        "expect equals kodperiod ", this.records[0].getKodperiod(), testResult.getKodperiod());
-    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
-    org.junit.Assert.assertEquals(
-        "expect equals descfinal ", this.records[0].getDescfinal(), testResult.getDescfinal());
     org.junit.Assert.assertEquals(
         "expect equals datefinal ",
         this.records[0].getDatefinal().getTime(),
         testResult.getDatefinal().getTime());
+    org.junit.Assert.assertTrue("expect equals aa ", this.records[0].getAa() == testResult.getAa());
+    org.junit.Assert.assertEquals(
+        "expect equals descfinal ", this.records[0].getDescfinal(), testResult.getDescfinal());
+    org.junit.Assert.assertTrue(
+        "expect equals kodfinal ", this.records[0].getKodfinal() == testResult.getKodfinal());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertEquals(
+        "expect equals kodkat ", this.records[0].getKodkat(), testResult.getKodkat());
     org.junit.Assert.assertEquals(
         "expect equals title ", this.records[0].getTitle(), testResult.getTitle());
   }

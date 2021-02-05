@@ -59,14 +59,14 @@ public class MisthZpidikotHandler extends DelimiterFileHandler<MisthZpidikot> {
     MisthZpidikot record = new MisthZpidikot();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodidikot(new java.lang.String(tokens.get(i)));
-          break;
         case "kodxrisi":
-          record.setKodxrisi(tokens.get(i));
+          record.setKodxrisi(new java.lang.String(tokens.get(i)));
           break;
         case "descidikot":
           record.setDescidikot(tokens.get(i));
+          break;
+        case "kodidikot":
+          record.setKodidikot(tokens.get(i));
           break;
 
         default:

@@ -40,5 +40,5 @@ import com.test.abc.dto.*;
  */
 
 public interface UsruserpermDtoDao {
-  List<DwUsruserpermListDto> dwUsruserpermList(java.lang.Float arg_koduser);
+  List<DwUsruserpermListDto> dwUsruserpermList(java.lang.Integer arg_koduser);
 }

@@ -82,13 +82,13 @@ public class MisthReportYpalDaoTest {
 
   @Test
   public void testSelect() {
-    MisthReportYpal testResult = dao.find(records[1].getKodreport());
+    MisthReportYpal testResult = dao.find(records[1].getKodypal());
     java.util.List<MisthReportYpal> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
-    org.junit.Assert.assertTrue(
-        "expect equals kodypal ", this.records[1].getKodypal() == testResult.getKodypal());
     org.junit.Assert.assertEquals(
         "expect equals kodxrisi ", this.records[1].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertEquals(
+        "expect equals kodreport ", this.records[1].getKodreport(), testResult.getKodreport());
   }
 }

@@ -45,41 +45,41 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "afxfilter")
 public class Afxfilter implements Serializable {
-  private static final long serialVersionUID = 160992137254825358L;
-  /** Description: kodfilter. */
+  private static final long serialVersionUID = 161096103745495938L;
+  /** Description: descfilter. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "kodfilter")
-  private java.lang.Float kodfilter;
-  /** Description: descfilter. */
-  @Basic
   @Column(name = "descfilter")
   private java.lang.String descfilter;
+  /** Description: kodfilter. */
+  @Basic
+  @Column(name = "kodfilter")
+  private java.lang.Float kodfilter;
   /** Description: tablename. */
   @Basic
-  @Column(name = "tablename")
+  @Column(name = "tablename", length = 50)
   private java.lang.String tablename;
 
   public Afxfilter() {}
 
-  public java.lang.Float getKodfilter() {
-    return this.kodfilter;
-  }
-
-  public void setKodfilter(java.lang.Float kodfilter) {
-    this.kodfilter = kodfilter;
-  }
-
   public java.lang.String getDescfilter() {
     return this.descfilter;
+  }
+
+  public void setDescfilter(java.lang.String descfilter) {
+    this.descfilter = descfilter;
+  }
+
+  public java.lang.Float getKodfilter() {
+    return this.kodfilter;
   }
 
   public java.lang.String getTablename() {
     return this.tablename;
   }
 
-  public void setDescfilter(java.lang.String descfilter) {
-    this.descfilter = descfilter;
+  public void setKodfilter(java.lang.Float kodfilter) {
+    this.kodfilter = kodfilter;
   }
 
   public void setTablename(java.lang.String tablename) {

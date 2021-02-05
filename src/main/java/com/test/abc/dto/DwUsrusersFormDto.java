@@ -41,10 +41,10 @@ import java.util.stream.Collectors;
  */
 
 public class DwUsrusersFormDto implements Serializable {
-  private static final long serialVersionUID = 160992137686022818L;
+  private static final long serialVersionUID = 161096104213514903L;
 
   /** Description: koduser. */
-  private java.lang.Float koduser;
+  private java.lang.Integer koduser;
 
   /** Description: username. */
   private java.lang.String username;
@@ -67,7 +67,7 @@ public class DwUsrusersFormDto implements Serializable {
   public DwUsrusersFormDto() {}
 
   public DwUsrusersFormDto(
-      java.lang.Float koduser,
+      java.lang.Integer koduser,
       java.lang.String username,
       java.lang.String fullname,
       java.lang.String password,
@@ -83,7 +83,7 @@ public class DwUsrusersFormDto implements Serializable {
     this.idiotita = idiotita;
   }
 
-  public java.lang.Float getKoduser() {
+  public java.lang.Integer getKoduser() {
     return this.koduser;
   }
 
@@ -111,7 +111,7 @@ public class DwUsrusersFormDto implements Serializable {
     return this.idiotita;
   }
 
-  public void setKoduser(java.lang.Float koduser) {
+  public void setKoduser(java.lang.Integer koduser) {
     this.koduser = koduser;
   }
 

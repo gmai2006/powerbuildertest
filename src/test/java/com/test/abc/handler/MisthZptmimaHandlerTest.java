@@ -20,19 +20,14 @@ package com.test.abc.handler;
 
 import static org.junit.Assert.assertEquals;
 import java.io.IOException;
-import com.google.gson.Gson;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Set;
-
+import org.json.CDL;
+import org.json.JSONArray;
+import com.google.gson.Gson;
 import com.test.abc.entity.MisthZptmima;
 import com.test.abc.dao.JpaDao;
 import com.test.abc.dao.StandaloneJpaDao;
@@ -72,14 +67,14 @@ import org.junit.Test;
 public class MisthZptmimaHandlerTest {
   static final String inputFile = "MisthZptmima.json";
   static MisthZptmimaHandler handler;
-  private JpaDao jpa;
+  private static JpaDao jpa;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
   private MisthZptmima[] records;
 
   /** Run before the test. */
-  @Before
-  public void before() {
-    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
+  @BeforeClass
+  public static void before() {
+    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
     jpa = new StandaloneJpaDao(factory.createEntityManager());
     handler = new MisthZptmimaHandler(jpa);
   }
@@ -94,9 +89,9 @@ public class MisthZptmimaHandlerTest {
     assertEquals("match count", count, records.length);
     MisthZptmima testResult = jpa.find(MisthZptmima.class, records[0].getKodtmima());
     assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    assertEquals(
         "expect equals desctmima ", this.records[0].getDesctmima(), testResult.getDesctmima());
+    assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
   }
 
   /**
@@ -111,39 +106,13 @@ public class MisthZptmimaHandlerTest {
       final File tempFile = File.createTempFile(inputFile, ".txt");
       tempFile.deleteOnExit();
       String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-      final MisthZptmima[] records = gson.fromJson(json, MisthZptmima[].class);
-      String header =
-          createHeader(
-              Paths.get(inputFile.substring(0, inputFile.length() - 5) + "header.json").toString());
-      final List<String> result = new ArrayList<>();
-      result.add(header);
-
-      final List<String> data =
-          Arrays.stream(records)
-              .map(record -> createCsvRecord(record))
-              .collect(Collectors.toList());
-
-      result.addAll(data);
-      FileUtils.writeListOfStringToFile(tempFile, result);
+      JSONArray docs = new JSONArray(json);
+      String csv = CDL.toString(docs);
+      org.apache.commons.io.FileUtils.writeStringToFile(tempFile, csv, Charset.defaultCharset());
       return tempFile;
     } catch (IOException ex) {
       ex.printStackTrace();
       return null;
     }
-  }
-
-  private String createCsvRecord(final MisthZptmima record) {
-    return TestUtils.getObject(record.getKodtmima())
-        + ","
-        + TestUtils.getObject(record.getKodxrisi())
-        + ","
-        + TestUtils.getObject(record.getDesctmima());
-  }
-
-  private String createHeader(String headerfile) throws IOException {
-    String json = FileUtils.readFileFromResource2String(headerfile, Charset.defaultCharset());
-    JsonParser parser = new JsonParser();
-    JsonObject jsonObject = parser.parse(json).getAsJsonObject();
-    return jsonObject.get("header").getAsString();
   }
 }

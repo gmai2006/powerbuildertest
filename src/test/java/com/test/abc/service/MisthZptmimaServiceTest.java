@@ -59,8 +59,8 @@ public class MisthZptmimaServiceTest {
     MisthZptmima testResult = serviceMock.find(records[0].getKodtmima());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals desctmima ", this.records[0].getDesctmima(), testResult.getDesctmima());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
   }
 }

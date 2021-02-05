@@ -64,31 +64,4 @@ public class TestUtils {
     final SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS");
     return formater.format(d);
   }
-
-  /**
-   * Get date object.
-   *
-   * @param date the date string.
-   * @return date object.
-   */
-  public static java.util.Date parseDateJson(final String date) {
-    final SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
-    try {
-      return formater.parse(date);
-    } catch (ParseException e) {
-      LOGGER.log(Level.SEVERE, "Cannot parse date %s", date);
-      return new java.util.Date();
-    }
-  }
-
-  /**
-   * Get null object.
-   *
-   * @param o the object
-   * @return an empty string if the object is null
-   */
-  public static Object getObject(Object o) {
-    if (null == o) return "";
-    return o;
-  }
 }

@@ -41,10 +41,10 @@ import java.util.stream.Collectors;
  */
 
 public class PrnFinalTotalMisthDto implements Serializable {
-  private static final long serialVersionUID = 160992137725472225L;
+  private static final long serialVersionUID = 161096104241462812L;
 
   /** Description: kodfinal. */
-  private java.lang.Float kodfinal;
+  private java.lang.Integer kodfinal;
 
   /** Description: descfinal. */
   private java.lang.String descfinal;
@@ -61,7 +61,7 @@ public class PrnFinalTotalMisthDto implements Serializable {
   public PrnFinalTotalMisthDto() {}
 
   public PrnFinalTotalMisthDto(
-      java.lang.Float kodfinal,
+      java.lang.Integer kodfinal,
       java.lang.String descfinal,
       java.util.Date datefinal,
       java.lang.String title,
@@ -73,7 +73,7 @@ public class PrnFinalTotalMisthDto implements Serializable {
     this.aa = aa;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
@@ -93,7 +93,7 @@ public class PrnFinalTotalMisthDto implements Serializable {
     return this.aa;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 

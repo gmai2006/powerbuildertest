@@ -82,12 +82,12 @@ public class AfxfilterDaoTest {
 
   @Test
   public void testSelect() {
-    Afxfilter testResult = dao.find(records[1].getKodfilter());
+    Afxfilter testResult = dao.find(records[1].getDescfilter());
     java.util.List<Afxfilter> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
-    org.junit.Assert.assertEquals(
-        "expect equals descfilter ", this.records[1].getDescfilter(), testResult.getDescfilter());
+    org.junit.Assert.assertTrue(
+        "expect equals kodfilter ", this.records[1].getKodfilter() == testResult.getKodfilter());
     org.junit.Assert.assertEquals(
         "expect equals tablename ", this.records[1].getTablename(), testResult.getTablename());
   }

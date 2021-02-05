@@ -51,16 +51,16 @@ public class MisthZpkatServiceTest {
     }
 
     // test data
-    when(serviceMock.find(records[0].getKodkat())).thenReturn(records[0]);
+    when(serviceMock.find(records[0].getKodxrisi())).thenReturn(records[0]);
   }
 
   @Test
   public void testFind_success() {
-    MisthZpkat testResult = serviceMock.find(records[0].getKodkat());
+    MisthZpkat testResult = serviceMock.find(records[0].getKodxrisi());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals desckat ", this.records[0].getDesckat(), testResult.getDesckat());
+    org.junit.Assert.assertEquals(
+        "expect equals kodkat ", this.records[0].getKodkat(), testResult.getKodkat());
   }
 }

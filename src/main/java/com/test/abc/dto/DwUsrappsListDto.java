@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwUsrappsListDto implements Serializable {
-  private static final long serialVersionUID = 160992137637029456L;
+  private static final long serialVersionUID = 161096104173022952L;
 
   /** Description: kodapp. */
   private java.lang.String kodapp;

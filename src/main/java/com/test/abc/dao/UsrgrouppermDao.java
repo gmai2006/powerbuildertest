@@ -60,7 +60,7 @@ public interface UsrgrouppermDao {
    * @param id An Usrgroupperm id.
    * @return The same Usrgroupperm.
    */
-  public Usrgroupperm find(java.lang.Float id);
+  public Usrgroupperm find(java.lang.Integer id);
   /**
    * Create an Usrgroupperm.
    *
@@ -82,5 +82,5 @@ public interface UsrgrouppermDao {
    *
    * @param id The entity Id.
    */
-  public void delete(java.lang.Float id);
+  public void delete(java.lang.Integer id);
 }

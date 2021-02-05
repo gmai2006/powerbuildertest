@@ -45,20 +45,20 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpthesi")
 public class MisthZpthesi implements Serializable {
-  private static final long serialVersionUID = 160992137253720674L;
+  private static final long serialVersionUID = 161096103743572366L;
   /** Description: kodthesi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodthesi")
   private java.lang.String kodthesi;
-  /** Description: kodxrisi. */
-  @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
   /** Description: descthesi. */
   @Basic
-  @Column(name = "descthesi")
+  @Column(name = "descthesi", length = 50)
   private java.lang.String descthesi;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
 
   public MisthZpthesi() {}
 
@@ -70,19 +70,19 @@ public class MisthZpthesi implements Serializable {
     this.kodthesi = kodthesi;
   }
 
-  public java.lang.String getKodxrisi() {
-    return this.kodxrisi;
-  }
-
   public java.lang.String getDescthesi() {
     return this.descthesi;
   }
 
-  public void setKodxrisi(java.lang.String kodxrisi) {
-    this.kodxrisi = kodxrisi;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
   }
 
   public void setDescthesi(java.lang.String descthesi) {
     this.descthesi = descthesi;
+  }
+
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
   }
 }

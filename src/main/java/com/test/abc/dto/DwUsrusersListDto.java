@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwUsrusersListDto implements Serializable {
-  private static final long serialVersionUID = 160992137726185307L;
+  private static final long serialVersionUID = 161096104241923306L;
 
   /** Description: username. */
   private java.lang.String username;
@@ -53,7 +53,7 @@ public class DwUsrusersListDto implements Serializable {
   private java.lang.Integer isactive;
 
   /** Description: koduser. */
-  private java.lang.Float koduser;
+  private java.lang.Integer koduser;
 
   /** Description: password. */
   private java.lang.String password;
@@ -70,7 +70,7 @@ public class DwUsrusersListDto implements Serializable {
       java.lang.String username,
       java.lang.String fullname,
       java.lang.Integer isactive,
-      java.lang.Float koduser,
+      java.lang.Integer koduser,
       java.lang.String password,
       java.lang.String tomeas,
       java.lang.String idiotita) {
@@ -95,7 +95,7 @@ public class DwUsrusersListDto implements Serializable {
     return this.isactive;
   }
 
-  public java.lang.Float getKoduser() {
+  public java.lang.Integer getKoduser() {
     return this.koduser;
   }
 
@@ -123,7 +123,7 @@ public class DwUsrusersListDto implements Serializable {
     this.isactive = isactive;
   }
 
-  public void setKoduser(java.lang.Float koduser) {
+  public void setKoduser(java.lang.Integer koduser) {
     this.koduser = koduser;
   }
 

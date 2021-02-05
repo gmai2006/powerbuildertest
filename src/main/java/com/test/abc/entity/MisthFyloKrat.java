@@ -45,32 +45,32 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_fylo_krat")
 public class MisthFyloKrat implements Serializable {
-  private static final long serialVersionUID = 160992137259728481L;
+  private static final long serialVersionUID = 161096103751949142L;
   /** Description: kodkrat. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodkrat")
   private java.lang.String kodkrat;
-  /** Description: kodxrisi. */
-  @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
-  /** Description: kodfylo. */
-  @Basic
-  @Column(name = "kodfylo")
-  private java.lang.String kodfylo;
-  /** Description: expr. */
-  @Basic
-  @Column(name = "expr")
-  private java.lang.String expr;
   /** Description: aa. */
   @Basic
   @Column(name = "aa")
-  private java.lang.Integer aa;
+  private java.lang.Float aa;
+  /** Description: kodfylo. */
+  @Basic
+  @Column(name = "kodfylo", length = 4)
+  private java.lang.String kodfylo;
   /** Description: notes. */
   @Basic
-  @Column(name = "notes")
+  @Column(name = "notes", length = 32766)
   private java.lang.String notes;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
+  /** Description: expr. */
+  @Basic
+  @Column(name = "expr", length = 32766)
+  private java.lang.String expr;
 
   public MisthFyloKrat() {}
 
@@ -82,43 +82,43 @@ public class MisthFyloKrat implements Serializable {
     this.kodkrat = kodkrat;
   }
 
-  public java.lang.String getKodxrisi() {
-    return this.kodxrisi;
+  public java.lang.Float getAa() {
+    return this.aa;
   }
 
   public java.lang.String getKodfylo() {
     return this.kodfylo;
   }
 
-  public java.lang.String getExpr() {
-    return this.expr;
-  }
-
-  public java.lang.Integer getAa() {
-    return this.aa;
-  }
-
   public java.lang.String getNotes() {
     return this.notes;
   }
 
-  public void setKodxrisi(java.lang.String kodxrisi) {
-    this.kodxrisi = kodxrisi;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
+  }
+
+  public java.lang.String getExpr() {
+    return this.expr;
+  }
+
+  public void setAa(java.lang.Float aa) {
+    this.aa = aa;
   }
 
   public void setKodfylo(java.lang.String kodfylo) {
     this.kodfylo = kodfylo;
   }
 
-  public void setExpr(java.lang.String expr) {
-    this.expr = expr;
-  }
-
-  public void setAa(java.lang.Integer aa) {
-    this.aa = aa;
-  }
-
   public void setNotes(java.lang.String notes) {
     this.notes = notes;
+  }
+
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
+  }
+
+  public void setExpr(java.lang.String expr) {
+    this.expr = expr;
   }
 }

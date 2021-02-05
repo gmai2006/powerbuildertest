@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usractions")
 public class Usractions implements Serializable {
-  private static final long serialVersionUID = 160992137260395093L;
-  /** Description: kodaction. */
+  private static final long serialVersionUID = 161096103751442631L;
+  /** Description: kodapp. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "kodaction")
-  private java.lang.String kodaction;
-  /** Description: kodapp. */
-  @Basic
   @Column(name = "kodapp")
   private java.lang.String kodapp;
   /** Description: descaction. */
   @Basic
-  @Column(name = "descaction")
+  @Column(name = "descaction", length = 100)
   private java.lang.String descaction;
+  /** Description: kodaction. */
+  @Basic
+  @Column(name = "kodaction", length = 64)
+  private java.lang.String kodaction;
 
   public Usractions() {}
 
-  public java.lang.String getKodaction() {
-    return this.kodaction;
-  }
-
-  public void setKodaction(java.lang.String kodaction) {
-    this.kodaction = kodaction;
-  }
-
   public java.lang.String getKodapp() {
     return this.kodapp;
-  }
-
-  public java.lang.String getDescaction() {
-    return this.descaction;
   }
 
   public void setKodapp(java.lang.String kodapp) {
     this.kodapp = kodapp;
   }
 
+  public java.lang.String getDescaction() {
+    return this.descaction;
+  }
+
+  public java.lang.String getKodaction() {
+    return this.kodaction;
+  }
+
   public void setDescaction(java.lang.String descaction) {
     this.descaction = descaction;
+  }
+
+  public void setKodaction(java.lang.String kodaction) {
+    this.kodaction = kodaction;
   }
 }

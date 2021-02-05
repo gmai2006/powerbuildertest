@@ -41,13 +41,13 @@ import java.util.stream.Collectors;
  */
 
 public class DwUsruserpermListDto implements Serializable {
-  private static final long serialVersionUID = 160992137715636663L;
+  private static final long serialVersionUID = 161096104234223045L;
 
   /** Description: kodapp. */
   private java.lang.String kodapp;
 
   /** Description: koduser. */
-  private java.lang.Float koduser;
+  private java.lang.Integer koduser;
 
   /** Description: enable. */
   private java.lang.Integer enable;
@@ -59,7 +59,7 @@ public class DwUsruserpermListDto implements Serializable {
 
   public DwUsruserpermListDto(
       java.lang.String kodapp,
-      java.lang.Float koduser,
+      java.lang.Integer koduser,
       java.lang.Integer enable,
       java.lang.String descapp) {
     this.kodapp = kodapp;
@@ -72,7 +72,7 @@ public class DwUsruserpermListDto implements Serializable {
     return this.kodapp;
   }
 
-  public java.lang.Float getKoduser() {
+  public java.lang.Integer getKoduser() {
     return this.koduser;
   }
 
@@ -88,7 +88,7 @@ public class DwUsruserpermListDto implements Serializable {
     this.kodapp = kodapp;
   }
 
-  public void setKoduser(java.lang.Float koduser) {
+  public void setKoduser(java.lang.Integer koduser) {
     this.koduser = koduser;
   }
 

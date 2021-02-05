@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthZpkatXrisiDto implements Serializable {
-  private static final long serialVersionUID = 160992137729620823L;
+  private static final long serialVersionUID = 161096104246943945L;
 
   /** Description: kodkat. */
   private java.lang.String kodkat;

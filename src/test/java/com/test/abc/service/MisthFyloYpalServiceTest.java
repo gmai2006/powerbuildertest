@@ -59,8 +59,8 @@ public class MisthFyloYpalServiceTest {
     MisthFyloYpal testResult = serviceMock.find(records[0].getKodypal());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals kodfylo ", this.records[0].getKodfylo(), testResult.getKodfylo());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
   }
 }

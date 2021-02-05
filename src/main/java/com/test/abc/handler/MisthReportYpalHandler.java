@@ -59,14 +59,14 @@ public class MisthReportYpalHandler extends DelimiterFileHandler<MisthReportYpal
     MisthReportYpal record = new MisthReportYpal();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodreport(new java.lang.Float(tokens.get(i)));
-          break;
         case "kodypal":
-          record.setKodypal(new java.lang.Float(tokens.get(i)));
+          record.setKodypal(new java.lang.Integer(tokens.get(i)));
           break;
         case "kodxrisi":
           record.setKodxrisi(tokens.get(i));
+          break;
+        case "kodreport":
+          record.setKodreport(tokens.get(i));
           break;
 
         default:

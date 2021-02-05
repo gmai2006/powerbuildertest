@@ -45,16 +45,16 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usrgroupperm")
 public class Usrgroupperm implements Serializable {
-  private static final long serialVersionUID = 160992137246325954L;
+  private static final long serialVersionUID = 161096103736560500L;
   /** Description: kodgroup. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodgroup")
-  private java.lang.Float kodgroup;
-  /** Description: kodaction. */
+  private java.lang.Integer kodgroup;
+  /** Description: openlist. */
   @Basic
-  @Column(name = "kodaction")
-  private java.lang.String kodaction;
+  @Column(name = "openlist")
+  private java.lang.Integer openlist;
   /** Description: editrec. */
   @Basic
   @Column(name = "editrec")
@@ -67,10 +67,10 @@ public class Usrgroupperm implements Serializable {
   @Basic
   @Column(name = "delrec")
   private java.lang.Integer delrec;
-  /** Description: openlist. */
+  /** Description: kodaction. */
   @Basic
-  @Column(name = "openlist")
-  private java.lang.Integer openlist;
+  @Column(name = "kodaction", length = 64)
+  private java.lang.String kodaction;
   /** Description: openform. */
   @Basic
   @Column(name = "openform")
@@ -78,16 +78,16 @@ public class Usrgroupperm implements Serializable {
 
   public Usrgroupperm() {}
 
-  public java.lang.Float getKodgroup() {
+  public java.lang.Integer getKodgroup() {
     return this.kodgroup;
   }
 
-  public void setKodgroup(java.lang.Float kodgroup) {
+  public void setKodgroup(java.lang.Integer kodgroup) {
     this.kodgroup = kodgroup;
   }
 
-  public java.lang.String getKodaction() {
-    return this.kodaction;
+  public java.lang.Integer getOpenlist() {
+    return this.openlist;
   }
 
   public java.lang.Integer getEditrec() {
@@ -102,16 +102,16 @@ public class Usrgroupperm implements Serializable {
     return this.delrec;
   }
 
-  public java.lang.Integer getOpenlist() {
-    return this.openlist;
+  public java.lang.String getKodaction() {
+    return this.kodaction;
   }
 
   public java.lang.Integer getOpenform() {
     return this.openform;
   }
 
-  public void setKodaction(java.lang.String kodaction) {
-    this.kodaction = kodaction;
+  public void setOpenlist(java.lang.Integer openlist) {
+    this.openlist = openlist;
   }
 
   public void setEditrec(java.lang.Integer editrec) {
@@ -126,8 +126,8 @@ public class Usrgroupperm implements Serializable {
     this.delrec = delrec;
   }
 
-  public void setOpenlist(java.lang.Integer openlist) {
-    this.openlist = openlist;
+  public void setKodaction(java.lang.String kodaction) {
+    this.kodaction = kodaction;
   }
 
   public void setOpenform(java.lang.Integer openform) {

@@ -45,36 +45,40 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_final_ypal")
 public class MisthFinalYpal implements Serializable {
-  private static final long serialVersionUID = 160992137252342551L;
+  private static final long serialVersionUID = 161096103742697L;
   /** Description: kodypal. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodypal")
-  private java.lang.Float kodypal;
-  /** Description: kodfinal. */
-  @Basic
-  @Column(name = "kodfinal")
-  private java.lang.Float kodfinal;
-  /** Description: kodxrisi. */
-  @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
+  private java.lang.Integer kodypal;
   /** Description: plirdate. */
   @Basic
   @Column(name = "plirdate")
   private java.util.Date plirdate;
+  /** Description: kodfinal. */
+  @Basic
+  @Column(name = "kodfinal")
+  private java.lang.Integer kodfinal;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
 
   public MisthFinalYpal() {}
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 
-  public java.lang.Float getKodfinal() {
+  public java.util.Date getPlirdate() {
+    return this.plirdate;
+  }
+
+  public java.lang.Integer getKodfinal() {
     return this.kodfinal;
   }
 
@@ -82,19 +86,15 @@ public class MisthFinalYpal implements Serializable {
     return this.kodxrisi;
   }
 
-  public java.util.Date getPlirdate() {
-    return this.plirdate;
+  public void setPlirdate(java.util.Date plirdate) {
+    this.plirdate = plirdate;
   }
 
-  public void setKodfinal(java.lang.Float kodfinal) {
+  public void setKodfinal(java.lang.Integer kodfinal) {
     this.kodfinal = kodfinal;
   }
 
   public void setKodxrisi(java.lang.String kodxrisi) {
     this.kodxrisi = kodxrisi;
-  }
-
-  public void setPlirdate(java.util.Date plirdate) {
-    this.plirdate = plirdate;
   }
 }

@@ -59,11 +59,11 @@ public class UsrmembersHandler extends DelimiterFileHandler<Usrmembers> {
     Usrmembers record = new Usrmembers();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodgroup(new java.lang.Float(tokens.get(i)));
-          break;
         case "koduser":
-          record.setKoduser(new java.lang.Float(tokens.get(i)));
+          record.setKoduser(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "kodgroup":
+          record.setKodgroup(new java.lang.Integer(tokens.get(i)));
           break;
 
         default:

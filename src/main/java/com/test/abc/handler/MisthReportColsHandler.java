@@ -59,26 +59,26 @@ public class MisthReportColsHandler extends DelimiterFileHandler<MisthReportCols
     MisthReportCols record = new MisthReportCols();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodreport(new java.lang.String(tokens.get(i)));
-          break;
         case "kodxrisi":
-          record.setKodxrisi(tokens.get(i));
-          break;
-        case "kodcol":
-          record.setKodcol(new java.lang.Integer(tokens.get(i)));
-          break;
-        case "expr":
-          record.setExpr(tokens.get(i));
+          record.setKodxrisi(new java.lang.String(tokens.get(i)));
           break;
         case "headerText":
           record.setHeaderText(tokens.get(i));
           break;
+        case "aa":
+          record.setAa(new java.lang.Float(tokens.get(i)));
+          break;
         case "width":
           record.setWidth(new java.lang.Integer(tokens.get(i)));
           break;
-        case "aa":
-          record.setAa(new java.lang.Integer(tokens.get(i)));
+        case "kodreport":
+          record.setKodreport(tokens.get(i));
+          break;
+        case "expr":
+          record.setExpr(tokens.get(i));
+          break;
+        case "kodcol":
+          record.setKodcol(new java.lang.Integer(tokens.get(i)));
           break;
 
         default:

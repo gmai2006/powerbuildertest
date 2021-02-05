@@ -45,7 +45,7 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usrapps")
 public class Usrapps implements Serializable {
-  private static final long serialVersionUID = 160992137253315395L;
+  private static final long serialVersionUID = 161096103743113035L;
   /** Description: kodapp. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
@@ -53,7 +53,7 @@ public class Usrapps implements Serializable {
   private java.lang.String kodapp;
   /** Description: descapp. */
   @Basic
-  @Column(name = "descapp")
+  @Column(name = "descapp", length = 100)
   private java.lang.String descapp;
 
   public Usrapps() {}

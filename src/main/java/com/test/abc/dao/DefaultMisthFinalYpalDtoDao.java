@@ -62,7 +62,7 @@ public class DefaultMisthFinalYpalDtoDao implements MisthFinalYpalDtoDao {
   public DefaultMisthFinalYpalDtoDao() {}
 
   public List<SprnReport3Dto> sprnReport3(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnReport3Dto> query =
         dao.getEntityManager().createNamedQuery("sprnReport3Mapping", SprnReport3Dto.class);
     query.setParameter("arg_kodfinal", arg_kodfinal);
@@ -71,7 +71,7 @@ public class DefaultMisthFinalYpalDtoDao implements MisthFinalYpalDtoDao {
   }
 
   public List<DwMisthFinalYpalPrildateDto> dwMisthFinalYpalPrildate(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthFinalYpalPrildateDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwMisthFinalYpalPrildateMapping", DwMisthFinalYpalPrildateDto.class);
@@ -81,7 +81,7 @@ public class DefaultMisthFinalYpalDtoDao implements MisthFinalYpalDtoDao {
   }
 
   public List<PrnFinalYpalListDto> prnFinalYpalList(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<PrnFinalYpalListDto> query =
         dao.getEntityManager()
             .createNamedQuery("prnFinalYpalListMapping", PrnFinalYpalListDto.class);
@@ -91,7 +91,7 @@ public class DefaultMisthFinalYpalDtoDao implements MisthFinalYpalDtoDao {
   }
 
   public List<DwMisthFinalYpalPlirdateListDto> dwMisthFinalYpalPlirdateList(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthFinalYpalPlirdateListDto> query =
         dao.getEntityManager()
             .createNamedQuery(
@@ -102,7 +102,7 @@ public class DefaultMisthFinalYpalDtoDao implements MisthFinalYpalDtoDao {
   }
 
   public List<DwMisthFinalYpalListDto> dwMisthFinalYpalList(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthFinalYpalListDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwMisthFinalYpalListMapping", DwMisthFinalYpalListDto.class);
@@ -112,7 +112,7 @@ public class DefaultMisthFinalYpalDtoDao implements MisthFinalYpalDtoDao {
   }
 
   public List<PickMisthFinalYpalDto> pickMisthFinalYpal(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<PickMisthFinalYpalDto> query =
         dao.getEntityManager()
             .createNamedQuery("pickMisthFinalYpalMapping", PickMisthFinalYpalDto.class);

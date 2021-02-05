@@ -86,15 +86,15 @@ public class AfxfilterdDaoTest {
     java.util.List<Afxfilterd> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
-    org.junit.Assert.assertTrue(
-        "expect equals kodfilter ", this.records[1].getKodfilter() == testResult.getKodfilter());
-    org.junit.Assert.assertEquals(
-        "expect equals pedio ", this.records[1].getPedio(), testResult.getPedio());
     org.junit.Assert.assertEquals(
         "expect equals telestis ", this.records[1].getTelestis(), testResult.getTelestis());
     org.junit.Assert.assertEquals(
-        "expect equals timi ", this.records[1].getTimi(), testResult.getTimi());
+        "expect equals pedio ", this.records[1].getPedio(), testResult.getPedio());
     org.junit.Assert.assertEquals(
         "expect equals joint ", this.records[1].getJoint(), testResult.getJoint());
+    org.junit.Assert.assertTrue(
+        "expect equals kodfilter ", this.records[1].getKodfilter() == testResult.getKodfilter());
+    org.junit.Assert.assertEquals(
+        "expect equals timi ", this.records[1].getTimi(), testResult.getTimi());
   }
 }

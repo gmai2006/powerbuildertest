@@ -20,19 +20,14 @@ package com.test.abc.handler;
 
 import static org.junit.Assert.assertEquals;
 import java.io.IOException;
-import com.google.gson.Gson;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Set;
-
+import org.json.CDL;
+import org.json.JSONArray;
+import com.google.gson.Gson;
 import com.test.abc.entity.Afxfilter;
 import com.test.abc.dao.JpaDao;
 import com.test.abc.dao.StandaloneJpaDao;
@@ -72,14 +67,14 @@ import org.junit.Test;
 public class AfxfilterHandlerTest {
   static final String inputFile = "Afxfilter.json";
   static AfxfilterHandler handler;
-  private JpaDao jpa;
+  private static JpaDao jpa;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
   private Afxfilter[] records;
 
   /** Run before the test. */
-  @Before
-  public void before() {
-    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
+  @BeforeClass
+  public static void before() {
+    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
     jpa = new StandaloneJpaDao(factory.createEntityManager());
     handler = new AfxfilterHandler(jpa);
   }
@@ -92,9 +87,9 @@ public class AfxfilterHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, Afxfilter[].class);
     assertEquals("match count", count, records.length);
-    Afxfilter testResult = jpa.find(Afxfilter.class, records[0].getKodfilter());
-    assertEquals(
-        "expect equals descfilter ", this.records[0].getDescfilter(), testResult.getDescfilter());
+    Afxfilter testResult = jpa.find(Afxfilter.class, records[0].getDescfilter());
+    org.junit.Assert.assertEquals(
+        "expect equals kodfilter ", this.records[0].getKodfilter(), testResult.getKodfilter());
     assertEquals(
         "expect equals tablename ", this.records[0].getTablename(), testResult.getTablename());
   }
@@ -111,39 +106,13 @@ public class AfxfilterHandlerTest {
       final File tempFile = File.createTempFile(inputFile, ".txt");
       tempFile.deleteOnExit();
       String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-      final Afxfilter[] records = gson.fromJson(json, Afxfilter[].class);
-      String header =
-          createHeader(
-              Paths.get(inputFile.substring(0, inputFile.length() - 5) + "header.json").toString());
-      final List<String> result = new ArrayList<>();
-      result.add(header);
-
-      final List<String> data =
-          Arrays.stream(records)
-              .map(record -> createCsvRecord(record))
-              .collect(Collectors.toList());
-
-      result.addAll(data);
-      FileUtils.writeListOfStringToFile(tempFile, result);
+      JSONArray docs = new JSONArray(json);
+      String csv = CDL.toString(docs);
+      org.apache.commons.io.FileUtils.writeStringToFile(tempFile, csv, Charset.defaultCharset());
       return tempFile;
     } catch (IOException ex) {
       ex.printStackTrace();
       return null;
     }
-  }
-
-  private String createCsvRecord(final Afxfilter record) {
-    return TestUtils.getObject(record.getKodfilter())
-        + ","
-        + TestUtils.getObject(record.getDescfilter())
-        + ","
-        + TestUtils.getObject(record.getTablename());
-  }
-
-  private String createHeader(String headerfile) throws IOException {
-    String json = FileUtils.readFileFromResource2String(headerfile, Charset.defaultCharset());
-    JsonParser parser = new JsonParser();
-    JsonObject jsonObject = parser.parse(json).getAsJsonObject();
-    return jsonObject.get("header").getAsString();
   }
 }

@@ -59,8 +59,8 @@ public class MisthFyloServiceTest {
     MisthFylo testResult = serviceMock.find(records[0].getKodxrisi());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals kodfylo ", this.records[0].getKodfylo(), testResult.getKodfylo());
-    org.junit.Assert.assertEquals(
         "expect equals descfylo ", this.records[0].getDescfylo(), testResult.getDescfylo());
+    org.junit.Assert.assertEquals(
+        "expect equals kodfylo ", this.records[0].getKodfylo(), testResult.getKodfylo());
   }
 }

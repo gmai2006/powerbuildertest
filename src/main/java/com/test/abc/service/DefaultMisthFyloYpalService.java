@@ -59,7 +59,7 @@ public class DefaultMisthFyloYpalService implements MisthFyloYpalService {
 
   /** {@inheritDoc} */
   @Override
-  public MisthFyloYpal find(java.lang.Float id) {
+  public MisthFyloYpal find(java.lang.Integer id) {
     final MisthFyloYpal result = dao.find(id);
     logger.info("find(MisthFyloYpal) - exited - return value={} result ");
     return result;
@@ -105,7 +105,7 @@ public class DefaultMisthFyloYpalService implements MisthFyloYpalService {
 
   /** {@inheritDoc} */
   @Override
-  public void delete(java.lang.Float id) {
+  public void delete(java.lang.Integer id) {
     logger.info("delete(MisthFyloYpal={}) - entered id " + id);
     dao.delete(id);
     logger.info("delete(MisthFyloYpal) - exited - return value={} result ");

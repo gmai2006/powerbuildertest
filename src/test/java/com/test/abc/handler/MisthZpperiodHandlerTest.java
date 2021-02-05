@@ -20,19 +20,14 @@ package com.test.abc.handler;
 
 import static org.junit.Assert.assertEquals;
 import java.io.IOException;
-import com.google.gson.Gson;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Set;
-
+import org.json.CDL;
+import org.json.JSONArray;
+import com.google.gson.Gson;
 import com.test.abc.entity.MisthZpperiod;
 import com.test.abc.dao.JpaDao;
 import com.test.abc.dao.StandaloneJpaDao;
@@ -72,14 +67,14 @@ import org.junit.Test;
 public class MisthZpperiodHandlerTest {
   static final String inputFile = "MisthZpperiod.json";
   static MisthZpperiodHandler handler;
-  private JpaDao jpa;
+  private static JpaDao jpa;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
   private MisthZpperiod[] records;
 
   /** Run before the test. */
-  @Before
-  public void before() {
-    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
+  @BeforeClass
+  public static void before() {
+    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
     jpa = new StandaloneJpaDao(factory.createEntityManager());
     handler = new MisthZpperiodHandler(jpa);
   }
@@ -94,11 +89,11 @@ public class MisthZpperiodHandlerTest {
     assertEquals("match count", count, records.length);
     MisthZpperiod testResult = jpa.find(MisthZpperiod.class, records[0].getKodperiod());
     assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    assertEquals(
         "expect equals descperiod ", this.records[0].getDescperiod(), testResult.getDescperiod());
     org.junit.Assert.assertEquals(
         "expect equals orderno ", this.records[0].getOrderno(), testResult.getOrderno());
+    assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
   }
 
   /**
@@ -113,41 +108,13 @@ public class MisthZpperiodHandlerTest {
       final File tempFile = File.createTempFile(inputFile, ".txt");
       tempFile.deleteOnExit();
       String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-      final MisthZpperiod[] records = gson.fromJson(json, MisthZpperiod[].class);
-      String header =
-          createHeader(
-              Paths.get(inputFile.substring(0, inputFile.length() - 5) + "header.json").toString());
-      final List<String> result = new ArrayList<>();
-      result.add(header);
-
-      final List<String> data =
-          Arrays.stream(records)
-              .map(record -> createCsvRecord(record))
-              .collect(Collectors.toList());
-
-      result.addAll(data);
-      FileUtils.writeListOfStringToFile(tempFile, result);
+      JSONArray docs = new JSONArray(json);
+      String csv = CDL.toString(docs);
+      org.apache.commons.io.FileUtils.writeStringToFile(tempFile, csv, Charset.defaultCharset());
       return tempFile;
     } catch (IOException ex) {
       ex.printStackTrace();
       return null;
     }
-  }
-
-  private String createCsvRecord(final MisthZpperiod record) {
-    return TestUtils.getObject(record.getKodperiod())
-        + ","
-        + TestUtils.getObject(record.getKodxrisi())
-        + ","
-        + TestUtils.getObject(record.getDescperiod())
-        + ","
-        + TestUtils.getObject(record.getOrderno());
-  }
-
-  private String createHeader(String headerfile) throws IOException {
-    String json = FileUtils.readFileFromResource2String(headerfile, Charset.defaultCharset());
-    JsonParser parser = new JsonParser();
-    JsonObject jsonObject = parser.parse(json).getAsJsonObject();
-    return jsonObject.get("header").getAsString();
   }
 }

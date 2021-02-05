@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthZpepidomXrisiDto implements Serializable {
-  private static final long serialVersionUID = 160992137641258588L;
+  private static final long serialVersionUID = 161096104177084226L;
 
   /** Description: kodepidom. */
   private java.lang.String kodepidom;

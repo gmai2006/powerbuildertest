@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthFyloXrisiCheckDto implements Serializable {
-  private static final long serialVersionUID = 160992137738996812L;
+  private static final long serialVersionUID = 161096104251262713L;
 
   /** Description: kodfylo. */
   private java.lang.String kodfylo;

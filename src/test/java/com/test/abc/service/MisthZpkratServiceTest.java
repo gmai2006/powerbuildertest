@@ -58,9 +58,16 @@ public class MisthZpkratServiceTest {
   public void testFind_success() {
     MisthZpkrat testResult = serviceMock.find(records[0].getKodkrat());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue(
+        "expect equals isautoforos ",
+        this.records[0].getIsautoforos() == testResult.getIsautoforos());
     org.junit.Assert.assertEquals(
         "expect equals desckrat ", this.records[0].getDesckrat(), testResult.getDesckrat());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    org.junit.Assert.assertTrue(
+        "expect equals isasf ", this.records[0].getIsasf() == testResult.getIsasf());
+    org.junit.Assert.assertTrue(
+        "expect equals isforos ", this.records[0].getIsforos() == testResult.getIsforos());
   }
 }

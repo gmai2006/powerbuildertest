@@ -42,9 +42,9 @@ import com.test.abc.dto.*;
 public interface UsrusersDtoDao {
   List<PickUsrusersDto> pickUsrusers();
 
-  List<DwUsrusersFormDto> dwUsrusersForm(java.lang.Float arg_koduser);
+  List<DwUsrusersFormDto> dwUsrusersForm(java.lang.Integer arg_koduser);
 
-  List<DwUsrmembersGroupListDto> dwUsrmembersGroupList(java.lang.Float arg_kodgroup);
+  List<DwUsrmembersGroupListDto> dwUsrmembersGroupList(java.lang.Integer arg_kodgroup);
 
   List<PickUsrusersWithadminDto> pickUsrusersWithadmin();
 

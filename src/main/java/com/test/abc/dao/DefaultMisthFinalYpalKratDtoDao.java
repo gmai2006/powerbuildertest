@@ -62,7 +62,7 @@ public class DefaultMisthFinalYpalKratDtoDao implements MisthFinalYpalKratDtoDao
   public DefaultMisthFinalYpalKratDtoDao() {}
 
   public List<DwMisthFinalYpalKratListDto> dwMisthFinalYpalKratList(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthFinalYpalKratListDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwMisthFinalYpalKratListMapping", DwMisthFinalYpalKratListDto.class);

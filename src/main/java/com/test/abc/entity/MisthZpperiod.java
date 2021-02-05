@@ -45,24 +45,24 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpperiod")
 public class MisthZpperiod implements Serializable {
-  private static final long serialVersionUID = 160992137251659971L;
+  private static final long serialVersionUID = 161096103742051370L;
   /** Description: kodperiod. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodperiod")
   private java.lang.String kodperiod;
-  /** Description: kodxrisi. */
-  @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
   /** Description: descperiod. */
   @Basic
-  @Column(name = "descperiod")
+  @Column(name = "descperiod", length = 50)
   private java.lang.String descperiod;
   /** Description: orderno. */
   @Basic
   @Column(name = "orderno")
   private java.lang.Integer orderno;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
 
   public MisthZpperiod() {}
 
@@ -74,10 +74,6 @@ public class MisthZpperiod implements Serializable {
     this.kodperiod = kodperiod;
   }
 
-  public java.lang.String getKodxrisi() {
-    return this.kodxrisi;
-  }
-
   public java.lang.String getDescperiod() {
     return this.descperiod;
   }
@@ -86,8 +82,8 @@ public class MisthZpperiod implements Serializable {
     return this.orderno;
   }
 
-  public void setKodxrisi(java.lang.String kodxrisi) {
-    this.kodxrisi = kodxrisi;
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
   }
 
   public void setDescperiod(java.lang.String descperiod) {
@@ -96,5 +92,9 @@ public class MisthZpperiod implements Serializable {
 
   public void setOrderno(java.lang.Integer orderno) {
     this.orderno = orderno;
+  }
+
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
   }
 }

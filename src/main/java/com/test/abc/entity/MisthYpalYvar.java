@@ -45,37 +45,41 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_ypal_yvar")
 public class MisthYpalYvar implements Serializable {
-  private static final long serialVersionUID = 160992137240898506L;
+  private static final long serialVersionUID = 161096103730626815L;
   /** Description: kodypal. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodypal")
-  private java.lang.Float kodypal;
-  /** Description: kodxrisi. */
-  @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
-  /** Description: kodyvar. */
-  @Basic
-  @Column(name = "kodyvar")
-  private java.lang.String kodyvar;
+  private java.lang.Integer kodypal;
   /** Description: aa. */
   @Basic
   @Column(name = "aa")
-  private java.lang.Integer aa;
+  private java.lang.Float aa;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
+  /** Description: kodyvar. */
+  @Basic
+  @Column(name = "kodyvar", length = 20)
+  private java.lang.String kodyvar;
   /** Description: expr. */
   @Basic
-  @Column(name = "expr")
+  @Column(name = "expr", length = 32766)
   private java.lang.String expr;
 
   public MisthYpalYvar() {}
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
+  }
+
+  public java.lang.Float getAa() {
+    return this.aa;
   }
 
   public java.lang.String getKodxrisi() {
@@ -86,12 +90,12 @@ public class MisthYpalYvar implements Serializable {
     return this.kodyvar;
   }
 
-  public java.lang.Integer getAa() {
-    return this.aa;
-  }
-
   public java.lang.String getExpr() {
     return this.expr;
+  }
+
+  public void setAa(java.lang.Float aa) {
+    this.aa = aa;
   }
 
   public void setKodxrisi(java.lang.String kodxrisi) {
@@ -100,10 +104,6 @@ public class MisthYpalYvar implements Serializable {
 
   public void setKodyvar(java.lang.String kodyvar) {
     this.kodyvar = kodyvar;
-  }
-
-  public void setAa(java.lang.Integer aa) {
-    this.aa = aa;
   }
 
   public void setExpr(java.lang.String expr) {

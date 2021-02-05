@@ -67,14 +67,14 @@ public class DefaultUsrusersDtoDao implements UsrusersDtoDao {
     return query.getResultList();
   }
 
-  public List<DwUsrusersFormDto> dwUsrusersForm(java.lang.Float arg_koduser) {
+  public List<DwUsrusersFormDto> dwUsrusersForm(java.lang.Integer arg_koduser) {
     final TypedQuery<DwUsrusersFormDto> query =
         dao.getEntityManager().createNamedQuery("dwUsrusersFormMapping", DwUsrusersFormDto.class);
     query.setParameter("arg_koduser", arg_koduser);
     return query.getResultList();
   }
 
-  public List<DwUsrmembersGroupListDto> dwUsrmembersGroupList(java.lang.Float arg_kodgroup) {
+  public List<DwUsrmembersGroupListDto> dwUsrmembersGroupList(java.lang.Integer arg_kodgroup) {
     final TypedQuery<DwUsrmembersGroupListDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwUsrmembersGroupListMapping", DwUsrmembersGroupListDto.class);

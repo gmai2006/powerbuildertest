@@ -41,8 +41,8 @@ import com.test.abc.dto.*;
 
 public interface MisthFinalDtoDao {
   List<DwMisthFinalFormDto> dwMisthFinalForm(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 
   List<PrnFinalTotalMisthDto> prnFinalTotalMisth(
-      java.lang.Float arg_kodfinal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodfinal, java.lang.String arg_kodxrisi);
 }

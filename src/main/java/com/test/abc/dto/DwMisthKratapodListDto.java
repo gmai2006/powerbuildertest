@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthKratapodListDto implements Serializable {
-  private static final long serialVersionUID = 160992137743238256L;
+  private static final long serialVersionUID = 161096104255652977L;
 
   /** Description: kodkratapod. */
   private java.lang.Float kodkratapod;

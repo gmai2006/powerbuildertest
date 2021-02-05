@@ -62,15 +62,15 @@ public class JsonParserTest {
       assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
       assertEquals(
+          "expect equals desckratapod ",
+          o.get("desckratapod").getAsString(),
+          result.get(i).getDesckratapod());
+
+      assertEquals(
           "expect equals kodkratapod ",
           o.get("kodkratapod").getAsFloat(),
           result.get(i).getKodkratapod(),
           0.001);
-
-      assertEquals(
-          "expect equals desckratapod ",
-          o.get("desckratapod").getAsString(),
-          result.get(i).getDesckratapod());
     }
   }
 
@@ -90,12 +90,12 @@ public class JsonParserTest {
           "expect equals kodstath ", o.get("kodstath").getAsString(), result.get(i).getKodstath());
 
       assertEquals(
+          "expect equals poso ", o.get("poso").getAsInt(), result.get(i).getPoso(), 0.0001);
+
+      assertEquals(
           "expect equals descstath ",
           o.get("descstath").getAsString(),
           result.get(i).getDescstath());
-
-      assertEquals(
-          "expect equals poso ", o.get("poso").getAsInt(), result.get(i).getPoso(), 0.0001);
     }
   }
 
@@ -111,16 +111,16 @@ public class JsonParserTest {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
           "expect equals kodypal ",
-          o.get("kodypal").getAsFloat(),
+          o.get("kodypal").getAsInt(),
           result.get(i).getKodypal(),
-          0.001);
+          0.0001);
+      assertEquals("expect equals aa ", o.get("aa").getAsFloat(), result.get(i).getAa(), 0.001);
+
       assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
 
       assertEquals(
           "expect equals kodyvar ", o.get("kodyvar").getAsString(), result.get(i).getKodyvar());
-
-      assertEquals("expect equals aa ", o.get("aa").getAsInt(), result.get(i).getAa(), 0.0001);
 
       assertEquals("expect equals expr ", o.get("expr").getAsString(), result.get(i).getExpr());
     }
@@ -139,12 +139,12 @@ public class JsonParserTest {
       assertEquals(
           "expect equals kodtmima ", o.get("kodtmima").getAsString(), result.get(i).getKodtmima());
       assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
-      assertEquals(
           "expect equals desctmima ",
           o.get("desctmima").getAsString(),
           result.get(i).getDesctmima());
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
     }
   }
 
@@ -159,62 +159,9 @@ public class JsonParserTest {
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
-          "expect equals kodypal ",
-          o.get("kodypal").getAsFloat(),
-          result.get(i).getKodypal(),
-          0.001);
-      assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
-      assertEquals(
-          "expect equals kodtmima ", o.get("kodtmima").getAsString(), result.get(i).getKodtmima());
-
-      assertEquals(
-          "expect equals kodidikot ",
-          o.get("kodidikot").getAsString(),
-          result.get(i).getKodidikot());
-
-      assertEquals(
-          "expect equals kodthesi ", o.get("kodthesi").getAsString(), result.get(i).getKodthesi());
-
-      assertEquals(
           "expect equals kodoikog ", o.get("kodoikog").getAsString(), result.get(i).getKodoikog());
-
       assertEquals(
-          "expect equals kodtamio ", o.get("kodtamio").getAsString(), result.get(i).getKodtamio());
-
-      assertEquals(
-          "expect equals surname ", o.get("surname").getAsString(), result.get(i).getSurname());
-
-      assertEquals("expect equals name ", o.get("name").getAsString(), result.get(i).getName());
-
-      assertEquals(
-          "expect equals fathername ",
-          o.get("fathername").getAsString(),
-          result.get(i).getFathername());
-
-      assertEquals(
-          "expect equals mitroo ", o.get("mitroo").getAsString(), result.get(i).getMitroo());
-
-      assertEquals("expect equals adt ", o.get("adt").getAsString(), result.get(i).getAdt());
-
-      assertEquals("expect equals afm ", o.get("afm").getAsString(), result.get(i).getAfm());
-
-      assertEquals("expect equals doy ", o.get("doy").getAsString(), result.get(i).getDoy());
-
-      assertEquals(
-          "expect equals bankno ", o.get("bankno").getAsString(), result.get(i).getBankno());
-
-      assertEquals("expect equals bank ", o.get("bank").getAsString(), result.get(i).getBank());
-
-      assertEquals(
-          "expect equals childs ", o.get("childs").getAsInt(), result.get(i).getChilds(), 0.0001);
-
-      assertEquals(
-          "expect equals prostmeli ",
-          o.get("prostmeli").getAsInt(),
-          result.get(i).getProstmeli(),
-          0.0001);
+          "expect equals bathmos ", o.get("bathmos").getAsString(), result.get(i).getBathmos());
 
       assertEquals(
           "expect equals klimakio ",
@@ -223,39 +170,61 @@ public class JsonParserTest {
           0.0001);
 
       assertEquals(
-          "expect equals bathmos ", o.get("bathmos").getAsString(), result.get(i).getBathmos());
+          "expect equals childs ", o.get("childs").getAsInt(), result.get(i).getChilds(), 0.0001);
 
       assertEquals(
-          "expect equals klados ", o.get("klados").getAsString(), result.get(i).getKlados());
+          "expect equals spouse ", o.get("spouse").getAsString(), result.get(i).getSpouse());
 
       assertEquals(
-          "expect equals homephone ",
-          o.get("homephone").getAsString(),
-          result.get(i).getHomephone());
+          "expect equals kodtmima ", o.get("kodtmima").getAsString(), result.get(i).getKodtmima());
+
+      assertEquals("expect equals bank ", o.get("bank").getAsString(), result.get(i).getBank());
 
       assertEquals(
           "expect equals mobilphone ",
           o.get("mobilphone").getAsString(),
           result.get(i).getMobilphone());
 
-      assertEquals("expect equals sex ", o.get("sex").getAsString(), result.get(i).getSex());
+      assertEquals(
+          "expect equals kodthesi ", o.get("kodthesi").getAsString(), result.get(i).getKodthesi());
 
       assertEquals(
-          "expect equals spouse ", o.get("spouse").getAsString(), result.get(i).getSpouse());
+          "expect equals bankno ", o.get("bankno").getAsString(), result.get(i).getBankno());
+
+      assertEquals(
+          "expect equals prostmeli ",
+          o.get("prostmeli").getAsInt(),
+          result.get(i).getProstmeli(),
+          0.0001);
 
       assertEquals("expect equals city ", o.get("city").getAsString(), result.get(i).getCity());
 
-      assertEquals("expect equals area ", o.get("area").getAsString(), result.get(i).getArea());
+      assertEquals(
+          "expect equals intphone ", o.get("intphone").getAsString(), result.get(i).getIntphone());
+
+      assertEquals("expect equals doy ", o.get("doy").getAsString(), result.get(i).getDoy());
 
       assertEquals(
-          "expect equals address ", o.get("address").getAsString(), result.get(i).getAddress());
+          "expect equals surname ", o.get("surname").getAsString(), result.get(i).getSurname());
 
-      assertEquals("expect equals tk ", o.get("tk").getAsString(), result.get(i).getTk());
+      assertEquals(
+          "expect equals kodypal ",
+          o.get("kodypal").getAsInt(),
+          result.get(i).getKodypal(),
+          0.0001);
 
       assertEquals("expect equals email ", o.get("email").getAsString(), result.get(i).getEmail());
 
       assertEquals(
+          "expect equals kodtamio ", o.get("kodtamio").getAsString(), result.get(i).getKodtamio());
+
+      assertEquals(
+          "expect equals address ", o.get("address").getAsString(), result.get(i).getAddress());
+
+      assertEquals(
           "expect equals jobtitle ", o.get("jobtitle").getAsString(), result.get(i).getJobtitle());
+
+      assertEquals("expect equals sex ", o.get("sex").getAsString(), result.get(i).getSex());
 
       assertEquals(
           "expect equals termreason ",
@@ -263,15 +232,46 @@ public class JsonParserTest {
           result.get(i).getTermreason());
 
       assertEquals(
+          "expect equals fathername ",
+          o.get("fathername").getAsString(),
+          result.get(i).getFathername());
+
+      assertEquals("expect equals tk ", o.get("tk").getAsString(), result.get(i).getTk());
+
+      assertEquals(
           "expect equals jobphone ", o.get("jobphone").getAsString(), result.get(i).getJobphone());
 
       assertEquals(
-          "expect equals intphone ", o.get("intphone").getAsString(), result.get(i).getIntphone());
+          "expect equals mitroo ", o.get("mitroo").getAsString(), result.get(i).getMitroo());
 
       assertEquals(
           "expect equals mothername ",
           o.get("mothername").getAsString(),
           result.get(i).getMothername());
+
+      assertEquals(
+          "expect equals klados ", o.get("klados").getAsString(), result.get(i).getKlados());
+
+      assertEquals("expect equals area ", o.get("area").getAsString(), result.get(i).getArea());
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+
+      assertEquals(
+          "expect equals kodidikot ",
+          o.get("kodidikot").getAsString(),
+          result.get(i).getKodidikot());
+
+      assertEquals("expect equals adt ", o.get("adt").getAsString(), result.get(i).getAdt());
+
+      assertEquals("expect equals name ", o.get("name").getAsString(), result.get(i).getName());
+
+      assertEquals(
+          "expect equals homephone ",
+          o.get("homephone").getAsString(),
+          result.get(i).getHomephone());
+
+      assertEquals("expect equals afm ", o.get("afm").getAsString(), result.get(i).getAfm());
     }
   }
 
@@ -287,14 +287,14 @@ public class JsonParserTest {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
           "expect equals kodypal ",
-          o.get("kodypal").getAsFloat(),
+          o.get("kodypal").getAsInt(),
           result.get(i).getKodypal(),
-          0.001);
-      assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
+          0.0001);
       assertEquals(
           "expect equals kodfylo ", o.get("kodfylo").getAsString(), result.get(i).getKodfylo());
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
     }
   }
 
@@ -309,26 +309,26 @@ public class JsonParserTest {
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
-          "expect equals kodreport ",
-          o.get("kodreport").getAsString(),
-          result.get(i).getKodreport());
-      assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
-      assertEquals(
-          "expect equals kodcol ", o.get("kodcol").getAsInt(), result.get(i).getKodcol(), 0.0001);
-
-      assertEquals("expect equals expr ", o.get("expr").getAsString(), result.get(i).getExpr());
-
       assertEquals(
           "expect equals headerText ",
           o.get("headerText").getAsString(),
           result.get(i).getHeaderText());
 
+      assertEquals("expect equals aa ", o.get("aa").getAsFloat(), result.get(i).getAa(), 0.001);
+
       assertEquals(
           "expect equals width ", o.get("width").getAsInt(), result.get(i).getWidth(), 0.0001);
 
-      assertEquals("expect equals aa ", o.get("aa").getAsInt(), result.get(i).getAa(), 0.0001);
+      assertEquals(
+          "expect equals kodreport ",
+          o.get("kodreport").getAsString(),
+          result.get(i).getKodreport());
+
+      assertEquals("expect equals expr ", o.get("expr").getAsString(), result.get(i).getExpr());
+
+      assertEquals(
+          "expect equals kodcol ", o.get("kodcol").getAsInt(), result.get(i).getKodcol(), 0.0001);
     }
   }
 
@@ -343,23 +343,7 @@ public class JsonParserTest {
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
-          "expect equals kodreport ",
-          o.get("kodreport").getAsString(),
-          result.get(i).getKodreport());
-      assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
-      assertEquals(
-          "expect equals descreport ",
-          o.get("descreport").getAsString(),
-          result.get(i).getDescreport());
-
-      assertEquals(
-          "expect equals printMarginTop ",
-          o.get("printMarginTop").getAsInt(),
-          result.get(i).getPrintMarginTop(),
-          0.0001);
-
       assertEquals(
           "expect equals printMarginBottom ",
           o.get("printMarginBottom").getAsInt(),
@@ -367,22 +351,9 @@ public class JsonParserTest {
           0.0001);
 
       assertEquals(
-          "expect equals printMarginLeft ",
-          o.get("printMarginLeft").getAsInt(),
-          result.get(i).getPrintMarginLeft(),
-          0.0001);
-
-      assertEquals(
-          "expect equals printMarginRight ",
-          o.get("printMarginRight").getAsInt(),
-          result.get(i).getPrintMarginRight(),
-          0.0001);
-
-      assertEquals(
-          "expect equals printOrientation ",
-          o.get("printOrientation").getAsInt(),
-          result.get(i).getPrintOrientation(),
-          0.0001);
+          "expect equals descreport ",
+          o.get("descreport").getAsString(),
+          result.get(i).getDescreport());
 
       assertEquals(
           "expect equals printPaperSize ",
@@ -391,9 +362,9 @@ public class JsonParserTest {
           0.0001);
 
       assertEquals(
-          "expect equals printScale ",
-          o.get("printScale").getAsInt(),
-          result.get(i).getPrintScale(),
+          "expect equals printOrientation ",
+          o.get("printOrientation").getAsInt(),
+          result.get(i).getPrintOrientation(),
           0.0001);
 
       assertEquals(
@@ -408,6 +379,35 @@ public class JsonParserTest {
           "expect equals prnNotes2 ",
           o.get("prnNotes2").getAsString(),
           result.get(i).getPrnNotes2());
+
+      assertEquals(
+          "expect equals printMarginRight ",
+          o.get("printMarginRight").getAsInt(),
+          result.get(i).getPrintMarginRight(),
+          0.0001);
+
+      assertEquals(
+          "expect equals printMarginTop ",
+          o.get("printMarginTop").getAsInt(),
+          result.get(i).getPrintMarginTop(),
+          0.0001);
+
+      assertEquals(
+          "expect equals printScale ",
+          o.get("printScale").getAsInt(),
+          result.get(i).getPrintScale(),
+          0.0001);
+
+      assertEquals(
+          "expect equals kodreport ",
+          o.get("kodreport").getAsString(),
+          result.get(i).getKodreport());
+
+      assertEquals(
+          "expect equals printMarginLeft ",
+          o.get("printMarginLeft").getAsInt(),
+          result.get(i).getPrintMarginLeft(),
+          0.0001);
     }
   }
 
@@ -423,13 +423,14 @@ public class JsonParserTest {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
           "expect equals kodgroup ",
-          o.get("kodgroup").getAsFloat(),
+          o.get("kodgroup").getAsInt(),
           result.get(i).getKodgroup(),
-          0.001);
+          0.0001);
       assertEquals(
-          "expect equals kodaction ",
-          o.get("kodaction").getAsString(),
-          result.get(i).getKodaction());
+          "expect equals openlist ",
+          o.get("openlist").getAsInt(),
+          result.get(i).getOpenlist(),
+          0.0001);
 
       assertEquals(
           "expect equals editrec ",
@@ -444,10 +445,9 @@ public class JsonParserTest {
           "expect equals delrec ", o.get("delrec").getAsInt(), result.get(i).getDelrec(), 0.0001);
 
       assertEquals(
-          "expect equals openlist ",
-          o.get("openlist").getAsInt(),
-          result.get(i).getOpenlist(),
-          0.0001);
+          "expect equals kodaction ",
+          o.get("kodaction").getAsString(),
+          result.get(i).getKodaction());
 
       assertEquals(
           "expect equals openform ",
@@ -470,12 +470,12 @@ public class JsonParserTest {
       assertEquals(
           "expect equals kodoikog ", o.get("kodoikog").getAsString(), result.get(i).getKodoikog());
       assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
-      assertEquals(
           "expect equals descoikog ",
           o.get("descoikog").getAsString(),
           result.get(i).getDescoikog());
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
     }
   }
 
@@ -492,10 +492,10 @@ public class JsonParserTest {
       assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
       assertEquals(
-          "expect equals kodyvar ", o.get("kodyvar").getAsString(), result.get(i).getKodyvar());
+          "expect equals descyvar ", o.get("descyvar").getAsString(), result.get(i).getDescyvar());
 
       assertEquals(
-          "expect equals descyvar ", o.get("descyvar").getAsString(), result.get(i).getDescyvar());
+          "expect equals kodyvar ", o.get("kodyvar").getAsString(), result.get(i).getKodyvar());
 
       assertEquals("expect equals expr ", o.get("expr").getAsString(), result.get(i).getExpr());
     }
@@ -512,18 +512,39 @@ public class JsonParserTest {
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
-          "expect equals kodreport ",
-          o.get("kodreport").getAsFloat(),
-          result.get(i).getKodreport(),
-          0.001);
-      assertEquals(
           "expect equals kodypal ",
-          o.get("kodypal").getAsFloat(),
+          o.get("kodypal").getAsInt(),
           result.get(i).getKodypal(),
-          0.001);
-
+          0.0001);
       assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+
+      assertEquals(
+          "expect equals kodreport ",
+          o.get("kodreport").getAsString(),
+          result.get(i).getKodreport());
+    }
+  }
+
+  @Test
+  public void testParsingUsrgroups() throws IOException {
+    String inputFile = "Usrgroups.json";
+    String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
+    JsonArray arr = JsonHelper.fromJson2Arr(json);
+    List<Usrgroups> result = new ArrayList<>();
+    arr.forEach(o -> result.add(JsonHelper.fromJson2Usrgroups(o)));
+
+    for (int i = 0; i < arr.size(); i++) {
+      JsonObject o = arr.get(i).getAsJsonObject();
+      assertEquals(
+          "expect equals kodgroup ",
+          o.get("kodgroup").getAsInt(),
+          result.get(i).getKodgroup(),
+          0.0001);
+      assertEquals(
+          "expect equals descgroup ",
+          o.get("descgroup").getAsString(),
+          result.get(i).getDescgroup());
     }
   }
 
@@ -542,34 +563,27 @@ public class JsonParserTest {
           o.get("kodepidom").getAsString(),
           result.get(i).getKodepidom());
       assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+          "expect equals autoforos ",
+          o.get("autoforos").getAsInt(),
+          result.get(i).getAutoforos(),
+          0.0001);
 
       assertEquals(
           "expect equals descepidom ",
           o.get("descepidom").getAsString(),
           result.get(i).getDescepidom());
-    }
-  }
 
-  @Test
-  public void testParsingUsrgroups() throws IOException {
-    String inputFile = "Usrgroups.json";
-    String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-    JsonArray arr = JsonHelper.fromJson2Arr(json);
-    List<Usrgroups> result = new ArrayList<>();
-    arr.forEach(o -> result.add(JsonHelper.fromJson2Usrgroups(o)));
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
 
-    for (int i = 0; i < arr.size(); i++) {
-      JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
-          "expect equals kodgroup ",
-          o.get("kodgroup").getAsFloat(),
-          result.get(i).getKodgroup(),
-          0.001);
+          "expect equals hasforo ",
+          o.get("hasforo").getAsInt(),
+          result.get(i).getHasforo(),
+          0.0001);
+
       assertEquals(
-          "expect equals descgroup ",
-          o.get("descgroup").getAsString(),
-          result.get(i).getDescgroup());
+          "expect equals isasf ", o.get("isasf").getAsInt(), result.get(i).getIsasf(), 0.0001);
     }
   }
 
@@ -584,12 +598,12 @@ public class JsonParserTest {
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
-          "expect equals kodkat ", o.get("kodkat").getAsString(), result.get(i).getKodkat());
-      assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
       assertEquals(
           "expect equals desckat ", o.get("desckat").getAsString(), result.get(i).getDesckat());
+
+      assertEquals(
+          "expect equals kodkat ", o.get("kodkat").getAsString(), result.get(i).getKodkat());
     }
   }
 
@@ -606,10 +620,25 @@ public class JsonParserTest {
       assertEquals(
           "expect equals kodkrat ", o.get("kodkrat").getAsString(), result.get(i).getKodkrat());
       assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+          "expect equals isautoforos ",
+          o.get("isautoforos").getAsInt(),
+          result.get(i).getIsautoforos(),
+          0.0001);
 
       assertEquals(
           "expect equals desckrat ", o.get("desckrat").getAsString(), result.get(i).getDesckrat());
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+
+      assertEquals(
+          "expect equals isasf ", o.get("isasf").getAsInt(), result.get(i).getIsasf(), 0.0001);
+
+      assertEquals(
+          "expect equals isforos ",
+          o.get("isforos").getAsInt(),
+          result.get(i).getIsforos(),
+          0.0001);
     }
   }
 
@@ -627,17 +656,17 @@ public class JsonParserTest {
           "expect equals kodepidom ",
           o.get("kodepidom").getAsString(),
           result.get(i).getKodepidom());
-      assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+      assertEquals("expect equals aa ", o.get("aa").getAsFloat(), result.get(i).getAa(), 0.001);
 
       assertEquals(
           "expect equals kodfylo ", o.get("kodfylo").getAsString(), result.get(i).getKodfylo());
 
-      assertEquals("expect equals expr ", o.get("expr").getAsString(), result.get(i).getExpr());
-
-      assertEquals("expect equals aa ", o.get("aa").getAsInt(), result.get(i).getAa(), 0.0001);
-
       assertEquals("expect equals notes ", o.get("notes").getAsString(), result.get(i).getNotes());
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+
+      assertEquals("expect equals expr ", o.get("expr").getAsString(), result.get(i).getExpr());
     }
   }
 
@@ -652,15 +681,15 @@ public class JsonParserTest {
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
-          "expect equals kodgroup ",
-          o.get("kodgroup").getAsFloat(),
-          result.get(i).getKodgroup(),
-          0.001);
-      assertEquals(
           "expect equals koduser ",
-          o.get("koduser").getAsFloat(),
+          o.get("koduser").getAsInt(),
           result.get(i).getKoduser(),
-          0.001);
+          0.0001);
+      assertEquals(
+          "expect equals kodgroup ",
+          o.get("kodgroup").getAsInt(),
+          result.get(i).getKodgroup(),
+          0.0001);
     }
   }
 
@@ -675,15 +704,15 @@ public class JsonParserTest {
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
-          "expect equals kodapp ", o.get("kodapp").getAsString(), result.get(i).getKodapp());
-      assertEquals(
           "expect equals koduser ",
-          o.get("koduser").getAsFloat(),
+          o.get("koduser").getAsInt(),
           result.get(i).getKoduser(),
-          0.001);
-
+          0.0001);
       assertEquals(
           "expect equals enable ", o.get("enable").getAsInt(), result.get(i).getEnable(), 0.0001);
+
+      assertEquals(
+          "expect equals kodapp ", o.get("kodapp").getAsString(), result.get(i).getKodapp());
     }
   }
 
@@ -702,9 +731,6 @@ public class JsonParserTest {
           o.get("kodperiod").getAsString(),
           result.get(i).getKodperiod());
       assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
-      assertEquals(
           "expect equals descperiod ",
           o.get("descperiod").getAsString(),
           result.get(i).getDescperiod());
@@ -714,6 +740,9 @@ public class JsonParserTest {
           o.get("orderno").getAsInt(),
           result.get(i).getOrderno(),
           0.0001);
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
     }
   }
 
@@ -729,49 +758,17 @@ public class JsonParserTest {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
           "expect equals kodypal ",
-          o.get("kodypal").getAsFloat(),
+          o.get("kodypal").getAsInt(),
           result.get(i).getKodypal(),
-          0.001);
+          0.0001);
       assertEquals(
           "expect equals kodfinal ",
-          o.get("kodfinal").getAsFloat(),
+          o.get("kodfinal").getAsInt(),
           result.get(i).getKodfinal(),
-          0.001);
+          0.0001);
 
       assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-    }
-  }
-
-  @Test
-  public void testParsingAfxfilterd() throws IOException {
-    String inputFile = "Afxfilterd.json";
-    String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-    JsonArray arr = JsonHelper.fromJson2Arr(json);
-    List<Afxfilterd> result = new ArrayList<>();
-    arr.forEach(o -> result.add(JsonHelper.fromJson2Afxfilterd(o)));
-
-    for (int i = 0; i < arr.size(); i++) {
-      JsonObject o = arr.get(i).getAsJsonObject();
-      assertEquals(
-          "expect equals kodfilterd ",
-          o.get("kodfilterd").getAsFloat(),
-          result.get(i).getKodfilterd(),
-          0.001);
-      assertEquals(
-          "expect equals kodfilter ",
-          o.get("kodfilter").getAsFloat(),
-          result.get(i).getKodfilter(),
-          0.001);
-
-      assertEquals("expect equals pedio ", o.get("pedio").getAsString(), result.get(i).getPedio());
-
-      assertEquals(
-          "expect equals telestis ", o.get("telestis").getAsString(), result.get(i).getTelestis());
-
-      assertEquals("expect equals timi ", o.get("timi").getAsString(), result.get(i).getTimi());
-
-      assertEquals("expect equals joint ", o.get("joint").getAsString(), result.get(i).getJoint());
     }
   }
 
@@ -805,12 +802,44 @@ public class JsonParserTest {
       assertEquals(
           "expect equals kodthesi ", o.get("kodthesi").getAsString(), result.get(i).getKodthesi());
       assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
-      assertEquals(
           "expect equals descthesi ",
           o.get("descthesi").getAsString(),
           result.get(i).getDescthesi());
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+    }
+  }
+
+  @Test
+  public void testParsingAfxfilterd() throws IOException {
+    String inputFile = "Afxfilterd.json";
+    String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
+    JsonArray arr = JsonHelper.fromJson2Arr(json);
+    List<Afxfilterd> result = new ArrayList<>();
+    arr.forEach(o -> result.add(JsonHelper.fromJson2Afxfilterd(o)));
+
+    for (int i = 0; i < arr.size(); i++) {
+      JsonObject o = arr.get(i).getAsJsonObject();
+      assertEquals(
+          "expect equals kodfilterd ",
+          o.get("kodfilterd").getAsFloat(),
+          result.get(i).getKodfilterd(),
+          0.001);
+      assertEquals(
+          "expect equals telestis ", o.get("telestis").getAsString(), result.get(i).getTelestis());
+
+      assertEquals("expect equals pedio ", o.get("pedio").getAsString(), result.get(i).getPedio());
+
+      assertEquals("expect equals joint ", o.get("joint").getAsString(), result.get(i).getJoint());
+
+      assertEquals(
+          "expect equals kodfilter ",
+          o.get("kodfilter").getAsFloat(),
+          result.get(i).getKodfilter(),
+          0.001);
+
+      assertEquals("expect equals timi ", o.get("timi").getAsString(), result.get(i).getTimi());
     }
   }
 
@@ -826,25 +855,13 @@ public class JsonParserTest {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
           "expect equals kodkrat ", o.get("kodkrat").getAsString(), result.get(i).getKodkrat());
-      assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
-      assertEquals(
-          "expect equals kodfinal ",
-          o.get("kodfinal").getAsFloat(),
-          result.get(i).getKodfinal(),
-          0.001);
+      assertEquals("expect equals aa ", o.get("aa").getAsFloat(), result.get(i).getAa(), 0.001);
 
       assertEquals(
           "expect equals kodypal ",
-          o.get("kodypal").getAsFloat(),
+          o.get("kodypal").getAsInt(),
           result.get(i).getKodypal(),
-          0.001);
-
-      assertEquals(
-          "expect equals poso ", o.get("poso").getAsInt(), result.get(i).getPoso(), 0.0001);
-
-      assertEquals("expect equals notes ", o.get("notes").getAsString(), result.get(i).getNotes());
+          0.0001);
 
       assertEquals(
           "expect equals kodkratapod ",
@@ -852,7 +869,19 @@ public class JsonParserTest {
           result.get(i).getKodkratapod(),
           0.001);
 
-      assertEquals("expect equals aa ", o.get("aa").getAsInt(), result.get(i).getAa(), 0.0001);
+      assertEquals("expect equals notes ", o.get("notes").getAsString(), result.get(i).getNotes());
+
+      assertEquals(
+          "expect equals kodfinal ",
+          o.get("kodfinal").getAsInt(),
+          result.get(i).getKodfinal(),
+          0.0001);
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+
+      assertEquals(
+          "expect equals poso ", o.get("poso").getAsInt(), result.get(i).getPoso(), 0.0001);
     }
   }
 
@@ -867,14 +896,14 @@ public class JsonParserTest {
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
+          "expect equals descfilter ",
+          o.get("descfilter").getAsString(),
+          result.get(i).getDescfilter());
+      assertEquals(
           "expect equals kodfilter ",
           o.get("kodfilter").getAsFloat(),
           result.get(i).getKodfilter(),
           0.001);
-      assertEquals(
-          "expect equals descfilter ",
-          o.get("descfilter").getAsString(),
-          result.get(i).getDescfilter());
 
       assertEquals(
           "expect equals tablename ",
@@ -895,15 +924,9 @@ public class JsonParserTest {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
           "expect equals koduser ",
-          o.get("koduser").getAsFloat(),
+          o.get("koduser").getAsInt(),
           result.get(i).getKoduser(),
-          0.001);
-      assertEquals(
-          "expect equals username ", o.get("username").getAsString(), result.get(i).getUsername());
-
-      assertEquals(
-          "expect equals fullname ", o.get("fullname").getAsString(), result.get(i).getFullname());
-
+          0.0001);
       assertEquals(
           "expect equals password ", o.get("password").getAsString(), result.get(i).getPassword());
 
@@ -914,34 +937,16 @@ public class JsonParserTest {
           0.0001);
 
       assertEquals(
+          "expect equals idiotita ", o.get("idiotita").getAsString(), result.get(i).getIdiotita());
+
+      assertEquals(
           "expect equals tomeas ", o.get("tomeas").getAsString(), result.get(i).getTomeas());
 
       assertEquals(
-          "expect equals idiotita ", o.get("idiotita").getAsString(), result.get(i).getIdiotita());
-    }
-  }
-
-  @Test
-  public void testParsingMisthZpidikot() throws IOException {
-    String inputFile = "MisthZpidikot.json";
-    String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-    JsonArray arr = JsonHelper.fromJson2Arr(json);
-    List<MisthZpidikot> result = new ArrayList<>();
-    arr.forEach(o -> result.add(JsonHelper.fromJson2MisthZpidikot(o)));
-
-    for (int i = 0; i < arr.size(); i++) {
-      JsonObject o = arr.get(i).getAsJsonObject();
-      assertEquals(
-          "expect equals kodidikot ",
-          o.get("kodidikot").getAsString(),
-          result.get(i).getKodidikot());
-      assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+          "expect equals fullname ", o.get("fullname").getAsString(), result.get(i).getFullname());
 
       assertEquals(
-          "expect equals descidikot ",
-          o.get("descidikot").getAsString(),
-          result.get(i).getDescidikot());
+          "expect equals username ", o.get("username").getAsString(), result.get(i).getUsername());
     }
   }
 
@@ -964,6 +969,30 @@ public class JsonParserTest {
           "expect equals desctamio ",
           o.get("desctamio").getAsString(),
           result.get(i).getDesctamio());
+    }
+  }
+
+  @Test
+  public void testParsingMisthZpidikot() throws IOException {
+    String inputFile = "MisthZpidikot.json";
+    String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
+    JsonArray arr = JsonHelper.fromJson2Arr(json);
+    List<MisthZpidikot> result = new ArrayList<>();
+    arr.forEach(o -> result.add(JsonHelper.fromJson2MisthZpidikot(o)));
+
+    for (int i = 0; i < arr.size(); i++) {
+      JsonObject o = arr.get(i).getAsJsonObject();
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+      assertEquals(
+          "expect equals descidikot ",
+          o.get("descidikot").getAsString(),
+          result.get(i).getDescidikot());
+
+      assertEquals(
+          "expect equals kodidikot ",
+          o.get("kodidikot").getAsString(),
+          result.get(i).getKodidikot());
     }
   }
 
@@ -1005,27 +1034,27 @@ public class JsonParserTest {
           "expect equals kodepidom ",
           o.get("kodepidom").getAsString(),
           result.get(i).getKodepidom());
+      assertEquals("expect equals aa ", o.get("aa").getAsFloat(), result.get(i).getAa(), 0.001);
+
+      assertEquals(
+          "expect equals kodypal ",
+          o.get("kodypal").getAsInt(),
+          result.get(i).getKodypal(),
+          0.0001);
+
+      assertEquals("expect equals notes ", o.get("notes").getAsString(), result.get(i).getNotes());
+
+      assertEquals(
+          "expect equals kodfinal ",
+          o.get("kodfinal").getAsInt(),
+          result.get(i).getKodfinal(),
+          0.0001);
+
       assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
 
       assertEquals(
-          "expect equals kodfinal ",
-          o.get("kodfinal").getAsFloat(),
-          result.get(i).getKodfinal(),
-          0.001);
-
-      assertEquals(
-          "expect equals kodypal ",
-          o.get("kodypal").getAsFloat(),
-          result.get(i).getKodypal(),
-          0.001);
-
-      assertEquals(
           "expect equals poso ", o.get("poso").getAsInt(), result.get(i).getPoso(), 0.0001);
-
-      assertEquals("expect equals notes ", o.get("notes").getAsString(), result.get(i).getNotes());
-
-      assertEquals("expect equals aa ", o.get("aa").getAsInt(), result.get(i).getAa(), 0.0001);
     }
   }
 
@@ -1058,10 +1087,10 @@ public class JsonParserTest {
 
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
-      assertEquals("expect equals onom ", o.get("onom").getAsString(), result.get(i).getOnom());
+      assertEquals("expect equals ait ", o.get("ait").getAsString(), result.get(i).getAit());
       assertEquals("expect equals gen ", o.get("gen").getAsString(), result.get(i).getGen());
 
-      assertEquals("expect equals ait ", o.get("ait").getAsString(), result.get(i).getAit());
+      assertEquals("expect equals onom ", o.get("onom").getAsString(), result.get(i).getOnom());
     }
   }
 
@@ -1078,10 +1107,10 @@ public class JsonParserTest {
       assertEquals(
           "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
       assertEquals(
-          "expect equals kodfylo ", o.get("kodfylo").getAsString(), result.get(i).getKodfylo());
+          "expect equals descfylo ", o.get("descfylo").getAsString(), result.get(i).getDescfylo());
 
       assertEquals(
-          "expect equals descfylo ", o.get("descfylo").getAsString(), result.get(i).getDescfylo());
+          "expect equals kodfylo ", o.get("kodfylo").getAsString(), result.get(i).getKodfylo());
     }
   }
 
@@ -1096,21 +1125,9 @@ public class JsonParserTest {
     for (int i = 0; i < arr.size(); i++) {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
-          "expect equals kodfinal ",
-          o.get("kodfinal").getAsFloat(),
-          result.get(i).getKodfinal(),
-          0.001);
-      assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
-
-      assertEquals(
-          "expect equals kodkat ", o.get("kodkat").getAsString(), result.get(i).getKodkat());
-
-      assertEquals(
           "expect equals kodperiod ",
           o.get("kodperiod").getAsString(),
           result.get(i).getKodperiod());
-
       assertEquals("expect equals aa ", o.get("aa").getAsFloat(), result.get(i).getAa(), 0.001);
 
       assertEquals(
@@ -1118,7 +1135,43 @@ public class JsonParserTest {
           o.get("descfinal").getAsString(),
           result.get(i).getDescfinal());
 
+      assertEquals(
+          "expect equals kodfinal ",
+          o.get("kodfinal").getAsInt(),
+          result.get(i).getKodfinal(),
+          0.0001);
+
+      assertEquals(
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+
+      assertEquals(
+          "expect equals kodkat ", o.get("kodkat").getAsString(), result.get(i).getKodkat());
+
       assertEquals("expect equals title ", o.get("title").getAsString(), result.get(i).getTitle());
+    }
+  }
+
+  @Test
+  public void testParsingUsractions() throws IOException {
+    String inputFile = "Usractions.json";
+    String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
+    JsonArray arr = JsonHelper.fromJson2Arr(json);
+    List<Usractions> result = new ArrayList<>();
+    arr.forEach(o -> result.add(JsonHelper.fromJson2Usractions(o)));
+
+    for (int i = 0; i < arr.size(); i++) {
+      JsonObject o = arr.get(i).getAsJsonObject();
+      assertEquals(
+          "expect equals kodapp ", o.get("kodapp").getAsString(), result.get(i).getKodapp());
+      assertEquals(
+          "expect equals descaction ",
+          o.get("descaction").getAsString(),
+          result.get(i).getDescaction());
+
+      assertEquals(
+          "expect equals kodaction ",
+          o.get("kodaction").getAsString(),
+          result.get(i).getKodaction());
     }
   }
 
@@ -1134,41 +1187,17 @@ public class JsonParserTest {
       JsonObject o = arr.get(i).getAsJsonObject();
       assertEquals(
           "expect equals kodkrat ", o.get("kodkrat").getAsString(), result.get(i).getKodkrat());
-      assertEquals(
-          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+      assertEquals("expect equals aa ", o.get("aa").getAsFloat(), result.get(i).getAa(), 0.001);
 
       assertEquals(
           "expect equals kodfylo ", o.get("kodfylo").getAsString(), result.get(i).getKodfylo());
 
-      assertEquals("expect equals expr ", o.get("expr").getAsString(), result.get(i).getExpr());
-
-      assertEquals("expect equals aa ", o.get("aa").getAsInt(), result.get(i).getAa(), 0.0001);
-
       assertEquals("expect equals notes ", o.get("notes").getAsString(), result.get(i).getNotes());
-    }
-  }
-
-  @Test
-  public void testParsingUsractions() throws IOException {
-    String inputFile = "Usractions.json";
-    String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-    JsonArray arr = JsonHelper.fromJson2Arr(json);
-    List<Usractions> result = new ArrayList<>();
-    arr.forEach(o -> result.add(JsonHelper.fromJson2Usractions(o)));
-
-    for (int i = 0; i < arr.size(); i++) {
-      JsonObject o = arr.get(i).getAsJsonObject();
-      assertEquals(
-          "expect equals kodaction ",
-          o.get("kodaction").getAsString(),
-          result.get(i).getKodaction());
-      assertEquals(
-          "expect equals kodapp ", o.get("kodapp").getAsString(), result.get(i).getKodapp());
 
       assertEquals(
-          "expect equals descaction ",
-          o.get("descaction").getAsString(),
-          result.get(i).getDescaction());
+          "expect equals kodxrisi ", o.get("kodxrisi").getAsString(), result.get(i).getKodxrisi());
+
+      assertEquals("expect equals expr ", o.get("expr").getAsString(), result.get(i).getExpr());
     }
   }
 }

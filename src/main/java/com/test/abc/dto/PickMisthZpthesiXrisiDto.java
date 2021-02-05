@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class PickMisthZpthesiXrisiDto implements Serializable {
-  private static final long serialVersionUID = 160992137682955813L;
+  private static final long serialVersionUID = 161096104211251417L;
 
   /** Description: kodthesi. */
   private java.lang.String kodthesi;

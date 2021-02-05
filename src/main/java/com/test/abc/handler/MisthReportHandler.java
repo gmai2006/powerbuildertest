@@ -59,35 +59,20 @@ public class MisthReportHandler extends DelimiterFileHandler<MisthReport> {
     MisthReport record = new MisthReport();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
-          record.setKodreport(new java.lang.String(tokens.get(i)));
-          break;
         case "kodxrisi":
-          record.setKodxrisi(tokens.get(i));
-          break;
-        case "descreport":
-          record.setDescreport(tokens.get(i));
-          break;
-        case "printMarginTop":
-          record.setPrintMarginTop(new java.lang.Integer(tokens.get(i)));
+          record.setKodxrisi(new java.lang.String(tokens.get(i)));
           break;
         case "printMarginBottom":
           record.setPrintMarginBottom(new java.lang.Integer(tokens.get(i)));
           break;
-        case "printMarginLeft":
-          record.setPrintMarginLeft(new java.lang.Integer(tokens.get(i)));
-          break;
-        case "printMarginRight":
-          record.setPrintMarginRight(new java.lang.Integer(tokens.get(i)));
-          break;
-        case "printOrientation":
-          record.setPrintOrientation(new java.lang.Integer(tokens.get(i)));
+        case "descreport":
+          record.setDescreport(tokens.get(i));
           break;
         case "printPaperSize":
           record.setPrintPaperSize(new java.lang.Integer(tokens.get(i)));
           break;
-        case "printScale":
-          record.setPrintScale(new java.lang.Integer(tokens.get(i)));
+        case "printOrientation":
+          record.setPrintOrientation(new java.lang.Integer(tokens.get(i)));
           break;
         case "subtitle":
           record.setSubtitle(tokens.get(i));
@@ -97,6 +82,21 @@ public class MisthReportHandler extends DelimiterFileHandler<MisthReport> {
           break;
         case "prnNotes2":
           record.setPrnNotes2(tokens.get(i));
+          break;
+        case "printMarginRight":
+          record.setPrintMarginRight(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "printMarginTop":
+          record.setPrintMarginTop(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "printScale":
+          record.setPrintScale(new java.lang.Integer(tokens.get(i)));
+          break;
+        case "kodreport":
+          record.setKodreport(tokens.get(i));
+          break;
+        case "printMarginLeft":
+          record.setPrintMarginLeft(new java.lang.Integer(tokens.get(i)));
           break;
 
         default:

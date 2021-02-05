@@ -45,23 +45,23 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_zpyvar")
 public class MisthZpyvar implements Serializable {
-  private static final long serialVersionUID = 160992137247455166L;
+  private static final long serialVersionUID = 16109610373753633L;
   /** Description: kodxrisi. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "kodxrisi")
   private java.lang.String kodxrisi;
-  /** Description: kodyvar. */
-  @Basic
-  @Column(name = "kodyvar")
-  private java.lang.String kodyvar;
   /** Description: descyvar. */
   @Basic
-  @Column(name = "descyvar")
+  @Column(name = "descyvar", length = 50)
   private java.lang.String descyvar;
+  /** Description: kodyvar. */
+  @Basic
+  @Column(name = "kodyvar", length = 20)
+  private java.lang.String kodyvar;
   /** Description: expr. */
   @Basic
-  @Column(name = "expr")
+  @Column(name = "expr", length = 32766)
   private java.lang.String expr;
 
   public MisthZpyvar() {}
@@ -74,24 +74,24 @@ public class MisthZpyvar implements Serializable {
     this.kodxrisi = kodxrisi;
   }
 
-  public java.lang.String getKodyvar() {
-    return this.kodyvar;
-  }
-
   public java.lang.String getDescyvar() {
     return this.descyvar;
+  }
+
+  public java.lang.String getKodyvar() {
+    return this.kodyvar;
   }
 
   public java.lang.String getExpr() {
     return this.expr;
   }
 
-  public void setKodyvar(java.lang.String kodyvar) {
-    this.kodyvar = kodyvar;
-  }
-
   public void setDescyvar(java.lang.String descyvar) {
     this.descyvar = descyvar;
+  }
+
+  public void setKodyvar(java.lang.String kodyvar) {
+    this.kodyvar = kodyvar;
   }
 
   public void setExpr(java.lang.String expr) {

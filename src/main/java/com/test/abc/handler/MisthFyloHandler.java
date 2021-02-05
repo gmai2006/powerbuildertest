@@ -59,14 +59,14 @@ public class MisthFyloHandler extends DelimiterFileHandler<MisthFylo> {
     MisthFylo record = new MisthFylo();
     for (int i = 0; i < tokens.size(); i++) {
       switch (headers.get(i)) {
-        case "id":
+        case "kodxrisi":
           record.setKodxrisi(new java.lang.String(tokens.get(i)));
-          break;
-        case "kodfylo":
-          record.setKodfylo(tokens.get(i));
           break;
         case "descfylo":
           record.setDescfylo(tokens.get(i));
+          break;
+        case "kodfylo":
+          record.setKodfylo(tokens.get(i));
           break;
 
         default:

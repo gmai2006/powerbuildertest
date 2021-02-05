@@ -22,7 +22,7 @@ import java.util.List;
 import com.test.abc.entity.Usruserperm;
 
 public interface UsruserpermService {
-  public Usruserperm find(java.lang.String id);
+  public Usruserperm find(java.lang.Integer id);
   /**
    * Select a list of Usruserperm based on a given maximum number of returning records.
    *
@@ -55,5 +55,5 @@ public interface UsruserpermService {
    *
    * @param id The Usruserperm Id.
    */
-  public void delete(java.lang.String id);
+  public void delete(java.lang.Integer id);
 }

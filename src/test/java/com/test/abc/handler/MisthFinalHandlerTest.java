@@ -20,19 +20,14 @@ package com.test.abc.handler;
 
 import static org.junit.Assert.assertEquals;
 import java.io.IOException;
-import com.google.gson.Gson;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Set;
-
+import org.json.CDL;
+import org.json.JSONArray;
+import com.google.gson.Gson;
 import com.test.abc.entity.MisthFinal;
 import com.test.abc.dao.JpaDao;
 import com.test.abc.dao.StandaloneJpaDao;
@@ -72,14 +67,14 @@ import org.junit.Test;
 public class MisthFinalHandlerTest {
   static final String inputFile = "MisthFinal.json";
   static MisthFinalHandler handler;
-  private JpaDao jpa;
+  private static JpaDao jpa;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
   private MisthFinal[] records;
 
   /** Run before the test. */
-  @Before
-  public void before() {
-    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
+  @BeforeClass
+  public static void before() {
+    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
     jpa = new StandaloneJpaDao(factory.createEntityManager());
     handler = new MisthFinalHandler(jpa);
   }
@@ -92,19 +87,19 @@ public class MisthFinalHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthFinal[].class);
     assertEquals("match count", count, records.length);
-    MisthFinal testResult = jpa.find(MisthFinal.class, records[0].getKodfinal());
-    assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    assertEquals("expect equals kodkat ", this.records[0].getKodkat(), testResult.getKodkat());
-    assertEquals(
-        "expect equals kodperiod ", this.records[0].getKodperiod(), testResult.getKodperiod());
-    org.junit.Assert.assertEquals("expect equals aa ", this.records[0].getAa(), testResult.getAa());
-    assertEquals(
-        "expect equals descfinal ", this.records[0].getDescfinal(), testResult.getDescfinal());
+    MisthFinal testResult = jpa.find(MisthFinal.class, records[0].getKodperiod());
     org.junit.Assert.assertEquals(
         "expect equals datefinal ",
         this.records[0].getDatefinal().getTime(),
         testResult.getDatefinal().getTime());
+    org.junit.Assert.assertEquals("expect equals aa ", this.records[0].getAa(), testResult.getAa());
+    assertEquals(
+        "expect equals descfinal ", this.records[0].getDescfinal(), testResult.getDescfinal());
+    org.junit.Assert.assertEquals(
+        "expect equals kodfinal ", this.records[0].getKodfinal(), testResult.getKodfinal());
+    assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    assertEquals("expect equals kodkat ", this.records[0].getKodkat(), testResult.getKodkat());
     assertEquals("expect equals title ", this.records[0].getTitle(), testResult.getTitle());
   }
 
@@ -120,49 +115,13 @@ public class MisthFinalHandlerTest {
       final File tempFile = File.createTempFile(inputFile, ".txt");
       tempFile.deleteOnExit();
       String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-      final MisthFinal[] records = gson.fromJson(json, MisthFinal[].class);
-      String header =
-          createHeader(
-              Paths.get(inputFile.substring(0, inputFile.length() - 5) + "header.json").toString());
-      final List<String> result = new ArrayList<>();
-      result.add(header);
-
-      final List<String> data =
-          Arrays.stream(records)
-              .map(record -> createCsvRecord(record))
-              .collect(Collectors.toList());
-
-      result.addAll(data);
-      FileUtils.writeListOfStringToFile(tempFile, result);
+      JSONArray docs = new JSONArray(json);
+      String csv = CDL.toString(docs);
+      org.apache.commons.io.FileUtils.writeStringToFile(tempFile, csv, Charset.defaultCharset());
       return tempFile;
     } catch (IOException ex) {
       ex.printStackTrace();
       return null;
     }
-  }
-
-  private String createCsvRecord(final MisthFinal record) {
-    return TestUtils.getObject(record.getKodfinal())
-        + ","
-        + TestUtils.getObject(record.getKodxrisi())
-        + ","
-        + TestUtils.getObject(record.getKodkat())
-        + ","
-        + TestUtils.getObject(record.getKodperiod())
-        + ","
-        + TestUtils.getObject(record.getAa())
-        + ","
-        + TestUtils.getObject(record.getDescfinal())
-        + ","
-        + TestUtils.getDateObject(record.getDatefinal())
-        + ","
-        + TestUtils.getObject(record.getTitle());
-  }
-
-  private String createHeader(String headerfile) throws IOException {
-    String json = FileUtils.readFileFromResource2String(headerfile, Charset.defaultCharset());
-    JsonParser parser = new JsonParser();
-    JsonObject jsonObject = parser.parse(json).getAsJsonObject();
-    return jsonObject.get("header").getAsString();
   }
 }

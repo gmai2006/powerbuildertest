@@ -40,10 +40,10 @@ import com.test.abc.dto.*;
  */
 
 public interface MisthReportYpalDtoDao {
-  List<SprnReport2Dto> sprnReport2(java.lang.Float arg_kodreport, java.lang.String arg_kodxrisi);
+  List<SprnReport2Dto> sprnReport2(java.lang.String arg_kodreport, java.lang.String arg_kodxrisi);
 
-  List<SprnReportDto> sprnReport(java.lang.Float arg_kodreport, java.lang.String arg_kodxrisi);
+  List<SprnReportDto> sprnReport(java.lang.String arg_kodreport, java.lang.String arg_kodxrisi);
 
   List<PickMisthReportYpalDto> pickMisthReportYpal(
-      java.lang.Float arg_kodreport, java.lang.String arg_kodxrisi);
+      java.lang.String arg_kodreport, java.lang.String arg_kodxrisi);
 }

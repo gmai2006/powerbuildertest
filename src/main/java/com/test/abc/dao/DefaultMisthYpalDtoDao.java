@@ -70,7 +70,7 @@ public class DefaultMisthYpalDtoDao implements MisthYpalDtoDao {
   }
 
   public List<DwMisthYpalFormJobDto> dwMisthYpalFormJob(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthYpalFormJobDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwMisthYpalFormJobMapping", DwMisthYpalFormJobDto.class);
@@ -90,7 +90,7 @@ public class DefaultMisthYpalDtoDao implements MisthYpalDtoDao {
   }
 
   public List<DwMisthYpalFormPersonalDto> dwMisthYpalFormPersonal(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthYpalFormPersonalDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwMisthYpalFormPersonalMapping", DwMisthYpalFormPersonalDto.class);
@@ -100,7 +100,7 @@ public class DefaultMisthYpalDtoDao implements MisthYpalDtoDao {
   }
 
   public List<DwMisthYpalFormGeneralDto> dwMisthYpalFormGeneral(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<DwMisthYpalFormGeneralDto> query =
         dao.getEntityManager()
             .createNamedQuery("dwMisthYpalFormGeneralMapping", DwMisthYpalFormGeneralDto.class);

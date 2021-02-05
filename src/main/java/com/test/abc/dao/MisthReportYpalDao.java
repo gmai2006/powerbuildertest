@@ -60,7 +60,7 @@ public interface MisthReportYpalDao {
    * @param id An MisthReportYpal id.
    * @return The same MisthReportYpal.
    */
-  public MisthReportYpal find(java.lang.Float id);
+  public MisthReportYpal find(java.lang.Integer id);
   /**
    * Create an MisthReportYpal.
    *
@@ -82,5 +82,5 @@ public interface MisthReportYpalDao {
    *
    * @param id The entity Id.
    */
-  public void delete(java.lang.Float id);
+  public void delete(java.lang.Integer id);
 }

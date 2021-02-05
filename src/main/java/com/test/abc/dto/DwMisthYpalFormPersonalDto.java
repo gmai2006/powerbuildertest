@@ -41,10 +41,10 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthYpalFormPersonalDto implements Serializable {
-  private static final long serialVersionUID = 160992137688080035L;
+  private static final long serialVersionUID = 161096104214987178L;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -169,7 +169,7 @@ public class DwMisthYpalFormPersonalDto implements Serializable {
   public DwMisthYpalFormPersonalDto() {}
 
   public DwMisthYpalFormPersonalDto(
-      java.lang.Float kodypal,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
       java.lang.String surname,
       java.lang.String name,
@@ -253,7 +253,7 @@ public class DwMisthYpalFormPersonalDto implements Serializable {
     this.newexeldate = newexeldate;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -417,7 +417,7 @@ public class DwMisthYpalFormPersonalDto implements Serializable {
     return this.newexeldate;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

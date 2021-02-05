@@ -45,61 +45,53 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "misth_final")
 public class MisthFinal implements Serializable {
-  private static final long serialVersionUID = 160992137259024697L;
-  /** Description: kodfinal. */
+  private static final long serialVersionUID = 161096103750787095L;
+  /** Description: kodperiod. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "kodfinal")
-  private java.lang.Float kodfinal;
-  /** Description: kodxrisi. */
-  @Basic
-  @Column(name = "kodxrisi")
-  private java.lang.String kodxrisi;
-  /** Description: kodkat. */
-  @Basic
-  @Column(name = "kodkat")
-  private java.lang.String kodkat;
-  /** Description: kodperiod. */
-  @Basic
   @Column(name = "kodperiod")
   private java.lang.String kodperiod;
+  /** Description: datefinal. */
+  @Basic
+  @Column(name = "datefinal")
+  private java.util.Date datefinal;
   /** Description: aa. */
   @Basic
   @Column(name = "aa")
   private java.lang.Float aa;
   /** Description: descfinal. */
   @Basic
-  @Column(name = "descfinal")
+  @Column(name = "descfinal", length = 100)
   private java.lang.String descfinal;
-  /** Description: datefinal. */
+  /** Description: kodfinal. */
   @Basic
-  @Column(name = "datefinal")
-  private java.util.Date datefinal;
+  @Column(name = "kodfinal")
+  private java.lang.Integer kodfinal;
+  /** Description: kodxrisi. */
+  @Basic
+  @Column(name = "kodxrisi", length = 64)
+  private java.lang.String kodxrisi;
+  /** Description: kodkat. */
+  @Basic
+  @Column(name = "kodkat", length = 64)
+  private java.lang.String kodkat;
   /** Description: title. */
   @Basic
-  @Column(name = "title")
+  @Column(name = "title", length = 32766)
   private java.lang.String title;
 
   public MisthFinal() {}
 
-  public java.lang.Float getKodfinal() {
-    return this.kodfinal;
-  }
-
-  public void setKodfinal(java.lang.Float kodfinal) {
-    this.kodfinal = kodfinal;
-  }
-
-  public java.lang.String getKodxrisi() {
-    return this.kodxrisi;
-  }
-
-  public java.lang.String getKodkat() {
-    return this.kodkat;
-  }
-
   public java.lang.String getKodperiod() {
     return this.kodperiod;
+  }
+
+  public void setKodperiod(java.lang.String kodperiod) {
+    this.kodperiod = kodperiod;
+  }
+
+  public java.util.Date getDatefinal() {
+    return this.datefinal;
   }
 
   public java.lang.Float getAa() {
@@ -110,24 +102,24 @@ public class MisthFinal implements Serializable {
     return this.descfinal;
   }
 
-  public java.util.Date getDatefinal() {
-    return this.datefinal;
+  public java.lang.Integer getKodfinal() {
+    return this.kodfinal;
+  }
+
+  public java.lang.String getKodxrisi() {
+    return this.kodxrisi;
+  }
+
+  public java.lang.String getKodkat() {
+    return this.kodkat;
   }
 
   public java.lang.String getTitle() {
     return this.title;
   }
 
-  public void setKodxrisi(java.lang.String kodxrisi) {
-    this.kodxrisi = kodxrisi;
-  }
-
-  public void setKodkat(java.lang.String kodkat) {
-    this.kodkat = kodkat;
-  }
-
-  public void setKodperiod(java.lang.String kodperiod) {
-    this.kodperiod = kodperiod;
+  public void setDatefinal(java.util.Date datefinal) {
+    this.datefinal = datefinal;
   }
 
   public void setAa(java.lang.Float aa) {
@@ -138,8 +130,16 @@ public class MisthFinal implements Serializable {
     this.descfinal = descfinal;
   }
 
-  public void setDatefinal(java.util.Date datefinal) {
-    this.datefinal = datefinal;
+  public void setKodfinal(java.lang.Integer kodfinal) {
+    this.kodfinal = kodfinal;
+  }
+
+  public void setKodxrisi(java.lang.String kodxrisi) {
+    this.kodxrisi = kodxrisi;
+  }
+
+  public void setKodkat(java.lang.String kodkat) {
+    this.kodkat = kodkat;
   }
 
   public void setTitle(java.lang.String title) {

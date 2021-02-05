@@ -43,16 +43,16 @@ public interface MisthYpalDtoDao {
   List<PickMisthYpalXrisiDto> pickMisthYpalXrisi(java.lang.String arg_kodxrisi);
 
   List<DwMisthYpalFormJobDto> dwMisthYpalFormJob(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 
   List<DwMisthFyloYpalListDto> dwMisthFyloYpalList(
       java.lang.String arg_kodfylo, java.lang.String arg_kodxrisi);
 
   List<DwMisthYpalFormPersonalDto> dwMisthYpalFormPersonal(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 
   List<DwMisthYpalFormGeneralDto> dwMisthYpalFormGeneral(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 
   List<PrnYpalNewklimakioDto> prnYpalNewklimakio(
       java.lang.String arg_kodxrisi, java.util.Date arg_date);

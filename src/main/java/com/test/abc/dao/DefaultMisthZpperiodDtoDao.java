@@ -102,7 +102,7 @@ public class DefaultMisthZpperiodDtoDao implements MisthZpperiodDtoDao {
   }
 
   public List<SprnYpalFinalDto> sprnYpalFinal(
-      java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi) {
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi) {
     final TypedQuery<SprnYpalFinalDto> query =
         dao.getEntityManager().createNamedQuery("sprnYpalFinalMapping", SprnYpalFinalDto.class);
     query.setParameter("arg_kodypal", arg_kodypal);

@@ -45,44 +45,44 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usruserperm")
 public class Usruserperm implements Serializable {
-  private static final long serialVersionUID = 160992137251127623L;
-  /** Description: kodapp. */
+  private static final long serialVersionUID = 161096103741691125L;
+  /** Description: koduser. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
-  @Column(name = "kodapp")
-  private java.lang.String kodapp;
-  /** Description: koduser. */
-  @Basic
   @Column(name = "koduser")
-  private java.lang.Float koduser;
+  private java.lang.Integer koduser;
   /** Description: enable. */
   @Basic
   @Column(name = "enable")
   private java.lang.Integer enable;
+  /** Description: kodapp. */
+  @Basic
+  @Column(name = "kodapp", length = 64)
+  private java.lang.String kodapp;
 
   public Usruserperm() {}
 
-  public java.lang.String getKodapp() {
-    return this.kodapp;
-  }
-
-  public void setKodapp(java.lang.String kodapp) {
-    this.kodapp = kodapp;
-  }
-
-  public java.lang.Float getKoduser() {
+  public java.lang.Integer getKoduser() {
     return this.koduser;
+  }
+
+  public void setKoduser(java.lang.Integer koduser) {
+    this.koduser = koduser;
   }
 
   public java.lang.Integer getEnable() {
     return this.enable;
   }
 
-  public void setKoduser(java.lang.Float koduser) {
-    this.koduser = koduser;
+  public java.lang.String getKodapp() {
+    return this.kodapp;
   }
 
   public void setEnable(java.lang.Integer enable) {
     this.enable = enable;
+  }
+
+  public void setKodapp(java.lang.String kodapp) {
+    this.kodapp = kodapp;
   }
 }

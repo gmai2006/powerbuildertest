@@ -20,19 +20,14 @@ package com.test.abc.handler;
 
 import static org.junit.Assert.assertEquals;
 import java.io.IOException;
-import com.google.gson.Gson;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Set;
-
+import org.json.CDL;
+import org.json.JSONArray;
+import com.google.gson.Gson;
 import com.test.abc.entity.MisthReportYpal;
 import com.test.abc.dao.JpaDao;
 import com.test.abc.dao.StandaloneJpaDao;
@@ -72,14 +67,14 @@ import org.junit.Test;
 public class MisthReportYpalHandlerTest {
   static final String inputFile = "MisthReportYpal.json";
   static MisthReportYpalHandler handler;
-  private JpaDao jpa;
+  private static JpaDao jpa;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
   private MisthReportYpal[] records;
 
   /** Run before the test. */
-  @Before
-  public void before() {
-    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("localpersistence");
+  @BeforeClass
+  public static void before() {
+    final EntityManagerFactory factory = Persistence.createEntityManagerFactory("testpersistence");
     jpa = new StandaloneJpaDao(factory.createEntityManager());
     handler = new MisthReportYpalHandler(jpa);
   }
@@ -92,11 +87,11 @@ public class MisthReportYpalHandlerTest {
     String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
     records = gson.fromJson(json, MisthReportYpal[].class);
     assertEquals("match count", count, records.length);
-    MisthReportYpal testResult = jpa.find(MisthReportYpal.class, records[0].getKodreport());
-    org.junit.Assert.assertEquals(
-        "expect equals kodypal ", this.records[0].getKodypal(), testResult.getKodypal());
+    MisthReportYpal testResult = jpa.find(MisthReportYpal.class, records[0].getKodypal());
     assertEquals(
         "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
+    assertEquals(
+        "expect equals kodreport ", this.records[0].getKodreport(), testResult.getKodreport());
   }
 
   /**
@@ -111,39 +106,13 @@ public class MisthReportYpalHandlerTest {
       final File tempFile = File.createTempFile(inputFile, ".txt");
       tempFile.deleteOnExit();
       String json = FileUtils.readFileFromResource2String(inputFile, Charset.defaultCharset());
-      final MisthReportYpal[] records = gson.fromJson(json, MisthReportYpal[].class);
-      String header =
-          createHeader(
-              Paths.get(inputFile.substring(0, inputFile.length() - 5) + "header.json").toString());
-      final List<String> result = new ArrayList<>();
-      result.add(header);
-
-      final List<String> data =
-          Arrays.stream(records)
-              .map(record -> createCsvRecord(record))
-              .collect(Collectors.toList());
-
-      result.addAll(data);
-      FileUtils.writeListOfStringToFile(tempFile, result);
+      JSONArray docs = new JSONArray(json);
+      String csv = CDL.toString(docs);
+      org.apache.commons.io.FileUtils.writeStringToFile(tempFile, csv, Charset.defaultCharset());
       return tempFile;
     } catch (IOException ex) {
       ex.printStackTrace();
       return null;
     }
-  }
-
-  private String createCsvRecord(final MisthReportYpal record) {
-    return TestUtils.getObject(record.getKodreport())
-        + ","
-        + TestUtils.getObject(record.getKodypal())
-        + ","
-        + TestUtils.getObject(record.getKodxrisi());
-  }
-
-  private String createHeader(String headerfile) throws IOException {
-    String json = FileUtils.readFileFromResource2String(headerfile, Charset.defaultCharset());
-    JsonParser parser = new JsonParser();
-    JsonObject jsonObject = parser.parse(json).getAsJsonObject();
-    return jsonObject.get("header").getAsString();
   }
 }

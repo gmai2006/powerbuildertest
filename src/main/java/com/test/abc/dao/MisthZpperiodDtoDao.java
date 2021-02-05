@@ -50,5 +50,6 @@ public interface MisthZpperiodDtoDao {
 
   List<PrnFinalNopaidAnaYpalDto> prnFinalNopaidAnaYpal(java.lang.String arg_kodxrisi);
 
-  List<SprnYpalFinalDto> sprnYpalFinal(java.lang.Float arg_kodypal, java.lang.String arg_kodxrisi);
+  List<SprnYpalFinalDto> sprnYpalFinal(
+      java.lang.Integer arg_kodypal, java.lang.String arg_kodxrisi);
 }

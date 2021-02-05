@@ -82,13 +82,13 @@ public class UsruserpermDaoTest {
 
   @Test
   public void testSelect() {
-    Usruserperm testResult = dao.find(records[1].getKodapp());
+    Usruserperm testResult = dao.find(records[1].getKoduser());
     java.util.List<Usruserperm> all = dao.selectAll();
     assertNotNull("expect result", testResult);
     org.junit.Assert.assertFalse(all.isEmpty());
     org.junit.Assert.assertTrue(
-        "expect equals koduser ", this.records[1].getKoduser() == testResult.getKoduser());
-    org.junit.Assert.assertTrue(
         "expect equals enable ", this.records[1].getEnable() == testResult.getEnable());
+    org.junit.Assert.assertEquals(
+        "expect equals kodapp ", this.records[1].getKodapp(), testResult.getKodapp());
   }
 }

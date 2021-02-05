@@ -102,7 +102,7 @@ public class UsrgroupsResource {
 
   /**
    * @Consumes(MediaType.APPLICATION_JSON) @DELETE public Response delete(@PathParam("id")
-   * java.lang.Float id) { this.service.delete(id); return
+   * java.lang.Integer id) { this.service.delete(id); return
    * Response.status(Response.Status.OK).entity("Successfully delete object").build(); }
    */
 
@@ -113,8 +113,8 @@ public class UsrgroupsResource {
    * @return Usrgroups.
    */
   /**
-   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.Float id) { Usrgroups result
-   * = this.service.find(id); if (null == result) { return
+   * @GET @Path("{id}") public Response find(@PathParam("id") java.lang.Integer id) { Usrgroups
+   * result = this.service.find(id); if (null == result) { return
    * Response.status(Response.Status.NOT_FOUND).build(); } return
    * Response.status(Response.Status.OK).entity(result).build(); }
    */

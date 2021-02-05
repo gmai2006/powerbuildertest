@@ -60,7 +60,7 @@ public interface MisthFinalDao {
    * @param id An MisthFinal id.
    * @return The same MisthFinal.
    */
-  public MisthFinal find(java.lang.Float id);
+  public MisthFinal find(java.lang.String id);
   /**
    * Create an MisthFinal.
    *
@@ -82,5 +82,5 @@ public interface MisthFinalDao {
    *
    * @param id The entity Id.
    */
-  public void delete(java.lang.Float id);
+  public void delete(java.lang.String id);
 }

@@ -41,10 +41,10 @@ import java.util.stream.Collectors;
  */
 
 public class DwUsrgrouppermListDto implements Serializable {
-  private static final long serialVersionUID = 160992137696455427L;
+  private static final long serialVersionUID = 161096104220529751L;
 
   /** Description: kodgroup. */
-  private java.lang.Float kodgroup;
+  private java.lang.Integer kodgroup;
 
   /** Description: kodaction. */
   private java.lang.String kodaction;
@@ -73,7 +73,7 @@ public class DwUsrgrouppermListDto implements Serializable {
   public DwUsrgrouppermListDto() {}
 
   public DwUsrgrouppermListDto(
-      java.lang.Float kodgroup,
+      java.lang.Integer kodgroup,
       java.lang.String kodaction,
       java.lang.Integer editrec,
       java.lang.Integer addrec,
@@ -93,7 +93,7 @@ public class DwUsrgrouppermListDto implements Serializable {
     this.descaction = descaction;
   }
 
-  public java.lang.Float getKodgroup() {
+  public java.lang.Integer getKodgroup() {
     return this.kodgroup;
   }
 
@@ -129,7 +129,7 @@ public class DwUsrgrouppermListDto implements Serializable {
     return this.descaction;
   }
 
-  public void setKodgroup(java.lang.Float kodgroup) {
+  public void setKodgroup(java.lang.Integer kodgroup) {
     this.kodgroup = kodgroup;
   }
 

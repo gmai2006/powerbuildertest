@@ -45,53 +45,45 @@ import javax.persistence.Basic;
 @Entity
 @Table(name = "usrusers")
 public class Usrusers implements Serializable {
-  private static final long serialVersionUID = 160992137255332417L;
+  private static final long serialVersionUID = 16109610374664564L;
   /** Description: koduser. */
   @javax.validation.constraints.NotNull
   @javax.persistence.Id
   @Column(name = "koduser")
-  private java.lang.Float koduser;
-  /** Description: username. */
-  @Basic
-  @Column(name = "username")
-  private java.lang.String username;
-  /** Description: fullname. */
-  @Basic
-  @Column(name = "fullname")
-  private java.lang.String fullname;
+  private java.lang.Integer koduser;
   /** Description: password. */
   @Basic
-  @Column(name = "password")
+  @Column(name = "password", length = 100)
   private java.lang.String password;
   /** Description: isactive. */
   @Basic
   @Column(name = "isactive")
   private java.lang.Integer isactive;
-  /** Description: tomeas. */
-  @Basic
-  @Column(name = "tomeas")
-  private java.lang.String tomeas;
   /** Description: idiotita. */
   @Basic
-  @Column(name = "idiotita")
+  @Column(name = "idiotita", length = 100)
   private java.lang.String idiotita;
+  /** Description: tomeas. */
+  @Basic
+  @Column(name = "tomeas", length = 100)
+  private java.lang.String tomeas;
+  /** Description: fullname. */
+  @Basic
+  @Column(name = "fullname", length = 100)
+  private java.lang.String fullname;
+  /** Description: username. */
+  @Basic
+  @Column(name = "username", length = 20)
+  private java.lang.String username;
 
   public Usrusers() {}
 
-  public java.lang.Float getKoduser() {
+  public java.lang.Integer getKoduser() {
     return this.koduser;
   }
 
-  public void setKoduser(java.lang.Float koduser) {
+  public void setKoduser(java.lang.Integer koduser) {
     this.koduser = koduser;
-  }
-
-  public java.lang.String getUsername() {
-    return this.username;
-  }
-
-  public java.lang.String getFullname() {
-    return this.fullname;
   }
 
   public java.lang.String getPassword() {
@@ -102,20 +94,20 @@ public class Usrusers implements Serializable {
     return this.isactive;
   }
 
-  public java.lang.String getTomeas() {
-    return this.tomeas;
-  }
-
   public java.lang.String getIdiotita() {
     return this.idiotita;
   }
 
-  public void setUsername(java.lang.String username) {
-    this.username = username;
+  public java.lang.String getTomeas() {
+    return this.tomeas;
   }
 
-  public void setFullname(java.lang.String fullname) {
-    this.fullname = fullname;
+  public java.lang.String getFullname() {
+    return this.fullname;
+  }
+
+  public java.lang.String getUsername() {
+    return this.username;
   }
 
   public void setPassword(java.lang.String password) {
@@ -126,11 +118,19 @@ public class Usrusers implements Serializable {
     this.isactive = isactive;
   }
 
+  public void setIdiotita(java.lang.String idiotita) {
+    this.idiotita = idiotita;
+  }
+
   public void setTomeas(java.lang.String tomeas) {
     this.tomeas = tomeas;
   }
 
-  public void setIdiotita(java.lang.String idiotita) {
-    this.idiotita = idiotita;
+  public void setFullname(java.lang.String fullname) {
+    this.fullname = fullname;
+  }
+
+  public void setUsername(java.lang.String username) {
+    this.username = username;
   }
 }

@@ -41,13 +41,13 @@ import java.util.stream.Collectors;
  */
 
 public class DwMisthFyloYpalListDto implements Serializable {
-  private static final long serialVersionUID = 160992137659567252L;
+  private static final long serialVersionUID = 161096104192123945L;
 
   /** Description: kodfylo. */
   private java.lang.String kodfylo;
 
   /** Description: kodypal. */
-  private java.lang.Float kodypal;
+  private java.lang.Integer kodypal;
 
   /** Description: kodxrisi. */
   private java.lang.String kodxrisi;
@@ -65,7 +65,7 @@ public class DwMisthFyloYpalListDto implements Serializable {
 
   public DwMisthFyloYpalListDto(
       java.lang.String kodfylo,
-      java.lang.Float kodypal,
+      java.lang.Integer kodypal,
       java.lang.String kodxrisi,
       java.lang.String surname,
       java.lang.String name,
@@ -82,7 +82,7 @@ public class DwMisthFyloYpalListDto implements Serializable {
     return this.kodfylo;
   }
 
-  public java.lang.Float getKodypal() {
+  public java.lang.Integer getKodypal() {
     return this.kodypal;
   }
 
@@ -106,7 +106,7 @@ public class DwMisthFyloYpalListDto implements Serializable {
     this.kodfylo = kodfylo;
   }
 
-  public void setKodypal(java.lang.Float kodypal) {
+  public void setKodypal(java.lang.Integer kodypal) {
     this.kodypal = kodypal;
   }
 

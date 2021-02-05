@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
  */
 
 public class DwAfxptoseisListDto implements Serializable {
-  private static final long serialVersionUID = 160992137704042785L;
+  private static final long serialVersionUID = 161096104226047569L;
 
   /** Description: onom. */
   private java.lang.String onom;

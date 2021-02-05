@@ -73,7 +73,7 @@ public class DefaultUsrgroupsDtoDao implements UsrgroupsDtoDao {
     return query.getResultList();
   }
 
-  public List<DwUsrgroupsFormDto> dwUsrgroupsForm(java.lang.Float arg_kodgroup) {
+  public List<DwUsrgroupsFormDto> dwUsrgroupsForm(java.lang.Integer arg_kodgroup) {
     final TypedQuery<DwUsrgroupsFormDto> query =
         dao.getEntityManager().createNamedQuery("dwUsrgroupsFormMapping", DwUsrgroupsFormDto.class);
     query.setParameter("arg_kodgroup", arg_kodgroup);

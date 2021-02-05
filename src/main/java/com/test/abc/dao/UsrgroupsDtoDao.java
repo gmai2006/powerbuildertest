@@ -44,5 +44,5 @@ public interface UsrgroupsDtoDao {
 
   List<PickUsrgroupsDto> pickUsrgroups();
 
-  List<DwUsrgroupsFormDto> dwUsrgroupsForm(java.lang.Float arg_kodgroup);
+  List<DwUsrgroupsFormDto> dwUsrgroupsForm(java.lang.Integer arg_kodgroup);
 }

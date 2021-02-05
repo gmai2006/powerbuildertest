@@ -58,16 +58,16 @@ public class UsrgrouppermServiceTest {
   public void testFind_success() {
     Usrgroupperm testResult = serviceMock.find(records[0].getKodgroup());
     org.junit.Assert.assertNotNull(testResult);
-    org.junit.Assert.assertEquals(
-        "expect equals kodaction ", this.records[0].getKodaction(), testResult.getKodaction());
+    org.junit.Assert.assertTrue(
+        "expect equals openlist ", this.records[0].getOpenlist() == testResult.getOpenlist());
     org.junit.Assert.assertTrue(
         "expect equals editrec ", this.records[0].getEditrec() == testResult.getEditrec());
     org.junit.Assert.assertTrue(
         "expect equals addrec ", this.records[0].getAddrec() == testResult.getAddrec());
     org.junit.Assert.assertTrue(
         "expect equals delrec ", this.records[0].getDelrec() == testResult.getDelrec());
-    org.junit.Assert.assertTrue(
-        "expect equals openlist ", this.records[0].getOpenlist() == testResult.getOpenlist());
+    org.junit.Assert.assertEquals(
+        "expect equals kodaction ", this.records[0].getKodaction(), testResult.getKodaction());
     org.junit.Assert.assertTrue(
         "expect equals openform ", this.records[0].getOpenform() == testResult.getOpenform());
   }

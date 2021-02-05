@@ -59,8 +59,8 @@ public class MisthZpthesiServiceTest {
     MisthZpthesi testResult = serviceMock.find(records[0].getKodthesi());
     org.junit.Assert.assertNotNull(testResult);
     org.junit.Assert.assertEquals(
-        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
-    org.junit.Assert.assertEquals(
         "expect equals descthesi ", this.records[0].getDescthesi(), testResult.getDescthesi());
+    org.junit.Assert.assertEquals(
+        "expect equals kodxrisi ", this.records[0].getKodxrisi(), testResult.getKodxrisi());
   }
 }
