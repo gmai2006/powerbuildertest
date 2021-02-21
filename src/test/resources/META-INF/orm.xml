@@ -1,0 +1,2138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
+    http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+
+  <sql-result-set-mapping name="dwUsrappsListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsrappsListDto">
+      <column name="kodapp" class="java.lang.String"/>
+      <column name="descapp" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickUsrusersMapping">
+    <constructor-result target-class="com.test.abc.dto.PickUsrusersDto">
+      <column name="koduser" class="java.lang.Integer"/>
+      <column name="username" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnYpalPeriodEpidomMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnYpalPeriodEpidomDto">
+      <column name="descepidom" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="notes" class="java.lang.String"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZpepidomXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZpepidomXrisiDto">
+      <column name="kodepidom" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descepidom" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthReportFormNotesMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthReportFormNotesDto">
+      <column name="kodreport" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descreport" class="java.lang.String"/>
+      <column name="print_margin_top" class="java.lang.Integer"/>
+      <column name="print_margin_bottom" class="java.lang.Integer"/>
+      <column name="print_margin_left" class="java.lang.Integer"/>
+      <column name="print_margin_right" class="java.lang.Integer"/>
+      <column name="print_orientation" class="java.lang.Integer"/>
+      <column name="print_paper_size" class="java.lang.Integer"/>
+      <column name="print_scale" class="java.lang.Integer"/>
+      <column name="subtitle" class="java.lang.String"/>
+      <column name="prn_notes1" class="java.lang.String"/>
+      <column name="prn_notes2" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthYpalXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthYpalXrisiDto">
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZpkratXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZpkratXrisiDto">
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desckrat" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwAfxptoseisFormMapping">
+    <constructor-result target-class="com.test.abc.dto.DwAfxptoseisFormDto">
+      <column name="onom" class="java.lang.String"/>
+      <column name="gen" class="java.lang.String"/>
+      <column name="ait" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnReport2Mapping">
+    <constructor-result target-class="com.test.abc.dto.SprnReport2Dto">
+      <column name="kodreport" class="java.lang.String"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="subtitle" class="java.lang.String"/>
+      <column name="prn_notes1" class="java.lang.String"/>
+      <column name="prn_notes2" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthZpperiodListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthZpperiodListDto">
+      <column name="kodperiod" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descperiod" class="java.lang.String"/>
+      <column name="orderno" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthYpalFormJobMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthYpalFormJobDto">
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="adt" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="afm" class="java.lang.String"/>
+      <column name="doy" class="java.lang.String"/>
+      <column name="birthdate" class="java.util.Date"/>
+      <column name="homephone" class="java.lang.String"/>
+      <column name="mobilphone" class="java.lang.String"/>
+      <column name="sex" class="java.lang.String"/>
+      <column name="spouse" class="java.lang.String"/>
+      <column name="childs" class="java.lang.Integer"/>
+      <column name="prostmeli" class="java.lang.Integer"/>
+      <column name="city" class="java.lang.String"/>
+      <column name="area" class="java.lang.String"/>
+      <column name="address" class="java.lang.String"/>
+      <column name="tk" class="java.lang.String"/>
+      <column name="email" class="java.lang.String"/>
+      <column name="kodtmima" class="java.lang.String"/>
+      <column name="kodidikot" class="java.lang.String"/>
+      <column name="jobtitle" class="java.lang.String"/>
+      <column name="hireddate" class="java.util.Date"/>
+      <column name="rehireddate" class="java.util.Date"/>
+      <column name="termdate" class="java.util.Date"/>
+      <column name="termreason" class="java.lang.String"/>
+      <column name="jobphone" class="java.lang.String"/>
+      <column name="intphone" class="java.lang.String"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="bank" class="java.lang.String"/>
+      <column name="bankno" class="java.lang.String"/>
+      <column name="exeldate" class="java.util.Date"/>
+      <column name="kodthesi" class="java.lang.String"/>
+      <column name="kodoikog" class="java.lang.String"/>
+      <column name="kodtamio" class="java.lang.String"/>
+      <column name="mothername" class="java.lang.String"/>
+      <column name="newexeldate" class="java.util.Date"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnAnalisiEpidomAsfMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnAnalisiEpidomAsfDto">
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="descepidom" class="java.lang.String"/>
+      <column name="kodepidom" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnFinalEpidomYpalMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnFinalEpidomYpalDto">
+      <column name="descepidom" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="notes" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFinalListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFinalListDto">
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="title" class="java.lang.String"/>
+      <column name="kodkat" class="java.lang.String"/>
+      <column name="desckat" class="java.lang.String"/>
+      <column name="kodperiod" class="java.lang.String"/>
+      <column name="descperiod" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFyloYpalListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFyloYpalListDto">
+      <column name="kodfylo" class="java.lang.String"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnYpalTotalDatesMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnYpalTotalDatesDto">
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="adt" class="java.lang.String"/>
+      <column name="afm" class="java.lang.String"/>
+      <column name="doy" class="java.lang.String"/>
+      <column name="bankno" class="java.lang.String"/>
+      <column name="bank" class="java.lang.String"/>
+      <column name="childs" class="java.lang.Integer"/>
+      <column name="prostmeli" class="java.lang.Integer"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="birthdate" class="java.util.Date"/>
+      <column name="hireddate" class="java.util.Date"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descidikot" class="java.lang.String"/>
+      <column name="descoikog" class="java.lang.String"/>
+      <column name="desctmima" class="java.lang.String"/>
+      <column name="descthesi" class="java.lang.String"/>
+      <column name="desctamio" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFinalYpalEpidomListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFinalYpalEpidomListDto">
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodepidom" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="aa" class="java.lang.Float"/>
+      <column name="notes" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsrgroupsListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsrgroupsListDto">
+      <column name="kodgroup" class="java.lang.Integer"/>
+      <column name="descgroup" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwAfxfilterListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwAfxfilterListDto">
+      <column name="kodfilter" class="java.lang.Float"/>
+      <column name="descfilter" class="java.lang.String"/>
+      <column name="tablename" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFyloFormMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFyloFormDto">
+      <column name="kodfylo" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descfylo" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="selMisthZpkratXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.SelMisthZpkratXrisiDto">
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="issel" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnYpalPeriodKratMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnYpalPeriodKratDto">
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="notes" class="java.lang.String"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnReport3Mapping">
+    <constructor-result target-class="com.test.abc.dto.SprnReport3Dto">
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="title" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthFyloXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthFyloXrisiDto">
+      <column name="kodfylo" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descfylo" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="selMisthZpperiodXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.SelMisthZpperiodXrisiDto">
+      <column name="kodperiod" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descperiod" class="java.lang.String"/>
+      <column name="issel" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFyloEpidomListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFyloEpidomListDto">
+      <column name="kodfylo" class="java.lang.String"/>
+      <column name="kodepidom" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="expr" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+      <column name="notes" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZptamioXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZptamioXrisiDto">
+      <column name="kodtamio" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desctamio" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZpperiodXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZpperiodXrisiDto">
+      <column name="kodperiod" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descperiod" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnAnalisiKratForosMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnAnalisiKratForosDto">
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFinalYpalKratListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFinalYpalKratListDto">
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="aa" class="java.lang.Float"/>
+      <column name="notes" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnReportMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnReportDto">
+      <column name="kodreport" class="java.lang.String"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFinalYpalPrildateMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFinalYpalPrildateDto">
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="plirdate" class="java.util.Date"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnFinalYpalListMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnFinalYpalListDto">
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="kodfinal1" class="java.lang.Integer"/>
+      <column name="title" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickUsrgroupsMapping">
+    <constructor-result target-class="com.test.abc.dto.PickUsrgroupsDto">
+      <column name="kodgroup" class="java.lang.Integer"/>
+      <column name="descgroup" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnFinalEpidomMisthMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnFinalEpidomMisthDto">
+      <column name="descepidom" class="java.lang.String"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnAnalisiEpidomNoforosMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnAnalisiEpidomNoforosDto">
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="descepidom" class="java.lang.String"/>
+      <column name="kodepidom" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthZpyvarFormMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthZpyvarFormDto">
+      <column name="kodyvar" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descyvar" class="java.lang.String"/>
+      <column name="expr" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthZpoikogListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthZpoikogListDto">
+      <column name="kodoikog" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descoikog" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickZpxrisiNocurrentMapping">
+    <constructor-result target-class="com.test.abc.dto.PickZpxrisiNocurrentDto">
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descxrisi" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZpthesiXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZpthesiXrisiDto">
+      <column name="kodthesi" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descthesi" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsractionsListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsractionsListDto">
+      <column name="kodaction" class="java.lang.String"/>
+      <column name="kodapp" class="java.lang.String"/>
+      <column name="descaction" class="java.lang.String"/>
+      <column name="descapp" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnFinalNopaidAnaKatastMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnFinalNopaidAnaKatastDto">
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="kodfinal1" class="java.lang.Integer"/>
+      <column name="descperiod" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthYpalYvarListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthYpalYvarListDto">
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodyvar" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+      <column name="expr" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsrusersFormMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsrusersFormDto">
+      <column name="koduser" class="java.lang.Integer"/>
+      <column name="username" class="java.lang.String"/>
+      <column name="fullname" class="java.lang.String"/>
+      <column name="password" class="java.lang.String"/>
+      <column name="isactive" class="java.lang.Integer"/>
+      <column name="tomeas" class="java.lang.String"/>
+      <column name="idiotita" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnFinalKratMisthMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnFinalKratMisthDto">
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwAfxfilterdListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwAfxfilterdListDto">
+      <column name="kodfilterd" class="java.lang.Float"/>
+      <column name="kodfilter" class="java.lang.Float"/>
+      <column name="pedio" class="java.lang.String"/>
+      <column name="telestis" class="java.lang.String"/>
+      <column name="timi" class="java.lang.String"/>
+      <column name="joint" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthYpalFormPersonalMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthYpalFormPersonalDto">
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="adt" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="afm" class="java.lang.String"/>
+      <column name="doy" class="java.lang.String"/>
+      <column name="birthdate" class="java.util.Date"/>
+      <column name="homephone" class="java.lang.String"/>
+      <column name="mobilphone" class="java.lang.String"/>
+      <column name="sex" class="java.lang.String"/>
+      <column name="spouse" class="java.lang.String"/>
+      <column name="childs" class="java.lang.Integer"/>
+      <column name="prostmeli" class="java.lang.Integer"/>
+      <column name="city" class="java.lang.String"/>
+      <column name="area" class="java.lang.String"/>
+      <column name="address" class="java.lang.String"/>
+      <column name="tk" class="java.lang.String"/>
+      <column name="email" class="java.lang.String"/>
+      <column name="kodtmima" class="java.lang.String"/>
+      <column name="kodidikot" class="java.lang.String"/>
+      <column name="jobtitle" class="java.lang.String"/>
+      <column name="hireddate" class="java.util.Date"/>
+      <column name="rehireddate" class="java.util.Date"/>
+      <column name="termdate" class="java.util.Date"/>
+      <column name="termreason" class="java.lang.String"/>
+      <column name="jobphone" class="java.lang.String"/>
+      <column name="intphone" class="java.lang.String"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="bank" class="java.lang.String"/>
+      <column name="bankno" class="java.lang.String"/>
+      <column name="exeldate" class="java.util.Date"/>
+      <column name="kodthesi" class="java.lang.String"/>
+      <column name="kodoikog" class="java.lang.String"/>
+      <column name="kodtamio" class="java.lang.String"/>
+      <column name="mothername" class="java.lang.String"/>
+      <column name="newexeldate" class="java.util.Date"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthZptmimaListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthZptmimaListDto">
+      <column name="kodtmima" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desctmima" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthYpalListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthYpalListDto">
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="descidikot" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnAnalisiKratAutoforosMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnAnalisiKratAutoforosDto">
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnFinalNopaidAnaYpalMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnFinalNopaidAnaYpalDto">
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descperiod" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnYpalFinalMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnYpalFinalDto">
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="descperiod" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZpoikogXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZpoikogXrisiDto">
+      <column name="kodoikog" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descoikog" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsrgrouppermListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsrgrouppermListDto">
+      <column name="kodgroup" class="java.lang.Integer"/>
+      <column name="kodaction" class="java.lang.String"/>
+      <column name="editrec" class="java.lang.Integer"/>
+      <column name="addrec" class="java.lang.Integer"/>
+      <column name="delrec" class="java.lang.Integer"/>
+      <column name="openlist" class="java.lang.Integer"/>
+      <column name="openform" class="java.lang.Integer"/>
+      <column name="descapp" class="java.lang.String"/>
+      <column name="descaction" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnAnalisiYpalMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnAnalisiYpalDto">
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="adt" class="java.lang.String"/>
+      <column name="afm" class="java.lang.String"/>
+      <column name="doy" class="java.lang.String"/>
+      <column name="bankno" class="java.lang.String"/>
+      <column name="bank" class="java.lang.String"/>
+      <column name="childs" class="java.lang.Integer"/>
+      <column name="prostmeli" class="java.lang.Integer"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="birthdate" class="java.util.Date"/>
+      <column name="hireddate" class="java.util.Date"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descidikot" class="java.lang.String"/>
+      <column name="descoikog" class="java.lang.String"/>
+      <column name="desctmima" class="java.lang.String"/>
+      <column name="descthesi" class="java.lang.String"/>
+      <column name="desctamio" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwStepKratapodMisthselectMapping">
+    <constructor-result target-class="com.test.abc.dto.DwStepKratapodMisthselectDto">
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+      <column name="notes" class="java.lang.String"/>
+      <column name="kodkratapod" class="java.lang.Float"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="cm_sel" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnAnalisiEpidomForosMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnAnalisiEpidomForosDto">
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="descepidom" class="java.lang.String"/>
+      <column name="kodepidom" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnKratapodMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnKratapodDto">
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="kodkratapod" class="java.lang.Float"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZpidikotXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZpidikotXrisiDto">
+      <column name="kodidikot" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descidikot" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnAnalisiKratLoipaMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnAnalisiKratLoipaDto">
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwAfxptoseisListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwAfxptoseisListDto">
+      <column name="onom" class="java.lang.String"/>
+      <column name="gen" class="java.lang.String"/>
+      <column name="ait" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthYpalFormGeneralMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthYpalFormGeneralDto">
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="adt" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="afm" class="java.lang.String"/>
+      <column name="doy" class="java.lang.String"/>
+      <column name="birthdate" class="java.util.Date"/>
+      <column name="homephone" class="java.lang.String"/>
+      <column name="mobilphone" class="java.lang.String"/>
+      <column name="sex" class="java.lang.String"/>
+      <column name="spouse" class="java.lang.String"/>
+      <column name="childs" class="java.lang.Integer"/>
+      <column name="prostmeli" class="java.lang.Integer"/>
+      <column name="city" class="java.lang.String"/>
+      <column name="area" class="java.lang.String"/>
+      <column name="address" class="java.lang.String"/>
+      <column name="tk" class="java.lang.String"/>
+      <column name="email" class="java.lang.String"/>
+      <column name="kodtmima" class="java.lang.String"/>
+      <column name="kodidikot" class="java.lang.String"/>
+      <column name="jobtitle" class="java.lang.String"/>
+      <column name="hireddate" class="java.util.Date"/>
+      <column name="rehireddate" class="java.util.Date"/>
+      <column name="termdate" class="java.util.Date"/>
+      <column name="termreason" class="java.lang.String"/>
+      <column name="jobphone" class="java.lang.String"/>
+      <column name="intphone" class="java.lang.String"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="bank" class="java.lang.String"/>
+      <column name="bankno" class="java.lang.String"/>
+      <column name="exeldate" class="java.util.Date"/>
+      <column name="kodthesi" class="java.lang.String"/>
+      <column name="kodoikog" class="java.lang.String"/>
+      <column name="kodtamio" class="java.lang.String"/>
+      <column name="mothername" class="java.lang.String"/>
+      <column name="newexeldate" class="java.util.Date"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnFinalAtomikiMisthMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnFinalAtomikiMisthDto">
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="adt" class="java.lang.String"/>
+      <column name="afm" class="java.lang.String"/>
+      <column name="doy" class="java.lang.String"/>
+      <column name="bankno" class="java.lang.String"/>
+      <column name="bank" class="java.lang.String"/>
+      <column name="childs" class="java.lang.Integer"/>
+      <column name="prostmeli" class="java.lang.Integer"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="birthdate" class="java.util.Date"/>
+      <column name="hireddate" class="java.util.Date"/>
+      <column name="descoikog" class="java.lang.String"/>
+      <column name="descidikot" class="java.lang.String"/>
+      <column name="descthesi" class="java.lang.String"/>
+      <column name="desctmima" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="aa" class="java.lang.Float"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="title" class="java.lang.String"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="desctamio" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFinalYpalPlirdateListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFinalYpalPlirdateListDto">
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnYpalFinalMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnYpalFinalDto">
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="adt" class="java.lang.String"/>
+      <column name="afm" class="java.lang.String"/>
+      <column name="doy" class="java.lang.String"/>
+      <column name="bankno" class="java.lang.String"/>
+      <column name="bank" class="java.lang.String"/>
+      <column name="childs" class="java.lang.Integer"/>
+      <column name="prostmeli" class="java.lang.Integer"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="birthdate" class="java.util.Date"/>
+      <column name="hireddate" class="java.util.Date"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descidikot" class="java.lang.String"/>
+      <column name="descoikog" class="java.lang.String"/>
+      <column name="desctmima" class="java.lang.String"/>
+      <column name="descthesi" class="java.lang.String"/>
+      <column name="desctamio" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFinalYpalListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFinalYpalListDto">
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="INTEGER" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZptmimaXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZptmimaXrisiDto">
+      <column name="kodtmima" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desctmima" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthZptamioListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthZptamioListDto">
+      <column name="kodtamio" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desctamio" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZpyvarXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZpyvarXrisiDto">
+      <column name="kodyvar" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descyvar" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsruserpermListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsruserpermListDto">
+      <column name="kodapp" class="java.lang.String"/>
+      <column name="koduser" class="java.lang.Integer"/>
+      <column name="enable" class="java.lang.Integer"/>
+      <column name="descapp" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFinalDetailsListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFinalDetailsListDto">
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="kodfinal1" class="java.lang.Integer"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desckat" class="java.lang.String"/>
+      <column name="descperiod" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnAnalisiKratAsfMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnAnalisiKratAsfDto">
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsrmembersGroupListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsrmembersGroupListDto">
+      <column name="kodgroup" class="java.lang.Integer"/>
+      <column name="koduser" class="java.lang.Integer"/>
+      <column name="username" class="java.lang.String"/>
+      <column name="fullname" class="java.lang.String"/>
+      <column name="isactive" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZptitlosXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZptitlosXrisiDto">
+      <column name="kodtitlos" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desctitlos" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsrmembersUserListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsrmembersUserListDto">
+      <column name="kodgroup" class="java.lang.Integer"/>
+      <column name="koduser" class="java.lang.Integer"/>
+      <column name="descgroup" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnKratNoapodMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnKratNoapodDto">
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="kodkratapod" class="java.lang.Float"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnAnalisiEpidomAutoforosMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnAnalisiEpidomAutoforosDto">
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="descepidom" class="java.lang.String"/>
+      <column name="kodepidom" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="sum" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickUsrusersWithadminMapping">
+    <constructor-result target-class="com.test.abc.dto.PickUsrusersWithadminDto">
+      <column name="koduser" class="java.lang.Integer"/>
+      <column name="username" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFinalFormMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFinalFormDto">
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="title" class="java.lang.String"/>
+      <column name="kodkat" class="java.lang.String"/>
+      <column name="kodperiod" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthZpyvarListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthZpyvarListDto">
+      <column name="kodyvar" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descyvar" class="java.lang.String"/>
+      <column name="expr" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthFinalYpalMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthFinalYpalDto">
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthZpthesiListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthZpthesiListDto">
+      <column name="kodthesi" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descthesi" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnFinalTotalMisthMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnFinalTotalMisthDto">
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="title" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsrusersListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsrusersListDto">
+      <column name="username" class="java.lang.String"/>
+      <column name="fullname" class="java.lang.String"/>
+      <column name="isactive" class="java.lang.Integer"/>
+      <column name="koduser" class="java.lang.Integer"/>
+      <column name="password" class="java.lang.String"/>
+      <column name="tomeas" class="java.lang.String"/>
+      <column name="idiotita" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthReportYpalMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthReportYpalDto">
+      <column name="kodreport" class="java.lang.String"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFyloListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFyloListDto">
+      <column name="kodfylo" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descfylo" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnYpalNewklimakioMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnYpalNewklimakioDto">
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="newexeldate" class="java.util.Date"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickUsrappsMapping">
+    <constructor-result target-class="com.test.abc.dto.PickUsrappsDto">
+      <column name="kodapp" class="java.lang.String"/>
+      <column name="descapp" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZpkatXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZpkatXrisiDto">
+      <column name="kodkat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desckat" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnKratTotalMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnKratTotalDto">
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="plirdate" class="java.util.Date"/>
+      <column name="descperiod" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsrgroupsFormMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsrgroupsFormDto">
+      <column name="kodgroup" class="java.lang.Integer"/>
+      <column name="descgroup" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthReportListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthReportListDto">
+      <column name="kodreport" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descreport" class="java.lang.String"/>
+      <column name="print_margin_top" class="java.lang.Integer"/>
+      <column name="print_margin_bottom" class="java.lang.Integer"/>
+      <column name="print_margin_left" class="java.lang.Integer"/>
+      <column name="print_margin_right" class="java.lang.Integer"/>
+      <column name="print_orientation" class="java.lang.Integer"/>
+      <column name="print_paper_size" class="java.lang.Integer"/>
+      <column name="print_scale" class="java.lang.Integer"/>
+      <column name="subtitle" class="java.lang.String"/>
+      <column name="prn_notes1" class="java.lang.String"/>
+      <column name="prn_notes2" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthReportFormMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthReportFormDto">
+      <column name="kodreport" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descreport" class="java.lang.String"/>
+      <column name="print_margin_top" class="java.lang.Integer"/>
+      <column name="print_margin_bottom" class="java.lang.Integer"/>
+      <column name="print_margin_left" class="java.lang.Integer"/>
+      <column name="print_margin_right" class="java.lang.Integer"/>
+      <column name="print_orientation" class="java.lang.Integer"/>
+      <column name="print_paper_size" class="java.lang.Integer"/>
+      <column name="print_scale" class="java.lang.Integer"/>
+      <column name="subtitle" class="java.lang.String"/>
+      <column name="prn_notes1" class="java.lang.String"/>
+      <column name="prn_notes2" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthReportColsListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthReportColsListDto">
+      <column name="kodcol" class="java.lang.Integer"/>
+      <column name="kodreport" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="expr" class="java.lang.String"/>
+      <column name="header_text" class="java.lang.String"/>
+      <column name="width" class="java.lang.Integer"/>
+      <column name="aa" class="java.lang.Float"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthZpstathListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthZpstathListDto">
+      <column name="kodstath" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descstath" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthFyloXrisiCheckMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthFyloXrisiCheckDto">
+      <column name="kodfylo" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descfylo" class="java.lang.String"/>
+      <column name="checked" class="java.lang.Integer"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthYpalNewklimakioMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthYpalNewklimakioDto">
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="exeldate" class="java.util.Date"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthFyloKratListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthFyloKratListDto">
+      <column name="kodfylo" class="java.lang.String"/>
+      <column name="kodkrat" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="expr" class="java.lang.String"/>
+      <column name="aa" class="java.lang.Float"/>
+      <column name="notes" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthZpstathXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthZpstathXrisiDto">
+      <column name="kodstath" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="descstath" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="sprnFinalKratYpalMapping">
+    <constructor-result target-class="com.test.abc.dto.SprnFinalKratYpalDto">
+      <column name="desckrat" class="java.lang.String"/>
+      <column name="poso" class="java.lang.Integer"/>
+      <column name="notes" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwUsrusersAdminFormMapping">
+    <constructor-result target-class="com.test.abc.dto.DwUsrusersAdminFormDto">
+      <column name="koduser" class="java.lang.Integer"/>
+      <column name="username" class="java.lang.String"/>
+      <column name="fullname" class="java.lang.String"/>
+      <column name="password" class="java.lang.String"/>
+      <column name="isactive" class="java.lang.Integer"/>
+      <column name="tomeas" class="java.lang.String"/>
+      <column name="idiotita" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="dwMisthKratapodListMapping">
+    <constructor-result target-class="com.test.abc.dto.DwMisthKratapodListDto">
+      <column name="kodkratapod" class="java.lang.Float"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+      <column name="desckratapod" class="java.lang.String"/>
+      <column name="apoddate" class="java.util.Date"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="pickMisthReportXrisiMapping">
+    <constructor-result target-class="com.test.abc.dto.PickMisthReportXrisiDto">
+      <column name="kodreport" class="java.lang.String"/>
+      <column name="descreport" class="java.lang.String"/>
+      <column name="kodxrisi" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <sql-result-set-mapping name="prnFinalAtomikiMisthArgMapping">
+    <constructor-result target-class="com.test.abc.dto.PrnFinalAtomikiMisthArgDto">
+      <column name="surname" class="java.lang.String"/>
+      <column name="name" class="java.lang.String"/>
+      <column name="fathername" class="java.lang.String"/>
+      <column name="mitroo" class="java.lang.String"/>
+      <column name="adt" class="java.lang.String"/>
+      <column name="afm" class="java.lang.String"/>
+      <column name="doy" class="java.lang.String"/>
+      <column name="bankno" class="java.lang.String"/>
+      <column name="bank" class="java.lang.String"/>
+      <column name="childs" class="java.lang.Integer"/>
+      <column name="prostmeli" class="java.lang.Integer"/>
+      <column name="klimakio" class="java.lang.Integer"/>
+      <column name="bathmos" class="java.lang.String"/>
+      <column name="klados" class="java.lang.String"/>
+      <column name="birthdate" class="java.util.Date"/>
+      <column name="hireddate" class="java.util.Date"/>
+      <column name="descoikog" class="java.lang.String"/>
+      <column name="descidikot" class="java.lang.String"/>
+      <column name="descthesi" class="java.lang.String"/>
+      <column name="desctmima" class="java.lang.String"/>
+      <column name="kodfinal" class="java.lang.Integer"/>
+      <column name="aa" class="java.lang.Float"/>
+      <column name="descfinal" class="java.lang.String"/>
+      <column name="datefinal" class="java.util.Date"/>
+      <column name="title" class="java.lang.String"/>
+      <column name="kodypal" class="java.lang.Integer"/>
+      <column name="desctamio" class="java.lang.String"/>
+    </constructor-result>
+  </sql-result-set-mapping>
+
+  <entity class="com.test.abc.entity.MisthYpalYvar">
+      <named-native-query name="dwMisthYpalYvarListMapping" result-set-mapping="dwMisthYpalYvarListMapping">
+        <query><![CDATA[
+          select  misth_ypal_yvar.kodypal, misth_ypal_yvar.kodyvar, misth_ypal_yvar.kodxrisi, misth_ypal_yvar.aa, misth_ypal_yvar.expr from misth_ypal_yvar  WHERE ( misth_ypal_yvar.kodypal = :arg_kodypal ) and ( misth_ypal_yvar.kodxrisi = :arg_kodxrisi )  order by misth_ypal_yvar.aa ASC, misth_ypal_yvar.kodyvar ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.Afxptoseis">
+      <named-native-query name="dwAfxptoseisFormMapping" result-set-mapping="dwAfxptoseisFormMapping">
+        <query><![CDATA[
+          select  afxptoseis.onom, afxptoseis.gen, afxptoseis.ait from afxptoseis  WHERE afxptoseis.onom = :as_onom  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwAfxptoseisListMapping" result-set-mapping="dwAfxptoseisListMapping">
+        <query><![CDATA[
+          select  afxptoseis.onom, afxptoseis.gen, afxptoseis.ait from afxptoseis  
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthKratapod">
+      <named-native-query name="dwMisthKratapodListMapping" result-set-mapping="dwMisthKratapodListMapping">
+        <query><![CDATA[
+          select  misth_kratapod.kodkratapod, misth_kratapod.kodxrisi, misth_kratapod.desckratapod, misth_kratapod.apoddate from misth_kratapod  WHERE misth_kratapod.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.Usrapps">
+      <named-native-query name="dwUsrappsListMapping" result-set-mapping="dwUsrappsListMapping">
+        <query><![CDATA[
+          select  usrapps.kodapp, usrapps.descapp from usrapps  order by usrapps.descapp ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwUsractionsListMapping" result-set-mapping="dwUsractionsListMapping">
+        <query><![CDATA[
+          select  usractions.kodaction, usractions.kodapp, usractions.descaction, usrapps.descapp from usractions, usrapps  WHERE usractions.kodapp = usrapps.kodapp order by usrapps.descapp ASC, usractions.descaction ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickUsrappsMapping" result-set-mapping="pickUsrappsMapping">
+        <query><![CDATA[
+          select  usrapps.kodapp, usrapps.descapp from usrapps  order by usrapps.descapp ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthFinalYpalKrat">
+      <named-native-query name="dwMisthFinalYpalKratListMapping" result-set-mapping="dwMisthFinalYpalKratListMapping">
+        <query><![CDATA[
+          select  misth_final_ypal_krat.kodfinal, misth_final_ypal_krat.kodypal, misth_final_ypal_krat.kodkrat, misth_final_ypal_krat.kodxrisi, misth_final_ypal_krat.poso, misth_final_ypal_krat.aa, misth_final_ypal_krat.notes from misth_final_ypal_krat  WHERE misth_final_ypal_krat.kodfinal = :arg_kodfinal and misth_final_ypal_krat.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.Afxfilter">
+      <named-native-query name="dwAfxfilterListMapping" result-set-mapping="dwAfxfilterListMapping">
+        <query><![CDATA[
+          select  afxfilter.kodfilter, afxfilter.descfilter, afxfilter.tablename from afxfilter  WHERE afxfilter.tablename = :argtrablename  order by afxfilter.descfilter ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpepidom">
+      <named-native-query name="pickMisthZpepidomXrisiMapping" result-set-mapping="pickMisthZpepidomXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpepidom.kodepidom, misth_zpepidom.kodxrisi, misth_zpepidom.descepidom from misth_zpepidom  WHERE misth_zpepidom.kodxrisi = :arg_kodxrisi  order by misth_zpepidom.descepidom ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthFylo">
+      <named-native-query name="dwMisthFyloFormMapping" result-set-mapping="dwMisthFyloFormMapping">
+        <query><![CDATA[
+          select  misth_fylo.kodfylo, misth_fylo.kodxrisi, misth_fylo.descfylo from misth_fylo  WHERE misth_fylo.kodfylo = :arg_kodfylo and misth_fylo.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthFyloXrisiMapping" result-set-mapping="pickMisthFyloXrisiMapping">
+        <query><![CDATA[
+          select  misth_fylo.kodfylo, misth_fylo.kodxrisi, misth_fylo.descfylo from misth_fylo  WHERE misth_fylo.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthFyloListMapping" result-set-mapping="dwMisthFyloListMapping">
+        <query><![CDATA[
+          select  misth_fylo.kodfylo, misth_fylo.kodxrisi, misth_fylo.descfylo from misth_fylo  WHERE misth_fylo.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthFyloXrisiCheckMapping" result-set-mapping="pickMisthFyloXrisiCheckMapping">
+        <query><![CDATA[
+          select  misth_fylo.kodfylo, misth_fylo.kodxrisi, misth_fylo.descfylo, 0 as checked from misth_fylo  WHERE misth_fylo.kodxrisi = :arg_kodxrisi  order by misth_fylo.descfylo ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.Usrusers">
+      <named-native-query name="pickUsrusersMapping" result-set-mapping="pickUsrusersMapping">
+        <query><![CDATA[
+          select  usrusers.koduser, usrusers.username from usrusers  WHERE usrusers.koduser <> -1  order by usrusers.username ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwUsrusersFormMapping" result-set-mapping="dwUsrusersFormMapping">
+        <query><![CDATA[
+          select  usrusers.koduser, usrusers.username, usrusers.fullname, usrusers.password, usrusers.isactive, usrusers.tomeas, usrusers.idiotita from usrusers  WHERE usrusers.koduser = :arg_koduser  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwUsrmembersGroupListMapping" result-set-mapping="dwUsrmembersGroupListMapping">
+        <query><![CDATA[
+          select  usrmembers.kodgroup, usrmembers.koduser, usrusers.username, usrusers.fullname, usrusers.isactive from usrmembers, usrusers WHERE usrmembers.koduser = usrusers.koduser AND ( usrmembers.kodgroup = :arg_kodgroup  ) order by usrusers.username ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickUsrusersWithadminMapping" result-set-mapping="pickUsrusersWithadminMapping">
+        <query><![CDATA[
+          select  usrusers.koduser, usrusers.username from usrusers  order by usrusers.username ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwUsrusersListMapping" result-set-mapping="dwUsrusersListMapping">
+        <query><![CDATA[
+          select  usrusers.username, usrusers.fullname, usrusers.isactive, usrusers.koduser, usrusers.password, usrusers.tomeas, usrusers.idiotita from usrusers  WHERE ( usrusers.koduser <> -1 )  order by usrusers.username ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwUsrusersAdminFormMapping" result-set-mapping="dwUsrusersAdminFormMapping">
+        <query><![CDATA[
+          select  usrusers.koduser, usrusers.username, usrusers.fullname, usrusers.password, usrusers.isactive, usrusers.tomeas, usrusers.idiotita from usrusers  WHERE usrusers.koduser = -1  
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthReportYpal">
+      <named-native-query name="sprnReport2Mapping" result-set-mapping="sprnReport2Mapping">
+        <query><![CDATA[
+          select  misth_report_ypal.kodreport, misth_report_ypal.kodypal, misth_report_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_report.subtitle, misth_report.prn_notes1, misth_report.prn_notes2 from misth_report_ypal, misth_ypal, misth_report WHERE misth_report_ypal.kodypal = misth_ypal.kodypal AND misth_report_ypal.kodxrisi = misth_ypal.kodxrisi AND misth_report_ypal.kodreport = misth_report.kodreport AND misth_report_ypal.kodxrisi = misth_report.kodxrisi AND ( misth_report_ypal.kodreport = :arg_kodreport and misth_report_ypal.kodxrisi = :arg_kodxrisi  ) order by misth_ypal.surname ASC, misth_ypal.name ASC, misth_ypal.fathername ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnReportMapping" result-set-mapping="sprnReportMapping">
+        <query><![CDATA[
+          select  misth_report_ypal.kodreport, misth_report_ypal.kodypal, misth_report_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_ypal.mitroo from misth_report_ypal, misth_ypal WHERE misth_report_ypal.kodypal = misth_ypal.kodypal AND misth_report_ypal.kodxrisi = misth_ypal.kodxrisi AND ( misth_report_ypal.kodreport = :arg_kodreport and misth_report_ypal.kodxrisi = :arg_kodxrisi  ) order by misth_ypal.surname ASC, misth_ypal.name ASC, misth_ypal.fathername ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthReportYpalMapping" result-set-mapping="pickMisthReportYpalMapping">
+        <query><![CDATA[
+          select  misth_report_ypal.kodreport, misth_report_ypal.kodypal, misth_report_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername from misth_report_ypal, misth_ypal WHERE misth_report_ypal.kodypal = misth_ypal.kodypal AND misth_report_ypal.kodxrisi = misth_ypal.kodxrisi AND ( misth_report_ypal.kodreport = :arg_kodreport and misth_report_ypal.kodxrisi = :arg_kodxrisi  ) 
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.Usrmembers">
+      <named-native-query name="dwUsrmembersUserListMapping" result-set-mapping="dwUsrmembersUserListMapping">
+        <query><![CDATA[
+          select  usrmembers.kodgroup, usrmembers.koduser, usrgroups.descgroup from usrmembers, usrgroups WHERE usrgroups.kodgroup = usrmembers.kodgroup AND ( usrmembers.koduser = :arg_koduser  ) order by usrgroups.descgroup ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthFinalYpalEpidom">
+      <named-native-query name="sprnYpalPeriodEpidomMapping" result-set-mapping="sprnYpalPeriodEpidomMapping">
+        <query><![CDATA[
+          select  misth_zpepidom.descepidom, misth_final_ypal_epidom.poso, misth_final_ypal_epidom.notes, sum(misth_final_ypal_epidom.poso) as sum_poso from misth_final_ypal_epidom, misth_zpepidom, misth_final, misth_final_ypal WHERE misth_final_ypal_epidom.kodepidom = misth_zpepidom.kodepidom AND misth_final_ypal_epidom.kodxrisi = misth_zpepidom.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_epidom.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_epidom.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_epidom.kodxrisi AND misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND ( misth_final_ypal_epidom.kodxrisi = :arg_kodxrisi and misth_final_ypal_epidom.kodypal = :arg_kodypal and misth_final_ypal.plirdate >= :arg_fromdate and misth_final_ypal.plirdate <= :arg_todate  ) order by misth_final_ypal_epidom.aa ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnAnalisiEpidomAsfMapping" result-set-mapping="sprnAnalisiEpidomAsfMapping">
+        <query><![CDATA[
+          select  misth_final_ypal_epidom.poso, misth_zpepidom.descepidom, misth_final_ypal_epidom.kodepidom, misth_final_ypal_epidom.kodxrisi, sum(misth_final_ypal_epidom.poso) as cm_sumposo from misth_final_ypal_epidom, misth_zpepidom, misth_final_ypal WHERE misth_final_ypal_epidom.kodepidom = misth_zpepidom.kodepidom AND misth_final_ypal_epidom.kodxrisi = misth_zpepidom.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_epidom.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_epidom.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_epidom.kodxrisi AND ( misth_final_ypal_epidom.kodxrisi = :arg_kodxrisi and misth_final_ypal_epidom.kodypal = :arg_kodypal and misth_zpepidom.isasf = 1 and misth_final_ypal.plirdate is not null  ) order by misth_zpepidom.descepidom ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnFinalEpidomYpalMapping" result-set-mapping="sprnFinalEpidomYpalMapping">
+        <query><![CDATA[
+          select  misth_zpepidom.descepidom, misth_final_ypal_epidom.poso, misth_final_ypal_epidom.notes from misth_final_ypal_epidom, misth_zpepidom WHERE misth_final_ypal_epidom.kodepidom = misth_zpepidom.kodepidom AND misth_final_ypal_epidom.kodxrisi = misth_zpepidom.kodxrisi AND ( ( ( misth_final_ypal_epidom.kodfinal = :arg_kodfinal ) and ( misth_final_ypal_epidom.kodypal = :arg_kodypal ) and ( misth_final_ypal_epidom.kodxrisi = :arg_kodxrisi ) )  ) order by misth_final_ypal_epidom.aa ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthFinalYpalEpidomListMapping" result-set-mapping="dwMisthFinalYpalEpidomListMapping">
+        <query><![CDATA[
+          select  misth_final_ypal_epidom.kodfinal, misth_final_ypal_epidom.kodypal, misth_final_ypal_epidom.kodepidom, misth_final_ypal_epidom.kodxrisi, misth_final_ypal_epidom.poso, misth_final_ypal_epidom.aa, misth_final_ypal_epidom.notes from misth_final_ypal_epidom  WHERE misth_final_ypal_epidom.kodfinal = :arg_kodfinal and misth_final_ypal_epidom.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnFinalEpidomMisthMapping" result-set-mapping="sprnFinalEpidomMisthMapping">
+        <query><![CDATA[
+          SELECT  misth_zpepidom.descepidom ,
+                     sum(misth_final_ypal_epidom.poso) as sum_poso
+                  FROM misth_final_ypal_epidom ,
+                     misth_zpepidom     
+                  WHERE ( misth_final_ypal_epidom.kodepidom = misth_zpepidom.kodepidom ) and          ( misth_zpepidom.kodxrisi = misth_final_ypal_epidom.kodxrisi ) and          ( ( misth_final_ypal_epidom.kodfinal = :arg_kodfinal ) and          ( misth_final_ypal_epidom.kodxrisi = :arg_kodxrisi ) ) 
+                  GROUP BY misth_zpepidom.kodepidom ,
+                     misth_zpepidom.descepidom   
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnAnalisiEpidomNoforosMapping" result-set-mapping="sprnAnalisiEpidomNoforosMapping">
+        <query><![CDATA[
+          select  misth_final_ypal_epidom.poso, misth_zpepidom.descepidom, misth_final_ypal_epidom.kodepidom, misth_final_ypal_epidom.kodxrisi, sum(misth_final_ypal_epidom.poso) as cm_sumposo from misth_final_ypal_epidom, misth_zpepidom, misth_final_ypal WHERE misth_final_ypal_epidom.kodepidom = misth_zpepidom.kodepidom AND misth_final_ypal_epidom.kodxrisi = misth_zpepidom.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_epidom.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_epidom.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_epidom.kodxrisi AND ( misth_final_ypal_epidom.kodxrisi = :arg_kodxrisi and misth_final_ypal_epidom.kodypal = :arg_kodypal and misth_zpepidom.hasforo = 0 and misth_zpepidom.isasf = 0 and misth_zpepidom.autoforos = 0 and misth_final_ypal.plirdate is not null  ) order by misth_zpepidom.descepidom ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnAnalisiEpidomForosMapping" result-set-mapping="sprnAnalisiEpidomForosMapping">
+        <query><![CDATA[
+          select  misth_final_ypal_epidom.poso, misth_zpepidom.descepidom, misth_final_ypal_epidom.kodepidom, misth_final_ypal_epidom.kodxrisi, sum(misth_final_ypal_epidom.poso) as cm_sumposo from misth_final_ypal_epidom, misth_zpepidom, misth_final_ypal WHERE misth_final_ypal_epidom.kodepidom = misth_zpepidom.kodepidom AND misth_final_ypal_epidom.kodxrisi = misth_zpepidom.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_epidom.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_epidom.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_epidom.kodxrisi AND ( misth_final_ypal_epidom.kodxrisi = :arg_kodxrisi and misth_final_ypal_epidom.kodypal = :arg_kodypal and misth_zpepidom.hasforo = 1 and misth_zpepidom.autoforos = 0 and misth_final_ypal.plirdate is not null  ) order by misth_zpepidom.descepidom ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnAnalisiEpidomAutoforosMapping" result-set-mapping="sprnAnalisiEpidomAutoforosMapping">
+        <query><![CDATA[
+          select  misth_final_ypal_epidom.poso, misth_zpepidom.descepidom, misth_final_ypal_epidom.kodepidom, misth_final_ypal_epidom.kodxrisi, sum(misth_final_ypal_epidom.poso) as cm_sumposo from misth_final_ypal_epidom, misth_zpepidom, misth_final_ypal WHERE misth_final_ypal_epidom.kodepidom = misth_zpepidom.kodepidom AND misth_final_ypal_epidom.kodxrisi = misth_zpepidom.kodxrisi AND misth_final_ypal_epidom.kodfinal = misth_final_ypal.kodfinal AND misth_final_ypal_epidom.kodypal = misth_final_ypal.kodypal AND misth_final_ypal_epidom.kodxrisi = misth_final_ypal.kodxrisi AND ( misth_final_ypal_epidom.kodxrisi = :arg_kodxrisi and misth_final_ypal_epidom.kodypal = :arg_kodypal and misth_zpepidom.autoforos = 1 and misth_zpepidom.hasforo = 0 and misth_final_ypal.plirdate is not null  ) order by misth_zpepidom.descepidom ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthReport">
+      <named-native-query name="dwMisthReportFormNotesMapping" result-set-mapping="dwMisthReportFormNotesMapping">
+        <query><![CDATA[
+          select  misth_report.kodreport, misth_report.kodxrisi, misth_report.descreport, misth_report.print_margin_top, misth_report.print_margin_bottom, misth_report.print_margin_left, misth_report.print_margin_right, misth_report.print_orientation, misth_report.print_paper_size, misth_report.print_scale, misth_report.subtitle, misth_report.prn_notes1, misth_report.prn_notes2 from misth_report  WHERE misth_report.kodreport = :arg_kodreport and misth_report.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthReportListMapping" result-set-mapping="dwMisthReportListMapping">
+        <query><![CDATA[
+          select  misth_report.kodreport, misth_report.kodxrisi, misth_report.descreport, misth_report.print_margin_top, misth_report.print_margin_bottom, misth_report.print_margin_left, misth_report.print_margin_right, misth_report.print_orientation, misth_report.print_paper_size, misth_report.print_scale, misth_report.subtitle, misth_report.prn_notes1, misth_report.prn_notes2 from misth_report  WHERE misth_report.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthReportFormMapping" result-set-mapping="dwMisthReportFormMapping">
+        <query><![CDATA[
+          select  misth_report.kodreport, misth_report.kodxrisi, misth_report.descreport, misth_report.print_margin_top, misth_report.print_margin_bottom, misth_report.print_margin_left, misth_report.print_margin_right, misth_report.print_orientation, misth_report.print_paper_size, misth_report.print_scale, misth_report.subtitle, misth_report.prn_notes1, misth_report.prn_notes2 from misth_report  WHERE misth_report.kodreport = :arg_kodreport and misth_report.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthReportXrisiMapping" result-set-mapping="pickMisthReportXrisiMapping">
+        <query><![CDATA[
+          select  misth_report.kodreport, misth_report.descreport, misth_report.kodxrisi from misth_report  WHERE misth_report.kodxrisi = :arg_kodxrisi  order by misth_report.descreport ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZptmima">
+      <named-native-query name="dwMisthZptmimaListMapping" result-set-mapping="dwMisthZptmimaListMapping">
+        <query><![CDATA[
+          select  misth_zptmima.kodtmima, misth_zptmima.kodxrisi, misth_zptmima.desctmima from misth_zptmima  WHERE misth_zptmima.kodxrisi = :arg_kodxrisi  order by misth_zptmima.kodtmima ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthZptmimaXrisiMapping" result-set-mapping="pickMisthZptmimaXrisiMapping">
+        <query><![CDATA[
+          select  misth_zptmima.kodtmima, misth_zptmima.kodxrisi, misth_zptmima.desctmima from misth_zptmima  WHERE misth_zptmima.kodxrisi = :arg_kodxrisi  order by misth_zptmima.desctmima ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpoikog">
+      <named-native-query name="dwMisthZpoikogListMapping" result-set-mapping="dwMisthZpoikogListMapping">
+        <query><![CDATA[
+          select  misth_zpoikog.kodoikog, misth_zpoikog.kodxrisi, misth_zpoikog.descoikog from misth_zpoikog  WHERE misth_zpoikog.kodxrisi = :arg_kodxrisi  order by misth_zpoikog.kodoikog ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthZpoikogXrisiMapping" result-set-mapping="pickMisthZpoikogXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpoikog.kodoikog, misth_zpoikog.kodxrisi, misth_zpoikog.descoikog from misth_zpoikog  WHERE misth_zpoikog.kodxrisi = :arg_kodxrisi  order by misth_zpoikog.descoikog ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthFyloKrat">
+      <named-native-query name="dwMisthFyloKratListMapping" result-set-mapping="dwMisthFyloKratListMapping">
+        <query><![CDATA[
+          select  misth_fylo_krat.kodfylo, misth_fylo_krat.kodkrat, misth_fylo_krat.kodxrisi, misth_fylo_krat.expr, misth_fylo_krat.aa, misth_fylo_krat.notes from misth_fylo_krat  WHERE misth_fylo_krat.kodfylo = :arg_kodfylo and misth_fylo_krat.kodxrisi = :arg_kodxrisi  order by misth_fylo_krat.aa ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpperiod">
+      <named-native-query name="dwMisthZpperiodListMapping" result-set-mapping="dwMisthZpperiodListMapping">
+        <query><![CDATA[
+          select  misth_zpperiod.kodperiod, misth_zpperiod.kodxrisi, misth_zpperiod.descperiod, misth_zpperiod.orderno from misth_zpperiod  WHERE misth_zpperiod.kodxrisi = :arg_kodxrisi  order by misth_zpperiod.orderno ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="selMisthZpperiodXrisiMapping" result-set-mapping="selMisthZpperiodXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpperiod.kodperiod, misth_zpperiod.kodxrisi, misth_zpperiod.descperiod, 0 as issel from misth_zpperiod  WHERE misth_zpperiod.kodxrisi = :arg_kodxrisi  order by misth_zpperiod.orderno ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthZpperiodXrisiMapping" result-set-mapping="pickMisthZpperiodXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpperiod.kodperiod, misth_zpperiod.kodxrisi, misth_zpperiod.descperiod from misth_zpperiod  WHERE misth_zpperiod.kodxrisi = :arg_kodxrisi  order by misth_zpperiod.orderno ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnFinalNopaidAnaKatastMapping" result-set-mapping="prnFinalNopaidAnaKatastMapping">
+        <query><![CDATA[
+          select  misth_final.descfinal, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final.kodfinal, misth_final.datefinal, misth_final_ypal.plirdate, misth_final_ypal.kodypal, misth_final_ypal.kodxrisi, misth_final_ypal.kodfinal AS kodfinal1, misth_zpperiod.descperiod, misth_final.aa from misth_final_ypal, misth_final, misth_ypal, misth_zpperiod WHERE misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND misth_ypal.kodypal = misth_final_ypal.kodypal AND misth_ypal.kodxrisi = misth_final_ypal.kodxrisi AND misth_final.kodperiod = misth_zpperiod.kodperiod AND misth_final.kodxrisi = misth_zpperiod.kodxrisi AND ( misth_final.kodxrisi = :arg_kodxrisi and misth_final_ypal.plirdate is null  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnFinalNopaidAnaYpalMapping" result-set-mapping="prnFinalNopaidAnaYpalMapping">
+        <query><![CDATA[
+          select  misth_final.descfinal, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final.kodfinal, misth_final.datefinal, misth_final_ypal.plirdate, misth_final_ypal.kodypal, misth_final_ypal.kodxrisi, misth_zpperiod.descperiod, misth_final.aa from misth_final_ypal, misth_final, misth_ypal, misth_zpperiod WHERE misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND misth_ypal.kodypal = misth_final_ypal.kodypal AND misth_ypal.kodxrisi = misth_final_ypal.kodxrisi AND misth_final.kodperiod = misth_zpperiod.kodperiod AND misth_final.kodxrisi = misth_zpperiod.kodxrisi AND ( misth_final.kodxrisi = :arg_kodxrisi and misth_final_ypal.plirdate is null  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnYpalFinalMapping" result-set-mapping="sprnYpalFinalMapping">
+        <query><![CDATA[
+          select  misth_final.datefinal, misth_final.descfinal, misth_final.kodfinal, misth_final_ypal.kodypal, misth_final_ypal.plirdate, misth_zpperiod.descperiod, misth_final.aa from misth_final, misth_final_ypal, misth_zpperiod WHERE misth_final_ypal.kodfinal = misth_final.kodfinal AND misth_final_ypal.kodxrisi = misth_final.kodxrisi AND misth_final.kodperiod = misth_zpperiod.kodperiod AND misth_final.kodxrisi = misth_zpperiod.kodxrisi AND ( misth_final_ypal.kodypal = :arg_kodypal and misth_final_ypal.kodxrisi = :arg_kodxrisi and misth_final_ypal.plirdate is not null  ) order by misth_final.datefinal ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpyvar">
+      <named-native-query name="dwMisthZpyvarFormMapping" result-set-mapping="dwMisthZpyvarFormMapping">
+        <query><![CDATA[
+          select  misth_zpyvar.kodyvar, misth_zpyvar.kodxrisi, misth_zpyvar.descyvar, misth_zpyvar.expr from misth_zpyvar  WHERE ( misth_zpyvar.kodyvar = :arg_kodyvar ) and ( misth_zpyvar.kodxrisi = :arg_kodxrisi )  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthZpyvarXrisiMapping" result-set-mapping="pickMisthZpyvarXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpyvar.kodyvar, misth_zpyvar.kodxrisi, misth_zpyvar.descyvar from misth_zpyvar  WHERE misth_zpyvar.kodxrisi = :arg_kodxrisi  order by misth_zpyvar.descyvar ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthZpyvarListMapping" result-set-mapping="dwMisthZpyvarListMapping">
+        <query><![CDATA[
+          select  misth_zpyvar.kodyvar, misth_zpyvar.kodxrisi, misth_zpyvar.descyvar, misth_zpyvar.expr from misth_zpyvar  WHERE ( misth_zpyvar.kodxrisi = :arg_kodxrisi )  
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpstath">
+      <named-native-query name="dwMisthZpstathListMapping" result-set-mapping="dwMisthZpstathListMapping">
+        <query><![CDATA[
+          select  misth_zpstath.kodstath, misth_zpstath.kodxrisi, misth_zpstath.descstath, misth_zpstath.poso from misth_zpstath  WHERE misth_zpstath.kodxrisi = :arg_kodxrisi  order by misth_zpstath.kodstath ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthZpstathXrisiMapping" result-set-mapping="pickMisthZpstathXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpstath.kodstath, misth_zpstath.kodxrisi, misth_zpstath.descstath from misth_zpstath  WHERE misth_zpstath.kodxrisi = :arg_kodxrisi  order by misth_zpstath.descstath ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.Usrgroups">
+      <named-native-query name="dwUsrgroupsListMapping" result-set-mapping="dwUsrgroupsListMapping">
+        <query><![CDATA[
+          select  usrgroups.kodgroup, usrgroups.descgroup from usrgroups  order by usrgroups.descgroup ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickUsrgroupsMapping" result-set-mapping="pickUsrgroupsMapping">
+        <query><![CDATA[
+          select  usrgroups.kodgroup, usrgroups.descgroup from usrgroups  order by usrgroups.descgroup ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwUsrgroupsFormMapping" result-set-mapping="dwUsrgroupsFormMapping">
+        <query><![CDATA[
+          select  usrgroups.kodgroup, usrgroups.descgroup from usrgroups  WHERE usrgroups.kodgroup = :arg_kodgroup  
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthFinal">
+      <named-native-query name="dwMisthFinalFormMapping" result-set-mapping="dwMisthFinalFormMapping">
+        <query><![CDATA[
+          select  misth_final.kodfinal, misth_final.kodxrisi, misth_final.descfinal, misth_final.datefinal, misth_final.title, misth_final.kodkat, misth_final.kodperiod, misth_final.aa from misth_final  WHERE ( misth_final.kodfinal = :arg_kodfinal ) and ( misth_final.kodxrisi = :arg_kodxrisi )  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnFinalTotalMisthMapping" result-set-mapping="prnFinalTotalMisthMapping">
+        <query><![CDATA[
+          select  misth_final.kodfinal, misth_final.descfinal, misth_final.datefinal, misth_final.title, misth_final.aa from misth_final  WHERE ( misth_final.kodfinal = :arg_kodfinal ) and ( misth_final.kodxrisi = :arg_kodxrisi )  
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.Usrgroupperm">
+      <named-native-query name="dwUsrgrouppermListMapping" result-set-mapping="dwUsrgrouppermListMapping">
+        <query><![CDATA[
+          select  usrgroupperm.kodgroup, usrgroupperm.kodaction, usrgroupperm.editrec, usrgroupperm.addrec, usrgroupperm.delrec, usrgroupperm.openlist, usrgroupperm.openform, usrapps.descapp, usractions.descaction from usrgroupperm, usractions, usrapps WHERE usrgroupperm.kodaction = usractions.kodaction AND usractions.kodapp = usrapps.kodapp AND ( usrgroupperm.kodgroup = :arg_kodgroup  ) order by usrapps.descapp ASC, usractions.descaction ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthReportCols">
+      <named-native-query name="dwMisthReportColsListMapping" result-set-mapping="dwMisthReportColsListMapping">
+        <query><![CDATA[
+          select  misth_report_cols.kodcol, misth_report_cols.kodreport, misth_report_cols.kodxrisi, misth_report_cols.expr, misth_report_cols.header_text, misth_report_cols.width, misth_report_cols.aa from misth_report_cols  WHERE misth_report_cols.kodreport = :arg_kodreport and misth_report_cols.kodxrisi = :arg_kodxrisi  order by misth_report_cols.aa ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthFyloEpidom">
+      <named-native-query name="dwMisthFyloEpidomListMapping" result-set-mapping="dwMisthFyloEpidomListMapping">
+        <query><![CDATA[
+          select  misth_fylo_epidom.kodfylo, misth_fylo_epidom.kodepidom, misth_fylo_epidom.kodxrisi, misth_fylo_epidom.expr, misth_fylo_epidom.aa, misth_fylo_epidom.notes from misth_fylo_epidom  WHERE misth_fylo_epidom.kodfylo = :arg_kodfylo and misth_fylo_epidom.kodxrisi = :arg_kodxrisi  order by misth_fylo_epidom.aa ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpxrisi">
+      <named-native-query name="pickZpxrisiNocurrentMapping" result-set-mapping="pickZpxrisiNocurrentMapping">
+        <query><![CDATA[
+          select  misth_zpxrisi.kodxrisi, misth_zpxrisi.descxrisi from misth_zpxrisi  WHERE misth_zpxrisi.kodxrisi not like :arg_kodxrisi  order by misth_zpxrisi.kodxrisi ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZptamio">
+      <named-native-query name="pickMisthZptamioXrisiMapping" result-set-mapping="pickMisthZptamioXrisiMapping">
+        <query><![CDATA[
+          select  misth_zptamio.kodtamio, misth_zptamio.kodxrisi, misth_zptamio.desctamio from misth_zptamio  WHERE misth_zptamio.kodxrisi = :arg_kodxrisi  order by misth_zptamio.desctamio ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthZptamioListMapping" result-set-mapping="dwMisthZptamioListMapping">
+        <query><![CDATA[
+          select  misth_zptamio.kodtamio, misth_zptamio.kodxrisi, misth_zptamio.desctamio from misth_zptamio  WHERE misth_zptamio.kodxrisi = :arg_kodxrisi  order by misth_zptamio.kodtamio ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpkrat">
+      <named-native-query name="pickMisthZpkratXrisiMapping" result-set-mapping="pickMisthZpkratXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpkrat.kodkrat, misth_zpkrat.kodxrisi, misth_zpkrat.desckrat from misth_zpkrat  WHERE misth_zpkrat.kodxrisi = :arg_kodxrisi  order by misth_zpkrat.desckrat ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="selMisthZpkratXrisiMapping" result-set-mapping="selMisthZpkratXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpkrat.kodkrat, misth_zpkrat.kodxrisi, misth_zpkrat.desckrat, 0 as issel from misth_zpkrat  WHERE misth_zpkrat.kodxrisi = :arg_kodxrisi  order by misth_zpkrat.desckrat ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnYpalPeriodKratMapping" result-set-mapping="sprnYpalPeriodKratMapping">
+        <query><![CDATA[
+          select  misth_zpkrat.desckrat, misth_final_ypal_krat.poso, misth_final_ypal_krat.notes, sum(misth_final_ypal_krat.poso) as sum_poso from misth_final_ypal_krat, misth_zpkrat, misth_final, misth_final_ypal WHERE misth_final_ypal_krat.kodkrat = misth_zpkrat.kodkrat AND misth_final_ypal_krat.kodxrisi = misth_zpkrat.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_krat.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_krat.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_krat.kodxrisi AND misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND ( misth_final_ypal_krat.kodxrisi = :arg_kodxrisi and misth_final_ypal_krat.kodypal = :arg_kodypal and misth_final_ypal.plirdate >= :arg_fromdate and misth_final_ypal.plirdate <= :arg_todate  ) order by misth_final_ypal_krat.aa ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnAnalisiKratForosMapping" result-set-mapping="sprnAnalisiKratForosMapping">
+        <query><![CDATA[
+          select  misth_zpkrat.desckrat, misth_final_ypal_krat.kodkrat, misth_final_ypal_krat.kodxrisi, misth_final_ypal_krat.poso, sum(misth_final_ypal_krat.poso) as cm_sumposo from misth_final_ypal_krat, misth_zpkrat, misth_final_ypal WHERE misth_zpkrat.kodkrat = misth_final_ypal_krat.kodkrat AND misth_zpkrat.kodxrisi = misth_final_ypal_krat.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_krat.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_krat.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_krat.kodxrisi AND ( misth_final_ypal_krat.kodypal = :arg_kodypal and misth_final_ypal_krat.kodxrisi = :arg_kodxrisi and misth_zpkrat.isforos = 1 and misth_zpkrat.isautoforos = 0 and misth_final_ypal.plirdate is not null  ) order by misth_zpkrat.desckrat ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnFinalKratMisthMapping" result-set-mapping="sprnFinalKratMisthMapping">
+        <query><![CDATA[
+          SELECT  misth_zpkrat.desckrat ,
+                     sum(misth_final_ypal_krat.poso) as sum_poso
+              
+                  FROM misth_final_ypal_krat ,
+                     misth_zpkrat     
+                  WHERE ( misth_final_ypal_krat.kodkrat = misth_zpkrat.kodkrat ) and          ( misth_zpkrat.kodxrisi = misth_final_ypal_krat.kodxrisi ) and          ( ( misth_final_ypal_krat.kodfinal = :arg_kodfinal ) and          ( misth_final_ypal_krat.kodxrisi = :arg_kodxrisi ) ) 
+                  GROUP BY misth_zpkrat.kodkrat ,
+                     misth_zpkrat.desckrat   
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnAnalisiKratAutoforosMapping" result-set-mapping="sprnAnalisiKratAutoforosMapping">
+        <query><![CDATA[
+          select  misth_zpkrat.desckrat, misth_final_ypal_krat.kodkrat, misth_final_ypal_krat.kodxrisi, misth_final_ypal_krat.poso, sum(misth_final_ypal_krat.poso) as cm_sumposo from misth_final_ypal_krat, misth_zpkrat, misth_final_ypal WHERE misth_zpkrat.kodkrat = misth_final_ypal_krat.kodkrat AND misth_zpkrat.kodxrisi = misth_final_ypal_krat.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_krat.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_krat.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_krat.kodxrisi AND ( misth_final_ypal_krat.kodypal = :arg_kodypal and misth_final_ypal_krat.kodxrisi = :arg_kodxrisi and misth_zpkrat.isautoforos = 1 and misth_zpkrat.isforos = 0 and misth_final_ypal.plirdate is not null  ) order by misth_zpkrat.desckrat ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwStepKratapodMisthselectMapping" result-set-mapping="dwStepKratapodMisthselectMapping">
+        <query><![CDATA[
+          select  misth_final.descfinal, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_zpkrat.desckrat, misth_final_ypal_krat.poso, 0 as cm_sel, misth_final_ypal_krat.kodfinal, misth_final_ypal_krat.kodypal, misth_final_ypal_krat.kodkrat, misth_final_ypal_krat.kodxrisi, misth_final_ypal_krat.aa, misth_final_ypal_krat.notes, misth_final_ypal_krat.kodkratapod, misth_final.datefinal, misth_final_ypal.plirdate from misth_final, misth_final_ypal_krat, misth_ypal, misth_final_ypal, misth_zpkrat WHERE misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND misth_final_ypal_krat.kodfinal = misth_final_ypal.kodfinal AND misth_final_ypal_krat.kodypal = misth_final_ypal.kodypal AND misth_final_ypal_krat.kodxrisi = misth_final_ypal.kodxrisi AND misth_ypal.kodypal = misth_final_ypal.kodypal AND misth_ypal.kodxrisi = misth_final_ypal.kodxrisi AND misth_zpkrat.kodkrat = misth_final_ypal_krat.kodkrat AND misth_zpkrat.kodxrisi = misth_final_ypal_krat.kodxrisi AND ( misth_final_ypal_krat.kodxrisi = :arg_kodxrisi and misth_final_ypal_krat.kodkratapod is NULL and misth_final_ypal.plirdate is not NULL  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnKratapodMapping" result-set-mapping="prnKratapodMapping">
+        <query><![CDATA[
+          select  misth_final_ypal_krat.kodkrat, misth_zpkrat.desckrat, misth_final.descfinal, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final.kodfinal, misth_final.datefinal, misth_final_ypal_krat.kodxrisi, misth_final_ypal_krat.poso, misth_final_ypal_krat.kodkratapod, misth_final.aa from misth_final_ypal_krat, misth_zpkrat, misth_final_ypal, misth_final, misth_ypal WHERE misth_final_ypal_krat.kodkrat = misth_zpkrat.kodkrat AND misth_final_ypal_krat.kodxrisi = misth_zpkrat.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_krat.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_krat.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_krat.kodxrisi AND misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND misth_ypal.kodypal = misth_final_ypal.kodypal AND misth_ypal.kodxrisi = misth_final_ypal.kodxrisi AND ( misth_final_ypal_krat.kodxrisi = :arg_kodxrisi and misth_final_ypal_krat.kodkratapod = :arg_kodkratapod  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnAnalisiKratLoipaMapping" result-set-mapping="sprnAnalisiKratLoipaMapping">
+        <query><![CDATA[
+          select  misth_zpkrat.desckrat, misth_final_ypal_krat.kodkrat, misth_final_ypal_krat.kodxrisi, misth_final_ypal_krat.poso, sum(misth_final_ypal_krat.poso) as cm_sumposo from misth_final_ypal_krat, misth_zpkrat, misth_final_ypal WHERE misth_zpkrat.kodkrat = misth_final_ypal_krat.kodkrat AND misth_zpkrat.kodxrisi = misth_final_ypal_krat.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_krat.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_krat.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_krat.kodxrisi AND ( misth_final_ypal_krat.kodypal = :arg_kodypal and misth_final_ypal_krat.kodxrisi = :arg_kodxrisi and misth_zpkrat.isasf = 0 and misth_zpkrat.isforos = 0 and misth_zpkrat.isautoforos = 0 and misth_final_ypal.plirdate is not null  ) order by misth_zpkrat.desckrat ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnAnalisiKratAsfMapping" result-set-mapping="sprnAnalisiKratAsfMapping">
+        <query><![CDATA[
+          select  misth_zpkrat.desckrat, misth_final_ypal_krat.kodkrat, misth_final_ypal_krat.kodxrisi, misth_final_ypal_krat.poso, sum(misth_final_ypal_krat.poso) as cm_sumposo from misth_final_ypal_krat, misth_zpkrat, misth_final_ypal WHERE misth_zpkrat.kodkrat = misth_final_ypal_krat.kodkrat AND misth_zpkrat.kodxrisi = misth_final_ypal_krat.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_krat.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_krat.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_krat.kodxrisi AND ( misth_final_ypal_krat.kodypal = :arg_kodypal and misth_final_ypal_krat.kodxrisi = :arg_kodxrisi and misth_zpkrat.isasf = 1 and misth_final_ypal.plirdate is not null  ) order by misth_zpkrat.desckrat ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnKratNoapodMapping" result-set-mapping="prnKratNoapodMapping">
+        <query><![CDATA[
+          select  misth_final_ypal_krat.kodkrat, misth_zpkrat.desckrat, misth_final.descfinal, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final.kodfinal, misth_final.datefinal, misth_final_ypal_krat.kodxrisi, misth_final_ypal_krat.poso, misth_final_ypal_krat.kodkratapod, misth_final_ypal.plirdate, misth_final.aa from misth_final_ypal_krat, misth_zpkrat, misth_final_ypal, misth_final, misth_ypal WHERE misth_final_ypal_krat.kodkrat = misth_zpkrat.kodkrat AND misth_final_ypal_krat.kodxrisi = misth_zpkrat.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_krat.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_krat.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_krat.kodxrisi AND misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND misth_ypal.kodypal = misth_final_ypal.kodypal AND misth_ypal.kodxrisi = misth_final_ypal.kodxrisi AND ( misth_final_ypal_krat.kodxrisi = :arg_kodxrisi and misth_final_ypal_krat.kodkratapod is null and misth_final_ypal.plirdate is not null  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnKratTotalMapping" result-set-mapping="prnKratTotalMapping">
+        <query><![CDATA[
+          select  misth_final_ypal_krat.kodkrat, misth_zpkrat.desckrat, misth_final.descfinal, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final.kodfinal, misth_final.datefinal, misth_final_ypal_krat.kodxrisi, misth_final_ypal_krat.poso, misth_final_ypal.plirdate, misth_zpperiod.descperiod, misth_final.aa from misth_final_ypal_krat, misth_zpkrat, misth_final_ypal, misth_final, misth_ypal, misth_zpperiod WHERE misth_final_ypal_krat.kodkrat = misth_zpkrat.kodkrat AND misth_final_ypal_krat.kodxrisi = misth_zpkrat.kodxrisi AND misth_final_ypal.kodfinal = misth_final_ypal_krat.kodfinal AND misth_final_ypal.kodypal = misth_final_ypal_krat.kodypal AND misth_final_ypal.kodxrisi = misth_final_ypal_krat.kodxrisi AND misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND misth_ypal.kodypal = misth_final_ypal.kodypal AND misth_ypal.kodxrisi = misth_final_ypal.kodxrisi AND misth_final.kodperiod = misth_zpperiod.kodperiod AND misth_final.kodxrisi = misth_zpperiod.kodxrisi AND ( misth_final_ypal_krat.kodxrisi = :arg_kodxrisi  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="sprnFinalKratYpalMapping" result-set-mapping="sprnFinalKratYpalMapping">
+        <query><![CDATA[
+          select  misth_zpkrat.desckrat, misth_final_ypal_krat.poso, misth_final_ypal_krat.notes from misth_final_ypal_krat, misth_zpkrat WHERE misth_final_ypal_krat.kodkrat = misth_zpkrat.kodkrat AND misth_final_ypal_krat.kodxrisi = misth_zpkrat.kodxrisi AND ( ( ( misth_final_ypal_krat.kodfinal = :arg_kodfinal ) and ( misth_final_ypal_krat.kodypal = :arg_kodypal ) and ( misth_final_ypal_krat.kodxrisi = :arg_kodxrisi ) )  ) order by misth_final_ypal_krat.aa ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthFinalYpal">
+      <named-native-query name="sprnReport3Mapping" result-set-mapping="sprnReport3Mapping">
+        <query><![CDATA[
+          select  misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final.aa, misth_final.datefinal, misth_ypal.kodypal, misth_final.title, misth_final.kodfinal from misth_ypal, misth_final_ypal, misth_final WHERE misth_ypal.kodypal = misth_final_ypal.kodypal AND misth_final_ypal.kodxrisi = misth_ypal.kodxrisi AND misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND ( misth_final_ypal.kodfinal = :arg_kodfinal and misth_final_ypal.kodxrisi = :arg_kodxrisi  ) order by misth_ypal.surname ASC, misth_ypal.name ASC, misth_ypal.fathername ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthFinalYpalPrildateMapping" result-set-mapping="dwMisthFinalYpalPrildateMapping">
+        <query><![CDATA[
+          select  misth_final_ypal.kodfinal, misth_final_ypal.kodypal, misth_final_ypal.kodxrisi, misth_final_ypal.plirdate from misth_final_ypal  WHERE misth_final_ypal.kodfinal = :arg_kodfinal and misth_final_ypal.kodxrisi = :arg_kodxrisi  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnFinalYpalListMapping" result-set-mapping="prnFinalYpalListMapping">
+        <query><![CDATA[
+          select  misth_final.descfinal, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final.kodfinal, misth_final.datefinal, misth_final_ypal.plirdate, misth_final_ypal.kodypal, misth_final_ypal.kodxrisi, misth_final_ypal.kodfinal AS kodfinal1, misth_final.title, misth_ypal.mitroo, misth_final.aa from misth_final_ypal, misth_final, misth_ypal WHERE misth_final.kodfinal = misth_final_ypal.kodfinal AND misth_final.kodxrisi = misth_final_ypal.kodxrisi AND misth_ypal.kodypal = misth_final_ypal.kodypal AND misth_ypal.kodxrisi = misth_final_ypal.kodxrisi AND ( misth_final.kodfinal = :arg_kodfinal and misth_final.kodxrisi = :arg_kodxrisi  ) order by misth_ypal.surname ASC, misth_ypal.name ASC, misth_ypal.fathername ASC, misth_ypal.mothername ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthFinalYpalPlirdateListMapping" result-set-mapping="dwMisthFinalYpalPlirdateListMapping">
+        <query><![CDATA[
+          select  misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final_ypal.plirdate, misth_final_ypal.kodfinal, misth_final_ypal.kodypal, misth_final_ypal.kodxrisi from misth_final_ypal, misth_ypal WHERE misth_final_ypal.kodypal = misth_ypal.kodypal AND misth_final_ypal.kodxrisi = misth_ypal.kodxrisi AND ( misth_final_ypal.kodfinal = :arg_kodfinal and misth_final_ypal.kodxrisi = :arg_kodxrisi  ) order by misth_ypal.surname ASC, misth_ypal.name ASC, misth_ypal.fathername ASC, misth_ypal.mothername ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthFinalYpalListMapping" result-set-mapping="dwMisthFinalYpalListMapping">
+        <query><![CDATA[
+          select  misth_final.datefinal, misth_final.descfinal, misth_final.kodfinal, misth_final_ypal.kodypal, misth_final_ypal.plirdate, if(isnull(misth_final_ypal.plirdate), 0, 1) as cm_paid from misth_final, misth_final_ypal WHERE misth_final_ypal.kodfinal = misth_final.kodfinal AND misth_final_ypal.kodxrisi = misth_final.kodxrisi AND ( misth_final_ypal.kodypal = :arg_kodypal and misth_final_ypal.kodxrisi = :arg_kodxrisi  ) order by misth_final.datefinal ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthFinalYpalMapping" result-set-mapping="pickMisthFinalYpalMapping">
+        <query><![CDATA[
+          select  misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final_ypal.kodypal from misth_final_ypal, misth_ypal WHERE misth_final_ypal.kodypal = misth_ypal.kodypal AND misth_final_ypal.kodxrisi = misth_ypal.kodxrisi AND ( misth_final_ypal.kodfinal = :arg_kodfinal And misth_final_ypal.kodxrisi = :arg_kodxrisi  ) order by misth_ypal.surname ASC, misth_ypal.name ASC, misth_ypal.fathername ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZptitlos">
+      <named-native-query name="pickMisthZptitlosXrisiMapping" result-set-mapping="pickMisthZptitlosXrisiMapping">
+        <query><![CDATA[
+          select  misth_zptitlos.kodtitlos, misth_zptitlos.kodxrisi, misth_zptitlos.desctitlos from misth_zptitlos  WHERE misth_zptitlos.kodxrisi = :arg_kodxrisi  order by misth_zptitlos.kodtitlos ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpidikot">
+      <named-native-query name="prnYpalTotalDatesMapping" result-set-mapping="prnYpalTotalDatesMapping">
+        <query><![CDATA[
+          select  misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_ypal.mitroo, misth_ypal.adt, misth_ypal.afm, misth_ypal.doy, misth_ypal.bankno, misth_ypal.bank, misth_ypal.childs, misth_ypal.prostmeli, misth_ypal.klimakio, misth_ypal.bathmos, misth_ypal.klados, misth_ypal.birthdate, misth_ypal.hireddate, misth_ypal.kodypal, misth_ypal.kodxrisi, misth_zpidikot.descidikot, misth_zpoikog.descoikog, misth_zptmima.desctmima, misth_zpthesi.descthesi, misth_zptamio.desctamio from misth_ypal, misth_zpidikot, misth_zpoikog, misth_zptmima, misth_zpthesi, misth_zptamio WHERE misth_ypal.kodxrisi = misth_zpidikot.kodxrisi AND misth_ypal.kodidikot = misth_zpidikot.kodidikot AND misth_ypal.kodxrisi = misth_zpoikog.kodxrisi AND misth_ypal.kodoikog = misth_zpoikog.kodoikog AND misth_ypal.kodxrisi = misth_zptmima.kodxrisi AND misth_ypal.kodtmima = misth_zptmima.kodtmima AND misth_ypal.kodxrisi = misth_zpthesi.kodxrisi AND misth_ypal.kodthesi = misth_zpthesi.kodthesi AND misth_ypal.kodxrisi = misth_zptamio.kodxrisi AND misth_ypal.kodtamio = misth_zptamio.kodtamio AND ( misth_ypal.kodxrisi = :arg_kodxrisi  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthYpalListMapping" result-set-mapping="dwMisthYpalListMapping">
+        <query><![CDATA[
+          select  misth_ypal.kodypal, misth_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.mitroo, misth_ypal.klimakio, misth_ypal.klados, misth_ypal.bathmos, misth_zpidikot.descidikot from misth_ypal, misth_zpidikot WHERE misth_ypal.kodidikot = misth_zpidikot.kodidikot AND misth_ypal.kodxrisi = misth_zpidikot.kodxrisi AND ( ( misth_ypal.kodxrisi = :arg_kodxrisi )  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnAnalisiYpalMapping" result-set-mapping="prnAnalisiYpalMapping">
+        <query><![CDATA[
+          select  misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_ypal.mitroo, misth_ypal.adt, misth_ypal.afm, misth_ypal.doy, misth_ypal.bankno, misth_ypal.bank, misth_ypal.childs, misth_ypal.prostmeli, misth_ypal.klimakio, misth_ypal.bathmos, misth_ypal.klados, misth_ypal.birthdate, misth_ypal.hireddate, misth_ypal.kodypal, misth_ypal.kodxrisi, misth_zpidikot.descidikot, misth_zpoikog.descoikog, misth_zptmima.desctmima, misth_zpthesi.descthesi, misth_zptamio.desctamio from misth_ypal, misth_zpidikot, misth_zpoikog, misth_zptmima, misth_zpthesi, misth_zptamio WHERE misth_ypal.kodxrisi = misth_zpidikot.kodxrisi AND misth_ypal.kodidikot = misth_zpidikot.kodidikot AND misth_ypal.kodxrisi = misth_zpoikog.kodxrisi AND misth_ypal.kodoikog = misth_zpoikog.kodoikog AND misth_ypal.kodxrisi = misth_zptmima.kodxrisi AND misth_ypal.kodtmima = misth_zptmima.kodtmima AND misth_ypal.kodxrisi = misth_zpthesi.kodxrisi AND misth_ypal.kodthesi = misth_zpthesi.kodthesi AND misth_ypal.kodxrisi = misth_zptamio.kodxrisi AND misth_ypal.kodtamio = misth_zptamio.kodtamio AND ( misth_ypal.kodxrisi = :arg_kodxrisi  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthZpidikotXrisiMapping" result-set-mapping="pickMisthZpidikotXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpidikot.kodidikot, misth_zpidikot.kodxrisi, misth_zpidikot.descidikot from misth_zpidikot  WHERE misth_zpidikot.kodxrisi = :arg_kodxrisi  order by misth_zpidikot.descidikot ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnFinalAtomikiMisthMapping" result-set-mapping="prnFinalAtomikiMisthMapping">
+        <query><![CDATA[
+          SELECT  misth_ypal.surname ,
+                     misth_ypal.name ,
+                     misth_ypal.fathername ,
+                     misth_ypal.mitroo ,
+                     misth_ypal.adt ,
+                     misth_ypal.afm ,
+                     misth_ypal.doy ,
+                     misth_ypal.bankno ,
+                     misth_ypal.bank ,
+                     misth_ypal.childs ,
+                     misth_ypal.prostmeli ,
+                     misth_ypal.klimakio ,
+                     misth_ypal.bathmos ,
+                     misth_ypal.klados ,
+                     misth_ypal.birthdate ,
+                     misth_ypal.hireddate ,
+                     misth_zpoikog.descoikog ,
+                     misth_zpidikot.descidikot ,
+                     misth_zpthesi.descthesi ,
+                     misth_zptmima.desctmima ,
+                     misth_final.kodfinal ,
+          			  misth_final.aa,
+                     misth_final.descfinal ,
+                     misth_final.datefinal ,
+          			  misth_final.title,
+                     misth_final_ypal.kodypal ,
+                     misth_zptamio.desctamio  
+                  FROM misth_ypal LEFT OUTER JOIN misth_zpoikog ON misth_ypal.kodoikog = misth_zpoikog.kodoikog AND misth_ypal.kodxrisi = misth_zpoikog.kodxrisi LEFT OUTER JOIN misth_zpidikot ON misth_ypal.kodidikot = misth_zpidikot.kodidikot AND misth_ypal.kodxrisi = misth_zpidikot.kodxrisi LEFT OUTER JOIN misth_zpthesi ON misth_ypal.kodthesi = misth_zpthesi.kodthesi AND misth_ypal.kodxrisi = misth_zpthesi.kodxrisi LEFT OUTER JOIN misth_zptmima ON misth_ypal.kodtmima = misth_zptmima.kodtmima AND misth_ypal.kodxrisi = misth_zptmima.kodxrisi LEFT OUTER JOIN misth_zptamio ON misth_ypal.kodtamio = misth_zptamio.kodtamio AND misth_ypal.kodxrisi = misth_zptamio.kodxrisi ,
+                     misth_final_ypal ,
+                     misth_final    
+                  WHERE ( misth_final_ypal.kodfinal = misth_final.kodfinal ) and          ( misth_final_ypal.kodxrisi = misth_final.kodxrisi ) and          ( misth_final_ypal.kodypal = misth_ypal.kodypal ) and          ( misth_final_ypal.kodxrisi = misth_ypal.kodxrisi ) and          ( ( misth_final_ypal.kodfinal = :arg_kodfinal ) and          ( misth_final_ypal.kodxrisi = :arg_kodxrisi ) ) 
+                  ORDER BY misth_ypal.surname          ASC,
+                     misth_ypal.name          ASC,
+                     misth_ypal.fathername          ASC  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnYpalFinalMapping" result-set-mapping="prnYpalFinalMapping">
+        <query><![CDATA[
+          select  misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_ypal.mitroo, misth_ypal.adt, misth_ypal.afm, misth_ypal.doy, misth_ypal.bankno, misth_ypal.bank, misth_ypal.childs, misth_ypal.prostmeli, misth_ypal.klimakio, misth_ypal.bathmos, misth_ypal.klados, misth_ypal.birthdate, misth_ypal.hireddate, misth_ypal.kodypal, misth_ypal.kodxrisi, misth_zpidikot.descidikot, misth_zpoikog.descoikog, misth_zptmima.desctmima, misth_zpthesi.descthesi, misth_zptamio.desctamio from misth_ypal, misth_zpidikot, misth_zpoikog, misth_zptmima, misth_zpthesi, misth_zptamio WHERE misth_ypal.kodxrisi = misth_zpidikot.kodxrisi AND misth_ypal.kodidikot = misth_zpidikot.kodidikot AND misth_ypal.kodxrisi = misth_zpoikog.kodxrisi AND misth_ypal.kodoikog = misth_zpoikog.kodoikog AND misth_ypal.kodxrisi = misth_zptmima.kodxrisi AND misth_ypal.kodtmima = misth_zptmima.kodtmima AND misth_ypal.kodxrisi = misth_zpthesi.kodxrisi AND misth_ypal.kodthesi = misth_zpthesi.kodthesi AND misth_ypal.kodxrisi = misth_zptamio.kodxrisi AND misth_ypal.kodtamio = misth_zptamio.kodtamio AND ( misth_ypal.kodxrisi = :arg_kodxrisi  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnFinalAtomikiMisthArgMapping" result-set-mapping="prnFinalAtomikiMisthArgMapping">
+        <query><![CDATA[
+          SELECT  misth_ypal.surname ,
+                     misth_ypal.name ,
+                     misth_ypal.fathername ,
+                     misth_ypal.mitroo ,
+                     misth_ypal.adt ,
+                     misth_ypal.afm ,
+                     misth_ypal.doy ,
+                     misth_ypal.bankno ,
+                     misth_ypal.bank ,
+                     misth_ypal.childs ,
+                     misth_ypal.prostmeli ,
+                     misth_ypal.klimakio ,
+                     misth_ypal.bathmos ,
+                     misth_ypal.klados ,
+                     misth_ypal.birthdate ,
+                     misth_ypal.hireddate ,
+                     misth_zpoikog.descoikog ,
+                     misth_zpidikot.descidikot ,
+                     misth_zpthesi.descthesi ,
+                     misth_zptmima.desctmima ,
+                     misth_final.kodfinal ,
+          			  misth_final.aa,
+                     misth_final.descfinal ,
+                     misth_final.datefinal ,
+          			  misth_final.title,
+                     misth_final_ypal.kodypal ,
+                     misth_zptamio.desctamio  
+                  FROM misth_ypal LEFT OUTER JOIN misth_zpoikog ON misth_ypal.kodoikog = misth_zpoikog.kodoikog AND misth_ypal.kodxrisi = misth_zpoikog.kodxrisi LEFT OUTER JOIN misth_zpidikot ON misth_ypal.kodidikot = misth_zpidikot.kodidikot AND misth_ypal.kodxrisi = misth_zpidikot.kodxrisi LEFT OUTER JOIN misth_zpthesi ON misth_ypal.kodthesi = misth_zpthesi.kodthesi AND misth_ypal.kodxrisi = misth_zpthesi.kodxrisi LEFT OUTER JOIN misth_zptmima ON misth_ypal.kodtmima = misth_zptmima.kodtmima AND misth_ypal.kodxrisi = misth_zptmima.kodxrisi LEFT OUTER JOIN misth_zptamio ON misth_ypal.kodtamio = misth_zptamio.kodtamio AND misth_ypal.kodxrisi = misth_zptamio.kodxrisi ,
+                     misth_final_ypal ,
+                     misth_final    
+                  WHERE (misth_final_ypal.kodypal = :arg_kodypal) and ( misth_final_ypal.kodfinal = misth_final.kodfinal ) and          ( misth_final_ypal.kodxrisi = misth_final.kodxrisi ) and          ( misth_final_ypal.kodypal = misth_ypal.kodypal ) and          ( misth_final_ypal.kodxrisi = misth_ypal.kodxrisi ) and          ( ( misth_final_ypal.kodfinal = :arg_kodfinal ) and          ( misth_final_ypal.kodxrisi = :arg_kodxrisi ) ) 
+                  ORDER BY misth_ypal.surname          ASC,
+                     misth_ypal.name          ASC,
+                     misth_ypal.fathername          ASC  
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.Usruserperm">
+      <named-native-query name="dwUsruserpermListMapping" result-set-mapping="dwUsruserpermListMapping">
+        <query><![CDATA[
+          select  usruserperm.kodapp, usruserperm.koduser, usruserperm.enable, usrapps.descapp from usruserperm, usrapps WHERE usruserperm.kodapp = usrapps.kodapp AND ( usruserperm.koduser = :arg_koduser  ) order by usrapps.descapp ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.Afxfilterd">
+      <named-native-query name="dwAfxfilterdListMapping" result-set-mapping="dwAfxfilterdListMapping">
+        <query><![CDATA[
+          select  afxfilterd.kodfilterd, afxfilterd.kodfilter, afxfilterd.pedio, afxfilterd.telestis, afxfilterd.timi, afxfilterd.joint from afxfilterd  WHERE afxfilterd.kodfilter = :kodfilter  order by afxfilterd.kodfilterd ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpkat">
+      <named-native-query name="dwMisthFinalListMapping" result-set-mapping="dwMisthFinalListMapping">
+        <query><![CDATA[
+          select  misth_final.kodfinal, misth_final.kodxrisi, misth_final.descfinal, misth_final.datefinal, misth_final.title, misth_final.kodkat, misth_zpkat.desckat, misth_final.kodperiod, misth_zpperiod.descperiod, misth_final.aa from misth_final, misth_zpkat, misth_zpperiod WHERE misth_zpkat.kodkat = misth_final.kodkat AND misth_final.kodxrisi = misth_zpkat.kodxrisi AND misth_final.kodperiod = misth_zpperiod.kodperiod AND misth_final.kodxrisi = misth_zpperiod.kodxrisi AND ( ( misth_final.kodxrisi = :arg_kodxrisi )  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthFinalDetailsListMapping" result-set-mapping="dwMisthFinalDetailsListMapping">
+        <query><![CDATA[
+          select  misth_final.datefinal, misth_final.descfinal, misth_final.kodfinal, misth_final_ypal.plirdate, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_final_ypal.kodfinal AS kodfinal1, misth_final_ypal.kodypal, misth_final_ypal.kodxrisi, misth_zpkat.desckat, misth_zpperiod.descperiod, misth_final.aa from misth_final, misth_final_ypal, misth_ypal, misth_zpkat, misth_zpperiod WHERE misth_final_ypal.kodfinal = misth_final.kodfinal AND misth_final_ypal.kodxrisi = misth_final.kodxrisi AND misth_final_ypal.kodypal = misth_ypal.kodypal AND misth_final_ypal.kodxrisi = misth_ypal.kodxrisi AND misth_final.kodkat = misth_zpkat.kodkat AND misth_final.kodxrisi = misth_zpkat.kodxrisi AND misth_final.kodperiod = misth_zpperiod.kodperiod AND misth_final.kodxrisi = misth_zpperiod.kodxrisi AND ( misth_final_ypal.kodxrisi = :arg_kodxrisi  ) 
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="pickMisthZpkatXrisiMapping" result-set-mapping="pickMisthZpkatXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpkat.kodkat, misth_zpkat.kodxrisi, misth_zpkat.desckat from misth_zpkat  WHERE misth_zpkat.kodxrisi = :arg_kodxrisi  order by misth_zpkat.desckat ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthYpal">
+      <named-native-query name="pickMisthYpalXrisiMapping" result-set-mapping="pickMisthYpalXrisiMapping">
+        <query><![CDATA[
+          select  misth_ypal.kodypal, misth_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername from misth_ypal  WHERE misth_ypal.kodxrisi = :arg_kodxrisi  order by misth_ypal.surname ASC, misth_ypal.name ASC, misth_ypal.fathername ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthYpalFormJobMapping" result-set-mapping="dwMisthYpalFormJobMapping">
+        <query><![CDATA[
+          select  misth_ypal.kodypal, misth_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_ypal.adt, misth_ypal.mitroo, misth_ypal.afm, misth_ypal.doy, misth_ypal.birthdate, misth_ypal.homephone, misth_ypal.mobilphone, misth_ypal.sex, misth_ypal.spouse, misth_ypal.childs, misth_ypal.prostmeli, misth_ypal.city, misth_ypal.area, misth_ypal.address, misth_ypal.tk, misth_ypal.email, misth_ypal.kodtmima, misth_ypal.kodidikot, misth_ypal.jobtitle, misth_ypal.hireddate, misth_ypal.rehireddate, misth_ypal.termdate, misth_ypal.termreason, misth_ypal.jobphone, misth_ypal.intphone, misth_ypal.klimakio, misth_ypal.bathmos, misth_ypal.klados, misth_ypal.bank, misth_ypal.bankno, misth_ypal.exeldate, misth_ypal.kodthesi, misth_ypal.kodoikog, misth_ypal.kodtamio, misth_ypal.mothername, misth_ypal.newexeldate from misth_ypal  WHERE ( misth_ypal.kodypal = :arg_kodypal ) and ( misth_ypal.kodxrisi = :arg_kodxrisi )  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthFyloYpalListMapping" result-set-mapping="dwMisthFyloYpalListMapping">
+        <query><![CDATA[
+          select  misth_fylo_ypal.kodfylo, misth_fylo_ypal.kodypal, misth_fylo_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername from misth_fylo_ypal, misth_ypal WHERE misth_fylo_ypal.kodypal = misth_ypal.kodypal AND misth_fylo_ypal.kodxrisi = misth_ypal.kodxrisi AND ( misth_fylo_ypal.kodfylo = :arg_kodfylo and misth_fylo_ypal.kodxrisi = :arg_kodxrisi  ) order by misth_ypal.surname ASC, misth_ypal.name ASC, misth_ypal.fathername ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthYpalFormPersonalMapping" result-set-mapping="dwMisthYpalFormPersonalMapping">
+        <query><![CDATA[
+          select  misth_ypal.kodypal, misth_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_ypal.adt, misth_ypal.mitroo, misth_ypal.afm, misth_ypal.doy, misth_ypal.birthdate, misth_ypal.homephone, misth_ypal.mobilphone, misth_ypal.sex, misth_ypal.spouse, misth_ypal.childs, misth_ypal.prostmeli, misth_ypal.city, misth_ypal.area, misth_ypal.address, misth_ypal.tk, misth_ypal.email, misth_ypal.kodtmima, misth_ypal.kodidikot, misth_ypal.jobtitle, misth_ypal.hireddate, misth_ypal.rehireddate, misth_ypal.termdate, misth_ypal.termreason, misth_ypal.jobphone, misth_ypal.intphone, misth_ypal.klimakio, misth_ypal.bathmos, misth_ypal.klados, misth_ypal.bank, misth_ypal.bankno, misth_ypal.exeldate, misth_ypal.kodthesi, misth_ypal.kodoikog, misth_ypal.kodtamio, misth_ypal.mothername, misth_ypal.newexeldate from misth_ypal  WHERE ( misth_ypal.kodypal = :arg_kodypal ) and ( misth_ypal.kodxrisi = :arg_kodxrisi )  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthYpalFormGeneralMapping" result-set-mapping="dwMisthYpalFormGeneralMapping">
+        <query><![CDATA[
+          select  misth_ypal.kodypal, misth_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_ypal.adt, misth_ypal.mitroo, misth_ypal.afm, misth_ypal.doy, misth_ypal.birthdate, misth_ypal.homephone, misth_ypal.mobilphone, misth_ypal.sex, misth_ypal.spouse, misth_ypal.childs, misth_ypal.prostmeli, misth_ypal.city, misth_ypal.area, misth_ypal.address, misth_ypal.tk, misth_ypal.email, misth_ypal.kodtmima, misth_ypal.kodidikot, misth_ypal.jobtitle, misth_ypal.hireddate, misth_ypal.rehireddate, misth_ypal.termdate, misth_ypal.termreason, misth_ypal.jobphone, misth_ypal.intphone, misth_ypal.klimakio, misth_ypal.bathmos, misth_ypal.klados, misth_ypal.bank, misth_ypal.bankno, misth_ypal.exeldate, misth_ypal.kodthesi, misth_ypal.kodoikog, misth_ypal.kodtamio, misth_ypal.mothername, misth_ypal.newexeldate from misth_ypal  WHERE ( misth_ypal.kodypal = :arg_kodypal ) and ( misth_ypal.kodxrisi = :arg_kodxrisi )  
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="prnYpalNewklimakioMapping" result-set-mapping="prnYpalNewklimakioMapping">
+        <query><![CDATA[
+          select  misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_ypal.mitroo, misth_ypal.klados, misth_ypal.bathmos, misth_ypal.klimakio, misth_ypal.newexeldate from misth_ypal  WHERE misth_ypal.kodxrisi = :arg_kodxrisi and misth_ypal.newexeldate <= :arg_date  order by misth_ypal.surname ASC, misth_ypal.name ASC, misth_ypal.fathername ASC, misth_ypal.mothername ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthYpalNewklimakioMapping" result-set-mapping="dwMisthYpalNewklimakioMapping">
+        <query><![CDATA[
+          select  misth_ypal.kodypal, misth_ypal.kodxrisi, misth_ypal.surname, misth_ypal.name, misth_ypal.fathername, misth_ypal.klimakio, misth_ypal.exeldate from misth_ypal  WHERE misth_ypal.kodxrisi = :arg_kodxrisi And misth_ypal.exeldate <= :arg_date  
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+
+  <entity class="com.test.abc.entity.MisthZpthesi">
+      <named-native-query name="pickMisthZpthesiXrisiMapping" result-set-mapping="pickMisthZpthesiXrisiMapping">
+        <query><![CDATA[
+          select  misth_zpthesi.kodthesi, misth_zpthesi.kodxrisi, misth_zpthesi.descthesi from misth_zpthesi  WHERE misth_zpthesi.kodxrisi = :arg_kodxrisi  order by misth_zpthesi.descthesi ASC
+        ]]>
+        </query>
+      </named-native-query>
+      <named-native-query name="dwMisthZpthesiListMapping" result-set-mapping="dwMisthZpthesiListMapping">
+        <query><![CDATA[
+          select  misth_zpthesi.kodthesi, misth_zpthesi.kodxrisi, misth_zpthesi.descthesi from misth_zpthesi  WHERE misth_zpthesi.kodxrisi = :arg_kodxrisi  order by misth_zpthesi.kodthesi ASC
+        ]]>
+        </query>
+      </named-native-query>
+
+  </entity>
+</entity-mappings>

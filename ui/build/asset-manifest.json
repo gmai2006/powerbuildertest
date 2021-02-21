@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/powerbuildertest2/static/css/main.6e9f9ce1.chunk.css",
+    "main.js": "/powerbuildertest2/static/js/main.48b0d7e2.chunk.js",
+    "main.js.map": "/powerbuildertest2/static/js/main.48b0d7e2.chunk.js.map",
+    "runtime-main.js": "/powerbuildertest2/static/js/runtime-main.f99944e5.js",
+    "runtime-main.js.map": "/powerbuildertest2/static/js/runtime-main.f99944e5.js.map",
+    "static/css/2.c6760b3c.chunk.css": "/powerbuildertest2/static/css/2.c6760b3c.chunk.css",
+    "static/js/2.7b9bde7c.chunk.js": "/powerbuildertest2/static/js/2.7b9bde7c.chunk.js",
+    "static/js/2.7b9bde7c.chunk.js.map": "/powerbuildertest2/static/js/2.7b9bde7c.chunk.js.map",
+    "static/js/3.b8ad0a74.chunk.js": "/powerbuildertest2/static/js/3.b8ad0a74.chunk.js",
+    "static/js/3.b8ad0a74.chunk.js.map": "/powerbuildertest2/static/js/3.b8ad0a74.chunk.js.map",
+    "index.html": "/powerbuildertest2/index.html",
+    "static/css/2.c6760b3c.chunk.css.map": "/powerbuildertest2/static/css/2.c6760b3c.chunk.css.map",
+    "static/css/main.6e9f9ce1.chunk.css.map": "/powerbuildertest2/static/css/main.6e9f9ce1.chunk.css.map",
+    "static/js/2.7b9bde7c.chunk.js.LICENSE.txt": "/powerbuildertest2/static/js/2.7b9bde7c.chunk.js.LICENSE.txt",
+    "static/media/html-sample.490a93c5.jpg": "/powerbuildertest2/static/media/html-sample.490a93c5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f99944e5.js",
+    "static/css/2.c6760b3c.chunk.css",
+    "static/js/2.7b9bde7c.chunk.js",
+    "static/css/main.6e9f9ce1.chunk.css",
+    "static/js/main.48b0d7e2.chunk.js"
+  ]
+}

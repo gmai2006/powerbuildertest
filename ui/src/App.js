@@ -6,47 +6,43 @@ import { Container } from 'react-bootstrap';
 import Sidebar from './components/Sidebar';
 import Overview from './pages/Overview';
 import Query from './pages/Query';
-import DwMisthYpalNewklimakio from './pages/tables/DwMisthYpalNewklimakio';
-import EdwFilter from './pages/tables/EdwFilter';
-import DwAfxfilterdList from './pages/tables/DwAfxfilterdList';
-import DwMisthZpyvarList from './pages/tables/DwMisthZpyvarList';
-import DwMisthReportList from './pages/tables/DwMisthReportList';
-import SprnFinalKratMisth from './pages/tables/SprnFinalKratMisth';
-import DwUsrappsList from './pages/tables/DwUsrappsList';
-import DwMisthZpoikogList from './pages/tables/DwMisthZpoikogList';
-import DwUsrgrouppermList from './pages/tables/DwUsrgrouppermList';
-import SprnYpalPeriodEpidom from './pages/tables/SprnYpalPeriodEpidom';
-import DwMisthYpalYvarList from './pages/tables/DwMisthYpalYvarList';
-import DwMisthReportColsList from './pages/tables/DwMisthReportColsList';
-import SprnYpalFinal from './pages/tables/SprnYpalFinal';
-import DwUsruserpermList from './pages/tables/DwUsruserpermList';
-import DwAfxfilterList from './pages/tables/DwAfxfilterList';
-import DwMisthFinalYpalList from './pages/tables/DwMisthFinalYpalList';
-import DwVar from './pages/tables/DwVar';
-import DwUsractionsList from './pages/tables/DwUsractionsList';
-import SprnFinalKratYpal from './pages/tables/SprnFinalKratYpal';
-import DwMisthKratapodList from './pages/tables/DwMisthKratapodList';
-import SprnFinalEpidomMisth from './pages/tables/SprnFinalEpidomMisth';
-import SprnFinalEpidomYpal from './pages/tables/SprnFinalEpidomYpal';
-import DwUsrgroupsList from './pages/tables/DwUsrgroupsList';
-import DwMisthFyloKratList from './pages/tables/DwMisthFyloKratList';
-import DwMisthZptamioList from './pages/tables/DwMisthZptamioList';
-import DwMisthZpstathList from './pages/tables/DwMisthZpstathList';
-import DwMisthFinalYpalEpidomList from './pages/tables/DwMisthFinalYpalEpidomList';
-import DwUsrusersList from './pages/tables/DwUsrusersList';
-import DwAfxptoseisList from './pages/tables/DwAfxptoseisList';
-import DwMisthFyloEpidomList from './pages/tables/DwMisthFyloEpidomList';
-import SprnYpalPeriodKrat from './pages/tables/SprnYpalPeriodKrat';
-import DwMisthYpalList from './pages/tables/DwMisthYpalList';
-import SprnReport from './pages/tables/SprnReport';
-import DwMisthZpperiodList from './pages/tables/DwMisthZpperiodList';
-import DwUsrmembersGroupList from './pages/tables/DwUsrmembersGroupList';
-import DwMisthZpthesiList from './pages/tables/DwMisthZpthesiList';
-import DwMisthFyloList from './pages/tables/DwMisthFyloList';
-import DwMisthFinalYpalKratList from './pages/tables/DwMisthFinalYpalKratList';
-import DwMisthZptmimaList from './pages/tables/DwMisthZptmimaList';
-import DwMisthFinalYpalPlirdateList from './pages/tables/DwMisthFinalYpalPlirdateList';
-import DwStepKratapodMisthselect from './pages/tables/DwStepKratapodMisthselect';;
+import MisthKratapod from './pages/tables/MisthKratapod';
+import MisthZpstath from './pages/tables/MisthZpstath';
+import MisthYpalYvar from './pages/tables/MisthYpalYvar';
+import MisthZptmima from './pages/tables/MisthZptmima';
+import MisthYpal from './pages/tables/MisthYpal';
+import MisthFyloYpal from './pages/tables/MisthFyloYpal';
+import MisthReportCols from './pages/tables/MisthReportCols';
+import MisthReport from './pages/tables/MisthReport';
+import Usrgroupperm from './pages/tables/Usrgroupperm';
+import MisthZpoikog from './pages/tables/MisthZpoikog';
+import MisthZpyvar from './pages/tables/MisthZpyvar';
+import MisthReportYpal from './pages/tables/MisthReportYpal';
+import Usrgroups from './pages/tables/Usrgroups';
+import MisthZpepidom from './pages/tables/MisthZpepidom';
+import MisthZpkat from './pages/tables/MisthZpkat';
+import MisthZpkrat from './pages/tables/MisthZpkrat';
+import MisthFyloEpidom from './pages/tables/MisthFyloEpidom';
+import Usrmembers from './pages/tables/Usrmembers';
+import Usruserperm from './pages/tables/Usruserperm';
+import MisthZpperiod from './pages/tables/MisthZpperiod';
+import MisthFinalYpal from './pages/tables/MisthFinalYpal';
+import Usrapps from './pages/tables/Usrapps';
+import MisthZpthesi from './pages/tables/MisthZpthesi';
+import Afxfilterd from './pages/tables/Afxfilterd';
+import MisthFinalYpalKrat from './pages/tables/MisthFinalYpalKrat';
+import Afxfilter from './pages/tables/Afxfilter';
+import Usrusers from './pages/tables/Usrusers';
+import MisthZptamio from './pages/tables/MisthZptamio';
+import MisthZpidikot from './pages/tables/MisthZpidikot';
+import MisthZptitlos from './pages/tables/MisthZptitlos';
+import MisthFinalYpalEpidom from './pages/tables/MisthFinalYpalEpidom';
+import MisthZpxrisi from './pages/tables/MisthZpxrisi';
+import Afxptoseis from './pages/tables/Afxptoseis';
+import MisthFylo from './pages/tables/MisthFylo';
+import MisthFinal from './pages/tables/MisthFinal';
+import Usractions from './pages/tables/Usractions';
+import MisthFyloKrat from './pages/tables/MisthFyloKrat';;
 
 const App = () => {
   return (
@@ -55,49 +51,45 @@ const App = () => {
         <Sidebar />
         <Container fluid>
           <Switch>
-            <Route path='/' exact component={Overview} />
-            <Route path='/query' component={Query} />
-            <Route path='/tables/dw_misth_ypal_newklimakio' component={DwMisthYpalNewklimakio} />
-            <Route path='/tables/edw_filter' component={EdwFilter} />
-            <Route path='/tables/dw_afxfilterd_list' component={DwAfxfilterdList} />
-            <Route path='/tables/dw_misth_zpyvar_list' component={DwMisthZpyvarList} />
-            <Route path='/tables/dw_misth_report_list' component={DwMisthReportList} />
-            <Route path='/tables/sprn_final_krat_misth' component={SprnFinalKratMisth} />
-            <Route path='/tables/dw_usrapps_list' component={DwUsrappsList} />
-            <Route path='/tables/dw_misth_zpoikog_list' component={DwMisthZpoikogList} />
-            <Route path='/tables/dw_usrgroupperm_list' component={DwUsrgrouppermList} />
-            <Route path='/tables/sprn_ypal_period_epidom' component={SprnYpalPeriodEpidom} />
-            <Route path='/tables/dw_misth_ypal_yvar_list' component={DwMisthYpalYvarList} />
-            <Route path='/tables/dw_misth_report_cols_list' component={DwMisthReportColsList} />
-            <Route path='/tables/sprn_ypal_final' component={SprnYpalFinal} />
-            <Route path='/tables/dw_usruserperm_list' component={DwUsruserpermList} />
-            <Route path='/tables/dw_afxfilter_list' component={DwAfxfilterList} />
-            <Route path='/tables/dw_misth_final_ypal_list' component={DwMisthFinalYpalList} />
-            <Route path='/tables/dw_var' component={DwVar} />
-            <Route path='/tables/dw_usractions_list' component={DwUsractionsList} />
-            <Route path='/tables/sprn_final_krat_ypal' component={SprnFinalKratYpal} />
-            <Route path='/tables/dw_misth_kratapod_list' component={DwMisthKratapodList} />
-            <Route path='/tables/sprn_final_epidom_misth' component={SprnFinalEpidomMisth} />
-            <Route path='/tables/sprn_final_epidom_ypal' component={SprnFinalEpidomYpal} />
-            <Route path='/tables/dw_usrgroups_list' component={DwUsrgroupsList} />
-            <Route path='/tables/dw_misth_fylo_krat_list' component={DwMisthFyloKratList} />
-            <Route path='/tables/dw_misth_zptamio_list' component={DwMisthZptamioList} />
-            <Route path='/tables/dw_misth_zpstath_list' component={DwMisthZpstathList} />
-            <Route path='/tables/dw_misth_final_ypal_epidom_list' component={DwMisthFinalYpalEpidomList} />
-            <Route path='/tables/dw_usrusers_list' component={DwUsrusersList} />
-            <Route path='/tables/dw_afxptoseis_list' component={DwAfxptoseisList} />
-            <Route path='/tables/dw_misth_fylo_epidom_list' component={DwMisthFyloEpidomList} />
-            <Route path='/tables/sprn_ypal_period_krat' component={SprnYpalPeriodKrat} />
-            <Route path='/tables/dw_misth_ypal_list' component={DwMisthYpalList} />
-            <Route path='/tables/sprn_report' component={SprnReport} />
-            <Route path='/tables/dw_misth_zpperiod_list' component={DwMisthZpperiodList} />
-            <Route path='/tables/dw_usrmembers_group_list' component={DwUsrmembersGroupList} />
-            <Route path='/tables/dw_misth_zpthesi_list' component={DwMisthZpthesiList} />
-            <Route path='/tables/dw_misth_fylo_list' component={DwMisthFyloList} />
-            <Route path='/tables/dw_misth_final_ypal_krat_list' component={DwMisthFinalYpalKratList} />
-            <Route path='/tables/dw_misth_zptmima_list' component={DwMisthZptmimaList} />
-            <Route path='/tables/dw_misth_final_ypal_plirdate_list' component={DwMisthFinalYpalPlirdateList} />
-            <Route path='/tables/dw_step_kratapod_misthselect' component={DwStepKratapodMisthselect} />
+            <Route path='/powerbuildertest2' exact component={Overview} />
+            <Route path='/powerbuildertest2/query' component={Query} />
+            <Route path='/powerbuildertest2/tables/misthkratapod' component={MisthKratapod} />
+            <Route path='/powerbuildertest2/tables/misthzpstath' component={MisthZpstath} />
+            <Route path='/powerbuildertest2/tables/misthypalyvar' component={MisthYpalYvar} />
+            <Route path='/powerbuildertest2/tables/misthzptmima' component={MisthZptmima} />
+            <Route path='/powerbuildertest2/tables/misthypal' component={MisthYpal} />
+            <Route path='/powerbuildertest2/tables/misthfyloypal' component={MisthFyloYpal} />
+            <Route path='/powerbuildertest2/tables/misthreportcols' component={MisthReportCols} />
+            <Route path='/powerbuildertest2/tables/misthreport' component={MisthReport} />
+            <Route path='/powerbuildertest2/tables/usrgroupperm' component={Usrgroupperm} />
+            <Route path='/powerbuildertest2/tables/misthzpoikog' component={MisthZpoikog} />
+            <Route path='/powerbuildertest2/tables/misthzpyvar' component={MisthZpyvar} />
+            <Route path='/powerbuildertest2/tables/misthreportypal' component={MisthReportYpal} />
+            <Route path='/powerbuildertest2/tables/usrgroups' component={Usrgroups} />
+            <Route path='/powerbuildertest2/tables/misthzpepidom' component={MisthZpepidom} />
+            <Route path='/powerbuildertest2/tables/misthzpkat' component={MisthZpkat} />
+            <Route path='/powerbuildertest2/tables/misthzpkrat' component={MisthZpkrat} />
+            <Route path='/powerbuildertest2/tables/misthfyloepidom' component={MisthFyloEpidom} />
+            <Route path='/powerbuildertest2/tables/usrmembers' component={Usrmembers} />
+            <Route path='/powerbuildertest2/tables/usruserperm' component={Usruserperm} />
+            <Route path='/powerbuildertest2/tables/misthzpperiod' component={MisthZpperiod} />
+            <Route path='/powerbuildertest2/tables/misthfinalypal' component={MisthFinalYpal} />
+            <Route path='/powerbuildertest2/tables/usrapps' component={Usrapps} />
+            <Route path='/powerbuildertest2/tables/misthzpthesi' component={MisthZpthesi} />
+            <Route path='/powerbuildertest2/tables/afxfilterd' component={Afxfilterd} />
+            <Route path='/powerbuildertest2/tables/misthfinalypalkrat' component={MisthFinalYpalKrat} />
+            <Route path='/powerbuildertest2/tables/afxfilter' component={Afxfilter} />
+            <Route path='/powerbuildertest2/tables/usrusers' component={Usrusers} />
+            <Route path='/powerbuildertest2/tables/misthzptamio' component={MisthZptamio} />
+            <Route path='/powerbuildertest2/tables/misthzpidikot' component={MisthZpidikot} />
+            <Route path='/powerbuildertest2/tables/misthzptitlos' component={MisthZptitlos} />
+            <Route path='/powerbuildertest2/tables/misthfinalypalepidom' component={MisthFinalYpalEpidom} />
+            <Route path='/powerbuildertest2/tables/misthzpxrisi' component={MisthZpxrisi} />
+            <Route path='/powerbuildertest2/tables/afxptoseis' component={Afxptoseis} />
+            <Route path='/powerbuildertest2/tables/misthfylo' component={MisthFylo} />
+            <Route path='/powerbuildertest2/tables/misthfinal' component={MisthFinal} />
+            <Route path='/powerbuildertest2/tables/usractions' component={Usractions} />
+            <Route path='/powerbuildertest2/tables/misthfylokrat' component={MisthFyloKrat} />
           </Switch>
       </Container>
     </Router>

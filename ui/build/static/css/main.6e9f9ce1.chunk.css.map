@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css","webpack://src/components/Sidebar/style.css"],"names":[],"mappings":"AAAA,KACI,QAAS,CACT,SACJ,CCHA,iBACI,+BACJ","file":"main.6e9f9ce1.chunk.css","sourcesContent":[".App {\n    margin: 0;\n    padding: 0;\n}",".panel-container {\n    background-color: white !important;\n}"]}

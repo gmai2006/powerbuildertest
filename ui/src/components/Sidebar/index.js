@@ -25,7 +25,7 @@ const Sidebar = () => {
           </Navbar.Brand>
             <Navbar.Collapse className="justify-content-end">
               <Navbar.Text>
-                Company Name
+                powerbuildertest2
               </Navbar.Text>
             </Navbar.Collapse>
         </Navbar>
@@ -46,182 +46,164 @@ const Sidebar = () => {
               items={[
                 {
                   title: 'Overview',
-                  itemId: '/',
+                  itemId: '/powerbuildertest2/',
                   elemBefore: () => <FontAwesomeIcon icon={faFileAlt} />,
                 },
                 {
                   title: 'Tables',
-                  itemId: '/table',
+                  itemId: '/powerbuildertest2/table',
                   elemBefore: () => <FontAwesomeIcon icon={faTable} />,
                   subNav: [
                     {
-                      title: 'DwMisthYpalNewklimakio',
-                      itemId: '/table/dw_misth_ypal_newklimakio',
+                      title: 'MisthKratapod',
+                      itemId: '/powerbuildertest2/tables/misthkratapod',
                     },
                     {
-                      title: 'EdwFilter',
-                      itemId: '/table/edw_filter',
+                      title: 'MisthZpstath',
+                      itemId: '/powerbuildertest2/tables/misthzpstath',
                     },
                     {
-                      title: 'DwAfxfilterdList',
-                      itemId: '/table/dw_afxfilterd_list',
+                      title: 'MisthYpalYvar',
+                      itemId: '/powerbuildertest2/tables/misthypalyvar',
                     },
                     {
-                      title: 'DwMisthZpyvarList',
-                      itemId: '/table/dw_misth_zpyvar_list',
+                      title: 'MisthZptmima',
+                      itemId: '/powerbuildertest2/tables/misthzptmima',
                     },
                     {
-                      title: 'DwMisthReportList',
-                      itemId: '/table/dw_misth_report_list',
+                      title: 'MisthYpal',
+                      itemId: '/powerbuildertest2/tables/misthypal',
                     },
                     {
-                      title: 'SprnFinalKratMisth',
-                      itemId: '/table/sprn_final_krat_misth',
+                      title: 'MisthFyloYpal',
+                      itemId: '/powerbuildertest2/tables/misthfyloypal',
                     },
                     {
-                      title: 'DwUsrappsList',
-                      itemId: '/table/dw_usrapps_list',
+                      title: 'MisthReportCols',
+                      itemId: '/powerbuildertest2/tables/misthreportcols',
                     },
                     {
-                      title: 'DwMisthZpoikogList',
-                      itemId: '/table/dw_misth_zpoikog_list',
+                      title: 'MisthReport',
+                      itemId: '/powerbuildertest2/tables/misthreport',
                     },
                     {
-                      title: 'DwUsrgrouppermList',
-                      itemId: '/table/dw_usrgroupperm_list',
+                      title: 'Usrgroupperm',
+                      itemId: '/powerbuildertest2/tables/usrgroupperm',
                     },
                     {
-                      title: 'SprnYpalPeriodEpidom',
-                      itemId: '/table/sprn_ypal_period_epidom',
+                      title: 'MisthZpoikog',
+                      itemId: '/powerbuildertest2/tables/misthzpoikog',
                     },
                     {
-                      title: 'DwMisthYpalYvarList',
-                      itemId: '/table/dw_misth_ypal_yvar_list',
+                      title: 'MisthZpyvar',
+                      itemId: '/powerbuildertest2/tables/misthzpyvar',
                     },
                     {
-                      title: 'DwMisthReportColsList',
-                      itemId: '/table/dw_misth_report_cols_list',
+                      title: 'MisthReportYpal',
+                      itemId: '/powerbuildertest2/tables/misthreportypal',
                     },
                     {
-                      title: 'SprnYpalFinal',
-                      itemId: '/table/sprn_ypal_final',
+                      title: 'Usrgroups',
+                      itemId: '/powerbuildertest2/tables/usrgroups',
                     },
                     {
-                      title: 'DwUsruserpermList',
-                      itemId: '/table/dw_usruserperm_list',
+                      title: 'MisthZpepidom',
+                      itemId: '/powerbuildertest2/tables/misthzpepidom',
                     },
                     {
-                      title: 'DwAfxfilterList',
-                      itemId: '/table/dw_afxfilter_list',
+                      title: 'MisthZpkat',
+                      itemId: '/powerbuildertest2/tables/misthzpkat',
                     },
                     {
-                      title: 'DwMisthFinalYpalList',
-                      itemId: '/table/dw_misth_final_ypal_list',
+                      title: 'MisthZpkrat',
+                      itemId: '/powerbuildertest2/tables/misthzpkrat',
                     },
                     {
-                      title: 'DwVar',
-                      itemId: '/table/dw_var',
+                      title: 'MisthFyloEpidom',
+                      itemId: '/powerbuildertest2/tables/misthfyloepidom',
                     },
                     {
-                      title: 'DwUsractionsList',
-                      itemId: '/table/dw_usractions_list',
+                      title: 'Usrmembers',
+                      itemId: '/powerbuildertest2/tables/usrmembers',
                     },
                     {
-                      title: 'SprnFinalKratYpal',
-                      itemId: '/table/sprn_final_krat_ypal',
+                      title: 'Usruserperm',
+                      itemId: '/powerbuildertest2/tables/usruserperm',
                     },
                     {
-                      title: 'DwMisthKratapodList',
-                      itemId: '/table/dw_misth_kratapod_list',
+                      title: 'MisthZpperiod',
+                      itemId: '/powerbuildertest2/tables/misthzpperiod',
                     },
                     {
-                      title: 'SprnFinalEpidomMisth',
-                      itemId: '/table/sprn_final_epidom_misth',
+                      title: 'MisthFinalYpal',
+                      itemId: '/powerbuildertest2/tables/misthfinalypal',
                     },
                     {
-                      title: 'SprnFinalEpidomYpal',
-                      itemId: '/table/sprn_final_epidom_ypal',
+                      title: 'Usrapps',
+                      itemId: '/powerbuildertest2/tables/usrapps',
                     },
                     {
-                      title: 'DwUsrgroupsList',
-                      itemId: '/table/dw_usrgroups_list',
+                      title: 'MisthZpthesi',
+                      itemId: '/powerbuildertest2/tables/misthzpthesi',
                     },
                     {
-                      title: 'DwMisthFyloKratList',
-                      itemId: '/table/dw_misth_fylo_krat_list',
+                      title: 'Afxfilterd',
+                      itemId: '/powerbuildertest2/tables/afxfilterd',
                     },
                     {
-                      title: 'DwMisthZptamioList',
-                      itemId: '/table/dw_misth_zptamio_list',
+                      title: 'MisthFinalYpalKrat',
+                      itemId: '/powerbuildertest2/tables/misthfinalypalkrat',
                     },
                     {
-                      title: 'DwMisthZpstathList',
-                      itemId: '/table/dw_misth_zpstath_list',
+                      title: 'Afxfilter',
+                      itemId: '/powerbuildertest2/tables/afxfilter',
                     },
                     {
-                      title: 'DwMisthFinalYpalEpidomList',
-                      itemId: '/table/dw_misth_final_ypal_epidom_list',
+                      title: 'Usrusers',
+                      itemId: '/powerbuildertest2/tables/usrusers',
                     },
                     {
-                      title: 'DwUsrusersList',
-                      itemId: '/table/dw_usrusers_list',
+                      title: 'MisthZptamio',
+                      itemId: '/powerbuildertest2/tables/misthzptamio',
                     },
                     {
-                      title: 'DwAfxptoseisList',
-                      itemId: '/table/dw_afxptoseis_list',
+                      title: 'MisthZpidikot',
+                      itemId: '/powerbuildertest2/tables/misthzpidikot',
                     },
                     {
-                      title: 'DwMisthFyloEpidomList',
-                      itemId: '/table/dw_misth_fylo_epidom_list',
+                      title: 'MisthZptitlos',
+                      itemId: '/powerbuildertest2/tables/misthzptitlos',
                     },
                     {
-                      title: 'SprnYpalPeriodKrat',
-                      itemId: '/table/sprn_ypal_period_krat',
+                      title: 'MisthFinalYpalEpidom',
+                      itemId: '/powerbuildertest2/tables/misthfinalypalepidom',
                     },
                     {
-                      title: 'DwMisthYpalList',
-                      itemId: '/table/dw_misth_ypal_list',
+                      title: 'MisthZpxrisi',
+                      itemId: '/powerbuildertest2/tables/misthzpxrisi',
                     },
                     {
-                      title: 'SprnReport',
-                      itemId: '/table/sprn_report',
+                      title: 'Afxptoseis',
+                      itemId: '/powerbuildertest2/tables/afxptoseis',
                     },
                     {
-                      title: 'DwMisthZpperiodList',
-                      itemId: '/table/dw_misth_zpperiod_list',
+                      title: 'MisthFylo',
+                      itemId: '/powerbuildertest2/tables/misthfylo',
                     },
                     {
-                      title: 'DwUsrmembersGroupList',
-                      itemId: '/table/dw_usrmembers_group_list',
+                      title: 'MisthFinal',
+                      itemId: '/powerbuildertest2/tables/misthfinal',
                     },
                     {
-                      title: 'DwMisthZpthesiList',
-                      itemId: '/table/dw_misth_zpthesi_list',
+                      title: 'Usractions',
+                      itemId: '/powerbuildertest2/tables/usractions',
                     },
                     {
-                      title: 'DwMisthFyloList',
-                      itemId: '/table/dw_misth_fylo_list',
-                    },
-                    {
-                      title: 'DwMisthFinalYpalKratList',
-                      itemId: '/table/dw_misth_final_ypal_krat_list',
-                    },
-                    {
-                      title: 'DwMisthZptmimaList',
-                      itemId: '/table/dw_misth_zptmima_list',
-                    },
-                    {
-                      title: 'DwMisthFinalYpalPlirdateList',
-                      itemId: '/table/dw_misth_final_ypal_plirdate_list',
-                    },
-                    {
-                      title: 'DwStepKratapodMisthselect',
-                      itemId: '/table/dw_step_kratapod_misthselect',
+                      title: 'MisthFyloKrat',
+                      itemId: '/powerbuildertest2/tables/misthfylokrat',
                     },
                   ]
-
                 },
-
               ]}
             />
           </div>

@@ -1,0 +1,19 @@
+
+]
+java:S1128""BRemove this unused import 'com.test.abc.dao.DefaultAfxfilterdDao'.(­¾½ıÿÿÿÿ
+q
+java:S1450H"VRemove the "records" field and declare it as a local variable in the relevant methods.(’’Ú‡ÿÿÿÿÿ
+t	java:S115D"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ú§İºûÿÿÿÿ
+O
+java:S1128%"9Remove this unused import 'com.test.abc.utils.TestUtils'.(ŒïÜ
+C
+java:S1128-"-Remove this unused import 'org.junit.Before'.(ÙşºÙ
+V	java:S1255"<This block of commented-out lines of code should be removed.(Í›¸ıÿÿÿÿ
+U
+java:S1128#"?Remove this unused import 'com.test.abc.utils.DelimiterParser'.(³Ú©Ñ
+D
+java:S1172k".Remove this unused method parameter "charset".(Öşã
+M
+java:S1128,"7Remove this unused import 'com.google.gson.JsonParser'.(Œƒ¸Æ
+M
+java:S1128+"7Remove this unused import 'com.google.gson.JsonObject'.(µÊ´½
