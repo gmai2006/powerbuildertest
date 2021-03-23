@@ -2,7 +2,11 @@
 This is a beta version of the generated JEE application from a legacy PowerBuilder application (https://sourceforge.net/projects/openpay/) using datascience9 automated legacy application transformation (https://datascience9.com/microservices).
 
 ## Components
-Back-end is JEE and the front-end is React
+- Back-end is JEE 
+- Front-end is React
+- Open API included ![open API 1](https://github.com/gmai2006/powerbuildertest/raw/master/openapi_screen1.png) 
+![open API 2](https://github.com/gmai2006/powerbuildertest/raw/master/openapi_screen2.png)
+![open API 3](https://github.com/gmai2006/powerbuildertest/raw/master/openapi_screen3.png)
 
 ### Clone the project
 ```git clone https://github.com/gmai2006/powerbuildertest.git```
