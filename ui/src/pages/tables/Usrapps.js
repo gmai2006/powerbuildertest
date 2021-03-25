@@ -10,7 +10,7 @@ const columns = [
 ]
 
 const loadData = () => {
-  return fetch('/powerbuildertest2/rest/usrapps/selectAll',{
+  return fetch('/powerbuilderreacttest2/rest/usrapps/selectAll',{
     headers : {
       'Content-Type': 'application/json',
       'Accept': 'application/json'

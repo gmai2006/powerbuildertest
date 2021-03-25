@@ -12,7 +12,7 @@ const columns = [
 ]
 
 const loadData = () => {
-  return fetch('/powerbuildertest2/rest/misthzpperiod/selectAll',{
+  return fetch('/powerbuilderreacttest2/rest/misthzpperiod/selectAll',{
     headers : {
       'Content-Type': 'application/json',
       'Accept': 'application/json'

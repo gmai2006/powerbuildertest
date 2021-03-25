@@ -1,21 +1,19 @@
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+/**
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
 import java.nio.charset.Charset;
@@ -45,24 +43,6 @@ import com.test.abc.dto.PrnYpalNewklimakioDto;
 import com.test.abc.dto.DwMisthYpalNewklimakioDto;
 import com.test.abc.utils.FileUtils;
 
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
-
 public class MisthYpalDaoDtoTest {
   static MisthYpalDtoDao dtoDao;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
@@ -82,7 +62,7 @@ public class MisthYpalDaoDtoTest {
     misthFyloYpalDao = new DefaultMisthFyloYpalDao(jpa);
     dtoDao = new DefaultMisthYpalDtoDao(jpa);
     try {
-      String json = null;
+      String json;
       json = FileUtils.readFileFromResource2String(misthYpalInputFile, Charset.defaultCharset());
       misthYpalRecords = gson.fromJson(json, MisthYpal[].class);
       json =
@@ -96,7 +76,6 @@ public class MisthYpalDaoDtoTest {
   @Test
   public void testpickMisthYpalXrisi() {
     misthYpalDao.create(misthYpalRecords[1]);
-    ;
     java.util.List<PickMisthYpalXrisiDto> testResult =
         dtoDao.pickMisthYpalXrisi(misthYpalRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -122,7 +101,6 @@ public class MisthYpalDaoDtoTest {
   @Test
   public void testdwMisthYpalFormJob() {
     misthYpalDao.create(misthYpalRecords[1]);
-    ;
     java.util.List<DwMisthYpalFormJobDto> testResult =
         dtoDao.dwMisthYpalFormJob(
             misthYpalRecords[1].getKodypal(), misthYpalRecords[1].getKodxrisi());
@@ -243,7 +221,6 @@ public class MisthYpalDaoDtoTest {
   public void testdwMisthFyloYpalList() {
     misthYpalDao.create(misthYpalRecords[1]);
     misthFyloYpalDao.create(misthFyloYpalRecords[1]);
-    ;
     java.util.List<DwMisthFyloYpalListDto> testResult =
         dtoDao.dwMisthFyloYpalList(
             misthFyloYpalRecords[1].getKodfylo(), misthFyloYpalRecords[1].getKodxrisi());
@@ -274,7 +251,6 @@ public class MisthYpalDaoDtoTest {
   @Test
   public void testdwMisthYpalFormPersonal() {
     misthYpalDao.create(misthYpalRecords[1]);
-    ;
     java.util.List<DwMisthYpalFormPersonalDto> testResult =
         dtoDao.dwMisthYpalFormPersonal(
             misthYpalRecords[1].getKodypal(), misthYpalRecords[1].getKodxrisi());
@@ -394,7 +370,6 @@ public class MisthYpalDaoDtoTest {
   @Test
   public void testdwMisthYpalFormGeneral() {
     misthYpalDao.create(misthYpalRecords[1]);
-    ;
     java.util.List<DwMisthYpalFormGeneralDto> testResult =
         dtoDao.dwMisthYpalFormGeneral(
             misthYpalRecords[1].getKodypal(), misthYpalRecords[1].getKodxrisi());
@@ -514,7 +489,6 @@ public class MisthYpalDaoDtoTest {
   @Test
   public void testprnYpalNewklimakio() {
     misthYpalDao.create(misthYpalRecords[1]);
-    ;
     java.util.List<PrnYpalNewklimakioDto> testResult =
         dtoDao.prnYpalNewklimakio(
             misthYpalRecords[1].getKodxrisi(), misthYpalRecords[1].getNewexeldate());
@@ -543,7 +517,6 @@ public class MisthYpalDaoDtoTest {
   @Test
   public void testdwMisthYpalNewklimakio() {
     misthYpalDao.create(misthYpalRecords[1]);
-    ;
     java.util.List<DwMisthYpalNewklimakioDto> testResult =
         dtoDao.dwMisthYpalNewklimakio(
             misthYpalRecords[1].getKodxrisi(), misthYpalRecords[1].getExeldate());

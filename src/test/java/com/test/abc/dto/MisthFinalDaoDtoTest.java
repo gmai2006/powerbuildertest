@@ -1,61 +1,37 @@
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+/**
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
-import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.io.IOException;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.test.abc.dao.DefaultMisthFinalDao;
+import com.test.abc.dao.DefaultMisthFinalDtoDao;
+import com.test.abc.dao.JpaDao;
+import com.test.abc.dao.MisthFinalDao;
+import com.test.abc.dao.MisthFinalDtoDao;
+import com.test.abc.dao.StandaloneJpaDao;
+import com.test.abc.entity.MisthFinal;
+import com.test.abc.utils.FileUtils;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.Arrays;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import com.test.abc.dao.*;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import com.test.abc.entity.MisthFinal;
-import com.test.abc.dto.DwMisthFinalFormDto;
-import com.test.abc.dto.PrnFinalTotalMisthDto;
-import com.test.abc.utils.FileUtils;
-
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
 
 public class MisthFinalDaoDtoTest {
   static MisthFinalDtoDao dtoDao;
@@ -72,7 +48,7 @@ public class MisthFinalDaoDtoTest {
     misthFinalDao = new DefaultMisthFinalDao(jpa);
     dtoDao = new DefaultMisthFinalDtoDao(jpa);
     try {
-      String json = null;
+      String json;
       json = FileUtils.readFileFromResource2String(misthFinalInputFile, Charset.defaultCharset());
       misthFinalRecords = gson.fromJson(json, MisthFinal[].class);
     } catch (IOException ex) {
@@ -83,7 +59,6 @@ public class MisthFinalDaoDtoTest {
   @Test
   public void testdwMisthFinalForm() {
     misthFinalDao.create(misthFinalRecords[1]);
-    ;
     java.util.List<DwMisthFinalFormDto> testResult =
         dtoDao.dwMisthFinalForm(
             misthFinalRecords[1].getKodfinal(), misthFinalRecords[1].getKodxrisi());
@@ -116,7 +91,6 @@ public class MisthFinalDaoDtoTest {
   @Test
   public void testprnFinalTotalMisth() {
     misthFinalDao.create(misthFinalRecords[1]);
-    ;
     java.util.List<PrnFinalTotalMisthDto> testResult =
         dtoDao.prnFinalTotalMisth(
             misthFinalRecords[1].getKodfinal(), misthFinalRecords[1].getKodxrisi());

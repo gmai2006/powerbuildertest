@@ -12,7 +12,7 @@ const columns = [
 ]
 
 const loadData = () => {
-  return fetch('/powerbuildertest2/rest/misthfinalypal/selectAll',{
+  return fetch('/powerbuilderreacttest2/rest/misthfinalypal/selectAll',{
     headers : {
       'Content-Type': 'application/json',
       'Accept': 'application/json'

@@ -1,21 +1,19 @@
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+/**
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
 import java.nio.charset.Charset;
@@ -39,24 +37,6 @@ import com.test.abc.entity.Usrgroups;
 import com.test.abc.dto.DwUsrmembersUserListDto;
 import com.test.abc.utils.FileUtils;
 
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
-
 public class UsrmembersDaoDtoTest {
   static UsrmembersDtoDao dtoDao;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
@@ -76,7 +56,7 @@ public class UsrmembersDaoDtoTest {
     usrgroupsDao = new DefaultUsrgroupsDao(jpa);
     dtoDao = new DefaultUsrmembersDtoDao(jpa);
     try {
-      String json = null;
+      String json;
       json = FileUtils.readFileFromResource2String(usrmembersInputFile, Charset.defaultCharset());
       usrmembersRecords = gson.fromJson(json, Usrmembers[].class);
       json = FileUtils.readFileFromResource2String(usrgroupsInputFile, Charset.defaultCharset());
@@ -90,7 +70,6 @@ public class UsrmembersDaoDtoTest {
   public void testdwUsrmembersUserList() {
     usrmembersDao.create(usrmembersRecords[1]);
     usrgroupsDao.create(usrgroupsRecords[1]);
-    ;
     java.util.List<DwUsrmembersUserListDto> testResult =
         dtoDao.dwUsrmembersUserList(usrmembersRecords[1].getKoduser());
     org.junit.Assert.assertFalse(testResult.isEmpty());

@@ -1,47 +1,27 @@
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+/**
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
 import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
-
 public class DwMisthFinalYpalListDto implements Serializable {
-  private static final long serialVersionUID = 161371648951571841L;
+  private static final long serialVersionUID = 161647059651485064L;
 
   /** Description: datefinal. */
   private java.util.Date datefinal;
@@ -58,8 +38,8 @@ public class DwMisthFinalYpalListDto implements Serializable {
   /** Description: plirdate. */
   private java.util.Date plirdate;
 
-  /** Description: INTEGER. */
-  private java.lang.Integer integer;
+  /** Description: cm_paid. */
+  private java.lang.Integer cmPaid;
 
   public DwMisthFinalYpalListDto() {}
 
@@ -69,13 +49,13 @@ public class DwMisthFinalYpalListDto implements Serializable {
       java.lang.Integer kodfinal,
       java.lang.Integer kodypal,
       java.util.Date plirdate,
-      java.lang.Integer integer) {
+      java.lang.Integer cmPaid) {
     this.datefinal = datefinal;
     this.descfinal = descfinal;
     this.kodfinal = kodfinal;
     this.kodypal = kodypal;
     this.plirdate = plirdate;
-    this.integer = integer;
+    this.cmPaid = cmPaid;
   }
 
   public java.util.Date getDatefinal() {
@@ -98,8 +78,8 @@ public class DwMisthFinalYpalListDto implements Serializable {
     return this.plirdate;
   }
 
-  public java.lang.Integer getInteger() {
-    return this.integer;
+  public java.lang.Integer getCmPaid() {
+    return this.cmPaid;
   }
 
   public void setDatefinal(java.util.Date datefinal) {
@@ -122,7 +102,7 @@ public class DwMisthFinalYpalListDto implements Serializable {
     this.plirdate = plirdate;
   }
 
-  public void setInteger(java.lang.Integer integer) {
-    this.integer = integer;
+  public void setCmPaid(java.lang.Integer cmPaid) {
+    this.cmPaid = cmPaid;
   }
 }

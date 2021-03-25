@@ -1,47 +1,27 @@
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+/**
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
 import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
-
 public class SprnAnalisiKratAutoforosDto implements Serializable {
-  private static final long serialVersionUID = 16137164892972326L;
+  private static final long serialVersionUID = 161647059628887728L;
 
   /** Description: desckrat. */
   private java.lang.String desckrat;
@@ -55,8 +35,8 @@ public class SprnAnalisiKratAutoforosDto implements Serializable {
   /** Description: poso. */
   private java.lang.Integer poso;
 
-  /** Description: sum. */
-  private java.lang.Integer sum;
+  /** Description: cm_sumposo. */
+  private java.lang.Integer cmSumposo;
 
   public SprnAnalisiKratAutoforosDto() {}
 
@@ -65,12 +45,12 @@ public class SprnAnalisiKratAutoforosDto implements Serializable {
       java.lang.String kodkrat,
       java.lang.String kodxrisi,
       java.lang.Integer poso,
-      java.lang.Integer sum) {
+      java.lang.Integer cmSumposo) {
     this.desckrat = desckrat;
     this.kodkrat = kodkrat;
     this.kodxrisi = kodxrisi;
     this.poso = poso;
-    this.sum = sum;
+    this.cmSumposo = cmSumposo;
   }
 
   public java.lang.String getDesckrat() {
@@ -89,8 +69,8 @@ public class SprnAnalisiKratAutoforosDto implements Serializable {
     return this.poso;
   }
 
-  public java.lang.Integer getSum() {
-    return this.sum;
+  public java.lang.Integer getCmSumposo() {
+    return this.cmSumposo;
   }
 
   public void setDesckrat(java.lang.String desckrat) {
@@ -109,7 +89,7 @@ public class SprnAnalisiKratAutoforosDto implements Serializable {
     this.poso = poso;
   }
 
-  public void setSum(java.lang.Integer sum) {
-    this.sum = sum;
+  public void setCmSumposo(java.lang.Integer cmSumposo) {
+    this.cmSumposo = cmSumposo;
   }
 }

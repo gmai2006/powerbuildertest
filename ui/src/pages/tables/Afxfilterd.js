@@ -14,7 +14,7 @@ const columns = [
 ]
 
 const loadData = () => {
-  return fetch('/powerbuildertest2/rest/afxfilterd/selectAll',{
+  return fetch('/powerbuilderreacttest2/rest/afxfilterd/selectAll',{
     headers : {
       'Content-Type': 'application/json',
       'Accept': 'application/json'

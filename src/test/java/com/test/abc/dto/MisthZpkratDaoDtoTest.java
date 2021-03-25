@@ -1,77 +1,52 @@
 /*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
-import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.io.IOException;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.util.Arrays;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import com.test.abc.dao.*;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import com.test.abc.entity.MisthZpkrat;
+import com.test.abc.dao.DefaultMisthFinalDao;
+import com.test.abc.dao.DefaultMisthFinalYpalDao;
+import com.test.abc.dao.DefaultMisthFinalYpalKratDao;
+import com.test.abc.dao.DefaultMisthYpalDao;
+import com.test.abc.dao.DefaultMisthZpkratDao;
+import com.test.abc.dao.DefaultMisthZpkratDtoDao;
+import com.test.abc.dao.DefaultMisthZpperiodDao;
+import com.test.abc.dao.JpaDao;
+import com.test.abc.dao.MisthFinalDao;
+import com.test.abc.dao.MisthFinalYpalDao;
+import com.test.abc.dao.MisthFinalYpalKratDao;
+import com.test.abc.dao.MisthYpalDao;
+import com.test.abc.dao.MisthZpkratDao;
+import com.test.abc.dao.MisthZpkratDtoDao;
+import com.test.abc.dao.MisthZpperiodDao;
+import com.test.abc.dao.StandaloneJpaDao;
+import com.test.abc.entity.MisthFinal;
+import com.test.abc.entity.MisthFinalYpal;
 import com.test.abc.entity.MisthFinalYpalKrat;
 import com.test.abc.entity.MisthYpal;
+import com.test.abc.entity.MisthZpkrat;
 import com.test.abc.entity.MisthZpperiod;
-import com.test.abc.entity.MisthFinalYpal;
-import com.test.abc.entity.MisthFinal;
-import com.test.abc.dto.PickMisthZpkratXrisiDto;
-import com.test.abc.dto.SelMisthZpkratXrisiDto;
-import com.test.abc.dto.SprnYpalPeriodKratDto;
-import com.test.abc.dto.SprnAnalisiKratForosDto;
-import com.test.abc.dto.SprnFinalKratMisthDto;
-import com.test.abc.dto.SprnAnalisiKratAutoforosDto;
-import com.test.abc.dto.DwStepKratapodMisthselectDto;
-import com.test.abc.dto.PrnKratapodDto;
-import com.test.abc.dto.SprnAnalisiKratLoipaDto;
-import com.test.abc.dto.SprnAnalisiKratAsfDto;
-import com.test.abc.dto.PrnKratNoapodDto;
-import com.test.abc.dto.PrnKratTotalDto;
-import com.test.abc.dto.SprnFinalKratYpalDto;
 import com.test.abc.utils.FileUtils;
-
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
+import java.io.IOException;
+import java.nio.charset.Charset;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 public class MisthZpkratDaoDtoTest {
   static MisthZpkratDtoDao dtoDao;
@@ -108,7 +83,7 @@ public class MisthZpkratDaoDtoTest {
     misthFinalDao = new DefaultMisthFinalDao(jpa);
     dtoDao = new DefaultMisthZpkratDtoDao(jpa);
     try {
-      String json = null;
+      String json;
       json = FileUtils.readFileFromResource2String(misthZpkratInputFile, Charset.defaultCharset());
       misthZpkratRecords = gson.fromJson(json, MisthZpkrat[].class);
       json =
@@ -133,7 +108,6 @@ public class MisthZpkratDaoDtoTest {
   @Test
   public void testpickMisthZpkratXrisi() {
     misthZpkratDao.create(misthZpkratRecords[1]);
-    ;
     java.util.List<PickMisthZpkratXrisiDto> testResult =
         dtoDao.pickMisthZpkratXrisi(misthZpkratRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -154,7 +128,6 @@ public class MisthZpkratDaoDtoTest {
   @Test
   public void testselMisthZpkratXrisi() {
     misthZpkratDao.create(misthZpkratRecords[1]);
-    ;
     java.util.List<SelMisthZpkratXrisiDto> testResult =
         dtoDao.selMisthZpkratXrisi(misthZpkratRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -178,7 +151,6 @@ public class MisthZpkratDaoDtoTest {
     misthFinalYpalKratDao.create(misthFinalYpalKratRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
     misthFinalDao.create(misthFinalRecords[1]);
-    ;
     java.util.List<SprnYpalPeriodKratDto> testResult =
         dtoDao.sprnYpalPeriodKrat(
             misthFinalYpalKratRecords[1].getKodxrisi(),
@@ -206,7 +178,6 @@ public class MisthZpkratDaoDtoTest {
     misthZpkratDao.create(misthZpkratRecords[1]);
     misthFinalYpalKratDao.create(misthFinalYpalKratRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
-    ;
     java.util.List<SprnAnalisiKratForosDto> testResult =
         dtoDao.sprnAnalisiKratForos(
             misthFinalYpalKratRecords[1].getKodypal(), misthFinalYpalKratRecords[1].getKodxrisi());
@@ -234,7 +205,6 @@ public class MisthZpkratDaoDtoTest {
   public void testsprnFinalKratMisth() {
     misthZpkratDao.create(misthZpkratRecords[1]);
     misthFinalYpalKratDao.create(misthFinalYpalKratRecords[1]);
-    ;
     java.util.List<SprnFinalKratMisthDto> testResult =
         dtoDao.sprnFinalKratMisth(
             misthFinalYpalKratRecords[1].getKodfinal(), misthFinalYpalKratRecords[1].getKodxrisi());
@@ -250,7 +220,6 @@ public class MisthZpkratDaoDtoTest {
     misthZpkratDao.create(misthZpkratRecords[1]);
     misthFinalYpalKratDao.create(misthFinalYpalKratRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
-    ;
     java.util.List<SprnAnalisiKratAutoforosDto> testResult =
         dtoDao.sprnAnalisiKratAutoforos(
             misthFinalYpalKratRecords[1].getKodypal(), misthFinalYpalKratRecords[1].getKodxrisi());
@@ -281,7 +250,6 @@ public class MisthZpkratDaoDtoTest {
     misthYpalDao.create(misthYpalRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
     misthFinalDao.create(misthFinalRecords[1]);
-    ;
     java.util.List<DwStepKratapodMisthselectDto> testResult =
         dtoDao.dwStepKratapodMisthselect(misthFinalYpalKratRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -347,7 +315,6 @@ public class MisthZpkratDaoDtoTest {
     misthYpalDao.create(misthYpalRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
     misthFinalDao.create(misthFinalRecords[1]);
-    ;
     java.util.List<PrnKratapodDto> testResult =
         dtoDao.prnKratapod(
             misthFinalYpalKratRecords[1].getKodxrisi(),
@@ -401,7 +368,6 @@ public class MisthZpkratDaoDtoTest {
     misthZpkratDao.create(misthZpkratRecords[1]);
     misthFinalYpalKratDao.create(misthFinalYpalKratRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
-    ;
     java.util.List<SprnAnalisiKratLoipaDto> testResult =
         dtoDao.sprnAnalisiKratLoipa(
             misthFinalYpalKratRecords[1].getKodypal(), misthFinalYpalKratRecords[1].getKodxrisi());
@@ -430,7 +396,6 @@ public class MisthZpkratDaoDtoTest {
     misthZpkratDao.create(misthZpkratRecords[1]);
     misthFinalYpalKratDao.create(misthFinalYpalKratRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
-    ;
     java.util.List<SprnAnalisiKratAsfDto> testResult =
         dtoDao.sprnAnalisiKratAsf(
             misthFinalYpalKratRecords[1].getKodypal(), misthFinalYpalKratRecords[1].getKodxrisi());
@@ -461,7 +426,6 @@ public class MisthZpkratDaoDtoTest {
     misthYpalDao.create(misthYpalRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
     misthFinalDao.create(misthFinalRecords[1]);
-    ;
     java.util.List<PrnKratNoapodDto> testResult =
         dtoDao.prnKratNoapod(misthFinalYpalKratRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -516,7 +480,6 @@ public class MisthZpkratDaoDtoTest {
     misthYpalDao.create(misthYpalRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
     misthFinalDao.create(misthFinalRecords[1]);
-    ;
     java.util.List<PrnKratTotalDto> testResult =
         dtoDao.prnKratTotal(misthFinalYpalKratRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -566,7 +529,6 @@ public class MisthZpkratDaoDtoTest {
   public void testsprnFinalKratYpal() {
     misthZpkratDao.create(misthZpkratRecords[1]);
     misthFinalYpalKratDao.create(misthFinalYpalKratRecords[1]);
-    ;
     java.util.List<SprnFinalKratYpalDto> testResult =
         dtoDao.sprnFinalKratYpal(
             misthFinalYpalKratRecords[1].getKodfinal(),

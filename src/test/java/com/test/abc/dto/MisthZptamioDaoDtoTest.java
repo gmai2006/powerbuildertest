@@ -1,21 +1,19 @@
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+/**
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
 import java.nio.charset.Charset;
@@ -39,24 +37,6 @@ import com.test.abc.dto.PickMisthZptamioXrisiDto;
 import com.test.abc.dto.DwMisthZptamioListDto;
 import com.test.abc.utils.FileUtils;
 
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
-
 public class MisthZptamioDaoDtoTest {
   static MisthZptamioDtoDao dtoDao;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
@@ -72,7 +52,7 @@ public class MisthZptamioDaoDtoTest {
     misthZptamioDao = new DefaultMisthZptamioDao(jpa);
     dtoDao = new DefaultMisthZptamioDtoDao(jpa);
     try {
-      String json = null;
+      String json;
       json = FileUtils.readFileFromResource2String(misthZptamioInputFile, Charset.defaultCharset());
       misthZptamioRecords = gson.fromJson(json, MisthZptamio[].class);
     } catch (IOException ex) {
@@ -83,7 +63,6 @@ public class MisthZptamioDaoDtoTest {
   @Test
   public void testpickMisthZptamioXrisi() {
     misthZptamioDao.create(misthZptamioRecords[1]);
-    ;
     java.util.List<PickMisthZptamioXrisiDto> testResult =
         dtoDao.pickMisthZptamioXrisi(misthZptamioRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -104,7 +83,6 @@ public class MisthZptamioDaoDtoTest {
   @Test
   public void testdwMisthZptamioList() {
     misthZptamioDao.create(misthZptamioRecords[1]);
-    ;
     java.util.List<DwMisthZptamioListDto> testResult =
         dtoDao.dwMisthZptamioList(misthZptamioRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());

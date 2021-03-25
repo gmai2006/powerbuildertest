@@ -1,0 +1,5901 @@
+---
+openapi: "3.0.0"
+info:
+  description: "This is a generated REST API from a given sqlgeneration database schema."
+  version: "1.0.0"
+  title: "REST API query generator"
+  termsOfService: "http://datascience9/terms"
+  contact:
+    name: "API Support"
+    url: "http://datascience9/contact"
+    email: "paul.mai@datascience9.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+servers:
+- url: "http://datascience9.com/query"
+  description: "Generation of queries"
+paths:
+  /DwUsrappsList:
+    get:
+      tags:
+      - "DwUsrappsList"
+      operationId: "b284ee38-1602-422a-b3d5-626b134fb92f"
+      parameters: []
+      responses:
+        200:
+          description: "DwUsrappsList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsrappsList"
+              examples:
+                test1:
+                  value:
+                    kodapp: "ulla facilisis. At v1"
+                    descapp: "a kasd gubergren, no1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickUsrusers:
+    get:
+      tags:
+      - "PickUsrusers"
+      operationId: "cb775907-1f1e-4c88-8cb9-532d8b2b47d6"
+      parameters: []
+      responses:
+        200:
+          description: "PickUsrusers response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickUsrusers"
+              examples:
+                test1:
+                  value:
+                    koduser: 1247318556
+                    username: "Delcine"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnYpalPeriodEpidom/{arg_kodxrisi}/{arg_kodypal}/{arg_fromdate}/{arg_todate}:
+    get:
+      tags:
+      - "SprnYpalPeriodEpidom"
+      operationId: "50d2b688-bc61-4ebd-8aea-ee679603e2d4"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_fromdate"
+        in: "path"
+        description: "arg_fromdate"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_todate"
+        in: "path"
+        description: "arg_todate"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnYpalPeriodEpidom response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnYpalPeriodEpidom"
+              examples:
+                test1:
+                  value:
+                    descepidom: "ed diam voluptua. At1"
+                    poso: 1
+                    notes: "ro eos et accusam et1"
+                    sumPoso: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZpepidomXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZpepidomXrisi"
+      operationId: "a3476bc5-fb10-4c54-a300-91f53c3919df"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZpepidomXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZpepidomXrisi"
+              examples:
+                test1:
+                  value:
+                    kodepidom: "ac94e611-3b80-40f1-9418-577676486659"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descepidom: "ed diam voluptua. At1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthReportFormNotes/{arg_kodreport}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthReportFormNotes"
+      operationId: "f0ae8e2c-b4c2-4f12-a24a-18d5449e46b9"
+      parameters:
+      - name: "arg_kodreport"
+        in: "path"
+        description: "arg_kodreport"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthReportFormNotes response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthReportFormNotes"
+              examples:
+                test1:
+                  value:
+                    kodreport: "ccusam et justo duo 1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descreport: " et justo duo dolore1"
+                    printMarginTop: 1
+                    printMarginBottom: 1
+                    printMarginLeft: 1
+                    printMarginRight: 1
+                    printOrientation: 1
+                    printPaperSize: 1
+                    printScale: 1
+                    subtitle: " dolore magna aliquy1"
+                    prnNotes1: "delenit augue duis d1"
+                    prnNotes2: ", consetetur sadipsc1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthYpalXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthYpalXrisi"
+      operationId: "12976f16-5b02-46de-b5a3-5f8f095e5018"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthYpalXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthYpalXrisi"
+              examples:
+                test1:
+                  value:
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZpkratXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZpkratXrisi"
+      operationId: "a4d40347-f34d-4b67-b87b-d578c7562f8a"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZpkratXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZpkratXrisi"
+              examples:
+                test1:
+                  value:
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desckrat: "akimata sanctus est 1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwAfxptoseisForm/{as_onom}:
+    get:
+      tags:
+      - "DwAfxptoseisForm"
+      operationId: "4baee807-d5fe-4a09-acf9-e8d93d83d737"
+      parameters:
+      - name: "as_onom"
+        in: "path"
+        description: "as_onom"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwAfxptoseisForm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwAfxptoseisForm"
+              examples:
+                test1:
+                  value:
+                    onom: "si. Lorem ipsum dolo1"
+                    gen: "e eu feugiat nulla f1"
+                    ait: "d7130fed-f2ee-4970-92e7-951136c52b7b"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnReport2/{arg_kodreport}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnReport2"
+      operationId: "c2c5e142-b25a-497f-9050-1c34bc7ae4b0"
+      parameters:
+      - name: "arg_kodreport"
+        in: "path"
+        description: "arg_kodreport"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnReport2 response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnReport2"
+              examples:
+                test1:
+                  value:
+                    kodreport: "ccusam et justo duo 1"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    subtitle: " dolore magna aliquy1"
+                    prnNotes1: "delenit augue duis d1"
+                    prnNotes2: ", consetetur sadipsc1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthZpperiodList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthZpperiodList"
+      operationId: "d77a196e-48b8-441e-ac28-200baaddcf9c"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthZpperiodList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthZpperiodList"
+              examples:
+                test1:
+                  value:
+                    kodperiod: "e34f69bb-fb1c-403f-ba8e-780bc41b31d7"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descperiod: "mod tincidunt ut lao1"
+                    orderno: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthYpalFormJob/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthYpalFormJob"
+      operationId: "714f9606-03fe-42ec-aac6-4cbd75b5af13"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthYpalFormJob response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthYpalFormJob"
+              examples:
+                test1:
+                  value:
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    adt: "nissim qu1"
+                    mitroo: "akimata ut vero vol1"
+                    afm: " ipsum do1"
+                    doy: "ng elitr, sed diam n1"
+                    birthdate: "1985-03-22"
+                    homephone: "177-829-6229"
+                    mobilphone: "713-865-9781"
+                    sex: "1"
+                    spouse: " sanctus est Lorem i1"
+                    childs: 1
+                    prostmeli: 1
+                    city: "G"
+                    area: "et ea rebum. Stet cl1"
+                    address: "quyam erat, sed diam1"
+                    tk: "t nulla f1"
+                    email: "Kathryn@dummy.com"
+                    kodtmima: "9260667e-79a4-4c91-bef0-1aa63a6e6780"
+                    kodidikot: "e feugait nulla faci1"
+                    jobtitle: " placerat facer poss1"
+                    hireddate: "1921-03-22"
+                    rehireddate: "2089-03-22"
+                    termdate: "1939-03-22"
+                    termreason: " nonumy eirmod tempo1"
+                    jobphone: "464-535-6572"
+                    intphone: "533-858-6518"
+                    klimakio: 1
+                    bathmos: "1"
+                    klados: "ita kasd 1"
+                    bank: "na aliquyam erat, se1"
+                    bankno: "s eleifend option co1"
+                    exeldate: "2045-03-22"
+                    kodthesi: "ipsum dolor sit amet1"
+                    kodoikog: "4acab7e4-e756-4a95-bdfa-b799e1c4562b"
+                    kodtamio: "numy eirmod tempor i1"
+                    mothername: "Cristie"
+                    newexeldate: "2042-03-22"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnAnalisiEpidomAsf/{arg_kodxrisi}/{arg_kodypal}:
+    get:
+      tags:
+      - "SprnAnalisiEpidomAsf"
+      operationId: "fd31ba93-542a-42c8-9dcc-157735478524"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "SprnAnalisiEpidomAsf response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnAnalisiEpidomAsf"
+              examples:
+                test1:
+                  value:
+                    poso: 1
+                    descepidom: "ed diam voluptua. At1"
+                    kodepidom: "ac94e611-3b80-40f1-9418-577676486659"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    cmSumposo: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnFinalEpidomYpal/{arg_kodfinal}/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnFinalEpidomYpal"
+      operationId: "a9e211ec-8f22-4f6d-9fdc-bdc9304f6012"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnFinalEpidomYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnFinalEpidomYpal"
+              examples:
+                test1:
+                  value:
+                    descepidom: "ed diam voluptua. At1"
+                    poso: 1
+                    notes: "ro eos et accusam et1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFinalList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFinalList"
+      operationId: "68b13576-8cf6-43d7-8b30-70346d8a0654"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFinalList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFinalList"
+              examples:
+                test1:
+                  value:
+                    kodfinal: 1
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descfinal: "em ipsum dolor sit a1"
+                    datefinal: "1947-03-22"
+                    title: "ro eros et accumsan 1"
+                    kodkat: "us est Lorem ipsum d1"
+                    desckat: " sanctus sea sed tak1"
+                    kodperiod: "e34f69bb-fb1c-403f-ba8e-780bc41b31d7"
+                    descperiod: "mod tincidunt ut lao1"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFyloYpalList/{arg_kodfylo}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFyloYpalList"
+      operationId: "ccbb2ebf-68d5-481c-896f-407f3a7de690"
+      parameters:
+      - name: "arg_kodfylo"
+        in: "path"
+        description: "arg_kodfylo"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFyloYpalList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFyloYpalList"
+              examples:
+                test1:
+                  value:
+                    kodfylo: "tet1"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnYpalTotalDates/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnYpalTotalDates"
+      operationId: "dd4b8ea5-3308-4661-8a17-83ecc4edc15d"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnYpalTotalDates response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnYpalTotalDates"
+              examples:
+                test1:
+                  value:
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    mitroo: "akimata ut vero vol1"
+                    adt: "nissim qu1"
+                    afm: " ipsum do1"
+                    doy: "ng elitr, sed diam n1"
+                    bankno: "s eleifend option co1"
+                    bank: "na aliquyam erat, se1"
+                    childs: 1
+                    prostmeli: 1
+                    klimakio: 1
+                    bathmos: "1"
+                    klados: "ita kasd 1"
+                    birthdate: "1985-03-22"
+                    hireddate: "1921-03-22"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descidikot: " rebum. Stet clita k1"
+                    descoikog: " justo duo dolores e1"
+                    desctmima: "sim assum. Lorem ips1"
+                    descthesi: "aliquyam erat, sed d1"
+                    desctamio: "quyam erat, sed diam1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFinalYpalEpidomList/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFinalYpalEpidomList"
+      operationId: "591cb40f-f938-44a0-a397-925df7697661"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFinalYpalEpidomList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFinalYpalEpidomList"
+              examples:
+                test1:
+                  value:
+                    kodfinal: 1
+                    kodypal: 1425319722
+                    kodepidom: "ac94e611-3b80-40f1-9418-577676486659"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    poso: 1
+                    aa: 1.0
+                    notes: "ro eos et accusam et1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsrgroupsList:
+    get:
+      tags:
+      - "DwUsrgroupsList"
+      operationId: "974f83ce-7bee-446a-835f-d9b3ed7336c1"
+      parameters: []
+      responses:
+        200:
+          description: "DwUsrgroupsList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsrgroupsList"
+              examples:
+                test1:
+                  value:
+                    kodgroup: 725487955
+                    descgroup: "sit amet. Lorem ipsu1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwAfxfilterList/{argtrablename}:
+    get:
+      tags:
+      - "DwAfxfilterList"
+      operationId: "a9c7bd87-08be-49bd-a4e6-4334ce7f78d3"
+      parameters:
+      - name: "argtrablename"
+        in: "path"
+        description: "argtrablename"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwAfxfilterList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwAfxfilterList"
+              examples:
+                test1:
+                  value:
+                    kodfilter: 1.0
+                    descfilter: "77b0a166-96ec-4618-bcbc-0ffb72c40f92"
+                    tablename: "Alana"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFyloForm/{arg_kodfylo}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFyloForm"
+      operationId: "434d35b3-35af-406a-a234-a44c37ea6ec1"
+      parameters:
+      - name: "arg_kodfylo"
+        in: "path"
+        description: "arg_kodfylo"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFyloForm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFyloForm"
+              examples:
+                test1:
+                  value:
+                    kodfylo: "tet1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descfylo: "m iriure dolor in he1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SelMisthZpkratXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SelMisthZpkratXrisi"
+      operationId: "d2e16964-24bf-43bb-871d-f2694f1549a7"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SelMisthZpkratXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SelMisthZpkratXrisi"
+              examples:
+                test1:
+                  value:
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desckrat: "akimata sanctus est 1"
+                    issel: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnYpalPeriodKrat/{arg_kodxrisi}/{arg_kodypal}/{arg_fromdate}/{arg_todate}:
+    get:
+      tags:
+      - "SprnYpalPeriodKrat"
+      operationId: "c2011468-d02e-483e-9454-6175cd1f63d9"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_fromdate"
+        in: "path"
+        description: "arg_fromdate"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_todate"
+        in: "path"
+        description: "arg_todate"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnYpalPeriodKrat response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnYpalPeriodKrat"
+              examples:
+                test1:
+                  value:
+                    desckrat: "akimata sanctus est 1"
+                    poso: 1
+                    notes: "ro eos et accusam et1"
+                    sumPoso: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnReport3/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnReport3"
+      operationId: "4dcc2c70-081f-4292-86e2-d952c028b6a6"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnReport3 response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnReport3"
+              examples:
+                test1:
+                  value:
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    aa: 1.0
+                    datefinal: "1947-03-22"
+                    kodypal: 1425319722
+                    title: "ro eros et accumsan 1"
+                    kodfinal: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthFyloXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthFyloXrisi"
+      operationId: "0d051efd-8c4c-4cf3-b2a3-e80dcbff8919"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthFyloXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthFyloXrisi"
+              examples:
+                test1:
+                  value:
+                    kodfylo: "tet1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descfylo: "m iriure dolor in he1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SelMisthZpperiodXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SelMisthZpperiodXrisi"
+      operationId: "bd7d911a-7ccc-4d0a-b541-d8c213110374"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SelMisthZpperiodXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SelMisthZpperiodXrisi"
+              examples:
+                test1:
+                  value:
+                    kodperiod: "e34f69bb-fb1c-403f-ba8e-780bc41b31d7"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descperiod: "mod tincidunt ut lao1"
+                    issel: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFyloEpidomList/{arg_kodfylo}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFyloEpidomList"
+      operationId: "4d75f988-e538-4913-a671-6d5bf4230d83"
+      parameters:
+      - name: "arg_kodfylo"
+        in: "path"
+        description: "arg_kodfylo"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFyloEpidomList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFyloEpidomList"
+              examples:
+                test1:
+                  value:
+                    kodfylo: "tet1"
+                    kodepidom: "ac94e611-3b80-40f1-9418-577676486659"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    expr: " diam nonumy eirmod 1"
+                    aa: 1.0
+                    notes: "ro eos et accusam et1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZptamioXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZptamioXrisi"
+      operationId: "54893342-2612-4cbd-9e02-924efe30e933"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZptamioXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZptamioXrisi"
+              examples:
+                test1:
+                  value:
+                    kodtamio: "numy eirmod tempor i1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desctamio: "quyam erat, sed diam1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZpperiodXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZpperiodXrisi"
+      operationId: "1e0da7bb-023b-4dc9-b2c4-aaaed956ce28"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZpperiodXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZpperiodXrisi"
+              examples:
+                test1:
+                  value:
+                    kodperiod: "e34f69bb-fb1c-403f-ba8e-780bc41b31d7"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descperiod: "mod tincidunt ut lao1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnAnalisiKratForos/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnAnalisiKratForos"
+      operationId: "fdf42162-ddf2-49fd-9ea0-a8e1638de04a"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnAnalisiKratForos response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnAnalisiKratForos"
+              examples:
+                test1:
+                  value:
+                    desckrat: "akimata sanctus est 1"
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    poso: 1
+                    cmSumposo: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFinalYpalKratList/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFinalYpalKratList"
+      operationId: "23e41832-0cbd-4ab9-9838-2ca643acbad6"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFinalYpalKratList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFinalYpalKratList"
+              examples:
+                test1:
+                  value:
+                    kodfinal: 1
+                    kodypal: 1425319722
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    poso: 1
+                    aa: 1.0
+                    notes: "ro eos et accusam et1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnReport/{arg_kodreport}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnReport"
+      operationId: "45518a3a-f97d-4a1d-9e81-a172168c6e73"
+      parameters:
+      - name: "arg_kodreport"
+        in: "path"
+        description: "arg_kodreport"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnReport response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnReport"
+              examples:
+                test1:
+                  value:
+                    kodreport: "ccusam et justo duo 1"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    mitroo: "akimata ut vero vol1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFinalYpalPrildate/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFinalYpalPrildate"
+      operationId: "0bca049d-b7db-4211-ad35-ef6a8e1ae7d0"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFinalYpalPrildate response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFinalYpalPrildate"
+              examples:
+                test1:
+                  value:
+                    kodfinal: 1
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    plirdate: "1960-03-22"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnFinalYpalList/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnFinalYpalList"
+      operationId: "78ebfd29-ae39-4cdf-b23f-88e887e8eb9a"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnFinalYpalList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnFinalYpalList"
+              examples:
+                test1:
+                  value:
+                    descfinal: "em ipsum dolor sit a1"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    kodfinal: 1
+                    datefinal: "1947-03-22"
+                    plirdate: "1960-03-22"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    kodfinal1: 1
+                    title: "ro eros et accumsan 1"
+                    mitroo: "akimata ut vero vol1"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickUsrgroups:
+    get:
+      tags:
+      - "PickUsrgroups"
+      operationId: "2f215370-59af-4845-887d-1ce540c22b46"
+      parameters: []
+      responses:
+        200:
+          description: "PickUsrgroups response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickUsrgroups"
+              examples:
+                test1:
+                  value:
+                    kodgroup: 725487955
+                    descgroup: "sit amet. Lorem ipsu1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnFinalEpidomMisth/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnFinalEpidomMisth"
+      operationId: "24c86586-286c-4f41-ba66-a3f06ea13b36"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnFinalEpidomMisth response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnFinalEpidomMisth"
+              examples:
+                test1:
+                  value:
+                    descepidom: "ed diam voluptua. At1"
+                    sumPoso: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnAnalisiEpidomNoforos/{arg_kodxrisi}/{arg_kodypal}:
+    get:
+      tags:
+      - "SprnAnalisiEpidomNoforos"
+      operationId: "a2371910-828f-4938-ad69-03a86bdcff19"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "SprnAnalisiEpidomNoforos response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnAnalisiEpidomNoforos"
+              examples:
+                test1:
+                  value:
+                    poso: 1
+                    descepidom: "ed diam voluptua. At1"
+                    kodepidom: "ac94e611-3b80-40f1-9418-577676486659"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    cmSumposo: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthZpyvarForm/{arg_kodyvar}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthZpyvarForm"
+      operationId: "dfd675e8-91f5-41f0-a298-02ab4e88922a"
+      parameters:
+      - name: "arg_kodyvar"
+        in: "path"
+        description: "arg_kodyvar"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthZpyvarForm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthZpyvarForm"
+              examples:
+                test1:
+                  value:
+                    kodyvar: "sam et justo duo do1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descyvar: "orem ipsum dolor sit1"
+                    expr: " diam nonumy eirmod 1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthZpoikogList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthZpoikogList"
+      operationId: "beac0a51-ec75-4935-bd7d-2b8f1350f438"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthZpoikogList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthZpoikogList"
+              examples:
+                test1:
+                  value:
+                    kodoikog: "4acab7e4-e756-4a95-bdfa-b799e1c4562b"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descoikog: " justo duo dolores e1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickZpxrisiNocurrent/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickZpxrisiNocurrent"
+      operationId: "6e104790-3667-4d94-92de-765d6f67f5a9"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickZpxrisiNocurrent response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickZpxrisiNocurrent"
+              examples:
+                test1:
+                  value:
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descxrisi: "lita kasd gubergren,1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZpthesiXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZpthesiXrisi"
+      operationId: "fd1cebca-21fd-4870-b950-080530bbc3fa"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZpthesiXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZpthesiXrisi"
+              examples:
+                test1:
+                  value:
+                    kodthesi: "ipsum dolor sit amet1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descthesi: "aliquyam erat, sed d1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsractionsList:
+    get:
+      tags:
+      - "DwUsractionsList"
+      operationId: "65f5bda2-eb34-4a13-bdd3-79f82035efe4"
+      parameters: []
+      responses:
+        200:
+          description: "DwUsractionsList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsractionsList"
+              examples:
+                test1:
+                  value:
+                    kodaction: "agna aliquyam erat, 1"
+                    kodapp: "ulla facilisis. At v1"
+                    descaction: "clita kasd gubergren1"
+                    descapp: "a kasd gubergren, no1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnFinalNopaidAnaKatast/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnFinalNopaidAnaKatast"
+      operationId: "5e042b54-449b-4b91-9f5e-7f7e2f9a0637"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnFinalNopaidAnaKatast response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnFinalNopaidAnaKatast"
+              examples:
+                test1:
+                  value:
+                    descfinal: "em ipsum dolor sit a1"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    kodfinal: 1
+                    datefinal: "1947-03-22"
+                    plirdate: "1960-03-22"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    kodfinal1: 1
+                    descperiod: "mod tincidunt ut lao1"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthYpalYvarList/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthYpalYvarList"
+      operationId: "0b13636b-1db0-4a11-bbad-1ae51e0be4a2"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthYpalYvarList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthYpalYvarList"
+              examples:
+                test1:
+                  value:
+                    kodypal: 1425319722
+                    kodyvar: "sam et justo duo do1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    aa: 1.0
+                    expr: " diam nonumy eirmod 1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsrusersForm/{arg_koduser}:
+    get:
+      tags:
+      - "DwUsrusersForm"
+      operationId: "0c589f1a-28fe-4d76-9997-954617831425"
+      parameters:
+      - name: "arg_koduser"
+        in: "path"
+        description: "arg_koduser"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "DwUsrusersForm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsrusersForm"
+              examples:
+                test1:
+                  value:
+                    koduser: 1247318556
+                    username: "Delcine"
+                    fullname: "Frayda"
+                    password: "f9c6c0a0-3d1b-4604-898d-519bf891fc5b"
+                    isactive: 1
+                    tomeas: "lore magna aliquyam 1"
+                    idiotita: "a aliquyam erat, sed1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnFinalKratMisth/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnFinalKratMisth"
+      operationId: "acb3a126-9260-413a-98b4-29c260c3ca7e"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnFinalKratMisth response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnFinalKratMisth"
+              examples:
+                test1:
+                  value:
+                    desckrat: "akimata sanctus est 1"
+                    sumPoso: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwAfxfilterdList/{kodfilter}:
+    get:
+      tags:
+      - "DwAfxfilterdList"
+      operationId: "bab9ea79-fea8-4055-b24a-fcf50ff35f09"
+      parameters:
+      - name: "kodfilter"
+        in: "path"
+        description: "kodfilter"
+        required: true
+        schema:
+          type: "number"
+      responses:
+        200:
+          description: "DwAfxfilterdList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwAfxfilterdList"
+              examples:
+                test1:
+                  value:
+                    kodfilterd: 1.74771597E9
+                    kodfilter: 1.0
+                    pedio: "o dignissim qui blan1"
+                    telestis: "uptua. At vero eos 1"
+                    timi: "a facilisis at vero 1"
+                    joint: "equat, ve1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthYpalFormPersonal/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthYpalFormPersonal"
+      operationId: "baee9662-ffaf-45b9-a784-d7750f6c791f"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthYpalFormPersonal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthYpalFormPersonal"
+              examples:
+                test1:
+                  value:
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    adt: "nissim qu1"
+                    mitroo: "akimata ut vero vol1"
+                    afm: " ipsum do1"
+                    doy: "ng elitr, sed diam n1"
+                    birthdate: "1985-03-22"
+                    homephone: "177-829-6229"
+                    mobilphone: "713-865-9781"
+                    sex: "1"
+                    spouse: " sanctus est Lorem i1"
+                    childs: 1
+                    prostmeli: 1
+                    city: "G"
+                    area: "et ea rebum. Stet cl1"
+                    address: "quyam erat, sed diam1"
+                    tk: "t nulla f1"
+                    email: "Kathryn@dummy.com"
+                    kodtmima: "9260667e-79a4-4c91-bef0-1aa63a6e6780"
+                    kodidikot: "e feugait nulla faci1"
+                    jobtitle: " placerat facer poss1"
+                    hireddate: "1921-03-22"
+                    rehireddate: "2089-03-22"
+                    termdate: "1939-03-22"
+                    termreason: " nonumy eirmod tempo1"
+                    jobphone: "464-535-6572"
+                    intphone: "533-858-6518"
+                    klimakio: 1
+                    bathmos: "1"
+                    klados: "ita kasd 1"
+                    bank: "na aliquyam erat, se1"
+                    bankno: "s eleifend option co1"
+                    exeldate: "2045-03-22"
+                    kodthesi: "ipsum dolor sit amet1"
+                    kodoikog: "4acab7e4-e756-4a95-bdfa-b799e1c4562b"
+                    kodtamio: "numy eirmod tempor i1"
+                    mothername: "Cristie"
+                    newexeldate: "2042-03-22"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthZptmimaList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthZptmimaList"
+      operationId: "ebb8dbdd-3152-4b78-9356-ec58af788cc7"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthZptmimaList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthZptmimaList"
+              examples:
+                test1:
+                  value:
+                    kodtmima: "9260667e-79a4-4c91-bef0-1aa63a6e6780"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desctmima: "sim assum. Lorem ips1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthYpalList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthYpalList"
+      operationId: "7a224512-a39a-41fd-bb33-c4f64b1374e4"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthYpalList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthYpalList"
+              examples:
+                test1:
+                  value:
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    mitroo: "akimata ut vero vol1"
+                    klimakio: 1
+                    klados: "ita kasd 1"
+                    bathmos: "1"
+                    descidikot: " rebum. Stet clita k1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnAnalisiKratAutoforos/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnAnalisiKratAutoforos"
+      operationId: "18c89201-3104-4919-8275-e3675f67c6fe"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnAnalisiKratAutoforos response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnAnalisiKratAutoforos"
+              examples:
+                test1:
+                  value:
+                    desckrat: "akimata sanctus est 1"
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    poso: 1
+                    cmSumposo: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnFinalNopaidAnaYpal/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnFinalNopaidAnaYpal"
+      operationId: "ee00e5f9-b445-4ae4-aac3-d9316eb96189"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnFinalNopaidAnaYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnFinalNopaidAnaYpal"
+              examples:
+                test1:
+                  value:
+                    descfinal: "em ipsum dolor sit a1"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    kodfinal: 1
+                    datefinal: "1947-03-22"
+                    plirdate: "1960-03-22"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descperiod: "mod tincidunt ut lao1"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnYpalFinal/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnYpalFinal"
+      operationId: "d850f66a-419a-4b69-8ebf-cbf960cef783"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnYpalFinal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnYpalFinal"
+              examples:
+                test1:
+                  value:
+                    datefinal: "1947-03-22"
+                    descfinal: "em ipsum dolor sit a1"
+                    kodfinal: 1
+                    kodypal: 1425319722
+                    plirdate: "1960-03-22"
+                    descperiod: "mod tincidunt ut lao1"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZpoikogXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZpoikogXrisi"
+      operationId: "1615e5ea-af7a-4423-8b26-ab5a903ada9b"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZpoikogXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZpoikogXrisi"
+              examples:
+                test1:
+                  value:
+                    kodoikog: "4acab7e4-e756-4a95-bdfa-b799e1c4562b"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descoikog: " justo duo dolores e1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsrgrouppermList/{arg_kodgroup}:
+    get:
+      tags:
+      - "DwUsrgrouppermList"
+      operationId: "5dc13989-d78a-48cb-a99b-26e1c34fa245"
+      parameters:
+      - name: "arg_kodgroup"
+        in: "path"
+        description: "arg_kodgroup"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "DwUsrgrouppermList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsrgrouppermList"
+              examples:
+                test1:
+                  value:
+                    kodgroup: 725487955
+                    kodaction: "agna aliquyam erat, 1"
+                    editrec: 1
+                    addrec: 1
+                    delrec: 1
+                    openlist: 1
+                    openform: 1
+                    descapp: "a kasd gubergren, no1"
+                    descaction: "clita kasd gubergren1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnAnalisiYpal/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnAnalisiYpal"
+      operationId: "acb21224-cfaf-4acd-aeae-3e7983a984b1"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnAnalisiYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnAnalisiYpal"
+              examples:
+                test1:
+                  value:
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    mitroo: "akimata ut vero vol1"
+                    adt: "nissim qu1"
+                    afm: " ipsum do1"
+                    doy: "ng elitr, sed diam n1"
+                    bankno: "s eleifend option co1"
+                    bank: "na aliquyam erat, se1"
+                    childs: 1
+                    prostmeli: 1
+                    klimakio: 1
+                    bathmos: "1"
+                    klados: "ita kasd 1"
+                    birthdate: "1985-03-22"
+                    hireddate: "1921-03-22"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descidikot: " rebum. Stet clita k1"
+                    descoikog: " justo duo dolores e1"
+                    desctmima: "sim assum. Lorem ips1"
+                    descthesi: "aliquyam erat, sed d1"
+                    desctamio: "quyam erat, sed diam1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwStepKratapodMisthselect/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwStepKratapodMisthselect"
+      operationId: "85c21ebb-f5bc-487f-bef9-84dd542e93fc"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwStepKratapodMisthselect response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwStepKratapodMisthselect"
+              examples:
+                test1:
+                  value:
+                    descfinal: "em ipsum dolor sit a1"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    desckrat: "akimata sanctus est 1"
+                    poso: 1
+                    kodfinal: 1
+                    kodypal: 1425319722
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    aa: 1.0
+                    notes: "ro eos et accusam et1"
+                    kodkratapod: 1.0
+                    datefinal: "1947-03-22"
+                    plirdate: "1960-03-22"
+                    cmSel: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnAnalisiEpidomForos/{arg_kodxrisi}/{arg_kodypal}:
+    get:
+      tags:
+      - "SprnAnalisiEpidomForos"
+      operationId: "b5338a77-ca53-4e1b-85b7-2fb6aa2ecc20"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "SprnAnalisiEpidomForos response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnAnalisiEpidomForos"
+              examples:
+                test1:
+                  value:
+                    poso: 1
+                    descepidom: "ed diam voluptua. At1"
+                    kodepidom: "ac94e611-3b80-40f1-9418-577676486659"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    cmSumposo: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnKratapod/{arg_kodxrisi}/{arg_kodkratapod}:
+    get:
+      tags:
+      - "PrnKratapod"
+      operationId: "6a71e140-164b-4a1e-b741-d3e2e83d3111"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodkratapod"
+        in: "path"
+        description: "arg_kodkratapod"
+        required: true
+        schema:
+          type: "number"
+      responses:
+        200:
+          description: "PrnKratapod response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnKratapod"
+              examples:
+                test1:
+                  value:
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    desckrat: "akimata sanctus est 1"
+                    descfinal: "em ipsum dolor sit a1"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    kodfinal: 1
+                    datefinal: "1947-03-22"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    poso: 1
+                    kodkratapod: 1.0
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZpidikotXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZpidikotXrisi"
+      operationId: "007c12bb-10b2-4c8b-8144-c942c3886e8d"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZpidikotXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZpidikotXrisi"
+              examples:
+                test1:
+                  value:
+                    kodidikot: "e feugait nulla faci1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descidikot: " rebum. Stet clita k1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnAnalisiKratLoipa/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnAnalisiKratLoipa"
+      operationId: "38fb7819-0136-4889-93b9-d3cc87783916"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnAnalisiKratLoipa response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnAnalisiKratLoipa"
+              examples:
+                test1:
+                  value:
+                    desckrat: "akimata sanctus est 1"
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    poso: 1
+                    cmSumposo: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwAfxptoseisList:
+    get:
+      tags:
+      - "DwAfxptoseisList"
+      operationId: "a621ce82-d343-41c0-9d89-20f8304874c8"
+      parameters: []
+      responses:
+        200:
+          description: "DwAfxptoseisList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwAfxptoseisList"
+              examples:
+                test1:
+                  value:
+                    onom: "si. Lorem ipsum dolo1"
+                    gen: "e eu feugiat nulla f1"
+                    ait: "d7130fed-f2ee-4970-92e7-951136c52b7b"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthYpalFormGeneral/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthYpalFormGeneral"
+      operationId: "9d8a858b-7cfe-4ff6-9077-50962f3cb26a"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthYpalFormGeneral response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthYpalFormGeneral"
+              examples:
+                test1:
+                  value:
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    adt: "nissim qu1"
+                    mitroo: "akimata ut vero vol1"
+                    afm: " ipsum do1"
+                    doy: "ng elitr, sed diam n1"
+                    birthdate: "1985-03-22"
+                    homephone: "177-829-6229"
+                    mobilphone: "713-865-9781"
+                    sex: "1"
+                    spouse: " sanctus est Lorem i1"
+                    childs: 1
+                    prostmeli: 1
+                    city: "G"
+                    area: "et ea rebum. Stet cl1"
+                    address: "quyam erat, sed diam1"
+                    tk: "t nulla f1"
+                    email: "Kathryn@dummy.com"
+                    kodtmima: "9260667e-79a4-4c91-bef0-1aa63a6e6780"
+                    kodidikot: "e feugait nulla faci1"
+                    jobtitle: " placerat facer poss1"
+                    hireddate: "1921-03-22"
+                    rehireddate: "2089-03-22"
+                    termdate: "1939-03-22"
+                    termreason: " nonumy eirmod tempo1"
+                    jobphone: "464-535-6572"
+                    intphone: "533-858-6518"
+                    klimakio: 1
+                    bathmos: "1"
+                    klados: "ita kasd 1"
+                    bank: "na aliquyam erat, se1"
+                    bankno: "s eleifend option co1"
+                    exeldate: "2045-03-22"
+                    kodthesi: "ipsum dolor sit amet1"
+                    kodoikog: "4acab7e4-e756-4a95-bdfa-b799e1c4562b"
+                    kodtamio: "numy eirmod tempor i1"
+                    mothername: "Cristie"
+                    newexeldate: "2042-03-22"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnFinalAtomikiMisth/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnFinalAtomikiMisth"
+      operationId: "3a291c41-a4d1-48d9-b4e2-fe41d4c5d46d"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnFinalAtomikiMisth response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnFinalAtomikiMisth"
+              examples:
+                test1:
+                  value:
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    mitroo: "akimata ut vero vol1"
+                    adt: "nissim qu1"
+                    afm: " ipsum do1"
+                    doy: "ng elitr, sed diam n1"
+                    bankno: "s eleifend option co1"
+                    bank: "na aliquyam erat, se1"
+                    childs: 1
+                    prostmeli: 1
+                    klimakio: 1
+                    bathmos: "1"
+                    klados: "ita kasd 1"
+                    birthdate: "1985-03-22"
+                    hireddate: "1921-03-22"
+                    descoikog: " justo duo dolores e1"
+                    descidikot: " rebum. Stet clita k1"
+                    descthesi: "aliquyam erat, sed d1"
+                    desctmima: "sim assum. Lorem ips1"
+                    kodfinal: 1
+                    aa: 1.0
+                    descfinal: "em ipsum dolor sit a1"
+                    datefinal: "1947-03-22"
+                    title: "ro eros et accumsan 1"
+                    kodypal: 1425319722
+                    desctamio: "quyam erat, sed diam1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFinalYpalPlirdateList/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFinalYpalPlirdateList"
+      operationId: "2667f641-7aa8-4d20-91ed-34868feb15b4"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFinalYpalPlirdateList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFinalYpalPlirdateList"
+              examples:
+                test1:
+                  value:
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    plirdate: "1960-03-22"
+                    kodfinal: 1
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnYpalFinal/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnYpalFinal"
+      operationId: "ce6309e9-649e-4350-a482-bf8183bc5848"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnYpalFinal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnYpalFinal"
+              examples:
+                test1:
+                  value:
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    mitroo: "akimata ut vero vol1"
+                    adt: "nissim qu1"
+                    afm: " ipsum do1"
+                    doy: "ng elitr, sed diam n1"
+                    bankno: "s eleifend option co1"
+                    bank: "na aliquyam erat, se1"
+                    childs: 1
+                    prostmeli: 1
+                    klimakio: 1
+                    bathmos: "1"
+                    klados: "ita kasd 1"
+                    birthdate: "1985-03-22"
+                    hireddate: "1921-03-22"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descidikot: " rebum. Stet clita k1"
+                    descoikog: " justo duo dolores e1"
+                    desctmima: "sim assum. Lorem ips1"
+                    descthesi: "aliquyam erat, sed d1"
+                    desctamio: "quyam erat, sed diam1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFinalYpalList/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFinalYpalList"
+      operationId: "20729dc4-f6b0-4f37-8ac1-10f031da3b65"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFinalYpalList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFinalYpalList"
+              examples:
+                test1:
+                  value:
+                    datefinal: "1947-03-22"
+                    descfinal: "em ipsum dolor sit a1"
+                    kodfinal: 1
+                    kodypal: 1425319722
+                    plirdate: "1960-03-22"
+                    cmPaid: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZptmimaXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZptmimaXrisi"
+      operationId: "8c521f5e-971c-4433-b730-d54077441233"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZptmimaXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZptmimaXrisi"
+              examples:
+                test1:
+                  value:
+                    kodtmima: "9260667e-79a4-4c91-bef0-1aa63a6e6780"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desctmima: "sim assum. Lorem ips1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthZptamioList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthZptamioList"
+      operationId: "486a6e4f-b2b0-43e9-a7f4-45be21540611"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthZptamioList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthZptamioList"
+              examples:
+                test1:
+                  value:
+                    kodtamio: "numy eirmod tempor i1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desctamio: "quyam erat, sed diam1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZpyvarXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZpyvarXrisi"
+      operationId: "1ebd9d89-b273-4a4c-ae3d-5696113d97ba"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZpyvarXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZpyvarXrisi"
+              examples:
+                test1:
+                  value:
+                    kodyvar: "sam et justo duo do1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descyvar: "orem ipsum dolor sit1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsruserpermList/{arg_koduser}:
+    get:
+      tags:
+      - "DwUsruserpermList"
+      operationId: "cf8e44ec-0572-4c64-869a-a618c5c817a2"
+      parameters:
+      - name: "arg_koduser"
+        in: "path"
+        description: "arg_koduser"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "DwUsruserpermList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsruserpermList"
+              examples:
+                test1:
+                  value:
+                    kodapp: "ulla facilisis. At v1"
+                    koduser: 1247318556
+                    enable: 1
+                    descapp: "a kasd gubergren, no1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFinalDetailsList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFinalDetailsList"
+      operationId: "fc2a1d24-3c72-4142-b838-f5f3dd62e4ec"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFinalDetailsList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFinalDetailsList"
+              examples:
+                test1:
+                  value:
+                    datefinal: "1947-03-22"
+                    descfinal: "em ipsum dolor sit a1"
+                    kodfinal: 1
+                    plirdate: "1960-03-22"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    kodfinal1: 1
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desckat: " sanctus sea sed tak1"
+                    descperiod: "mod tincidunt ut lao1"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnAnalisiKratAsf/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnAnalisiKratAsf"
+      operationId: "58a62350-ba27-4cda-9d45-287be11d6132"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnAnalisiKratAsf response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnAnalisiKratAsf"
+              examples:
+                test1:
+                  value:
+                    desckrat: "akimata sanctus est 1"
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    poso: 1
+                    cmSumposo: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsrmembersGroupList/{arg_kodgroup}:
+    get:
+      tags:
+      - "DwUsrmembersGroupList"
+      operationId: "d7ab26f0-1528-448f-b4a6-c2b498c866ca"
+      parameters:
+      - name: "arg_kodgroup"
+        in: "path"
+        description: "arg_kodgroup"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "DwUsrmembersGroupList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsrmembersGroupList"
+              examples:
+                test1:
+                  value:
+                    kodgroup: 725487955
+                    koduser: 1247318556
+                    username: "Delcine"
+                    fullname: "Frayda"
+                    isactive: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZptitlosXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZptitlosXrisi"
+      operationId: "a93c41bd-dfe8-40b0-9982-ff9d48322df6"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZptitlosXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZptitlosXrisi"
+              examples:
+                test1:
+                  value:
+                    kodtitlos: " 1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desctitlos: "m ipsum d1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsrmembersUserList/{arg_koduser}:
+    get:
+      tags:
+      - "DwUsrmembersUserList"
+      operationId: "3a18e46e-d2fc-4bd8-838e-dd849c0f462e"
+      parameters:
+      - name: "arg_koduser"
+        in: "path"
+        description: "arg_koduser"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "DwUsrmembersUserList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsrmembersUserList"
+              examples:
+                test1:
+                  value:
+                    kodgroup: 725487955
+                    koduser: 1247318556
+                    descgroup: "sit amet. Lorem ipsu1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnKratNoapod/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnKratNoapod"
+      operationId: "73e638ff-49fc-4686-b542-3b2acc5988fa"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnKratNoapod response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnKratNoapod"
+              examples:
+                test1:
+                  value:
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    desckrat: "akimata sanctus est 1"
+                    descfinal: "em ipsum dolor sit a1"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    kodfinal: 1
+                    datefinal: "1947-03-22"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    poso: 1
+                    kodkratapod: 1.0
+                    plirdate: "1960-03-22"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnAnalisiEpidomAutoforos/{arg_kodxrisi}/{arg_kodypal}:
+    get:
+      tags:
+      - "SprnAnalisiEpidomAutoforos"
+      operationId: "9fab3bd8-a1ea-4a0e-be9c-841a21555e3a"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "SprnAnalisiEpidomAutoforos response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnAnalisiEpidomAutoforos"
+              examples:
+                test1:
+                  value:
+                    poso: 1
+                    descepidom: "ed diam voluptua. At1"
+                    kodepidom: "ac94e611-3b80-40f1-9418-577676486659"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    cmSumposo: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickUsrusersWithadmin:
+    get:
+      tags:
+      - "PickUsrusersWithadmin"
+      operationId: "5c93901d-d9f1-4a1d-8f93-9c0e2e935881"
+      parameters: []
+      responses:
+        200:
+          description: "PickUsrusersWithadmin response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickUsrusersWithadmin"
+              examples:
+                test1:
+                  value:
+                    koduser: 1247318556
+                    username: "Delcine"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFinalForm/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFinalForm"
+      operationId: "3691f94e-02a1-41c8-be1d-d089d847740b"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFinalForm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFinalForm"
+              examples:
+                test1:
+                  value:
+                    kodfinal: 1
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descfinal: "em ipsum dolor sit a1"
+                    datefinal: "1947-03-22"
+                    title: "ro eros et accumsan 1"
+                    kodkat: "us est Lorem ipsum d1"
+                    kodperiod: "e34f69bb-fb1c-403f-ba8e-780bc41b31d7"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthZpyvarList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthZpyvarList"
+      operationId: "25b7dd82-2537-46d3-9639-763e68915120"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthZpyvarList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthZpyvarList"
+              examples:
+                test1:
+                  value:
+                    kodyvar: "sam et justo duo do1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descyvar: "orem ipsum dolor sit1"
+                    expr: " diam nonumy eirmod 1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthFinalYpal/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthFinalYpal"
+      operationId: "77398c94-00aa-4de0-a084-ad5636919ec4"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthFinalYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthFinalYpal"
+              examples:
+                test1:
+                  value:
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    kodypal: 1425319722
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthZpthesiList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthZpthesiList"
+      operationId: "73170cf0-1cd1-48f5-9bda-e7fafe46c3a5"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthZpthesiList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthZpthesiList"
+              examples:
+                test1:
+                  value:
+                    kodthesi: "ipsum dolor sit amet1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descthesi: "aliquyam erat, sed d1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnFinalTotalMisth/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnFinalTotalMisth"
+      operationId: "7071b3ce-4081-4f72-9af6-4f5b4e0ceeef"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnFinalTotalMisth response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnFinalTotalMisth"
+              examples:
+                test1:
+                  value:
+                    kodfinal: 1
+                    descfinal: "em ipsum dolor sit a1"
+                    datefinal: "1947-03-22"
+                    title: "ro eros et accumsan 1"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsrusersList:
+    get:
+      tags:
+      - "DwUsrusersList"
+      operationId: "cd4a7463-3b6d-48c4-ae7b-2346ace3bd4e"
+      parameters: []
+      responses:
+        200:
+          description: "DwUsrusersList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsrusersList"
+              examples:
+                test1:
+                  value:
+                    username: "Delcine"
+                    fullname: "Frayda"
+                    isactive: 1
+                    koduser: 1247318556
+                    password: "f9c6c0a0-3d1b-4604-898d-519bf891fc5b"
+                    tomeas: "lore magna aliquyam 1"
+                    idiotita: "a aliquyam erat, sed1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthReportYpal/{arg_kodreport}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthReportYpal"
+      operationId: "f7656e71-341b-4bae-920f-6a83ae92c318"
+      parameters:
+      - name: "arg_kodreport"
+        in: "path"
+        description: "arg_kodreport"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthReportYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthReportYpal"
+              examples:
+                test1:
+                  value:
+                    kodreport: "ccusam et justo duo 1"
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFyloList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFyloList"
+      operationId: "f9d26b16-afff-461d-a9d7-ffc7b0f3326f"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFyloList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFyloList"
+              examples:
+                test1:
+                  value:
+                    kodfylo: "tet1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descfylo: "m iriure dolor in he1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnYpalNewklimakio/{arg_kodxrisi}/{arg_date}:
+    get:
+      tags:
+      - "PrnYpalNewklimakio"
+      operationId: "32ecf6f8-9244-4dd1-80ea-a9321075cc03"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_date"
+        in: "path"
+        description: "arg_date"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnYpalNewklimakio response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnYpalNewklimakio"
+              examples:
+                test1:
+                  value:
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    mitroo: "akimata ut vero vol1"
+                    klados: "ita kasd 1"
+                    bathmos: "1"
+                    klimakio: 1
+                    newexeldate: "2042-03-22"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickUsrapps:
+    get:
+      tags:
+      - "PickUsrapps"
+      operationId: "718a414e-02ec-4fa3-b81d-e386217db032"
+      parameters: []
+      responses:
+        200:
+          description: "PickUsrapps response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickUsrapps"
+              examples:
+                test1:
+                  value:
+                    kodapp: "ulla facilisis. At v1"
+                    descapp: "a kasd gubergren, no1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZpkatXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZpkatXrisi"
+      operationId: "cb89be28-4ffa-4736-b0ea-61d9344d5fc8"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZpkatXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZpkatXrisi"
+              examples:
+                test1:
+                  value:
+                    kodkat: "us est Lorem ipsum d1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desckat: " sanctus sea sed tak1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnKratTotal/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnKratTotal"
+      operationId: "ad5a7846-bc20-448c-96c3-7f9be2ea7464"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnKratTotal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnKratTotal"
+              examples:
+                test1:
+                  value:
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    desckrat: "akimata sanctus est 1"
+                    descfinal: "em ipsum dolor sit a1"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    kodfinal: 1
+                    datefinal: "1947-03-22"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    poso: 1
+                    plirdate: "1960-03-22"
+                    descperiod: "mod tincidunt ut lao1"
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsrgroupsForm/{arg_kodgroup}:
+    get:
+      tags:
+      - "DwUsrgroupsForm"
+      operationId: "5fbb6251-9e1d-4219-b343-3ae2b8072037"
+      parameters:
+      - name: "arg_kodgroup"
+        in: "path"
+        description: "arg_kodgroup"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        200:
+          description: "DwUsrgroupsForm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsrgroupsForm"
+              examples:
+                test1:
+                  value:
+                    kodgroup: 725487955
+                    descgroup: "sit amet. Lorem ipsu1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthReportList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthReportList"
+      operationId: "ab8401b0-d7ea-4f42-96a0-44b96e92f582"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthReportList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthReportList"
+              examples:
+                test1:
+                  value:
+                    kodreport: "ccusam et justo duo 1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descreport: " et justo duo dolore1"
+                    printMarginTop: 1
+                    printMarginBottom: 1
+                    printMarginLeft: 1
+                    printMarginRight: 1
+                    printOrientation: 1
+                    printPaperSize: 1
+                    printScale: 1
+                    subtitle: " dolore magna aliquy1"
+                    prnNotes1: "delenit augue duis d1"
+                    prnNotes2: ", consetetur sadipsc1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthReportForm/{arg_kodreport}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthReportForm"
+      operationId: "c16bceb6-3e1f-4b0e-9f31-149fb8bd8b61"
+      parameters:
+      - name: "arg_kodreport"
+        in: "path"
+        description: "arg_kodreport"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthReportForm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthReportForm"
+              examples:
+                test1:
+                  value:
+                    kodreport: "ccusam et justo duo 1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descreport: " et justo duo dolore1"
+                    printMarginTop: 1
+                    printMarginBottom: 1
+                    printMarginLeft: 1
+                    printMarginRight: 1
+                    printOrientation: 1
+                    printPaperSize: 1
+                    printScale: 1
+                    subtitle: " dolore magna aliquy1"
+                    prnNotes1: "delenit augue duis d1"
+                    prnNotes2: ", consetetur sadipsc1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthReportColsList/{arg_kodreport}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthReportColsList"
+      operationId: "1fb2f42b-36ec-43da-ab95-8394d909d0f1"
+      parameters:
+      - name: "arg_kodreport"
+        in: "path"
+        description: "arg_kodreport"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthReportColsList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthReportColsList"
+              examples:
+                test1:
+                  value:
+                    kodcol: 1
+                    kodreport: "ccusam et justo duo 1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    expr: " diam nonumy eirmod 1"
+                    headerText: ", consectetuer adipi1"
+                    width: 1
+                    aa: 1.0
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthZpstathList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthZpstathList"
+      operationId: "2d1e6122-c327-43af-80a3-a6da64cae900"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthZpstathList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthZpstathList"
+              examples:
+                test1:
+                  value:
+                    kodstath: "bergren, no sea tak1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descstath: "erat.  Consetetur sa1"
+                    poso: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthFyloXrisiCheck/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthFyloXrisiCheck"
+      operationId: "9760d4ff-013b-487f-92dc-c5a9e51881e8"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthFyloXrisiCheck response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthFyloXrisiCheck"
+              examples:
+                test1:
+                  value:
+                    kodfylo: "tet1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descfylo: "m iriure dolor in he1"
+                    checked: 1
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthYpalNewklimakio/{arg_kodxrisi}/{arg_date}:
+    get:
+      tags:
+      - "DwMisthYpalNewklimakio"
+      operationId: "9acc15f7-4f7a-4e3c-b773-45a7e15fc191"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_date"
+        in: "path"
+        description: "arg_date"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthYpalNewklimakio response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthYpalNewklimakio"
+              examples:
+                test1:
+                  value:
+                    kodypal: 1425319722
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    klimakio: 1
+                    exeldate: "2045-03-22"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthFyloKratList/{arg_kodfylo}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthFyloKratList"
+      operationId: "abcb81c7-e9f2-44f8-a688-78bf1c926782"
+      parameters:
+      - name: "arg_kodfylo"
+        in: "path"
+        description: "arg_kodfylo"
+        required: true
+        schema:
+          type: "string"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthFyloKratList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthFyloKratList"
+              examples:
+                test1:
+                  value:
+                    kodfylo: "tet1"
+                    kodkrat: "00609287-c775-4ff2-8702-10438fb68f21"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    expr: " diam nonumy eirmod 1"
+                    aa: 1.0
+                    notes: "ro eos et accusam et1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthZpstathXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthZpstathXrisi"
+      operationId: "22ddf536-2a94-436f-b270-cd17d9a1c328"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthZpstathXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthZpstathXrisi"
+              examples:
+                test1:
+                  value:
+                    kodstath: "bergren, no sea tak1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    descstath: "erat.  Consetetur sa1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /SprnFinalKratYpal/{arg_kodfinal}/{arg_kodypal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "SprnFinalKratYpal"
+      operationId: "f4b166f9-a85a-48d9-b2cc-f91e45508b5e"
+      parameters:
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "SprnFinalKratYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/SprnFinalKratYpal"
+              examples:
+                test1:
+                  value:
+                    desckrat: "akimata sanctus est 1"
+                    poso: 1
+                    notes: "ro eos et accusam et1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwUsrusersAdminForm:
+    get:
+      tags:
+      - "DwUsrusersAdminForm"
+      operationId: "78515db9-107a-498a-a787-2927966dc33d"
+      parameters: []
+      responses:
+        200:
+          description: "DwUsrusersAdminForm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwUsrusersAdminForm"
+              examples:
+                test1:
+                  value:
+                    koduser: 1247318556
+                    username: "Delcine"
+                    fullname: "Frayda"
+                    password: "f9c6c0a0-3d1b-4604-898d-519bf891fc5b"
+                    isactive: 1
+                    tomeas: "lore magna aliquyam 1"
+                    idiotita: "a aliquyam erat, sed1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /DwMisthKratapodList/{arg_kodxrisi}:
+    get:
+      tags:
+      - "DwMisthKratapodList"
+      operationId: "db53dabf-a3a9-482f-9094-bc2044cac639"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "DwMisthKratapodList response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/DwMisthKratapodList"
+              examples:
+                test1:
+                  value:
+                    kodkratapod: 1.0
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+                    desckratapod: "um iriure dolor in h1"
+                    apoddate: "1985-03-22"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PickMisthReportXrisi/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PickMisthReportXrisi"
+      operationId: "ec1372ba-268a-4d39-9309-86dec7b71b89"
+      parameters:
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PickMisthReportXrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PickMisthReportXrisi"
+              examples:
+                test1:
+                  value:
+                    kodreport: "ccusam et justo duo 1"
+                    descreport: " et justo duo dolore1"
+                    kodxrisi: "1c093651-3a9d-4d87-a713-943074873513"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /PrnFinalAtomikiMisthArg/{arg_kodypal}/{arg_kodfinal}/{arg_kodxrisi}:
+    get:
+      tags:
+      - "PrnFinalAtomikiMisthArg"
+      operationId: "30cb2577-c7d5-448c-b5c5-e4f0b4192738"
+      parameters:
+      - name: "arg_kodypal"
+        in: "path"
+        description: "arg_kodypal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodfinal"
+        in: "path"
+        description: "arg_kodfinal"
+        required: true
+        schema:
+          type: "integer"
+      - name: "arg_kodxrisi"
+        in: "path"
+        description: "arg_kodxrisi"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "PrnFinalAtomikiMisthArg response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/PrnFinalAtomikiMisthArg"
+              examples:
+                test1:
+                  value:
+                    surname: "Crystal"
+                    name: "Laurice"
+                    fathername: "Helga"
+                    mitroo: "akimata ut vero vol1"
+                    adt: "nissim qu1"
+                    afm: " ipsum do1"
+                    doy: "ng elitr, sed diam n1"
+                    bankno: "s eleifend option co1"
+                    bank: "na aliquyam erat, se1"
+                    childs: 1
+                    prostmeli: 1
+                    klimakio: 1
+                    bathmos: "1"
+                    klados: "ita kasd 1"
+                    birthdate: "1985-03-22"
+                    hireddate: "1921-03-22"
+                    descoikog: " justo duo dolores e1"
+                    descidikot: " rebum. Stet clita k1"
+                    descthesi: "aliquyam erat, sed d1"
+                    desctmima: "sim assum. Lorem ips1"
+                    kodfinal: 1
+                    aa: 1.0
+                    descfinal: "em ipsum dolor sit a1"
+                    datefinal: "1947-03-22"
+                    title: "ro eros et accumsan 1"
+                    kodypal: 1425319722
+                    desctamio: "quyam erat, sed diam1"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+components:
+  schemas:
+    DwUsrappsList:
+      properties:
+        kodapp:
+          type: "string"
+        descapp:
+          type: "string"
+    PickUsrusers:
+      properties:
+        koduser:
+          type: "integer"
+        username:
+          type: "string"
+    SprnYpalPeriodEpidom:
+      properties:
+        descepidom:
+          type: "string"
+        poso:
+          type: "integer"
+        notes:
+          type: "string"
+        sum:
+          type: "integer"
+    PickMisthZpepidomXrisi:
+      properties:
+        kodepidom:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descepidom:
+          type: "string"
+    DwMisthReportFormNotes:
+      properties:
+        kodreport:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descreport:
+          type: "string"
+        print_margin_top:
+          type: "integer"
+        print_margin_bottom:
+          type: "integer"
+        print_margin_left:
+          type: "integer"
+        print_margin_right:
+          type: "integer"
+        print_orientation:
+          type: "integer"
+        print_paper_size:
+          type: "integer"
+        print_scale:
+          type: "integer"
+        subtitle:
+          type: "string"
+        prn_notes1:
+          type: "string"
+        prn_notes2:
+          type: "string"
+    PickMisthYpalXrisi:
+      properties:
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+    PickMisthZpkratXrisi:
+      properties:
+        kodkrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        desckrat:
+          type: "string"
+    DwAfxptoseisForm:
+      properties:
+        onom:
+          type: "string"
+        gen:
+          type: "string"
+        ait:
+          type: "string"
+    SprnReport2:
+      properties:
+        kodreport:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        subtitle:
+          type: "string"
+        prn_notes1:
+          type: "string"
+        prn_notes2:
+          type: "string"
+    DwMisthZpperiodList:
+      properties:
+        kodperiod:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descperiod:
+          type: "string"
+        orderno:
+          type: "integer"
+    DwMisthYpalFormJob:
+      properties:
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        adt:
+          type: "string"
+        mitroo:
+          type: "string"
+        afm:
+          type: "string"
+        doy:
+          type: "string"
+        birthdate:
+          type: "string"
+        homephone:
+          type: "string"
+        mobilphone:
+          type: "string"
+        sex:
+          type: "string"
+        spouse:
+          type: "string"
+        childs:
+          type: "integer"
+        prostmeli:
+          type: "integer"
+        city:
+          type: "string"
+        area:
+          type: "string"
+        address:
+          type: "string"
+        tk:
+          type: "string"
+        email:
+          type: "string"
+        kodtmima:
+          type: "string"
+        kodidikot:
+          type: "string"
+        jobtitle:
+          type: "string"
+        hireddate:
+          type: "string"
+        rehireddate:
+          type: "string"
+        termdate:
+          type: "string"
+        termreason:
+          type: "string"
+        jobphone:
+          type: "string"
+        intphone:
+          type: "string"
+        klimakio:
+          type: "integer"
+        bathmos:
+          type: "string"
+        klados:
+          type: "string"
+        bank:
+          type: "string"
+        bankno:
+          type: "string"
+        exeldate:
+          type: "string"
+        kodthesi:
+          type: "string"
+        kodoikog:
+          type: "string"
+        kodtamio:
+          type: "string"
+        mothername:
+          type: "string"
+        newexeldate:
+          type: "string"
+    SprnAnalisiEpidomAsf:
+      properties:
+        poso:
+          type: "integer"
+        descepidom:
+          type: "string"
+        kodepidom:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        sum:
+          type: "integer"
+    SprnFinalEpidomYpal:
+      properties:
+        descepidom:
+          type: "string"
+        poso:
+          type: "integer"
+        notes:
+          type: "string"
+    DwMisthFinalList:
+      properties:
+        kodfinal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        descfinal:
+          type: "string"
+        datefinal:
+          type: "string"
+        title:
+          type: "string"
+        kodkat:
+          type: "string"
+        desckat:
+          type: "string"
+        kodperiod:
+          type: "string"
+        descperiod:
+          type: "string"
+        aa:
+          type: "number"
+    DwMisthFyloYpalList:
+      properties:
+        kodfylo:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+    PrnYpalTotalDates:
+      properties:
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        mitroo:
+          type: "string"
+        adt:
+          type: "string"
+        afm:
+          type: "string"
+        doy:
+          type: "string"
+        bankno:
+          type: "string"
+        bank:
+          type: "string"
+        childs:
+          type: "integer"
+        prostmeli:
+          type: "integer"
+        klimakio:
+          type: "integer"
+        bathmos:
+          type: "string"
+        klados:
+          type: "string"
+        birthdate:
+          type: "string"
+        hireddate:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        descidikot:
+          type: "string"
+        descoikog:
+          type: "string"
+        desctmima:
+          type: "string"
+        descthesi:
+          type: "string"
+        desctamio:
+          type: "string"
+    DwMisthFinalYpalEpidomList:
+      properties:
+        kodfinal:
+          type: "integer"
+        kodypal:
+          type: "integer"
+        kodepidom:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+        aa:
+          type: "number"
+        notes:
+          type: "string"
+    DwUsrgroupsList:
+      properties:
+        kodgroup:
+          type: "integer"
+        descgroup:
+          type: "string"
+    DwAfxfilterList:
+      properties:
+        kodfilter:
+          type: "number"
+        descfilter:
+          type: "string"
+        tablename:
+          type: "string"
+    DwMisthFyloForm:
+      properties:
+        kodfylo:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descfylo:
+          type: "string"
+    SelMisthZpkratXrisi:
+      properties:
+        kodkrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        desckrat:
+          type: "string"
+        issel:
+          type: "integer"
+    SprnYpalPeriodKrat:
+      properties:
+        desckrat:
+          type: "string"
+        poso:
+          type: "integer"
+        notes:
+          type: "string"
+        sum:
+          type: "integer"
+    SprnReport3:
+      properties:
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        aa:
+          type: "number"
+        datefinal:
+          type: "string"
+        kodypal:
+          type: "integer"
+        title:
+          type: "string"
+        kodfinal:
+          type: "integer"
+    PickMisthFyloXrisi:
+      properties:
+        kodfylo:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descfylo:
+          type: "string"
+    SelMisthZpperiodXrisi:
+      properties:
+        kodperiod:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descperiod:
+          type: "string"
+        issel:
+          type: "integer"
+    DwMisthFyloEpidomList:
+      properties:
+        kodfylo:
+          type: "string"
+        kodepidom:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        expr:
+          type: "string"
+        aa:
+          type: "number"
+        notes:
+          type: "string"
+    PickMisthZptamioXrisi:
+      properties:
+        kodtamio:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        desctamio:
+          type: "string"
+    PickMisthZpperiodXrisi:
+      properties:
+        kodperiod:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descperiod:
+          type: "string"
+    SprnAnalisiKratForos:
+      properties:
+        desckrat:
+          type: "string"
+        kodkrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+        sum:
+          type: "integer"
+    DwMisthFinalYpalKratList:
+      properties:
+        kodfinal:
+          type: "integer"
+        kodypal:
+          type: "integer"
+        kodkrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+        aa:
+          type: "number"
+        notes:
+          type: "string"
+    SprnReport:
+      properties:
+        kodreport:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        mitroo:
+          type: "string"
+    DwMisthFinalYpalPrildate:
+      properties:
+        kodfinal:
+          type: "integer"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        plirdate:
+          type: "string"
+    PrnFinalYpalList:
+      properties:
+        descfinal:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        datefinal:
+          type: "string"
+        plirdate:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        title:
+          type: "string"
+        mitroo:
+          type: "string"
+        aa:
+          type: "number"
+    PickUsrgroups:
+      properties:
+        kodgroup:
+          type: "integer"
+        descgroup:
+          type: "string"
+    SprnFinalEpidomMisth:
+      properties:
+        descepidom:
+          type: "string"
+        sum:
+          type: "integer"
+    SprnAnalisiEpidomNoforos:
+      properties:
+        poso:
+          type: "integer"
+        descepidom:
+          type: "string"
+        kodepidom:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        sum:
+          type: "integer"
+    DwMisthZpyvarForm:
+      properties:
+        kodyvar:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descyvar:
+          type: "string"
+        expr:
+          type: "string"
+    DwMisthZpoikogList:
+      properties:
+        kodoikog:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descoikog:
+          type: "string"
+    PickZpxrisiNocurrent:
+      properties:
+        kodxrisi:
+          type: "string"
+        descxrisi:
+          type: "string"
+    PickMisthZpthesiXrisi:
+      properties:
+        kodthesi:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descthesi:
+          type: "string"
+    DwUsractionsList:
+      properties:
+        kodaction:
+          type: "string"
+        kodapp:
+          type: "string"
+        descaction:
+          type: "string"
+        descapp:
+          type: "string"
+    PrnFinalNopaidAnaKatast:
+      properties:
+        descfinal:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        datefinal:
+          type: "string"
+        plirdate:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        descperiod:
+          type: "string"
+        aa:
+          type: "number"
+    DwMisthYpalYvarList:
+      properties:
+        kodypal:
+          type: "integer"
+        kodyvar:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        aa:
+          type: "number"
+        expr:
+          type: "string"
+    DwUsrusersForm:
+      properties:
+        koduser:
+          type: "integer"
+        username:
+          type: "string"
+        fullname:
+          type: "string"
+        password:
+          type: "string"
+        isactive:
+          type: "integer"
+        tomeas:
+          type: "string"
+        idiotita:
+          type: "string"
+    SprnFinalKratMisth:
+      properties:
+        desckrat:
+          type: "string"
+        sum:
+          type: "integer"
+    DwAfxfilterdList:
+      properties:
+        kodfilterd:
+          type: "number"
+        kodfilter:
+          type: "number"
+        pedio:
+          type: "string"
+        telestis:
+          type: "string"
+        timi:
+          type: "string"
+        joint:
+          type: "string"
+    DwMisthYpalFormPersonal:
+      properties:
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        adt:
+          type: "string"
+        mitroo:
+          type: "string"
+        afm:
+          type: "string"
+        doy:
+          type: "string"
+        birthdate:
+          type: "string"
+        homephone:
+          type: "string"
+        mobilphone:
+          type: "string"
+        sex:
+          type: "string"
+        spouse:
+          type: "string"
+        childs:
+          type: "integer"
+        prostmeli:
+          type: "integer"
+        city:
+          type: "string"
+        area:
+          type: "string"
+        address:
+          type: "string"
+        tk:
+          type: "string"
+        email:
+          type: "string"
+        kodtmima:
+          type: "string"
+        kodidikot:
+          type: "string"
+        jobtitle:
+          type: "string"
+        hireddate:
+          type: "string"
+        rehireddate:
+          type: "string"
+        termdate:
+          type: "string"
+        termreason:
+          type: "string"
+        jobphone:
+          type: "string"
+        intphone:
+          type: "string"
+        klimakio:
+          type: "integer"
+        bathmos:
+          type: "string"
+        klados:
+          type: "string"
+        bank:
+          type: "string"
+        bankno:
+          type: "string"
+        exeldate:
+          type: "string"
+        kodthesi:
+          type: "string"
+        kodoikog:
+          type: "string"
+        kodtamio:
+          type: "string"
+        mothername:
+          type: "string"
+        newexeldate:
+          type: "string"
+    DwMisthZptmimaList:
+      properties:
+        kodtmima:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        desctmima:
+          type: "string"
+    DwMisthYpalList:
+      properties:
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        mitroo:
+          type: "string"
+        klimakio:
+          type: "integer"
+        klados:
+          type: "string"
+        bathmos:
+          type: "string"
+        descidikot:
+          type: "string"
+    SprnAnalisiKratAutoforos:
+      properties:
+        desckrat:
+          type: "string"
+        kodkrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+        sum:
+          type: "integer"
+    PrnFinalNopaidAnaYpal:
+      properties:
+        descfinal:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        datefinal:
+          type: "string"
+        plirdate:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        descperiod:
+          type: "string"
+        aa:
+          type: "number"
+    SprnYpalFinal:
+      properties:
+        datefinal:
+          type: "string"
+        descfinal:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        kodypal:
+          type: "integer"
+        plirdate:
+          type: "string"
+        descperiod:
+          type: "string"
+        aa:
+          type: "number"
+    PickMisthZpoikogXrisi:
+      properties:
+        kodoikog:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descoikog:
+          type: "string"
+    DwUsrgrouppermList:
+      properties:
+        kodgroup:
+          type: "integer"
+        kodaction:
+          type: "string"
+        editrec:
+          type: "integer"
+        addrec:
+          type: "integer"
+        delrec:
+          type: "integer"
+        openlist:
+          type: "integer"
+        openform:
+          type: "integer"
+        descapp:
+          type: "string"
+        descaction:
+          type: "string"
+    PrnAnalisiYpal:
+      properties:
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        mitroo:
+          type: "string"
+        adt:
+          type: "string"
+        afm:
+          type: "string"
+        doy:
+          type: "string"
+        bankno:
+          type: "string"
+        bank:
+          type: "string"
+        childs:
+          type: "integer"
+        prostmeli:
+          type: "integer"
+        klimakio:
+          type: "integer"
+        bathmos:
+          type: "string"
+        klados:
+          type: "string"
+        birthdate:
+          type: "string"
+        hireddate:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        descidikot:
+          type: "string"
+        descoikog:
+          type: "string"
+        desctmima:
+          type: "string"
+        descthesi:
+          type: "string"
+        desctamio:
+          type: "string"
+    DwStepKratapodMisthselect:
+      properties:
+        descfinal:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        desckrat:
+          type: "string"
+        poso:
+          type: "integer"
+        kodfinal:
+          type: "integer"
+        kodypal:
+          type: "integer"
+        kodkrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        aa:
+          type: "number"
+        notes:
+          type: "string"
+        kodkratapod:
+          type: "number"
+        datefinal:
+          type: "string"
+        plirdate:
+          type: "string"
+        cm_sel:
+          type: "integer"
+    SprnAnalisiEpidomForos:
+      properties:
+        poso:
+          type: "integer"
+        descepidom:
+          type: "string"
+        kodepidom:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        sum:
+          type: "integer"
+    PrnKratapod:
+      properties:
+        kodkrat:
+          type: "string"
+        desckrat:
+          type: "string"
+        descfinal:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        datefinal:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+        kodkratapod:
+          type: "number"
+        aa:
+          type: "number"
+    PickMisthZpidikotXrisi:
+      properties:
+        kodidikot:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descidikot:
+          type: "string"
+    SprnAnalisiKratLoipa:
+      properties:
+        desckrat:
+          type: "string"
+        kodkrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+        sum:
+          type: "integer"
+    DwAfxptoseisList:
+      properties:
+        onom:
+          type: "string"
+        gen:
+          type: "string"
+        ait:
+          type: "string"
+    DwMisthYpalFormGeneral:
+      properties:
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        adt:
+          type: "string"
+        mitroo:
+          type: "string"
+        afm:
+          type: "string"
+        doy:
+          type: "string"
+        birthdate:
+          type: "string"
+        homephone:
+          type: "string"
+        mobilphone:
+          type: "string"
+        sex:
+          type: "string"
+        spouse:
+          type: "string"
+        childs:
+          type: "integer"
+        prostmeli:
+          type: "integer"
+        city:
+          type: "string"
+        area:
+          type: "string"
+        address:
+          type: "string"
+        tk:
+          type: "string"
+        email:
+          type: "string"
+        kodtmima:
+          type: "string"
+        kodidikot:
+          type: "string"
+        jobtitle:
+          type: "string"
+        hireddate:
+          type: "string"
+        rehireddate:
+          type: "string"
+        termdate:
+          type: "string"
+        termreason:
+          type: "string"
+        jobphone:
+          type: "string"
+        intphone:
+          type: "string"
+        klimakio:
+          type: "integer"
+        bathmos:
+          type: "string"
+        klados:
+          type: "string"
+        bank:
+          type: "string"
+        bankno:
+          type: "string"
+        exeldate:
+          type: "string"
+        kodthesi:
+          type: "string"
+        kodoikog:
+          type: "string"
+        kodtamio:
+          type: "string"
+        mothername:
+          type: "string"
+        newexeldate:
+          type: "string"
+    PrnFinalAtomikiMisth:
+      properties:
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        mitroo:
+          type: "string"
+        adt:
+          type: "string"
+        afm:
+          type: "string"
+        doy:
+          type: "string"
+        bankno:
+          type: "string"
+        bank:
+          type: "string"
+        childs:
+          type: "integer"
+        prostmeli:
+          type: "integer"
+        klimakio:
+          type: "integer"
+        bathmos:
+          type: "string"
+        klados:
+          type: "string"
+        birthdate:
+          type: "string"
+        hireddate:
+          type: "string"
+        descoikog:
+          type: "string"
+        descidikot:
+          type: "string"
+        descthesi:
+          type: "string"
+        desctmima:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        aa:
+          type: "number"
+        descfinal:
+          type: "string"
+        datefinal:
+          type: "string"
+        title:
+          type: "string"
+        kodypal:
+          type: "integer"
+        desctamio:
+          type: "string"
+    DwMisthFinalYpalPlirdateList:
+      properties:
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        plirdate:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+    PrnYpalFinal:
+      properties:
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        mitroo:
+          type: "string"
+        adt:
+          type: "string"
+        afm:
+          type: "string"
+        doy:
+          type: "string"
+        bankno:
+          type: "string"
+        bank:
+          type: "string"
+        childs:
+          type: "integer"
+        prostmeli:
+          type: "integer"
+        klimakio:
+          type: "integer"
+        bathmos:
+          type: "string"
+        klados:
+          type: "string"
+        birthdate:
+          type: "string"
+        hireddate:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        descidikot:
+          type: "string"
+        descoikog:
+          type: "string"
+        desctmima:
+          type: "string"
+        descthesi:
+          type: "string"
+        desctamio:
+          type: "string"
+    DwMisthFinalYpalList:
+      properties:
+        datefinal:
+          type: "string"
+        descfinal:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        kodypal:
+          type: "integer"
+        plirdate:
+          type: "string"
+        INTEGER:
+          type: "integer"
+    PickMisthZptmimaXrisi:
+      properties:
+        kodtmima:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        desctmima:
+          type: "string"
+    DwMisthZptamioList:
+      properties:
+        kodtamio:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        desctamio:
+          type: "string"
+    PickMisthZpyvarXrisi:
+      properties:
+        kodyvar:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descyvar:
+          type: "string"
+    DwUsruserpermList:
+      properties:
+        kodapp:
+          type: "string"
+        koduser:
+          type: "integer"
+        enable:
+          type: "integer"
+        descapp:
+          type: "string"
+    DwMisthFinalDetailsList:
+      properties:
+        datefinal:
+          type: "string"
+        descfinal:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        plirdate:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        desckat:
+          type: "string"
+        descperiod:
+          type: "string"
+        aa:
+          type: "number"
+    SprnAnalisiKratAsf:
+      properties:
+        desckrat:
+          type: "string"
+        kodkrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+        sum:
+          type: "integer"
+    DwUsrmembersGroupList:
+      properties:
+        kodgroup:
+          type: "integer"
+        koduser:
+          type: "integer"
+        username:
+          type: "string"
+        fullname:
+          type: "string"
+        isactive:
+          type: "integer"
+    PickMisthZptitlosXrisi:
+      properties:
+        kodtitlos:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        desctitlos:
+          type: "string"
+    DwUsrmembersUserList:
+      properties:
+        kodgroup:
+          type: "integer"
+        koduser:
+          type: "integer"
+        descgroup:
+          type: "string"
+    PrnKratNoapod:
+      properties:
+        kodkrat:
+          type: "string"
+        desckrat:
+          type: "string"
+        descfinal:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        datefinal:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+        kodkratapod:
+          type: "number"
+        plirdate:
+          type: "string"
+        aa:
+          type: "number"
+    SprnAnalisiEpidomAutoforos:
+      properties:
+        poso:
+          type: "integer"
+        descepidom:
+          type: "string"
+        kodepidom:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        sum:
+          type: "integer"
+    PickUsrusersWithadmin:
+      properties:
+        koduser:
+          type: "integer"
+        username:
+          type: "string"
+    DwMisthFinalForm:
+      properties:
+        kodfinal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        descfinal:
+          type: "string"
+        datefinal:
+          type: "string"
+        title:
+          type: "string"
+        kodkat:
+          type: "string"
+        kodperiod:
+          type: "string"
+        aa:
+          type: "number"
+    DwMisthZpyvarList:
+      properties:
+        kodyvar:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descyvar:
+          type: "string"
+        expr:
+          type: "string"
+    PickMisthFinalYpal:
+      properties:
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        kodypal:
+          type: "integer"
+    DwMisthZpthesiList:
+      properties:
+        kodthesi:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descthesi:
+          type: "string"
+    PrnFinalTotalMisth:
+      properties:
+        kodfinal:
+          type: "integer"
+        descfinal:
+          type: "string"
+        datefinal:
+          type: "string"
+        title:
+          type: "string"
+        aa:
+          type: "number"
+    DwUsrusersList:
+      properties:
+        username:
+          type: "string"
+        fullname:
+          type: "string"
+        isactive:
+          type: "integer"
+        koduser:
+          type: "integer"
+        password:
+          type: "string"
+        tomeas:
+          type: "string"
+        idiotita:
+          type: "string"
+    PickMisthReportYpal:
+      properties:
+        kodreport:
+          type: "string"
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+    DwMisthFyloList:
+      properties:
+        kodfylo:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descfylo:
+          type: "string"
+    PrnYpalNewklimakio:
+      properties:
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        mitroo:
+          type: "string"
+        klados:
+          type: "string"
+        bathmos:
+          type: "string"
+        klimakio:
+          type: "integer"
+        newexeldate:
+          type: "string"
+    PickUsrapps:
+      properties:
+        kodapp:
+          type: "string"
+        descapp:
+          type: "string"
+    PickMisthZpkatXrisi:
+      properties:
+        kodkat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        desckat:
+          type: "string"
+    PrnKratTotal:
+      properties:
+        kodkrat:
+          type: "string"
+        desckrat:
+          type: "string"
+        descfinal:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        datefinal:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+        plirdate:
+          type: "string"
+        descperiod:
+          type: "string"
+        aa:
+          type: "number"
+    DwUsrgroupsForm:
+      properties:
+        kodgroup:
+          type: "integer"
+        descgroup:
+          type: "string"
+    DwMisthReportList:
+      properties:
+        kodreport:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descreport:
+          type: "string"
+        print_margin_top:
+          type: "integer"
+        print_margin_bottom:
+          type: "integer"
+        print_margin_left:
+          type: "integer"
+        print_margin_right:
+          type: "integer"
+        print_orientation:
+          type: "integer"
+        print_paper_size:
+          type: "integer"
+        print_scale:
+          type: "integer"
+        subtitle:
+          type: "string"
+        prn_notes1:
+          type: "string"
+        prn_notes2:
+          type: "string"
+    DwMisthReportForm:
+      properties:
+        kodreport:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descreport:
+          type: "string"
+        print_margin_top:
+          type: "integer"
+        print_margin_bottom:
+          type: "integer"
+        print_margin_left:
+          type: "integer"
+        print_margin_right:
+          type: "integer"
+        print_orientation:
+          type: "integer"
+        print_paper_size:
+          type: "integer"
+        print_scale:
+          type: "integer"
+        subtitle:
+          type: "string"
+        prn_notes1:
+          type: "string"
+        prn_notes2:
+          type: "string"
+    DwMisthReportColsList:
+      properties:
+        kodcol:
+          type: "integer"
+        kodreport:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        expr:
+          type: "string"
+        header_text:
+          type: "string"
+        width:
+          type: "integer"
+        aa:
+          type: "number"
+    DwMisthZpstathList:
+      properties:
+        kodstath:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descstath:
+          type: "string"
+        poso:
+          type: "integer"
+    PickMisthFyloXrisiCheck:
+      properties:
+        kodfylo:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descfylo:
+          type: "string"
+        checked:
+          type: "integer"
+    DwMisthYpalNewklimakio:
+      properties:
+        kodypal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        klimakio:
+          type: "integer"
+        exeldate:
+          type: "string"
+    DwMisthFyloKratList:
+      properties:
+        kodfylo:
+          type: "string"
+        kodkrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        expr:
+          type: "string"
+        aa:
+          type: "number"
+        notes:
+          type: "string"
+    PickMisthZpstathXrisi:
+      properties:
+        kodstath:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        descstath:
+          type: "string"
+    SprnFinalKratYpal:
+      properties:
+        desckrat:
+          type: "string"
+        poso:
+          type: "integer"
+        notes:
+          type: "string"
+    DwUsrusersAdminForm:
+      properties:
+        koduser:
+          type: "integer"
+        username:
+          type: "string"
+        fullname:
+          type: "string"
+        password:
+          type: "string"
+        isactive:
+          type: "integer"
+        tomeas:
+          type: "string"
+        idiotita:
+          type: "string"
+    DwMisthKratapodList:
+      properties:
+        kodkratapod:
+          type: "number"
+        kodxrisi:
+          type: "string"
+        desckratapod:
+          type: "string"
+        apoddate:
+          type: "string"
+    PickMisthReportXrisi:
+      properties:
+        kodreport:
+          type: "string"
+        descreport:
+          type: "string"
+        kodxrisi:
+          type: "string"
+    PrnFinalAtomikiMisthArg:
+      properties:
+        surname:
+          type: "string"
+        name:
+          type: "string"
+        fathername:
+          type: "string"
+        mitroo:
+          type: "string"
+        adt:
+          type: "string"
+        afm:
+          type: "string"
+        doy:
+          type: "string"
+        bankno:
+          type: "string"
+        bank:
+          type: "string"
+        childs:
+          type: "integer"
+        prostmeli:
+          type: "integer"
+        klimakio:
+          type: "integer"
+        bathmos:
+          type: "string"
+        klados:
+          type: "string"
+        birthdate:
+          type: "string"
+        hireddate:
+          type: "string"
+        descoikog:
+          type: "string"
+        descidikot:
+          type: "string"
+        descthesi:
+          type: "string"
+        desctmima:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        aa:
+          type: "number"
+        descfinal:
+          type: "string"
+        datefinal:
+          type: "string"
+        title:
+          type: "string"
+        kodypal:
+          type: "integer"
+        desctamio:
+          type: "string"

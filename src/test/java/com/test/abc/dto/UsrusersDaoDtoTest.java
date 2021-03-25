@@ -1,21 +1,19 @@
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+/**
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
 import java.nio.charset.Charset;
@@ -44,24 +42,6 @@ import com.test.abc.dto.DwUsrusersListDto;
 import com.test.abc.dto.DwUsrusersAdminFormDto;
 import com.test.abc.utils.FileUtils;
 
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
-
 public class UsrusersDaoDtoTest {
   static UsrusersDtoDao dtoDao;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
@@ -81,7 +61,7 @@ public class UsrusersDaoDtoTest {
     usrmembersDao = new DefaultUsrmembersDao(jpa);
     dtoDao = new DefaultUsrusersDtoDao(jpa);
     try {
-      String json = null;
+      String json;
       json = FileUtils.readFileFromResource2String(usrusersInputFile, Charset.defaultCharset());
       usrusersRecords = gson.fromJson(json, Usrusers[].class);
       json = FileUtils.readFileFromResource2String(usrmembersInputFile, Charset.defaultCharset());
@@ -94,7 +74,6 @@ public class UsrusersDaoDtoTest {
   @Test
   public void testpickUsrusers() {
     usrusersDao.create(usrusersRecords[1]);
-    ;
     java.util.List<PickUsrusersDto> testResult = dtoDao.pickUsrusers();
     org.junit.Assert.assertFalse(testResult.isEmpty());
     org.junit.Assert.assertEquals(
@@ -111,7 +90,6 @@ public class UsrusersDaoDtoTest {
   @Test
   public void testdwUsrusersForm() {
     usrusersDao.create(usrusersRecords[1]);
-    ;
     java.util.List<DwUsrusersFormDto> testResult =
         dtoDao.dwUsrusersForm(usrusersRecords[1].getKoduser());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -149,7 +127,6 @@ public class UsrusersDaoDtoTest {
   public void testdwUsrmembersGroupList() {
     usrusersDao.create(usrusersRecords[1]);
     usrmembersDao.create(usrmembersRecords[1]);
-    ;
     java.util.List<DwUsrmembersGroupListDto> testResult =
         dtoDao.dwUsrmembersGroupList(usrmembersRecords[1].getKodgroup());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -181,7 +158,6 @@ public class UsrusersDaoDtoTest {
   @Test
   public void testpickUsrusersWithadmin() {
     usrusersDao.create(usrusersRecords[1]);
-    ;
     java.util.List<PickUsrusersWithadminDto> testResult = dtoDao.pickUsrusersWithadmin();
     org.junit.Assert.assertFalse(testResult.isEmpty());
     org.junit.Assert.assertEquals(
@@ -198,7 +174,6 @@ public class UsrusersDaoDtoTest {
   @Test
   public void testdwUsrusersList() {
     usrusersDao.create(usrusersRecords[1]);
-    ;
     java.util.List<DwUsrusersListDto> testResult = dtoDao.dwUsrusersList();
     org.junit.Assert.assertFalse(testResult.isEmpty());
     org.junit.Assert.assertEquals(
@@ -234,7 +209,6 @@ public class UsrusersDaoDtoTest {
   @Test
   public void testdwUsrusersAdminForm() {
     usrusersDao.create(usrusersRecords[1]);
-    ;
     java.util.List<DwUsrusersAdminFormDto> testResult = dtoDao.dwUsrusersAdminForm();
     org.junit.Assert.assertFalse(testResult.isEmpty());
     org.junit.Assert.assertEquals(

@@ -23,7 +23,7 @@
       <column name="descepidom" class="java.lang.String"/>
       <column name="poso" class="java.lang.Integer"/>
       <column name="notes" class="java.lang.String"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="sum_poso" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -154,7 +154,7 @@
       <column name="descepidom" class="java.lang.String"/>
       <column name="kodepidom" class="java.lang.String"/>
       <column name="kodxrisi" class="java.lang.String"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="cm_sumposo" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -269,7 +269,7 @@
       <column name="desckrat" class="java.lang.String"/>
       <column name="poso" class="java.lang.Integer"/>
       <column name="notes" class="java.lang.String"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="sum_poso" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -336,7 +336,7 @@
       <column name="kodkrat" class="java.lang.String"/>
       <column name="kodxrisi" class="java.lang.String"/>
       <column name="poso" class="java.lang.Integer"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="cm_sumposo" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -401,7 +401,7 @@
   <sql-result-set-mapping name="sprnFinalEpidomMisthMapping">
     <constructor-result target-class="com.test.abc.dto.SprnFinalEpidomMisthDto">
       <column name="descepidom" class="java.lang.String"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="sum_poso" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -411,7 +411,7 @@
       <column name="descepidom" class="java.lang.String"/>
       <column name="kodepidom" class="java.lang.String"/>
       <column name="kodxrisi" class="java.lang.String"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="cm_sumposo" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -498,7 +498,7 @@
   <sql-result-set-mapping name="sprnFinalKratMisthMapping">
     <constructor-result target-class="com.test.abc.dto.SprnFinalKratMisthDto">
       <column name="desckrat" class="java.lang.String"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="sum_poso" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -587,7 +587,7 @@
       <column name="kodkrat" class="java.lang.String"/>
       <column name="kodxrisi" class="java.lang.String"/>
       <column name="poso" class="java.lang.Integer"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="cm_sumposo" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -696,7 +696,7 @@
       <column name="descepidom" class="java.lang.String"/>
       <column name="kodepidom" class="java.lang.String"/>
       <column name="kodxrisi" class="java.lang.String"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="cm_sumposo" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -731,7 +731,7 @@
       <column name="kodkrat" class="java.lang.String"/>
       <column name="kodxrisi" class="java.lang.String"/>
       <column name="poso" class="java.lang.Integer"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="cm_sumposo" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -868,7 +868,7 @@
       <column name="kodfinal" class="java.lang.Integer"/>
       <column name="kodypal" class="java.lang.Integer"/>
       <column name="plirdate" class="java.util.Date"/>
-      <column name="INTEGER" class="java.lang.Integer"/>
+      <column name="cm_paid" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -929,7 +929,7 @@
       <column name="kodkrat" class="java.lang.String"/>
       <column name="kodxrisi" class="java.lang.String"/>
       <column name="poso" class="java.lang.Integer"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="cm_sumposo" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 
@@ -983,7 +983,7 @@
       <column name="descepidom" class="java.lang.String"/>
       <column name="kodepidom" class="java.lang.String"/>
       <column name="kodxrisi" class="java.lang.String"/>
-      <column name="sum" class="java.lang.Integer"/>
+      <column name="cm_sumposo" class="java.lang.Integer"/>
     </constructor-result>
   </sql-result-set-mapping>
 

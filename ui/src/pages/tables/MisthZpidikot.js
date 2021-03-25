@@ -11,7 +11,7 @@ const columns = [
 ]
 
 const loadData = () => {
-  return fetch('/powerbuildertest2/rest/misthzpidikot/selectAll',{
+  return fetch('/powerbuilderreacttest2/rest/misthzpidikot/selectAll',{
     headers : {
       'Content-Type': 'application/json',
       'Accept': 'application/json'

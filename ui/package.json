@@ -1,6 +1,6 @@
 {
-  "name": "powerbuildertest2",
-  "homepage": "powerbuildertest2",
+  "name": "powerbuilderreacttest2",
+  "homepage": "powerbuilderreacttest2",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8080/",

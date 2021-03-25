@@ -1,21 +1,19 @@
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+/**
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
 import java.nio.charset.Charset;
@@ -48,24 +46,6 @@ import com.test.abc.dto.SprnAnalisiEpidomForosDto;
 import com.test.abc.dto.SprnAnalisiEpidomAutoforosDto;
 import com.test.abc.utils.FileUtils;
 
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
-
 public class MisthFinalYpalEpidomDaoDtoTest {
   static MisthFinalYpalEpidomDtoDao dtoDao;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
@@ -93,7 +73,7 @@ public class MisthFinalYpalEpidomDaoDtoTest {
     misthFinalDao = new DefaultMisthFinalDao(jpa);
     dtoDao = new DefaultMisthFinalYpalEpidomDtoDao(jpa);
     try {
-      String json = null;
+      String json;
       json =
           FileUtils.readFileFromResource2String(
               misthFinalYpalEpidomInputFile, Charset.defaultCharset());
@@ -117,7 +97,6 @@ public class MisthFinalYpalEpidomDaoDtoTest {
     misthZpepidomDao.create(misthZpepidomRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
     misthFinalDao.create(misthFinalRecords[1]);
-    ;
     java.util.List<SprnYpalPeriodEpidomDto> testResult =
         dtoDao.sprnYpalPeriodEpidom(
             misthFinalYpalEpidomRecords[1].getKodxrisi(),
@@ -145,7 +124,6 @@ public class MisthFinalYpalEpidomDaoDtoTest {
     misthFinalYpalEpidomDao.create(misthFinalYpalEpidomRecords[1]);
     misthZpepidomDao.create(misthZpepidomRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
-    ;
     java.util.List<SprnAnalisiEpidomAsfDto> testResult =
         dtoDao.sprnAnalisiEpidomAsf(
             misthFinalYpalEpidomRecords[1].getKodxrisi(),
@@ -174,7 +152,6 @@ public class MisthFinalYpalEpidomDaoDtoTest {
   public void testsprnFinalEpidomYpal() {
     misthFinalYpalEpidomDao.create(misthFinalYpalEpidomRecords[1]);
     misthZpepidomDao.create(misthZpepidomRecords[1]);
-    ;
     java.util.List<SprnFinalEpidomYpalDto> testResult =
         dtoDao.sprnFinalEpidomYpal(
             misthFinalYpalEpidomRecords[1].getKodfinal(),
@@ -199,7 +176,6 @@ public class MisthFinalYpalEpidomDaoDtoTest {
   @Test
   public void testdwMisthFinalYpalEpidomList() {
     misthFinalYpalEpidomDao.create(misthFinalYpalEpidomRecords[1]);
-    ;
     java.util.List<DwMisthFinalYpalEpidomListDto> testResult =
         dtoDao.dwMisthFinalYpalEpidomList(
             misthFinalYpalEpidomRecords[1].getKodfinal(),
@@ -243,7 +219,6 @@ public class MisthFinalYpalEpidomDaoDtoTest {
   public void testsprnFinalEpidomMisth() {
     misthFinalYpalEpidomDao.create(misthFinalYpalEpidomRecords[1]);
     misthZpepidomDao.create(misthZpepidomRecords[1]);
-    ;
     java.util.List<SprnFinalEpidomMisthDto> testResult =
         dtoDao.sprnFinalEpidomMisth(
             misthFinalYpalEpidomRecords[1].getKodfinal(),
@@ -260,7 +235,6 @@ public class MisthFinalYpalEpidomDaoDtoTest {
     misthFinalYpalEpidomDao.create(misthFinalYpalEpidomRecords[1]);
     misthZpepidomDao.create(misthZpepidomRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
-    ;
     java.util.List<SprnAnalisiEpidomNoforosDto> testResult =
         dtoDao.sprnAnalisiEpidomNoforos(
             misthFinalYpalEpidomRecords[1].getKodxrisi(),
@@ -290,7 +264,6 @@ public class MisthFinalYpalEpidomDaoDtoTest {
     misthFinalYpalEpidomDao.create(misthFinalYpalEpidomRecords[1]);
     misthZpepidomDao.create(misthZpepidomRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
-    ;
     java.util.List<SprnAnalisiEpidomForosDto> testResult =
         dtoDao.sprnAnalisiEpidomForos(
             misthFinalYpalEpidomRecords[1].getKodxrisi(),
@@ -320,7 +293,6 @@ public class MisthFinalYpalEpidomDaoDtoTest {
     misthFinalYpalEpidomDao.create(misthFinalYpalEpidomRecords[1]);
     misthZpepidomDao.create(misthZpepidomRecords[1]);
     misthFinalYpalDao.create(misthFinalYpalRecords[1]);
-    ;
     java.util.List<SprnAnalisiEpidomAutoforosDto> testResult =
         dtoDao.sprnAnalisiEpidomAutoforos(
             misthFinalYpalEpidomRecords[1].getKodxrisi(),

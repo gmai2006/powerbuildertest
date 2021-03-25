@@ -1,0 +1,3182 @@
+---
+openapi: "3.0.0"
+info:
+  description: "This is a generated REST API from a given sqlgeneration database schema."
+  version: "1.0.0"
+  title: "REST API schema generator"
+  termsOfService: "http://datascience9/terms"
+  contact:
+    name: "API Support"
+    url: "http://datascience9/contact"
+    email: "paul.mai@datascience9.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+servers:
+- url: "http://datascience9.com/schema"
+  description: "Open API for schema"
+paths:
+  /MisthKratapod/{MisthKratapod}:
+    put:
+      tags:
+      - "MisthKratapod"
+      operationId: "911b8920-ce14-4e74-95a7-c093163cbd39"
+      parameters:
+      - name: "MisthKratapod"
+        in: "path"
+        description: "MisthKratapod"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthKratapod"
+      responses:
+        200:
+          description: "MisthKratapod response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthKratapod"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthKratapod"
+      operationId: "eb57a559-153a-49bf-a011-02328af4b1d2"
+      parameters:
+      - name: "MisthKratapod"
+        in: "path"
+        description: "MisthKratapod"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthKratapod"
+      responses:
+        200:
+          description: "MisthKratapod response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthKratapod"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpstath/{MisthZpstath}:
+    put:
+      tags:
+      - "MisthZpstath"
+      operationId: "701a171b-d802-43a6-9541-f02d376508d0"
+      parameters:
+      - name: "MisthZpstath"
+        in: "path"
+        description: "MisthZpstath"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpstath"
+      responses:
+        200:
+          description: "MisthZpstath response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpstath"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpstath"
+      operationId: "7a24456c-79c2-4136-a3aa-7da0c7ecd27d"
+      parameters:
+      - name: "MisthZpstath"
+        in: "path"
+        description: "MisthZpstath"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpstath"
+      responses:
+        200:
+          description: "MisthZpstath response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpstath"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthYpalYvar/{MisthYpalYvar}:
+    put:
+      tags:
+      - "MisthYpalYvar"
+      operationId: "88ced5f1-fcd0-4787-8f6e-c808aec5f72f"
+      parameters:
+      - name: "MisthYpalYvar"
+        in: "path"
+        description: "MisthYpalYvar"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthYpalYvar"
+      responses:
+        200:
+          description: "MisthYpalYvar response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthYpalYvar"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthYpalYvar"
+      operationId: "4223fedf-bdee-414b-aa08-ec3dbdb57c06"
+      parameters:
+      - name: "MisthYpalYvar"
+        in: "path"
+        description: "MisthYpalYvar"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthYpalYvar"
+      responses:
+        200:
+          description: "MisthYpalYvar response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthYpalYvar"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZptmima/{MisthZptmima}:
+    put:
+      tags:
+      - "MisthZptmima"
+      operationId: "a4bb378b-75f6-4d57-87b0-e5fee572588a"
+      parameters:
+      - name: "MisthZptmima"
+        in: "path"
+        description: "MisthZptmima"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZptmima"
+      responses:
+        200:
+          description: "MisthZptmima response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZptmima"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZptmima"
+      operationId: "a2fb9b5c-6acb-4c1b-966a-3cc6fa657080"
+      parameters:
+      - name: "MisthZptmima"
+        in: "path"
+        description: "MisthZptmima"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZptmima"
+      responses:
+        200:
+          description: "MisthZptmima response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZptmima"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthYpal/{MisthYpal}:
+    put:
+      tags:
+      - "MisthYpal"
+      operationId: "ecdcf273-d485-45e2-b119-ee4bf04a1946"
+      parameters:
+      - name: "MisthYpal"
+        in: "path"
+        description: "MisthYpal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthYpal"
+      responses:
+        200:
+          description: "MisthYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthYpal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthYpal"
+      operationId: "ef9b9b7f-a6eb-4fee-a8d6-9f9654ea24a7"
+      parameters:
+      - name: "MisthYpal"
+        in: "path"
+        description: "MisthYpal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthYpal"
+      responses:
+        200:
+          description: "MisthYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthYpal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthFyloYpal/{MisthFyloYpal}:
+    put:
+      tags:
+      - "MisthFyloYpal"
+      operationId: "97da979f-4fb4-4f55-ac88-b595a860fc35"
+      parameters:
+      - name: "MisthFyloYpal"
+        in: "path"
+        description: "MisthFyloYpal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFyloYpal"
+      responses:
+        200:
+          description: "MisthFyloYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFyloYpal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthFyloYpal"
+      operationId: "04c94b2f-65d0-4965-80af-2bec1766ed36"
+      parameters:
+      - name: "MisthFyloYpal"
+        in: "path"
+        description: "MisthFyloYpal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFyloYpal"
+      responses:
+        200:
+          description: "MisthFyloYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFyloYpal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthReportCols/{MisthReportCols}:
+    put:
+      tags:
+      - "MisthReportCols"
+      operationId: "00faab9e-753c-4b63-b5db-63f2e420f531"
+      parameters:
+      - name: "MisthReportCols"
+        in: "path"
+        description: "MisthReportCols"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthReportCols"
+      responses:
+        200:
+          description: "MisthReportCols response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthReportCols"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthReportCols"
+      operationId: "ead8a8d3-d5ab-47ea-a825-9d6b71722d9b"
+      parameters:
+      - name: "MisthReportCols"
+        in: "path"
+        description: "MisthReportCols"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthReportCols"
+      responses:
+        200:
+          description: "MisthReportCols response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthReportCols"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthReport/{MisthReport}:
+    put:
+      tags:
+      - "MisthReport"
+      operationId: "5280c7b9-ebca-465f-aeb5-7d8b85e7c69c"
+      parameters:
+      - name: "MisthReport"
+        in: "path"
+        description: "MisthReport"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthReport"
+      responses:
+        200:
+          description: "MisthReport response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthReport"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthReport"
+      operationId: "62e6e42b-d185-4a6b-95e3-439f9674dd57"
+      parameters:
+      - name: "MisthReport"
+        in: "path"
+        description: "MisthReport"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthReport"
+      responses:
+        200:
+          description: "MisthReport response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthReport"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Usrgroupperm/{Usrgroupperm}:
+    put:
+      tags:
+      - "Usrgroupperm"
+      operationId: "89b3fbdf-7386-455e-95b5-1cfad43dcb63"
+      parameters:
+      - name: "Usrgroupperm"
+        in: "path"
+        description: "Usrgroupperm"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrgroupperm"
+      responses:
+        200:
+          description: "Usrgroupperm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrgroupperm"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Usrgroupperm"
+      operationId: "822c740b-d6e6-4837-988f-831c9300fd6d"
+      parameters:
+      - name: "Usrgroupperm"
+        in: "path"
+        description: "Usrgroupperm"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrgroupperm"
+      responses:
+        200:
+          description: "Usrgroupperm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrgroupperm"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpoikog/{MisthZpoikog}:
+    put:
+      tags:
+      - "MisthZpoikog"
+      operationId: "b32e4a6b-1cc0-4697-9ef1-797ade420a41"
+      parameters:
+      - name: "MisthZpoikog"
+        in: "path"
+        description: "MisthZpoikog"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpoikog"
+      responses:
+        200:
+          description: "MisthZpoikog response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpoikog"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpoikog"
+      operationId: "7b7058a2-d773-4c37-9b30-c355c76ecf2e"
+      parameters:
+      - name: "MisthZpoikog"
+        in: "path"
+        description: "MisthZpoikog"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpoikog"
+      responses:
+        200:
+          description: "MisthZpoikog response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpoikog"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpyvar/{MisthZpyvar}:
+    put:
+      tags:
+      - "MisthZpyvar"
+      operationId: "d850fd30-89a1-43bb-a238-3f756f9af094"
+      parameters:
+      - name: "MisthZpyvar"
+        in: "path"
+        description: "MisthZpyvar"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpyvar"
+      responses:
+        200:
+          description: "MisthZpyvar response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpyvar"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpyvar"
+      operationId: "fedf7bae-fd68-4e4c-b0c1-ac7346e11b74"
+      parameters:
+      - name: "MisthZpyvar"
+        in: "path"
+        description: "MisthZpyvar"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpyvar"
+      responses:
+        200:
+          description: "MisthZpyvar response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpyvar"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthReportYpal/{MisthReportYpal}:
+    put:
+      tags:
+      - "MisthReportYpal"
+      operationId: "c795f19e-473f-46ea-bf64-c8abeefb25db"
+      parameters:
+      - name: "MisthReportYpal"
+        in: "path"
+        description: "MisthReportYpal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthReportYpal"
+      responses:
+        200:
+          description: "MisthReportYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthReportYpal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthReportYpal"
+      operationId: "29db2e83-5b96-4ed5-931b-06c07be7dc4f"
+      parameters:
+      - name: "MisthReportYpal"
+        in: "path"
+        description: "MisthReportYpal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthReportYpal"
+      responses:
+        200:
+          description: "MisthReportYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthReportYpal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Usrgroups/{Usrgroups}:
+    put:
+      tags:
+      - "Usrgroups"
+      operationId: "1a23f6ae-da37-4af1-9c28-a1dd38ac6915"
+      parameters:
+      - name: "Usrgroups"
+        in: "path"
+        description: "Usrgroups"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrgroups"
+      responses:
+        200:
+          description: "Usrgroups response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrgroups"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Usrgroups"
+      operationId: "916dea56-c8cf-430e-81a6-99d0c738e665"
+      parameters:
+      - name: "Usrgroups"
+        in: "path"
+        description: "Usrgroups"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrgroups"
+      responses:
+        200:
+          description: "Usrgroups response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrgroups"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpepidom/{MisthZpepidom}:
+    put:
+      tags:
+      - "MisthZpepidom"
+      operationId: "569928b4-7278-4308-84f3-9c9eabb43ea6"
+      parameters:
+      - name: "MisthZpepidom"
+        in: "path"
+        description: "MisthZpepidom"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpepidom"
+      responses:
+        200:
+          description: "MisthZpepidom response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpepidom"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpepidom"
+      operationId: "cbb7a909-12cb-4229-965f-def4ea140eed"
+      parameters:
+      - name: "MisthZpepidom"
+        in: "path"
+        description: "MisthZpepidom"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpepidom"
+      responses:
+        200:
+          description: "MisthZpepidom response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpepidom"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpkat/{MisthZpkat}:
+    put:
+      tags:
+      - "MisthZpkat"
+      operationId: "479b3df5-f0a9-4607-bff5-4fca2966a2c4"
+      parameters:
+      - name: "MisthZpkat"
+        in: "path"
+        description: "MisthZpkat"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpkat"
+      responses:
+        200:
+          description: "MisthZpkat response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpkat"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpkat"
+      operationId: "a33c8493-7477-4f03-900f-096278e7a477"
+      parameters:
+      - name: "MisthZpkat"
+        in: "path"
+        description: "MisthZpkat"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpkat"
+      responses:
+        200:
+          description: "MisthZpkat response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpkat"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpkrat/{MisthZpkrat}:
+    put:
+      tags:
+      - "MisthZpkrat"
+      operationId: "f156033b-f559-46fb-b800-7ccbcefd79b9"
+      parameters:
+      - name: "MisthZpkrat"
+        in: "path"
+        description: "MisthZpkrat"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpkrat"
+      responses:
+        200:
+          description: "MisthZpkrat response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpkrat"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpkrat"
+      operationId: "68417885-9801-44d9-a0c0-abb6afd4fa46"
+      parameters:
+      - name: "MisthZpkrat"
+        in: "path"
+        description: "MisthZpkrat"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpkrat"
+      responses:
+        200:
+          description: "MisthZpkrat response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpkrat"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthFyloEpidom/{MisthFyloEpidom}:
+    put:
+      tags:
+      - "MisthFyloEpidom"
+      operationId: "c55569f3-4fad-4e92-9cb8-1394aa3b3451"
+      parameters:
+      - name: "MisthFyloEpidom"
+        in: "path"
+        description: "MisthFyloEpidom"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFyloEpidom"
+      responses:
+        200:
+          description: "MisthFyloEpidom response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFyloEpidom"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthFyloEpidom"
+      operationId: "01d91b35-7220-4891-bcfa-bc51e52220e6"
+      parameters:
+      - name: "MisthFyloEpidom"
+        in: "path"
+        description: "MisthFyloEpidom"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFyloEpidom"
+      responses:
+        200:
+          description: "MisthFyloEpidom response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFyloEpidom"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Usrmembers/{Usrmembers}:
+    put:
+      tags:
+      - "Usrmembers"
+      operationId: "1cb33964-0d45-4b72-b32d-16bed0280518"
+      parameters:
+      - name: "Usrmembers"
+        in: "path"
+        description: "Usrmembers"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrmembers"
+      responses:
+        200:
+          description: "Usrmembers response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrmembers"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Usrmembers"
+      operationId: "d9dbcd28-161a-48fd-ac8e-6ad824294d58"
+      parameters:
+      - name: "Usrmembers"
+        in: "path"
+        description: "Usrmembers"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrmembers"
+      responses:
+        200:
+          description: "Usrmembers response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrmembers"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Usruserperm/{Usruserperm}:
+    put:
+      tags:
+      - "Usruserperm"
+      operationId: "c99f7939-af92-434a-aae9-3502390d2ac0"
+      parameters:
+      - name: "Usruserperm"
+        in: "path"
+        description: "Usruserperm"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usruserperm"
+      responses:
+        200:
+          description: "Usruserperm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usruserperm"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Usruserperm"
+      operationId: "467a3633-1f10-47bf-bc6b-50e147c68d8e"
+      parameters:
+      - name: "Usruserperm"
+        in: "path"
+        description: "Usruserperm"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usruserperm"
+      responses:
+        200:
+          description: "Usruserperm response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usruserperm"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpperiod/{MisthZpperiod}:
+    put:
+      tags:
+      - "MisthZpperiod"
+      operationId: "43681ecf-5cab-426b-bcc8-76b819226de0"
+      parameters:
+      - name: "MisthZpperiod"
+        in: "path"
+        description: "MisthZpperiod"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpperiod"
+      responses:
+        200:
+          description: "MisthZpperiod response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpperiod"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpperiod"
+      operationId: "ddab342b-02d8-4563-b6ac-677153f1b8a2"
+      parameters:
+      - name: "MisthZpperiod"
+        in: "path"
+        description: "MisthZpperiod"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpperiod"
+      responses:
+        200:
+          description: "MisthZpperiod response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpperiod"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthFinalYpal/{MisthFinalYpal}:
+    put:
+      tags:
+      - "MisthFinalYpal"
+      operationId: "93c4983b-ae2b-4ef7-9d63-08d5e1c2982a"
+      parameters:
+      - name: "MisthFinalYpal"
+        in: "path"
+        description: "MisthFinalYpal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFinalYpal"
+      responses:
+        200:
+          description: "MisthFinalYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFinalYpal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthFinalYpal"
+      operationId: "f4c32878-9aa2-4ef3-92bd-54ca8c68032e"
+      parameters:
+      - name: "MisthFinalYpal"
+        in: "path"
+        description: "MisthFinalYpal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFinalYpal"
+      responses:
+        200:
+          description: "MisthFinalYpal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFinalYpal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Usrapps/{Usrapps}:
+    put:
+      tags:
+      - "Usrapps"
+      operationId: "85a60ed8-773b-407a-b931-2ffebc64aec6"
+      parameters:
+      - name: "Usrapps"
+        in: "path"
+        description: "Usrapps"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrapps"
+      responses:
+        200:
+          description: "Usrapps response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrapps"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Usrapps"
+      operationId: "463f5ab1-a3cf-44ef-884f-1d7929559ff2"
+      parameters:
+      - name: "Usrapps"
+        in: "path"
+        description: "Usrapps"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrapps"
+      responses:
+        200:
+          description: "Usrapps response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrapps"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpthesi/{MisthZpthesi}:
+    put:
+      tags:
+      - "MisthZpthesi"
+      operationId: "d4fb194d-73bf-41bf-a78c-69ba6b02ecae"
+      parameters:
+      - name: "MisthZpthesi"
+        in: "path"
+        description: "MisthZpthesi"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpthesi"
+      responses:
+        200:
+          description: "MisthZpthesi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpthesi"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpthesi"
+      operationId: "faa1e2ed-4272-48e0-87e3-a34953ea0bdc"
+      parameters:
+      - name: "MisthZpthesi"
+        in: "path"
+        description: "MisthZpthesi"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpthesi"
+      responses:
+        200:
+          description: "MisthZpthesi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpthesi"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Afxfilterd/{Afxfilterd}:
+    put:
+      tags:
+      - "Afxfilterd"
+      operationId: "97ecb047-4b4c-4bcd-ae0f-561c06edf4a9"
+      parameters:
+      - name: "Afxfilterd"
+        in: "path"
+        description: "Afxfilterd"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Afxfilterd"
+      responses:
+        200:
+          description: "Afxfilterd response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Afxfilterd"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Afxfilterd"
+      operationId: "e4fc134f-8c6c-4fe6-991a-9a10de246493"
+      parameters:
+      - name: "Afxfilterd"
+        in: "path"
+        description: "Afxfilterd"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Afxfilterd"
+      responses:
+        200:
+          description: "Afxfilterd response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Afxfilterd"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthFinalYpalKrat/{MisthFinalYpalKrat}:
+    put:
+      tags:
+      - "MisthFinalYpalKrat"
+      operationId: "1a7a45a2-1535-4c5d-a1d8-e6266c28903c"
+      parameters:
+      - name: "MisthFinalYpalKrat"
+        in: "path"
+        description: "MisthFinalYpalKrat"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFinalYpalKrat"
+      responses:
+        200:
+          description: "MisthFinalYpalKrat response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFinalYpalKrat"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthFinalYpalKrat"
+      operationId: "26c22aff-93da-45a3-b002-a1017c082a3e"
+      parameters:
+      - name: "MisthFinalYpalKrat"
+        in: "path"
+        description: "MisthFinalYpalKrat"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFinalYpalKrat"
+      responses:
+        200:
+          description: "MisthFinalYpalKrat response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFinalYpalKrat"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Afxfilter/{Afxfilter}:
+    put:
+      tags:
+      - "Afxfilter"
+      operationId: "f2ddc838-ebf9-4af4-bfab-dd321f543787"
+      parameters:
+      - name: "Afxfilter"
+        in: "path"
+        description: "Afxfilter"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Afxfilter"
+      responses:
+        200:
+          description: "Afxfilter response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Afxfilter"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Afxfilter"
+      operationId: "714786af-2451-4b19-a452-834b342e4d29"
+      parameters:
+      - name: "Afxfilter"
+        in: "path"
+        description: "Afxfilter"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Afxfilter"
+      responses:
+        200:
+          description: "Afxfilter response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Afxfilter"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Usrusers/{Usrusers}:
+    put:
+      tags:
+      - "Usrusers"
+      operationId: "34334dcb-3e4e-4066-924e-4ce878aac93a"
+      parameters:
+      - name: "Usrusers"
+        in: "path"
+        description: "Usrusers"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrusers"
+      responses:
+        200:
+          description: "Usrusers response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrusers"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Usrusers"
+      operationId: "135b797b-659c-4c37-bcc5-4fc1c32ee5d4"
+      parameters:
+      - name: "Usrusers"
+        in: "path"
+        description: "Usrusers"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usrusers"
+      responses:
+        200:
+          description: "Usrusers response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usrusers"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZptamio/{MisthZptamio}:
+    put:
+      tags:
+      - "MisthZptamio"
+      operationId: "16201991-2131-4908-be1e-b6c1d7762568"
+      parameters:
+      - name: "MisthZptamio"
+        in: "path"
+        description: "MisthZptamio"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZptamio"
+      responses:
+        200:
+          description: "MisthZptamio response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZptamio"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZptamio"
+      operationId: "a32e9882-a3ae-4afe-a56f-ea287cab461c"
+      parameters:
+      - name: "MisthZptamio"
+        in: "path"
+        description: "MisthZptamio"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZptamio"
+      responses:
+        200:
+          description: "MisthZptamio response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZptamio"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpidikot/{MisthZpidikot}:
+    put:
+      tags:
+      - "MisthZpidikot"
+      operationId: "799ed7a3-559a-48e2-b167-eb2ebb4699a9"
+      parameters:
+      - name: "MisthZpidikot"
+        in: "path"
+        description: "MisthZpidikot"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpidikot"
+      responses:
+        200:
+          description: "MisthZpidikot response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpidikot"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpidikot"
+      operationId: "7e7a6852-3eb2-43ab-a9cc-c7c50c0c7aa7"
+      parameters:
+      - name: "MisthZpidikot"
+        in: "path"
+        description: "MisthZpidikot"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpidikot"
+      responses:
+        200:
+          description: "MisthZpidikot response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpidikot"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZptitlos/{MisthZptitlos}:
+    put:
+      tags:
+      - "MisthZptitlos"
+      operationId: "9a76aec3-829f-4ae1-b8ff-c3feb7887549"
+      parameters:
+      - name: "MisthZptitlos"
+        in: "path"
+        description: "MisthZptitlos"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZptitlos"
+      responses:
+        200:
+          description: "MisthZptitlos response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZptitlos"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZptitlos"
+      operationId: "fa3f881d-e75d-40d9-95bb-dba774f65ba3"
+      parameters:
+      - name: "MisthZptitlos"
+        in: "path"
+        description: "MisthZptitlos"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZptitlos"
+      responses:
+        200:
+          description: "MisthZptitlos response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZptitlos"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthFinalYpalEpidom/{MisthFinalYpalEpidom}:
+    put:
+      tags:
+      - "MisthFinalYpalEpidom"
+      operationId: "e7d85ceb-b4bd-4c7b-b116-7b1c7aab2e1a"
+      parameters:
+      - name: "MisthFinalYpalEpidom"
+        in: "path"
+        description: "MisthFinalYpalEpidom"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFinalYpalEpidom"
+      responses:
+        200:
+          description: "MisthFinalYpalEpidom response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFinalYpalEpidom"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthFinalYpalEpidom"
+      operationId: "1da4c3b9-79f0-47e5-9b46-f461a23c7587"
+      parameters:
+      - name: "MisthFinalYpalEpidom"
+        in: "path"
+        description: "MisthFinalYpalEpidom"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFinalYpalEpidom"
+      responses:
+        200:
+          description: "MisthFinalYpalEpidom response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFinalYpalEpidom"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthZpxrisi/{MisthZpxrisi}:
+    put:
+      tags:
+      - "MisthZpxrisi"
+      operationId: "13853b89-dfcf-4ae9-b15a-2ff8242ea095"
+      parameters:
+      - name: "MisthZpxrisi"
+        in: "path"
+        description: "MisthZpxrisi"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpxrisi"
+      responses:
+        200:
+          description: "MisthZpxrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpxrisi"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthZpxrisi"
+      operationId: "e8bc9400-40ec-4d09-804e-ea0d2adddd7b"
+      parameters:
+      - name: "MisthZpxrisi"
+        in: "path"
+        description: "MisthZpxrisi"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthZpxrisi"
+      responses:
+        200:
+          description: "MisthZpxrisi response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthZpxrisi"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Afxptoseis/{Afxptoseis}:
+    put:
+      tags:
+      - "Afxptoseis"
+      operationId: "ca15c895-90f5-4630-a12b-1522724bc1ba"
+      parameters:
+      - name: "Afxptoseis"
+        in: "path"
+        description: "Afxptoseis"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Afxptoseis"
+      responses:
+        200:
+          description: "Afxptoseis response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Afxptoseis"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Afxptoseis"
+      operationId: "543abcfe-fdcd-4f63-94bd-092a12de4792"
+      parameters:
+      - name: "Afxptoseis"
+        in: "path"
+        description: "Afxptoseis"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Afxptoseis"
+      responses:
+        200:
+          description: "Afxptoseis response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Afxptoseis"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthFylo/{MisthFylo}:
+    put:
+      tags:
+      - "MisthFylo"
+      operationId: "a94ca986-a3ec-4c9c-9284-d4b2ae1ba252"
+      parameters:
+      - name: "MisthFylo"
+        in: "path"
+        description: "MisthFylo"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFylo"
+      responses:
+        200:
+          description: "MisthFylo response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFylo"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthFylo"
+      operationId: "184166c2-cd8b-4ee4-a7a3-df5d1466fc17"
+      parameters:
+      - name: "MisthFylo"
+        in: "path"
+        description: "MisthFylo"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFylo"
+      responses:
+        200:
+          description: "MisthFylo response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFylo"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthFinal/{MisthFinal}:
+    put:
+      tags:
+      - "MisthFinal"
+      operationId: "5a3bda3b-ed86-44f2-9c0b-6534413abd3c"
+      parameters:
+      - name: "MisthFinal"
+        in: "path"
+        description: "MisthFinal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFinal"
+      responses:
+        200:
+          description: "MisthFinal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFinal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthFinal"
+      operationId: "6408f9c1-124f-4b4b-90e1-e58c3c88cc3d"
+      parameters:
+      - name: "MisthFinal"
+        in: "path"
+        description: "MisthFinal"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFinal"
+      responses:
+        200:
+          description: "MisthFinal response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFinal"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /Usractions/{Usractions}:
+    put:
+      tags:
+      - "Usractions"
+      operationId: "5c0a07c0-afd1-4099-838e-93ce8eeee91a"
+      parameters:
+      - name: "Usractions"
+        in: "path"
+        description: "Usractions"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usractions"
+      responses:
+        200:
+          description: "Usractions response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usractions"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "Usractions"
+      operationId: "14a44751-31c0-40c9-8ec9-ed9ba214d357"
+      parameters:
+      - name: "Usractions"
+        in: "path"
+        description: "Usractions"
+        required: true
+        schema:
+          $ref: "#/components/schemas/Usractions"
+      responses:
+        200:
+          description: "Usractions response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/Usractions"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+  /MisthFyloKrat/{MisthFyloKrat}:
+    put:
+      tags:
+      - "MisthFyloKrat"
+      operationId: "758c61bc-b697-4c7c-87be-d061e3296c11"
+      parameters:
+      - name: "MisthFyloKrat"
+        in: "path"
+        description: "MisthFyloKrat"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFyloKrat"
+      responses:
+        200:
+          description: "MisthFyloKrat response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFyloKrat"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+    post:
+      tags:
+      - "MisthFyloKrat"
+      operationId: "b733c0d1-e91a-4e1e-a88e-9f4be728c36c"
+      parameters:
+      - name: "MisthFyloKrat"
+        in: "path"
+        description: "MisthFyloKrat"
+        required: true
+        schema:
+          $ref: "#/components/schemas/MisthFyloKrat"
+      responses:
+        200:
+          description: "MisthFyloKrat response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                items:
+                  $ref: "#/components/schemas/MisthFyloKrat"
+              examples:
+                test1:
+                  value:
+                    desckratapod: "aoreet dolore magna 0"
+                    apoddate: "1984-03-22"
+                    kodkratapod: 0.0
+                    kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        default:
+          description: "error payload"
+          content:
+            application/json:
+              schema:
+                type: "string"
+components:
+  schemas:
+    MisthKratapod:
+      required:
+      - "kodxrisi"
+      properties:
+        desckratapod:
+          type: "string"
+        kodkratapod:
+          type: "number"
+        apoddate:
+          type: "string"
+      example:
+        desckratapod: "aoreet dolore magna 0"
+        apoddate: "1984-03-22"
+        kodkratapod: 0
+    MisthZpstath:
+      required:
+      - "kodxrisi"
+      properties:
+        kodstath:
+          type: "string"
+        poso:
+          type: "integer"
+        descstath:
+          type: "string"
+      example:
+        kodstath: "dolores et ea rebum0"
+        descstath: "t accusam aliquyam d0"
+        poso: 0
+    MisthYpalYvar:
+      required:
+      - "kodypal"
+      properties:
+        aa:
+          type: "number"
+        kodxrisi:
+          type: "string"
+        kodyvar:
+          type: "string"
+        expr:
+          type: "string"
+      example:
+        aa: 0
+        kodyvar: "ssim qui blandit pr0"
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        expr: " placerat facer poss0"
+    MisthZptmima:
+      required:
+      - "kodtmima"
+      properties:
+        desctmima:
+          type: "string"
+        kodxrisi:
+          type: "string"
+      example:
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        desctmima: "am et justo duo dolo0"
+    MisthYpal:
+      required:
+      - "kodoikog"
+      properties:
+        bathmos:
+          type: "string"
+        birthdate:
+          type: "string"
+        klimakio:
+          type: "integer"
+        childs:
+          type: "integer"
+        spouse:
+          type: "string"
+        kodtmima:
+          type: "string"
+        bank:
+          type: "string"
+        mobilphone:
+          type: "string"
+        hireddate:
+          type: "string"
+        kodthesi:
+          type: "string"
+        bankno:
+          type: "string"
+        prostmeli:
+          type: "integer"
+        rehireddate:
+          type: "string"
+        city:
+          type: "string"
+        intphone:
+          type: "string"
+        doy:
+          type: "string"
+        surname:
+          type: "string"
+        kodypal:
+          type: "integer"
+        email:
+          type: "string"
+        kodtamio:
+          type: "string"
+        address:
+          type: "string"
+        jobtitle:
+          type: "string"
+        sex:
+          type: "string"
+        termreason:
+          type: "string"
+        fathername:
+          type: "string"
+        exeldate:
+          type: "string"
+        tk:
+          type: "string"
+        jobphone:
+          type: "string"
+        mitroo:
+          type: "string"
+        termdate:
+          type: "string"
+        mothername:
+          type: "string"
+        klados:
+          type: "string"
+        area:
+          type: "string"
+        newexeldate:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        kodidikot:
+          type: "string"
+        adt:
+          type: "string"
+        name:
+          type: "string"
+        homephone:
+          type: "string"
+        afm:
+          type: "string"
+      example:
+        bathmos: "0"
+        rehireddate: "2081-03-22"
+        birthdate: "2002-03-22"
+        mitroo: "t wisi enim ad mini0"
+        homephone: "513-664-9122"
+        city: "C"
+        intphone: "645-429-8414"
+        klimakio: 0
+        childs: 0
+        spouse: " justo duo dolores e0"
+        kodtmima: "98117404-7640-4d95-9c17-8116750413f7"
+        doy: "t ea rebum. Stet cli0"
+        termdate: "1993-03-22"
+        bank: "ed diam nonumy eirmo0"
+        mobilphone: "135-367-6167"
+        surname: "Sarita"
+        mothername: "Nanon"
+        kodypal: 817981434
+        email: "Shawn@dummy.com"
+        klados: "m dolor s0"
+        kodtamio: "y eirmod tempor invi0"
+        area: " dolores et ea rebum0"
+        newexeldate: "1987-03-22"
+        address: "et, consetetur sadip0"
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        jobtitle: "ore dolores duo eirm0"
+        hireddate: "2077-03-22"
+        sex: "0"
+        termreason: "et dolore magna aliq0"
+        kodidikot: "t amet. Lorem ipsum 0"
+        afm: "Lorem ips0"
+        kodthesi: "m ipsum dolor sit am0"
+        adt: " elitr, s0"
+        fathername: "Arda"
+        exeldate: "1903-03-22"
+        tk: "st Lorem 0"
+        jobphone: "181-657-7599"
+        bankno: ", sed diam voluptua.0"
+        name: "Tildy"
+        prostmeli: 0
+    MisthFyloYpal:
+      required:
+      - "kodypal"
+      properties:
+        kodfylo:
+          type: "string"
+        kodxrisi:
+          type: "string"
+      example:
+        kodfylo: "uer0"
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+    MisthReportCols:
+      required:
+      - "kodxrisi"
+      properties:
+        header_text:
+          type: "string"
+        aa:
+          type: "number"
+        width:
+          type: "integer"
+        kodreport:
+          type: "string"
+        expr:
+          type: "string"
+        kodcol:
+          type: "integer"
+      example:
+        aa: 0
+        kodcol: 0
+        header_text: "lita ea et gubergren0"
+        width: 0
+        expr: " placerat facer poss0"
+        kodreport: "m voluptua. At vero 0"
+    MisthReport:
+      required:
+      - "kodxrisi"
+      properties:
+        print_margin_bottom:
+          type: "integer"
+        descreport:
+          type: "string"
+        print_paper_size:
+          type: "integer"
+        print_orientation:
+          type: "integer"
+        subtitle:
+          type: "string"
+        prn_notes1:
+          type: "string"
+        prn_notes2:
+          type: "string"
+        print_margin_right:
+          type: "integer"
+        print_margin_top:
+          type: "integer"
+        print_scale:
+          type: "integer"
+        kodreport:
+          type: "string"
+        print_margin_left:
+          type: "integer"
+      example:
+        print_margin_right: 0
+        print_margin_left: 0
+        print_orientation: 0
+        subtitle: "Lorem ipsum dolor si0"
+        print_margin_bottom: 0
+        descreport: "ores et ea rebum. St0"
+        print_scale: 0
+        prn_notes1: "tur sadipscing elitr0"
+        kodreport: "m voluptua. At vero 0"
+        prn_notes2: "sto duo dolores et e0"
+        print_paper_size: 0
+        print_margin_top: 0
+    Usrgroupperm:
+      required:
+      - "kodgroup"
+      properties:
+        openlist:
+          type: "integer"
+        editrec:
+          type: "integer"
+        addrec:
+          type: "integer"
+        delrec:
+          type: "integer"
+        kodaction:
+          type: "string"
+        openform:
+          type: "integer"
+      example:
+        delrec: 0
+        addrec: 0
+        kodaction: " At accusam aliquyam0"
+        openform: 0
+        openlist: 0
+        editrec: 0
+    MisthZpoikog:
+      required:
+      - "kodoikog"
+      properties:
+        descoikog:
+          type: "string"
+        kodxrisi:
+          type: "string"
+      example:
+        descoikog: "my eirmod tempor inv0"
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+    MisthZpyvar:
+      required:
+      - "kodxrisi"
+      properties:
+        descyvar:
+          type: "string"
+        kodyvar:
+          type: "string"
+        expr:
+          type: "string"
+      example:
+        kodyvar: "ssim qui blandit pr0"
+        expr: " placerat facer poss0"
+        descyvar: "Duis autem vel eum i0"
+    MisthReportYpal:
+      required:
+      - "kodypal"
+      properties:
+        kodxrisi:
+          type: "string"
+        kodreport:
+          type: "string"
+      example:
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        kodreport: "m voluptua. At vero 0"
+    Usrgroups:
+      required:
+      - "kodgroup"
+      properties:
+        descgroup:
+          type: "string"
+      example:
+        descgroup: "itr, At accusam aliq0"
+    MisthZpepidom:
+      required:
+      - "kodepidom"
+      properties:
+        autoforos:
+          type: "integer"
+        descepidom:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        hasforo:
+          type: "integer"
+        isasf:
+          type: "integer"
+      example:
+        descepidom: " invidunt justo labo0"
+        hasforo: 0
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        isasf: 0
+        autoforos: 0
+    MisthZpkat:
+      required:
+      - "kodxrisi"
+      properties:
+        desckat:
+          type: "string"
+        kodkat:
+          type: "string"
+      example:
+        desckat: "met, consetetur sadi0"
+        kodkat: "t ea rebum. Stet cli0"
+    MisthZpkrat:
+      required:
+      - "kodkrat"
+      properties:
+        isautoforos:
+          type: "integer"
+        desckrat:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        isasf:
+          type: "integer"
+        isforos:
+          type: "integer"
+      example:
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        isautoforos: 0
+        desckrat: "ur sadipscing elitr,0"
+        isasf: 0
+        isforos: 0
+    MisthFyloEpidom:
+      required:
+      - "kodepidom"
+      properties:
+        aa:
+          type: "number"
+        kodfylo:
+          type: "string"
+        notes:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        expr:
+          type: "string"
+      example:
+        aa: 0
+        kodfylo: "uer0"
+        notes: "sto duo dolores et e0"
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        expr: " placerat facer poss0"
+    Usrmembers:
+      required:
+      - "koduser"
+      properties:
+        kodgroup:
+          type: "integer"
+      example:
+        kodgroup: 550055519
+    Usruserperm:
+      required:
+      - "koduser"
+      properties:
+        enable:
+          type: "integer"
+        kodapp:
+          type: "string"
+      example:
+        kodapp: "m nonumy eirmod temp0"
+        enable: 0
+    MisthZpperiod:
+      required:
+      - "kodperiod"
+      properties:
+        descperiod:
+          type: "string"
+        orderno:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+      example:
+        descperiod: "em ipsum dolor sit a0"
+        orderno: 0
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+    MisthFinalYpal:
+      required:
+      - "kodypal"
+      properties:
+        plirdate:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+      example:
+        kodfinal: 0
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        plirdate: "1914-03-22"
+    Usrapps:
+      required:
+      - "kodapp"
+      properties:
+        descapp:
+          type: "string"
+      example:
+        descapp: " ea rebum. Stet clit0"
+    MisthZpthesi:
+      required:
+      - "kodthesi"
+      properties:
+        descthesi:
+          type: "string"
+        kodxrisi:
+          type: "string"
+      example:
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        descthesi: "em ipsum dolor sit a0"
+    Afxfilterd:
+      required:
+      - "kodfilterd"
+      properties:
+        telestis:
+          type: "string"
+        pedio:
+          type: "string"
+        joint:
+          type: "string"
+        kodfilter:
+          type: "number"
+        timi:
+          type: "string"
+      example:
+        joint: "ur sadips0"
+        timi: "psum dolor sit amet,0"
+        telestis: "tus est Lorem ipsum0"
+        pedio: "ion ullamcorper susc0"
+        kodfilter: 0
+    MisthFinalYpalKrat:
+      required:
+      - "kodkrat"
+      properties:
+        aa:
+          type: "number"
+        kodypal:
+          type: "integer"
+        kodkratapod:
+          type: "number"
+        notes:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+      example:
+        aa: 0
+        kodfinal: 0
+        notes: "sto duo dolores et e0"
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        kodkratapod: 0
+        kodypal: 817981434
+        poso: 0
+    Afxfilter:
+      required:
+      - "descfilter"
+      properties:
+        kodfilter:
+          type: "number"
+        tablename:
+          type: "string"
+      example:
+        kodfilter: 0
+        tablename: "Devonne"
+    Usrusers:
+      required:
+      - "koduser"
+      properties:
+        password:
+          type: "string"
+        isactive:
+          type: "integer"
+        idiotita:
+          type: "string"
+        tomeas:
+          type: "string"
+        fullname:
+          type: "string"
+        username:
+          type: "string"
+      example:
+        password: "f4a996c8-c6e1-4966-bbcf-eb8434324fef"
+        tomeas: "m erat, sed diam vol0"
+        isactive: 0
+        idiotita: "usam aliquyam diam d0"
+        fullname: "Anica"
+        username: "Estrellita"
+    MisthZptamio:
+      required:
+      - "kodtamio"
+      properties:
+        kodxrisi:
+          type: "string"
+        desctamio:
+          type: "string"
+      example:
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        desctamio: "met. Duis autem vel 0"
+    MisthZpidikot:
+      required:
+      - "kodxrisi"
+      properties:
+        descidikot:
+          type: "string"
+        kodidikot:
+          type: "string"
+      example:
+        kodidikot: "t amet. Lorem ipsum 0"
+        descidikot: " et justo duo dolore0"
+    MisthZptitlos:
+      required:
+      - "kodxrisi"
+      properties:
+        kodtitlos:
+          type: "string"
+        desctitlos:
+          type: "string"
+      example:
+        desctitlos: "utate vel0"
+        kodtitlos: "a0"
+    MisthFinalYpalEpidom:
+      required:
+      - "kodepidom"
+      properties:
+        aa:
+          type: "number"
+        kodypal:
+          type: "integer"
+        notes:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        poso:
+          type: "integer"
+      example:
+        aa: 0
+        kodfinal: 0
+        notes: "sto duo dolores et e0"
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        kodypal: 817981434
+        poso: 0
+    MisthZpxrisi:
+      required:
+      - "kodxrisi"
+      properties:
+        descxrisi:
+          type: "string"
+      example:
+        descxrisi: " exerci tation ullam0"
+    Afxptoseis:
+      required:
+      - "ait"
+      properties:
+        gen:
+          type: "string"
+        onom:
+          type: "string"
+      example:
+        gen: "nonumy eirmod tempor0"
+        onom: "placerat facer possi0"
+    MisthFylo:
+      required:
+      - "kodxrisi"
+      properties:
+        descfylo:
+          type: "string"
+        kodfylo:
+          type: "string"
+      example:
+        kodfylo: "uer0"
+        descfylo: " soluta nobis eleife0"
+    MisthFinal:
+      required:
+      - "kodperiod"
+      properties:
+        datefinal:
+          type: "string"
+        aa:
+          type: "number"
+        descfinal:
+          type: "string"
+        kodfinal:
+          type: "integer"
+        kodxrisi:
+          type: "string"
+        kodkat:
+          type: "string"
+        title:
+          type: "string"
+      example:
+        datefinal: "1955-03-22"
+        aa: 0
+        kodfinal: 0
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        descfinal: "o dolores et ea rebu0"
+        title: "et ea rebum. Stet cl0"
+        kodkat: "t ea rebum. Stet cli0"
+    Usractions:
+      required:
+      - "kodapp"
+      properties:
+        descaction:
+          type: "string"
+        kodaction:
+          type: "string"
+      example:
+        descaction: "eirmod tempor invidu0"
+        kodaction: " At accusam aliquyam0"
+    MisthFyloKrat:
+      required:
+      - "kodkrat"
+      properties:
+        aa:
+          type: "number"
+        kodfylo:
+          type: "string"
+        notes:
+          type: "string"
+        kodxrisi:
+          type: "string"
+        expr:
+          type: "string"
+      example:
+        aa: 0
+        kodfylo: "uer0"
+        notes: "sto duo dolores et e0"
+        kodxrisi: "e5f88e9d-739a-485d-8816-52be7b770aac"
+        expr: " placerat facer poss0"

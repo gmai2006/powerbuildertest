@@ -1,21 +1,19 @@
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+/**
+ * %% Copyright (C) 2021 DataScience 9 LLC %% Licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance with the License. You may obtain a
+ * copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * <p>http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
+ * <p>Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License. #L%
+ *
+ * <p>This code is 100% AUTO generated. Please do not modify it DIRECTLY If you need new features or
+ * function or changes please update the templates then submit the template through our web
+ * interface.
  */
-
 package com.test.abc.dto;
 
 import java.nio.charset.Charset;
@@ -41,24 +39,6 @@ import com.test.abc.dto.DwMisthFyloListDto;
 import com.test.abc.dto.PickMisthFyloXrisiCheckDto;
 import com.test.abc.utils.FileUtils;
 
-/*
- * %%
- * Copyright (C) 2018 DataScience 9 LLC
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
-
 public class MisthFyloDaoDtoTest {
   static MisthFyloDtoDao dtoDao;
   static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.S").create();
@@ -74,7 +54,7 @@ public class MisthFyloDaoDtoTest {
     misthFyloDao = new DefaultMisthFyloDao(jpa);
     dtoDao = new DefaultMisthFyloDtoDao(jpa);
     try {
-      String json = null;
+      String json;
       json = FileUtils.readFileFromResource2String(misthFyloInputFile, Charset.defaultCharset());
       misthFyloRecords = gson.fromJson(json, MisthFylo[].class);
     } catch (IOException ex) {
@@ -85,7 +65,6 @@ public class MisthFyloDaoDtoTest {
   @Test
   public void testdwMisthFyloForm() {
     misthFyloDao.create(misthFyloRecords[1]);
-    ;
     java.util.List<DwMisthFyloFormDto> testResult =
         dtoDao.dwMisthFyloForm(misthFyloRecords[1].getKodfylo(), misthFyloRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -104,7 +83,6 @@ public class MisthFyloDaoDtoTest {
   @Test
   public void testpickMisthFyloXrisi() {
     misthFyloDao.create(misthFyloRecords[1]);
-    ;
     java.util.List<PickMisthFyloXrisiDto> testResult =
         dtoDao.pickMisthFyloXrisi(misthFyloRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -123,7 +101,6 @@ public class MisthFyloDaoDtoTest {
   @Test
   public void testdwMisthFyloList() {
     misthFyloDao.create(misthFyloRecords[1]);
-    ;
     java.util.List<DwMisthFyloListDto> testResult =
         dtoDao.dwMisthFyloList(misthFyloRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
@@ -142,7 +119,6 @@ public class MisthFyloDaoDtoTest {
   @Test
   public void testpickMisthFyloXrisiCheck() {
     misthFyloDao.create(misthFyloRecords[1]);
-    ;
     java.util.List<PickMisthFyloXrisiCheckDto> testResult =
         dtoDao.pickMisthFyloXrisiCheck(misthFyloRecords[1].getKodxrisi());
     org.junit.Assert.assertFalse(testResult.isEmpty());
